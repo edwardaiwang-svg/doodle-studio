@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320">
+  <rect id="box" x="35" y="89" width="282" height="166" rx="14" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cab" d="M 317 125 L 381 125 C 395 125 403 131 409 143 L 437 195 C 441 203 443 211 443 219 L 443 245 C 443 251 439 255 433 255 L 317 255 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="window" points="331,139 379,139 403,185 331,185" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="stripe" x="35" y="205" width="404" height="22" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cross" points="146,106 176,106 176,132 202,132 202,162 176,162 176,188 146,188 146,162 120,162 120,132 146,132" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="light" d="M 247 89 L 247 77 C 247 63 257 57 273 57 C 289 57 299 63 299 77 L 299 89 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rays" d="M 273 43 L 273 27 M 235 57 L 223 45 M 311 57 L 323 45" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="headlight" x="429" y="231" width="16" height="14" rx="4" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="wheel" cx="111" cy="257" r="36" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="111" cy="257" r="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="wheel" cx="367" cy="257" r="36" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="367" cy="257" r="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

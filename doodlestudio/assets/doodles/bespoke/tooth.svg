@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400">
+  <path id="tooth" d="M 56 116 C 46 66 106 46 136 72 C 152 84 180 84 196 72 C 226 46 286 66 276 116 C 270 156 256 196 252 236 C 248 286 242 346 222 356 C 202 364 192 326 186 296 C 180 274 152 274 146 296 C 140 326 130 364 110 356 C 90 346 84 286 80 236 C 76 196 62 156 56 116 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shade" d="M 258 102 C 258 156 242 202 238 242 C 234 292 228 336 218 350 C 232 342 240 296 246 242 C 252 192 268 146 258 102 Z" fill="#E0E0E0" data-noink="1"/>
+  <path id="gloss" d="M 80 122 C 76 102 90 86 110 86" fill="none" stroke="#64B5F6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="sparkle" d="M 304 42 Q 304 76 338 76 Q 304 76 304 110 Q 304 76 270 76 Q 304 76 304 42 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 316 278 Q 316 296 334 296 Q 316 296 316 314 Q 316 296 298 296 Q 316 296 316 278 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 36 292 Q 36 306 50 306 Q 36 306 36 320 Q 36 306 22 306 Q 36 306 36 292 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,606 @@
+{
+ "question_big": {
+  "desc": "Big chunky blue question mark",
+  "category": "symbols",
+  "en": [
+   "question",
+   "question mark",
+   "unknown",
+   "mystery",
+   "uncertainty",
+   "open question",
+   "unanswered",
+   "puzzle",
+   "curious",
+   "why",
+   "what if"
+  ],
+  "zh": [
+   "问号",
+   "疑问",
+   "未知",
+   "谜团",
+   "不确定",
+   "为什么"
+  ]
+ },
+ "exclamation_big": {
+  "desc": "Big chunky red exclamation mark with pop lines",
+  "category": "symbols",
+  "en": [
+   "exclamation mark",
+   "important",
+   "attention",
+   "surprise",
+   "alert",
+   "key fact",
+   "wow",
+   "shocking",
+   "notice",
+   "emphasis"
+  ],
+  "zh": [
+   "感叹号",
+   "重要",
+   "注意",
+   "惊讶",
+   "提醒",
+   "震惊"
+  ]
+ },
+ "warning_triangle": {
+  "desc": "Yellow warning triangle with a black exclamation mark",
+  "category": "symbols",
+  "en": [
+   "warning",
+   "caution",
+   "risk",
+   "danger",
+   "hazard",
+   "red flag",
+   "watch out",
+   "be careful",
+   "risk factor",
+   "alert"
+  ],
+  "zh": [
+   "警告",
+   "警示",
+   "风险",
+   "危险",
+   "小心",
+   "注意"
+  ]
+ },
+ "check_big": {
+  "desc": "Big green check mark in a green ring",
+  "category": "symbols",
+  "en": [
+   "check mark",
+   "correct",
+   "done",
+   "yes",
+   "approved",
+   "complete",
+   "success",
+   "right answer",
+   "verified",
+   "tick",
+   "passed"
+  ],
+  "zh": [
+   "对勾",
+   "正确",
+   "完成",
+   "是",
+   "通过",
+   "成功"
+  ]
+ },
+ "cross_big": {
+  "desc": "Big red X in a red ring",
+  "category": "symbols",
+  "en": [
+   "wrong",
+   "no",
+   "rejected",
+   "incorrect",
+   "cross",
+   "denied",
+   "fail",
+   "cancelled",
+   "mistake",
+   "not allowed"
+  ],
+  "zh": [
+   "错误",
+   "叉号",
+   "否",
+   "拒绝",
+   "失败",
+   "不对"
+  ]
+ },
+ "thumbs_up": {
+  "desc": "Thumbs-up hand with a green sleeve",
+  "category": "symbols",
+  "en": [
+   "thumbs up",
+   "approve",
+   "good",
+   "like",
+   "agree",
+   "well done",
+   "okay",
+   "positive",
+   "endorse",
+   "support"
+  ],
+  "zh": [
+   "点赞",
+   "赞",
+   "好",
+   "同意",
+   "认可",
+   "支持"
+  ]
+ },
+ "thumbs_down": {
+  "desc": "Thumbs-down hand with a red sleeve",
+  "category": "symbols",
+  "en": [
+   "thumbs down",
+   "disapprove",
+   "bad",
+   "dislike",
+   "disagree",
+   "reject",
+   "negative",
+   "poor",
+   "unpopular",
+   "not good"
+  ],
+  "zh": [
+   "差评",
+   "不赞成",
+   "不好",
+   "反对",
+   "不喜欢",
+   "否定"
+  ]
+ },
+ "star_burst": {
+  "desc": "Spiky yellow starburst badge with a white star",
+  "category": "symbols",
+  "en": [
+   "highlight",
+   "key point",
+   "new",
+   "featured",
+   "breaking",
+   "special",
+   "headline",
+   "standout",
+   "spotlight",
+   "big news"
+  ],
+  "zh": [
+   "重点",
+   "亮点",
+   "新",
+   "特别",
+   "关键",
+   "焦点"
+  ]
+ },
+ "medal": {
+  "desc": "Gold medal with a star on a blue and red ribbon",
+  "category": "symbols",
+  "en": [
+   "medal",
+   "gold medal",
+   "winner",
+   "achievement",
+   "first place",
+   "champion",
+   "award",
+   "victory",
+   "top performer",
+   "prize"
+  ],
+  "zh": [
+   "奖牌",
+   "金牌",
+   "冠军",
+   "第一名",
+   "成就",
+   "获奖"
+  ]
+ },
+ "sparkles": {
+  "desc": "Three yellow sparkle stars",
+  "category": "symbols",
+  "en": [
+   "sparkles",
+   "new",
+   "magic",
+   "shiny",
+   "brand new",
+   "fresh",
+   "glitter",
+   "polished",
+   "dazzling",
+   "wonderful"
+  ],
+  "zh": [
+   "闪光",
+   "闪亮",
+   "全新",
+   "魔法",
+   "闪耀",
+   "焕然一新"
+  ]
+ },
+ "fire_flame": {
+  "desc": "Big red, orange and yellow flame",
+  "category": "symbols",
+  "en": [
+   "fire",
+   "flame",
+   "hot",
+   "trending",
+   "burning",
+   "on fire",
+   "heating up",
+   "blazing",
+   "hot topic",
+   "red hot"
+  ],
+  "zh": [
+   "火",
+   "火焰",
+   "火热",
+   "热门",
+   "燃烧",
+   "爆火"
+  ]
+ },
+ "ice_cube": {
+  "desc": "Blue ice cube with white frost glints",
+  "category": "symbols",
+  "en": [
+   "ice",
+   "ice cube",
+   "frozen",
+   "cold",
+   "freeze",
+   "chill",
+   "icy",
+   "cool down",
+   "put on ice",
+   "cooling",
+   "frozen assets"
+  ],
+  "zh": [
+   "冰块",
+   "冰冻",
+   "寒冷",
+   "冻结",
+   "降温",
+   "冷却"
+  ]
+ },
+ "lightning_bolt": {
+  "desc": "Yellow lightning bolt with zap lines",
+  "category": "symbols",
+  "en": [
+   "lightning",
+   "lightning bolt",
+   "fast",
+   "power",
+   "energy",
+   "shock",
+   "electricity",
+   "flash",
+   "zap",
+   "sudden",
+   "electric"
+  ],
+  "zh": [
+   "闪电",
+   "快速",
+   "能量",
+   "电力",
+   "冲击",
+   "突然"
+  ]
+ },
+ "heart_symbol": {
+  "desc": "Glossy red heart with sparkles",
+  "category": "symbols",
+  "en": [
+   "heart",
+   "love",
+   "care",
+   "like",
+   "favorite",
+   "passion",
+   "kindness",
+   "affection",
+   "fan",
+   "compassion"
+  ],
+  "zh": [
+   "爱心",
+   "爱",
+   "关爱",
+   "喜欢",
+   "热爱",
+   "心"
+  ]
+ },
+ "broken_heart": {
+  "desc": "Red heart cracked in two halves",
+  "category": "symbols",
+  "en": [
+   "broken heart",
+   "heartbreak",
+   "loss",
+   "disappointment",
+   "sadness",
+   "breakup",
+   "grief",
+   "let down",
+   "hurt",
+   "sorrow"
+  ],
+  "zh": [
+   "心碎",
+   "伤心",
+   "失望",
+   "失去",
+   "分手",
+   "难过"
+  ]
+ },
+ "thought_bubble": {
+  "desc": "White cloud thought bubble with trailing circles",
+  "category": "symbols",
+  "en": [
+   "thinking",
+   "thought",
+   "imagine",
+   "idea",
+   "wondering",
+   "daydream",
+   "consider",
+   "reflect",
+   "in my head",
+   "what if"
+  ],
+  "zh": [
+   "思考",
+   "想法",
+   "想象",
+   "念头",
+   "考虑",
+   "沉思"
+  ]
+ },
+ "arrows_up_down": {
+  "desc": "Green up arrow beside a red down arrow",
+  "category": "symbols",
+  "en": [
+   "ups and downs",
+   "up and down",
+   "change",
+   "rise and fall",
+   "volatility",
+   "fluctuation",
+   "gains and losses",
+   "mixed results",
+   "swings",
+   "winners and losers"
+  ],
+  "zh": [
+   "涨跌",
+   "起伏",
+   "上下波动",
+   "变化",
+   "升降",
+   "波动"
+  ]
+ },
+ "plus_minus": {
+  "desc": "Green plus sign beside a red minus sign",
+  "category": "symbols",
+  "en": [
+   "plus and minus",
+   "pros and cons",
+   "add and subtract",
+   "positive and negative",
+   "advantages and disadvantages",
+   "trade-offs",
+   "benefits and drawbacks",
+   "net effect",
+   "gains and losses"
+  ],
+  "zh": [
+   "加减",
+   "利弊",
+   "正负",
+   "优缺点",
+   "得失",
+   "加与减"
+  ]
+ },
+ "clock_fast": {
+  "desc": "Red clock with speed lines",
+  "category": "symbols",
+  "en": [
+   "time pressure",
+   "hurry",
+   "speed",
+   "deadline",
+   "running out of time",
+   "fast",
+   "rush",
+   "time flies",
+   "race against time",
+   "urgent",
+   "quickly"
+  ],
+  "zh": [
+   "时间紧迫",
+   "赶时间",
+   "快速",
+   "截止日期",
+   "争分夺秒",
+   "紧急"
+  ]
+ },
+ "infinity_loop": {
+  "desc": "Purple infinity loop",
+  "category": "symbols",
+  "en": [
+   "infinity",
+   "forever",
+   "endless",
+   "unlimited",
+   "eternal",
+   "infinite",
+   "never-ending",
+   "limitless",
+   "perpetual",
+   "loop"
+  ],
+  "zh": [
+   "无限",
+   "永远",
+   "无穷",
+   "无止境",
+   "永恒",
+   "循环"
+  ]
+ },
+ "recycle_arrows": {
+  "desc": "Three green arrows chasing around a recycling triangle",
+  "category": "symbols",
+  "en": [
+   "recycling",
+   "recycle",
+   "reuse",
+   "sustainability",
+   "circular economy",
+   "environment",
+   "waste reduction",
+   "eco-friendly",
+   "renewable",
+   "cycle"
+  ],
+  "zh": [
+   "回收",
+   "循环利用",
+   "再利用",
+   "环保",
+   "可持续",
+   "循环经济"
+  ]
+ },
+ "peace_dove": {
+  "desc": "White dove flying with an olive branch",
+  "category": "symbols",
+  "en": [
+   "peace",
+   "dove",
+   "ceasefire",
+   "harmony",
+   "truce",
+   "peace deal",
+   "reconciliation",
+   "olive branch",
+   "end of conflict",
+   "calm"
+  ],
+  "zh": [
+   "和平",
+   "和平鸽",
+   "停火",
+   "和谐",
+   "和解",
+   "橄榄枝"
+  ]
+ },
+ "earth_globe": {
+  "desc": "Planet Earth with green continents on a blue ocean",
+  "category": "places",
+  "en": [
+   "world",
+   "global",
+   "planet",
+   "earth",
+   "worldwide",
+   "international",
+   "globe",
+   "around the world",
+   "globalization",
+   "whole world"
+  ],
+  "zh": [
+   "地球",
+   "世界",
+   "全球",
+   "星球",
+   "国际",
+   "全世界"
+  ]
+ },
+ "confetti_party": {
+  "desc": "Party popper bursting with confetti and streamers",
+  "category": "culture",
+  "en": [
+   "celebration",
+   "party",
+   "success",
+   "congratulations",
+   "confetti",
+   "party popper",
+   "milestone",
+   "hooray",
+   "festive",
+   "celebrate"
+  ],
+  "zh": [
+   "庆祝",
+   "派对",
+   "成功",
+   "恭喜",
+   "彩带",
+   "庆典"
+  ]
+ },
+ "stop_hand": {
+  "desc": "Raised open palm inside a red octagon",
+  "category": "symbols",
+  "en": [
+   "stop",
+   "halt",
+   "forbidden",
+   "not allowed",
+   "prohibited",
+   "hold on",
+   "wait",
+   "ban",
+   "no entry",
+   "pause"
+  ],
+  "zh": [
+   "停止",
+   "禁止",
+   "停下",
+   "不许",
+   "暂停",
+   "叫停"
+  ]
+ }
+}

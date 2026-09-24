@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 430" width="500" height="430">
+  <g transform="translate(-10,2)">
+    <rect id="walls" x="40" y="216" width="440" height="184" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="roof" points="26,222 494,222 470,186 50,186" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="tower" x="212" y="110" width="96" height="76" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="tower_roof" points="198,114 260,56 322,114" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="belfry" d="M236,178 L236,152 A24,24 0 0 1 284,152 L284,178 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bell" d="M243,172 L277,172 Q270,166 270,152 Q270,138 260,138 Q250,138 250,152 Q250,166 243,172 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="pole" x1="260" y1="56" x2="260" y2="14" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="flag" d="M262,18 Q281,10 299,18 Q317,26 336,18 L336,52 Q317,60 299,52 Q281,44 262,52 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="clock" cx="260" cy="262" r="26" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="clock_hands" d="M260,262 L260,246 M260,262 L272,268" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="door" d="M230,400 L230,340 A30,30 0 0 1 290,340 L290,400 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="door_split" x1="260" y1="312" x2="260" y2="400" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="win1" x="70" y="262" width="50" height="80" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mullion1" d="M95,262 L95,342 M70,302 L120,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="win2" x="146" y="262" width="50" height="80" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mullion2" d="M171,262 L171,342 M146,302 L196,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="win3" x="324" y="262" width="50" height="80" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mullion3" d="M349,262 L349,342 M324,302 L374,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="win4" x="400" y="262" width="50" height="80" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mullion4" d="M425,262 L425,342 M400,302 L450,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="step" x="212" y="398" width="96" height="14" rx="3" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

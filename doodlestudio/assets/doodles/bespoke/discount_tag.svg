@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 320" width="380" height="320">
+  <g transform="translate(206,178) rotate(26)">
+    <path id="tag" d="M -146,0 L -100,-62 L 120,-62 Q 146,-62 146,-36 L 146,36 Q 146,62 120,62 L -100,62 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="hole" cx="-100" cy="0" r="15" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60,-42 L -6,42" fill="none" stroke="#1B1B1B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60,-42 L -6,42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -25,-26 A 21,21 0 1 0 17,-26 A 21,21 0 1 0 -25,-26 Z M -13,-26 A 9,9 0 1 0 5,-26 A 9,9 0 1 0 -13,-26 Z" fill="#FFFFFF" fill-rule="evenodd" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 37,26 A 21,21 0 1 0 79,26 A 21,21 0 1 0 37,26 Z M 49,26 A 9,9 0 1 0 67,26 A 9,9 0 1 0 49,26 Z" fill="#FFFFFF" fill-rule="evenodd" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path id="string" d="M 116,134 C 84,120 44,90 50,56 C 56,26 96,30 100,58 C 104,84 112,110 116,134" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 312,24 Q 312,44 332,44 Q 312,44 312,64 Q 312,44 292,44 Q 312,44 312,24 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 40,210 Q 40,226 56,226 Q 40,226 40,242 Q 40,226 24,226 Q 40,226 40,210 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

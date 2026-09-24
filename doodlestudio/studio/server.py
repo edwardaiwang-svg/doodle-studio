@@ -1,0 +1,427 @@
+"""Doodle Studio's local server: a JSON API for the single-page app, bound to 127.0.0.1 only.
+
+Every API request must carry the per-launch token (header X-Studio-Token) that the server
+injects into the page, so other web pages on this computer cannot drive it.
+"""
+from __future__ import annotations
+
+import json
+import mimetypes
+import re
+import secrets
+import threading
+import time
+import traceback
+import uuid
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import parse_qs, unquote, urlparse
+
+import platformdirs
+
+from .. import director, pipeline, voice
+from ..director.validate import validate
+from ..library import resolve
+from ..package import sha
+
+STATIC = Path(__file__).resolve().parent / 'static'
+FONTS = Path(__file__).resolve().parents[1] / 'assets' / 'fonts'
+CONFIG = Path(platformdirs.user_config_dir('DoodleStudio')) / 'studio.json'
+
+
+def projects_root() -> Path:
+    cfg = _config()
+    root = Path(cfg.get('projects') or Path(platformdirs.user_videos_dir()) / 'Doodle Studio')
+    root.mkdir(parents=True, exist_ok=True)
+    return root
+
+
+def _config() -> dict:
+    try:
+        return json.loads(CONFIG.read_text())
+    except Exception:  # noqa: BLE001 - first run
+        return {}
+
+
+def _save_config(cfg: dict):
+    CONFIG.parent.mkdir(parents=True, exist_ok=True)
+    CONFIG.write_text(json.dumps(cfg, indent=1))
+
+
+# ------------------------------------------------------------------ jobs
+class Jobs:
+    """One heavy job at a time (voice/render are CPU-bound); others wait in order."""
+
+    def __init__(self):
+        self.jobs: dict[str, dict] = {}
+        self.lock = threading.Lock()
+        self.run_lock = threading.Lock()
+
+    def start(self, kind: str, project: str, fn) -> str:
+        jid = uuid.uuid4().hex[:10]
+        job = {'id': jid, 'kind': kind, 'project': project, 'state': 'queued', 'stage': '', 'done': 0, 'total': 0,
+               'error': None, 'result': None, 'started': time.time()}
+        with self.lock:
+            self.jobs[jid] = job
+
+        def progress(stage, done, total):
+            job.update(stage=stage, done=done, total=total)
+
+        def run():
+            with self.run_lock:
+                job['state'] = 'running'
+                try:
+                    job['result'] = fn(progress)
+                    job['state'] = 'done'
+                except Exception as error:  # noqa: BLE001 - shown to the user
+                    job.update(state='failed', error=f'{type(error).__name__}: {error}')
+                    traceback.print_exc()
+        threading.Thread(target=run, daemon=True).start()
+        return jid
+
+    def get(self, jid: str) -> dict | None:
+        return self.jobs.get(jid)
+
+
+JOBS = Jobs()
+
+
+def _project(name: str) -> Path:
+    if not re.fullmatch(r'[\w\- .]{1,80}', name) or name.startswith('.'):
+        raise ValueError('bad project name')
+    path = projects_root() / name
+    if not (path / 'project.json').exists():
+        raise FileNotFoundError(name)
+    return path
+
+
+def _slug(title: str) -> str:
+    base = re.sub(r'[^\w\- ]+', '', title).strip()[:60] or 'Video'
+    name, k = base, 2
+    while (projects_root() / name).exists():
+        name, k = f'{base} {k}', k + 1
+    return name
+
+
+def _summary(path: Path) -> dict:
+    try:
+        board = pipeline.storyboard(path)
+        cfg = pipeline.settings(path)
+        videos = sorted(p.name for p in path.glob('*.mp4') if not p.name.endswith('.partial.mp4'))
+        return {'name': path.name, 'title': board['title'][board['lang']], 'lang': board['lang'],
+                'beats': len(board['beats']), 'director': cfg.get('director', 'rules'), 'videos': videos,
+                'thumbnail': next((p.name for p in path.glob('*-thumbnail.png')), None),
+                'modified': path.stat().st_mtime}
+    except Exception:  # noqa: BLE001 - a half-created folder
+        return {'name': path.name, 'title': path.name, 'broken': True, 'modified': path.stat().st_mtime}
+
+
+# ------------------------------------------------------------------ actions
+def create_project(body: dict) -> dict:
+    text = (body.get('text') or '').strip()
+    source = Path(body['path']) if body.get('path') else None
+    if not text and not (source and source.is_file()):
+        raise ValueError('paste a script or choose a file')
+    title = (body.get('title') or '').strip() or None
+    from .. import ingest
+    doc = ingest.read(source if source else text, title=title)
+    name = _slug(doc.title)
+    path = projects_root() / name
+    mode = body.get('director') or 'rules'
+    settings = {k: body[k] for k in ('voice', 'workers') if body.get(k)}
+
+    def job(progress):
+        progress('storyboard', 0, 1)
+        pipeline.new_project(source if source else text, path, title=title, lang=body.get('lang') or None,
+                             director=mode, **settings)
+        report = director.direct(path, mode, body.get('model') or None, body.get('base_url') or None, progress)
+        usage = report.get('usage')
+        return {'project': name, 'notes': report.get('notes', [])[:20],
+                'cost': None if not usage else usage.cost_usd, 'calls': 0 if not usage else usage.calls}
+    return {'job': JOBS.start('create', name, job), 'project': name}
+
+
+def make_video(name: str) -> dict:
+    path = _project(name)
+
+    def job(progress):
+        clips = pipeline.narrate(path, progress)
+        progress('timeline', 0, 1)
+        pipeline.build_audio(path, clips)
+        progress('render', 0, 1)
+        pipeline.render(path)
+        progress('finish', 0, 1)
+        qa = pipeline.finish(path)
+        return {'video': Path(qa['video']).name, 'ok': qa['ok'], 'problems': qa['problems'], 'length': qa['length']}
+    return {'job': JOBS.start('make', name, job)}
+
+
+def redirect(name: str, body: dict) -> dict:
+    path = _project(name)
+    mode = body.get('director') or 'rules'
+
+    def job(progress):
+        report = director.direct(path, mode, body.get('model') or None, body.get('base_url') or None, progress)
+        cfg = pipeline.settings(path)
+        cfg['director'] = mode
+        (path / 'project.json').write_text(json.dumps(cfg, indent=1))
+        usage = report.get('usage')
+        return {'notes': report.get('notes', [])[:20], 'cost': None if not usage else usage.cost_usd}
+    return {'job': JOBS.start('direct', name, job)}
+
+
+def save_storyboard(name: str, board: dict) -> dict:
+    path = _project(name)
+    report = validate(board, path)
+    if not report['ok']:
+        return {'ok': False, 'errors': report['errors'][:20]}
+    (path / 'storyboard.json').write_text(json.dumps(board, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    return {'ok': True, 'warnings': report['warnings']}
+
+
+def search_doodles(query: str, lang: str) -> list:
+    """Doodles whose keywords appear in the query first, then the closest in meaning."""
+    m = _matcher(lang)
+    ranked = m.lexical(query)
+    seen = {h.id for h in ranked}
+    ranked += [h for h in m.semantic(query, 32) if h.id not in seen]
+    return [{'id': h.id, 'desc': m.entries[h.id].get('desc', ''), 'set': m.entries[h.id]['set']} for h in ranked[:32]]
+
+
+_matchers: dict = {}
+
+
+_matcher_lock = threading.Lock()
+
+
+def _matcher(lang):
+    from ..director.match import Matcher
+    with _matcher_lock:
+        if lang not in _matchers:
+            _matchers[lang] = Matcher(lang, exclude_categories=())
+        return _matchers[lang]
+
+
+def still(name: str, beat: str | None, offset: float = 0.0, t: float = 0.0) -> bytes:
+    import io
+    from ..engine import render as renderer
+    path = _project(name)
+    tl_path = path / 'build' / 'timeline.json'
+    board = pipeline.storyboard(path)
+    lang = board['lang']
+    if tl_path.exists() and json.loads(tl_path.read_text()).get('storyboard_sha256') == sha(path / 'storyboard.json'):
+        tl = json.loads(tl_path.read_text())
+    else:                                             # no narration yet (or edited): estimated timing
+        from ..engine import timeline
+        tl = timeline.layout(board, lang, timeline.synthetic_clips(board, lang))
+    if beat in tl['beats']:
+        info = tl['beats'][beat]
+        t = min(info['start'] + offset, info['end'] - .1)
+    prod = renderer.Production(board, tl, lang, path)
+    buf = io.BytesIO()
+    prod.frame(min(t, tl['duration'] - .05)).convert('RGB').resize((960, 540)).save(buf, 'JPEG', quality=85)
+    return buf.getvalue()
+
+
+def state() -> dict:
+    from ..director.llm import cloud
+    from ..director.llm.providers import SUGGESTED, api_key
+    cloud_status = None
+    if cloud.URL and cloud._token():
+        try:
+            cloud_status = cloud.me()
+        except Exception as error:  # noqa: BLE001
+            cloud_status = {'error': str(error)}
+    return {'projects_root': str(projects_root()), 'cloud_available': bool(cloud.URL), 'cloud': cloud_status,
+            'keys': {p: bool(api_key(p)) for p in ('openai', 'anthropic', 'compat')}, 'models': SUGGESTED,
+            'voices': {'en': ['af_heart', 'af_bella', 'af_nicole', 'am_michael', 'am_fenrir', 'bf_emma', 'bm_george'],
+                       'zh': ['zf_001', 'zf_002', 'zm_010', 'zm_020']},
+            'models_ready': {lang: not voice.missing_files(lang) for lang in ('en', 'zh')}}
+
+
+# ------------------------------------------------------------------ HTTP
+class Handler(BaseHTTPRequestHandler):
+    server_version = 'DoodleStudio'
+    token = ''
+    port = 0
+
+    def log_message(self, *args):                     # quiet console
+        pass
+
+    # -- plumbing
+    def _send(self, code, body: bytes, ctype='application/json', extra=None):
+        self.send_response(code)
+        self.send_header('Content-Type', ctype)
+        self.send_header('Content-Length', str(len(body)))
+        self.send_header('Cache-Control', 'no-store')
+        self.send_header('X-Content-Type-Options', 'nosniff')
+        for k, v in (extra or {}).items():
+            self.send_header(k, v)
+        try:
+            self.end_headers()
+            if self.command != 'HEAD':
+                self.wfile.write(body)
+        except (BrokenPipeError, ConnectionResetError):   # the page moved on (e.g. <video> seeking)
+            pass
+
+    def _json(self, data, code=200):
+        self._send(code, json.dumps(data, ensure_ascii=False, default=str).encode())
+
+    def _body(self) -> dict:
+        n = int(self.headers.get('Content-Length') or 0)
+        if n > 20_000_000:
+            raise ValueError('request too large')
+        return json.loads(self.rfile.read(n) or b'{}')
+
+    def _allowed(self) -> bool:
+        host = (self.headers.get('Host') or '').split(':')[0]
+        if host not in ('127.0.0.1', 'localhost'):  # DNS-rebinding guard
+            return False
+        path = urlparse(self.path).path
+        if path == '/' or path.startswith(('/static/', '/fonts/')):
+            return True
+        supplied = self.headers.get('X-Studio-Token') or parse_qs(urlparse(self.path).query).get('token', [''])[0]
+        return secrets.compare_digest(supplied, self.token)
+
+    def _file(self, path: Path, ctype=None):
+        if not path.is_file():
+            return self._json({'error': 'not found'}, 404)
+        ctype = ctype or mimetypes.guess_type(path.name)[0] or 'application/octet-stream'
+        size = path.stat().st_size
+        rng = re.match(r'bytes=(\d+)-(\d*)', self.headers.get('Range') or '')
+        if rng:                                        # <video> seeks with range requests
+            a = int(rng.group(1))
+            b = min(int(rng.group(2)) if rng.group(2) else a + (4 << 20) - 1, size - 1)
+            with path.open('rb') as f:
+                f.seek(a)
+                data = f.read(b - a + 1)
+            return self._send(206, data, ctype, {'Content-Range': f'bytes {a}-{b}/{size}', 'Accept-Ranges': 'bytes'})
+        self._send(200, path.read_bytes(), ctype, {'Accept-Ranges': 'bytes'})
+
+    # -- routes
+    def do_GET(self):
+        self._route('GET')
+
+    def do_HEAD(self):
+        self._route('GET')
+
+    def do_POST(self):
+        self._route('POST')
+
+    def do_PUT(self):
+        self._route('PUT')
+
+    def _route(self, method):
+        if not self._allowed():
+            return self._json({'error': 'forbidden'}, 403)
+        url = urlparse(self.path)
+        parts = [unquote(p) for p in url.path.strip('/').split('/') if p]
+        q = {k: v[0] for k, v in parse_qs(url.query).items()}
+        try:
+            if method == 'GET' and not parts:
+                page = (STATIC / 'index.html').read_text(encoding='utf-8').replace('__STUDIO_TOKEN__', self.token)
+                return self._send(200, page.encode(), 'text/html; charset=utf-8')
+            if parts[0] == 'static' and method == 'GET':
+                target = (STATIC / '/'.join(parts[1:])).resolve()
+                return self._file(target) if STATIC in target.parents else self._json({'error': 'no'}, 404)
+            if parts[0] == 'fonts' and method == 'GET' and len(parts) == 2:
+                return self._file(FONTS / Path(parts[1]).name)
+            if parts[0] == 'doodle' and method == 'GET' and len(parts) >= 2:
+                did = Path(parts[-1]).stem
+                proj = projects_root() / q['project'] if q.get('project') else None
+                path = resolve(did, proj)
+                return self._file(path, 'image/svg+xml') if path else self._json({'error': 'no doodle'}, 404)
+            if parts[0] == 'files' and method == 'GET' and len(parts) >= 3:
+                root = _project(parts[1])
+                target = (root / '/'.join(parts[2:])).resolve()
+                return self._file(target) if root in target.parents else self._json({'error': 'no'}, 404)
+            if parts[0] != 'api':
+                return self._json({'error': 'not found'}, 404)
+            return self._api(method, parts[1:], q)
+        except FileNotFoundError as error:
+            self._json({'error': f'not found: {error}'}, 404)
+        except ValueError as error:
+            self._json({'error': str(error)}, 400)
+        except Exception as error:  # noqa: BLE001
+            traceback.print_exc()
+            self._json({'error': f'{type(error).__name__}: {error}'}, 500)
+
+    def _api(self, method, p, q):
+        if p == ['state'] and method == 'GET':
+            return self._json(state())
+        if p == ['projects'] and method == 'GET':
+            items = [_summary(d) for d in projects_root().iterdir() if (d / 'project.json').exists()]
+            return self._json(sorted(items, key=lambda x: -x['modified']))
+        if p == ['projects'] and method == 'POST':
+            return self._json(create_project(self._body()))
+        if len(p) >= 2 and p[0] == 'projects':
+            name = p[1]
+            if len(p) == 2 and method == 'GET':
+                path = _project(name)
+                return self._json({**_summary(path), 'storyboard': pipeline.storyboard(path),
+                                   'settings': pipeline.settings(path),
+                                   'qa': json.loads((path / 'build/qa.json').read_text()) if (path / 'build/qa.json').exists() else None})
+            if p[2:] == ['storyboard'] and method == 'PUT':
+                return self._json(save_storyboard(name, self._body()))
+            if p[2:] == ['direct'] and method == 'POST':
+                return self._json(redirect(name, self._body()))
+            if p[2:] == ['make'] and method == 'POST':
+                return self._json(make_video(name))
+            if p[2:] == ['still'] and method == 'GET':
+                return self._send(200, still(name, q.get('beat'), float(q.get('offset', 0)), float(q.get('t', 0))), 'image/jpeg')
+            if p[2:] == ['reveal'] and method == 'POST':
+                return self._json(_reveal(_project(name)))
+        if p[:1] == ['jobs'] and len(p) == 2 and method == 'GET':
+            job = JOBS.get(p[1])
+            return self._json(job) if job else self._json({'error': 'no such job'}, 404)
+        if p == ['upload'] and method == 'POST':
+            import base64
+            b = self._body()
+            name = Path(str(b.get('name') or 'script.txt')).name
+            if Path(name).suffix.lower() not in ('.txt', '.md', '.docx'):
+                raise ValueError('choose a .txt, .md or .docx file')
+            folder = projects_root() / '.uploads' / uuid.uuid4().hex[:8]
+            folder.mkdir(parents=True)
+            (folder / name).write_bytes(base64.b64decode(b.get('data') or ''))
+            return self._json({'path': str(folder / name)})
+        if p == ['doodles'] and method == 'GET':
+            return self._json(search_doodles(q.get('q', ''), q.get('lang', 'en')))
+        if p == ['cloud', 'signup'] and method == 'POST':
+            from ..director.llm import cloud
+            return self._json(cloud.signup(self._body()['email']))
+        if p == ['cloud', 'verify'] and method == 'POST':
+            from ..director.llm import cloud
+            b = self._body()
+            return self._json(cloud.verify(b['email'], b['code']))
+        if p == ['keys'] and method == 'POST':
+            from ..director.llm.providers import save_key
+            b = self._body()
+            if b.get('provider') not in ('openai', 'anthropic', 'compat') or not b.get('key'):
+                raise ValueError('provider and key are required')
+            save_key(b['provider'], b['key'].strip())
+            return self._json({'ok': True})
+        if p == ['settings'] and method == 'POST':
+            b = self._body()
+            cfg = _config()
+            if b.get('projects'):
+                Path(b['projects']).expanduser().mkdir(parents=True, exist_ok=True)
+                cfg['projects'] = str(Path(b['projects']).expanduser())
+            _save_config(cfg)
+            return self._json({'ok': True, 'projects_root': str(projects_root())})
+        return self._json({'error': 'not found'}, 404)
+
+
+def _reveal(path: Path) -> dict:
+    import subprocess
+    import sys
+    opener = {'darwin': ['open'], 'win32': ['explorer']}.get(sys.platform, ['xdg-open'])
+    subprocess.Popen(opener + [str(path)])
+    return {'ok': True}
+
+
+def serve(port: int = 0) -> tuple[ThreadingHTTPServer, str]:
+    Handler.token = secrets.token_urlsafe(24)
+    server = ThreadingHTTPServer(('127.0.0.1', port), Handler)
+    Handler.port = server.server_address[1]
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    return server, f'http://127.0.0.1:{Handler.port}/'

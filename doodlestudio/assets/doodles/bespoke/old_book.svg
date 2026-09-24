@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 350" width="430" height="350">
+  <path id="book" d="M 34,128 L 138,44 L 400,110 L 400,188 L 296,272 L 34,206 C 14,192 14,146 34,128 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cover" points="34,128 296,194 400,110 138,44" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="pages_front" points="47.1,143.3 292.1,205 292.1,257 47.1,195.3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="pages_right" points="295.1,204.3 391.8,126.2 391.8,178.2 295.1,256.3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="page_lines" d="M 55,163.3 L 285.5,221.4 M 299.2,219 L 386.6,148.4 M 55,179.3 L 285.5,237.4 M 299.2,235 L 386.6,164.4" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="34,128 75.9,138.6 54.8,111.2" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="296,194 316.8,177.2 254.1,183.4" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="400,110 358.1,99.4 379.2,126.8" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="138,44 117.2,60.8 179.9,54.6" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cover_frame" points="109.3,122.7 266.5,162.3 324.7,115.3 167.5,75.7" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="emblem" points="243.2,125.6 231.6,107.2 190.8,112.4 202.4,130.8" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="ribbon" points="192.7,228.2 212.7,232.2 215.7,304.2 204.7,292.2 193.7,302.2" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

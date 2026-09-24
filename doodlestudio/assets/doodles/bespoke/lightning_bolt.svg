@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" width="320" height="440">
+  <polygon id="bolt" points="152,24 256,24 200,168 268,168 110,420 150,232 82,232" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bolt_shade" d="M 251.9,182.5 L 150,346.8 L 236.6,172.9 Z" fill="#F9A825" data-noink="1"/>
+  <path id="bolt_shine" d="M 117.2,174.4 L 150.8,74.5" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="zap_left" d="M 64,120 L 30,108 M 58,168 L 24,174" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="zap_right" d="M 262,238 L 296,224 M 254,288 L 290,296" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

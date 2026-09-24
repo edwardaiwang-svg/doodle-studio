@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <ellipse id="saucer" cx="200" cy="337" rx="164" ry="38" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="handle" d="M 308 189 A 48 44 0 1 1 308 277 A 48 44 0 1 1 308 189 Z M 308 211 A 26 22 0 1 0 308 255 A 26 22 0 1 0 308 211 Z" fill-rule="evenodd" fill="#00897B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cup" d="M 80 159 L 320 159 C 316 259 290 327 200 329 C 110 327 84 259 80 159 Z" fill="#00897B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="rim" cx="200" cy="159" rx="120" ry="26" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="coffee" cx="200" cy="163" rx="102" ry="17" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="steam1" d="M 154 119 C 136 99 170 83 154 61 C 144 47 150 37 158 29" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="steam2" d="M 204 115 C 186 95 220 79 204 57 C 194 43 200 33 208 25" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="steam3" d="M 254 119 C 236 99 270 83 254 61 C 244 47 250 37 258 29" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 108 197 C 112 237 128 267 152 289" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 420" width="440" height="420">
+  <path id="frame" d="M 44,24 L 396,24 Q 410,24 410,38 L 410,286 Q 410,300 396,300 L 44,300 Q 30,300 30,286 L 30,38 Q 30,24 44,24 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="board" x="48" y="42" width="344" height="240" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="leg_l" points="112,300 130,300 100,402 82,402" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="leg_r" points="310,300 328,300 358,402 340,402" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="tray" x="66" y="288" width="308" height="16" rx="4" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="marker" d="M 257,274 L 313,274 Q 320,274 320,281 L 320,281 Q 320,288 313,288 L 257,288 Q 250,288 250,281 L 250,281 Q 250,274 257,274 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="62.4,66 134,58.4 141.6,130 70,137.6" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="157.3,53 229,59.3 222.7,131 151,124.7" fill="#F48FB1" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="310.7,59.9 382.1,68.7 373.3,140.1 301.9,131.3" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="75.3,175 147,181.3 140.7,253 69,246.7" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="187.6,188.6 259.4,183.6 264.4,255.4 192.6,260.4" fill="#FB8C00" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="295.9,184.7 367.3,175.9 376.1,247.3 304.7,256.1" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="scribbles" d="M 79.1,90.4 L 122.8,85.8 M 81.2,110.2 L 113,106.9 M 169,80.1 L 212.8,84 M 167.2,100 L 199.1,102.8 M 321.4,87.4 L 365.1,92.8 M 318.9,107.2 L 350.7,111.1 M 87,202.1 L 130.8,206 M 85.2,222 L 117.1,224.8 M 203.4,213.6 L 247.2,210.5 M 204.8,233.5 L 236.7,231.3 M 312.9,208.8 L 356.6,203.4 M 315.4,228.6 L 347.1,224.7" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="bulb" cx="266" cy="92" r="22" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bulb_base" d="M 257,114 L 257,128 L 275,128 L 275,114" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rays" d="M 266,52 L 266,62 M 230,64 L 237,71 M 302,64 L 295,71" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

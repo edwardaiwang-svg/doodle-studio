@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 234" width="472" height="234">
+  <rect id="bar" x="22" y="50" width="336" height="100" rx="50" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="placeholder" x="68" y="86" width="130" height="28" rx="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="220" y1="74" x2="220" y2="126" fill="none" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="ring" cx="338" cy="100" r="78" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="glass" cx="338" cy="100" r="56" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="handle" x="410" y="85" width="80" height="30" rx="15" transform="rotate(45 338 100)" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 300,94 A 38 38 0 0 1 328,64" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

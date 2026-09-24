@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="420" height="380">
+  <circle id="coin_a" cx="112" cy="190" r="64" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="190" r="48" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 127.3,173.2 C 121.2,164.1 96.7,164.1 96.7,179.3 C 96.7,191.5 127.3,188.5 127.3,202.2 C 127.3,215.9 101.3,215.9 96,206 M 112,161 L 112,219" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="coin_b" cx="308" cy="190" r="64" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="308" cy="190" r="48" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="star" points="308,158 316.8,179.9 340.3,181.5 322.3,196.6 328,219.5 308,207 288,219.5 293.7,196.6 275.7,181.5 299.2,179.9" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow_top" d="M 76.5,100 A 161,161 0 0 1 316.7,69.4 L 327.2,57.4 L 334.4,106.1 L 291.5,97.9 L 302.1,85.9 A 139,139 0 0 0 94.8,112.3 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow_bottom" d="M 343.5,280 A 161,161 0 0 1 103.3,310.6 L 92.8,322.6 L 85.6,273.9 L 128.5,282.1 L 117.9,294.1 A 139,139 0 0 0 325.2,267.7 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

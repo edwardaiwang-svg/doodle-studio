@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="420" height="380">
+  <path id="arrow1" d="M 113,166 L 187.5,37 A 26 26 0 0 1 232.5,37 L 264.1,91.7 L 284.9,79.7 L 272.6,158.4 L 198.3,129.7 L 219,117.7 L 210,102 L 158,192 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow2" d="M 307,166 L 381.5,295 A 26 26 0 0 1 359,334 L 295.8,334 L 295.8,358 L 233.8,308 L 295.8,258 L 295.8,282 L 313.9,282 L 262,192 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow3" d="M 210,334 L 61,334 A 26 26 0 0 1 38.5,295 L 70.1,240.3 L 49.3,228.3 L 123.6,199.6 L 135.9,278.3 L 115.1,266.3 L 106.1,282 L 210,282 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine1" d="M 132.8,156.8 L 170,92.3 A 4.5 4.5 0 0 1 177.8,96.8 L 140.6,161.3 A 4.5 4.5 0 0 1 132.8,156.8 Z" fill="#9CCC65" data-noink="1"/>
+  <path id="shine2" d="M 305.1,187.7 L 342.3,252.2 A 4.5 4.5 0 0 1 334.6,256.7 L 297.3,192.2 A 4.5 4.5 0 0 1 305.1,187.7 Z" fill="#9CCC65" data-noink="1"/>
+  <path id="shine3" d="M 192.1,321.5 L 117.6,321.5 A 4.5 4.5 0 0 1 117.6,312.5 L 192.1,312.5 A 4.5 4.5 0 0 1 192.1,321.5 Z" fill="#9CCC65" data-noink="1"/>
+</svg>

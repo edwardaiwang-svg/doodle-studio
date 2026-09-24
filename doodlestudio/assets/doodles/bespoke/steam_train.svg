@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 400" width="460" height="400">
+  <rect id="cab" x="46" y="150" width="114" height="146" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="boiler" x="158" y="190" width="204" height="90" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="smokebox" x="354" y="182" width="52" height="108" rx="10" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="stack" d="M 366,186 L 368,134 L 350,104 L 414,104 L 396,134 L 398,186 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="roof" x="34" y="130" width="138" height="24" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="window" x="72" y="172" width="62" height="54" rx="6" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="dome" d="M 248,192 C 248,158 294,158 294,192 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bands" d="M 222,190 L 222,280 M 302,190 L 302,280" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="lamp" x="400" y="196" width="24" height="26" rx="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="frame" x="38" y="280" width="384" height="26" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cowcatcher" points="406,292 444,362 406,362" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="320" r="44" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="320" r="31" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 76,320 L 132,320 M 104,292 L 104,348" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="320" r="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="212" cy="320" r="44" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="212" cy="320" r="31" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 184,320 L 240,320 M 212,292 L 212,348" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="212" cy="320" r="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="340" r="24" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="340" r="8" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="380" cy="340" r="24" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="380" cy="340" r="8" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rod" x="98" y="326" width="120" height="14" rx="7" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="18" y1="366" x2="442" y2="366" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="puff1" d="M 382,40 A 14.9,14.9 0 0 1 402.8,52 A 14.9,14.9 0 0 1 402.8,76 A 14.9,14.9 0 0 1 382,88 A 14.9,14.9 0 0 1 361.2,76 A 14.9,14.9 0 0 1 361.2,52 A 14.9,14.9 0 0 1 382,40 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="puff2" d="M 316,18 A 16.1,16.1 0 0 1 339.5,29.3 A 16.1,16.1 0 0 1 345.2,54.7 A 16.1,16.1 0 0 1 329,75 A 16.1,16.1 0 0 1 303,75 A 16.1,16.1 0 0 1 286.8,54.7 A 16.1,16.1 0 0 1 292.5,29.3 A 16.1,16.1 0 0 1 316,18 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="puff3" d="M 242,20 A 13.6,13.6 0 0 1 261.1,31 A 13.6,13.6 0 0 1 261.1,53 A 13.6,13.6 0 0 1 242,64 A 13.6,13.6 0 0 1 222.9,53 A 13.6,13.6 0 0 1 222.9,31 A 13.6,13.6 0 0 1 242,20 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

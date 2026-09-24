@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 360" width="440" height="360">
+  <rect id="frame" x="30" y="30" width="380" height="240" rx="22" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="screen" x="56" y="56" width="328" height="188" rx="10" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pulse" d="M 78 160 L 148 160 L 162 140 L 176 160 L 194 160 L 212 88 L 232 216 L 250 134 L 262 160 L 290 160 L 304 146 L 318 160 L 362 160" fill="none" stroke="#1B1B1B" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pulse_glow" d="M 78 160 L 148 160 L 162 140 L 176 160 L 194 160 L 212 88 L 232 216 L 250 134 L 262 160 L 290 160 L 304 146 L 318 160 L 362 160" fill="none" stroke="#9CCC65" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="heart" d="M 346 104 C 330 92 322 82 322 74 C 322 66 328 62 334 62 C 339 62 343 65 346 70 C 349 65 353 62 358 62 C 364 62 370 66 370 74 C 370 82 362 92 346 104 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="neck" x="196" y="270" width="48" height="32" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="base" x="132" y="298" width="176" height="26" rx="10" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

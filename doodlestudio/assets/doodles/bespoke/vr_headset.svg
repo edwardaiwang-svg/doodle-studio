@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 216" width="452" height="216">
+  <path id="head_strap" d="M 36,124 C 36,-12 416,-12 416,124" fill="none" stroke="#1B1B1B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 36,124 C 36,-12 416,-12 416,124" fill="none" stroke="#424242" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="strap_l" d="M 92,88 L 40,102 Q 22,106 22,124 Q 22,142 40,146 L 92,160 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="strap_r" d="M 360,88 L 412,102 Q 430,106 430,124 Q 430,142 412,146 L 360,160 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="top" d="M 114,58 Q 120,32 146,32 L 306,32 Q 332,32 338,58 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="body" d="M 132,54 L 320,54 Q 366,54 366,100 L 366,152 Q 366,194 324,194 L 262,194 C 260,170 246,160 226,160 C 206,160 192,170 190,194 L 128,194 Q 86,194 86,152 L 86,100 Q 86,54 132,54 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="visor" d="M 140,70 L 312,70 Q 350,70 350,106 L 350,148 Q 350,178 318,178 L 274,178 C 268,158 250,146 226,146 C 202,146 184,158 178,178 L 134,178 Q 102,178 102,148 L 102,106 Q 102,70 140,70 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="lens_l" cx="166" cy="112" r="32" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="lens_r" cx="286" cy="112" r="32" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 148,106 A 19 19 0 0 1 162,92" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 268,106 A 19 19 0 0 1 282,92" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 408,22 Q 408,44 430,44 Q 408,44 408,66 Q 408,44 386,44 Q 408,44 408,22 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 48,39 Q 48,54 63,54 Q 48,54 48,69 Q 48,54 33,54 Q 48,54 48,39 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

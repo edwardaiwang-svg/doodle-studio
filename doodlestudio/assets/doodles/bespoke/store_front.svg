@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="400" height="380">
+  <rect id="wall" x="48" y="84" width="304" height="264" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="roof" x="30" y="56" width="340" height="34" rx="6" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 58,90 L 105.3,90 L 85.3,150 A 28.7,28.7 0 0 1 28,150 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 105.3,90 L 152.7,90 L 142.7,150 A 28.7,28.7 0 0 1 85.3,150 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 152.7,90 L 200,90 L 200,150 A 28.7,28.7 0 0 1 142.7,150 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 200,90 L 247.3,90 L 257.3,150 A 28.7,28.7 0 0 1 200,150 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 247.3,90 L 294.7,90 L 314.7,150 A 28.7,28.7 0 0 1 257.3,150 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 294.7,90 L 342,90 L 372,150 A 28.7,28.7 0 0 1 314.7,150 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="window" x="70" y="204" width="152" height="108" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="92,300 132,214 152,214 112,300" fill="#FFFFFF" data-noink="1"/>
+  <polygon points="170,300 206,222 216,222 180,300" fill="#FFFFFF" data-noink="1"/>
+  <line x1="146" y1="204" x2="146" y2="312" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="sill" x="60" y="312" width="172" height="16" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="door" x="252" y="196" width="82" height="152" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="266" y="212" width="54" height="56" rx="4" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="318" cy="292" r="7" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="ground" x1="20" y1="348" x2="380" y2="348" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

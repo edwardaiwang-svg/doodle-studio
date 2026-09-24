@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <polygon id="burst" points="200,18 226,52.3 262.2,29 275,70.1 317,60.6 314.9,103.6 357.6,109 341,148.7 379.2,168.4 350,200 379.2,231.6 341,251.3 357.6,291 314.9,296.4 317,339.4 275,329.9 262.2,371 226,347.7 200,382 174,347.7 137.8,371 125,329.9 83,339.4 85.1,296.4 42.4,291 59,251.3 20.8,231.6 50,200 20.8,168.4 59,148.7 42.4,109 85.1,103.6 83,60.6 125,70.1 137.8,29 174,52.3" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="badge" cx="200" cy="200" r="116" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="badge_shine" d="M 104.2,165.1 A 102 102 0 0 1 165.1,104.2" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <polygon id="star" points="200,132 218.2,178.9 268.5,181.8 229.5,213.6 242.3,262.2 200,235 157.7,262.2 170.5,213.6 131.5,181.8 181.8,178.9" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sparkle1" d="M 358,24 Q 363,41 380,46 Q 363,51 358,68 Q 353,51 336,46 Q 353,41 358,24 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sparkle2" d="M 40,341 Q 44,354 57,358 Q 44,362 40,375 Q 36,362 23,358 Q 36,354 40,341 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

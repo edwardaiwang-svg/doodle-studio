@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440" width="420" height="440">
+  <polygon id="back_leg" points="200,60 220,60 224,418 196,418" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="left_leg" points="194,18 214,22 84,420 62,416" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="right_leg" points="206,22 226,18 358,416 336,420" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="frame" x="40" y="46" width="340" height="262" rx="10" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="board" x="58" y="64" width="304" height="226" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="tray" x="30" y="304" width="360" height="20" rx="6" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="axes" d="M 90 86 L 90 262 L 340 262" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="122" cy="224" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="238" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="174" cy="192" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="204" cy="206" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="228" cy="150" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="174" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="280" cy="122" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="306" cy="142" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="324" cy="96" r="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="trend" points="107.9,254.4 341.9,110.4 334.1,97.6 100.1,241.6" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

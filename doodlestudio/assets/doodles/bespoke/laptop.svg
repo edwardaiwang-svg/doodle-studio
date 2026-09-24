@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446 310" width="446" height="310">
+  <rect id="lid" x="81" y="22" width="284" height="206" rx="16" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="screen" x="101" y="42" width="244" height="166" rx="6" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="deck" d="M 67,228 L 379,228 L 423,274 Q 427,288 411,288 L 35,288 Q 19,288 23,274 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="keys" points="93,238 353,238 373,260 73,260" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="touchpad" x="187" y="266" width="72" height="14" rx="5" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="axis" d="M 121,60 L 121,192 L 327,192" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="139" y="154" width="36" height="38" rx="3" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="189" y="130" width="36" height="62" rx="3" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="239" y="106" width="36" height="86" rx="3" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="arrow" points="134.4,144.3 279.6,84.4 284.6,96.4 315,60 267.8,55.7 272.7,67.7 127.6,127.7" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

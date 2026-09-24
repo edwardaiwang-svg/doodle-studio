@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 312" width="392" height="312">
+  <g transform="translate(-14,-24)">
+    <path id="handle" d="M148,98 L148,64 Q148,40 172,40 L248,40 Q272,40 272,64 L272,98 L252,98 L252,68 Q252,60 244,60 L176,60 Q168,60 168,68 L168,98 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="body" x="30" y="92" width="360" height="228" rx="24" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="flap_seam" d="M30,182 L390,182" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="mount_l" x="140" y="84" width="38" height="16" rx="4" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="mount_r" x="242" y="84" width="38" height="16" rx="4" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="latch_l" x="88" y="166" width="44" height="32" rx="5" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="latch_r" x="288" y="166" width="44" height="32" rx="5" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="keyholes" d="M110,176 L110,188 M310,176 L310,188" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="side_seams" d="M54,112 L54,300 M366,112 L366,300" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

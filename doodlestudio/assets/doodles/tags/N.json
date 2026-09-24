@@ -1,0 +1,56 @@
+{
+  "narrator_head": {
+    "desc": "Close-up of the narrator's friendly face above a teal sweater with a yellow collar",
+    "category": "narrator",
+    "en": ["narrator", "host", "presenter", "guide", "me", "myself", "introduce", "your host", "about me", "speaker"],
+    "zh": ["旁白", "主持人", "讲解员", "我", "向导", "自我介绍"]
+  },
+  "narrator_wave": {
+    "desc": "Narrator smiling and waving hello with one raised hand",
+    "category": "narrator",
+    "en": ["hello", "hi", "welcome", "greetings", "hey there", "goodbye", "bye", "see you", "wave", "welcome back", "nice to meet you", "thanks for watching"],
+    "zh": ["你好", "欢迎", "打招呼", "再见", "挥手", "大家好", "下期见"]
+  },
+  "narrator_explain": {
+    "desc": "Narrator raising an index finger to make a point",
+    "category": "narrator",
+    "en": ["explain", "key point", "important", "note that", "remember", "rule", "tip", "lesson", "first", "fact", "here's the thing", "one thing"],
+    "zh": ["解释", "要点", "重点", "注意", "记住", "提示", "关键"]
+  },
+  "narrator_present": {
+    "desc": "Narrator presenting with a pointer stick aimed to the right",
+    "category": "narrator",
+    "en": ["present", "presentation", "look at this", "show", "as you can see", "chart", "slide", "over here", "pointer", "demonstrate", "take a look"],
+    "zh": ["展示", "演示", "请看", "如图所示", "讲解", "指出"]
+  },
+  "narrator_think": {
+    "desc": "Narrator with hand on chin, looking up and thinking with a slight frown",
+    "category": "narrator",
+    "en": ["think", "wonder", "question", "why", "how", "hmm", "consider", "puzzle", "curious", "what if", "ponder", "figure out"],
+    "zh": ["思考", "想一想", "疑问", "为什么", "琢磨", "好奇", "问题"]
+  },
+  "narrator_magnifier": {
+    "desc": "Narrator peering through a big magnifying glass, investigating",
+    "category": "narrator",
+    "en": ["investigate", "look closer", "research", "examine", "analyze", "details", "search", "clue", "inspect", "dig deeper", "find out", "fine print"],
+    "zh": ["调查", "研究", "仔细看", "分析", "探究", "细节", "放大镜", "发现"]
+  },
+  "narrator_notebook": {
+    "desc": "Narrator writing notes in a spiral notebook with a pen",
+    "category": "narrator",
+    "en": ["take notes", "write down", "note", "record", "list", "plan", "summary", "jot down", "homework", "checklist", "keep track"],
+    "zh": ["笔记", "记录", "写下", "清单", "总结", "计划"]
+  },
+  "narrator_thumbs": {
+    "desc": "Narrator grinning with a double thumbs-up",
+    "category": "narrator",
+    "en": ["great", "good job", "success", "approve", "awesome", "well done", "yes", "agree", "perfect", "win", "recommend", "good news"],
+    "zh": ["太棒了", "点赞", "成功", "好消息", "同意", "干得好", "完美"]
+  },
+  "narrator_worried": {
+    "desc": "Worried narrator with hands on cheeks, raised eyebrows and a sweat drop",
+    "category": "narrator",
+    "en": ["worried", "uh oh", "problem", "risk", "danger", "nervous", "stress", "scary", "warning", "trouble", "oh no", "concern"],
+    "zh": ["担心", "糟糕", "紧张", "风险", "麻烦", "焦虑", "害怕"]
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 420" width="380" height="420">
+  <rect id="page" x="50" y="22" width="252" height="374" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="header" d="M 50,72 L 50,30 Q 50,22 58,22 L 294,22 Q 302,22 302,30 L 302,72 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="74" y="39" width="110" height="16" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="35" width="30" height="24" rx="3" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="74" y="93" width="30" height="30" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="74" y="141" width="30" height="30" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="74" y="189" width="30" height="30" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="74" y="237" width="30" height="30" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lines" d="M 124,108 L 276,108 M 124,156 L 252,156 M 124,204 L 268,204 M 124,252 L 236,252" fill="none" stroke="#9E9E9E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="checks_ink" d="M 79,108 L 88,117 L 106,95 M 79,156 L 88,165 L 106,143 M 79,252 L 88,261 L 106,239" fill="none" stroke="#1B1B1B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="checks" d="M 79,108 L 88,117 L 106,95 M 79,156 L 88,165 L 106,143 M 79,252 L 88,261 L 106,239" fill="none" stroke="#43A047" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 74,306 L 164,306 M 74,338 L 146,338" fill="none" stroke="#9E9E9E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(238,318) rotate(-16)">
+    <path id="stamp" d="M -56,0 A 56,56 0 1 0 56,0 A 56,56 0 1 0 -56,0 Z M -42,0 A 42,42 0 1 0 42,0 A 42,42 0 1 0 -42,0 Z" fill="#E53935" fill-rule="evenodd" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 16,-24 L -16,24" fill="none" stroke="#1B1B1B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 16,-24 L -16,24" fill="none" stroke="#E53935" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-15" cy="-14" r="8" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="15" cy="14" r="8" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

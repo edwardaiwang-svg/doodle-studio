@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" width="380" height="380">
+  <path id="board" d="M 40,40 L 340,40 L 340,340 L 40,340 Z" fill="#FFFFFF" data-noink="1"/>
+  <path id="walls" d="M 90,40 L 340,40 L 340,340 M 290,340 L 40,340 L 40,40 M 90,190 L 90,290 M 140,90 L 140,190 M 140,240 L 140,290 M 190,40 L 190,90 M 190,190 L 190,240 M 190,290 L 190,340 M 240,90 L 240,190 M 290,90 L 290,190 M 290,240 L 290,290 M 40,90 L 140,90 M 190,90 L 240,90 M 40,140 L 90,140 M 140,140 L 190,140 M 90,190 L 140,190 M 190,190 L 240,190 M 290,190 L 340,190 M 140,240 L 290,240 M 190,290 L 240,290" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="route_ink" d="M 65,24 L 65,65 L 115,65 L 165,65 L 165,115 L 215,115 L 215,165 L 165,165 L 165,215 L 115,215 L 115,265 L 115,315 L 165,315 L 165,265 L 215,265 L 265,265 L 265,315 L 315,315 L 315,348" fill="none" stroke="#1B1B1B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="route" d="M 65,24 L 65,65 L 115,65 L 165,65 L 165,115 L 215,115 L 215,165 L 165,165 L 165,215 L 115,215 L 115,265 L 115,315 L 165,315 L 165,265 L 215,265 L 265,265 L 265,315 L 315,315 L 315,348" fill="none" stroke="#E53935" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <circle id="start" cx="65" cy="24" r="11" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="finish" points="299,346 331,346 315,370" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

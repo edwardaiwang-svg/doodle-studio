@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 360" width="380" height="360">
+  <path d="M 154.9,56.1 A 128,128 0 1 0 276.1,237.9 A 110,110 0 0 1 154.9,56.1 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="94" cy="226" r="17" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="160" r="11" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="286" r="12" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="292,70 300.5,92.3 324.3,93.5 305.8,108.5 312,131.5 292,118.5 272,131.5 278.2,108.5 259.7,93.5 283.5,92.3" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="336,191 341.3,204.7 356,205.5 344.6,214.8 348.3,229 336,221 323.7,229 327.4,214.8 316,205.5 330.7,204.7" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 230,35 C 232.7,47.3 232.7,47.3 245,50 C 232.7,52.7 232.7,52.7 230,65 C 227.3,52.7 227.3,52.7 215,50 C 227.3,47.3 227.3,47.3 230,35 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 302,283 C 304.3,293.7 304.3,293.7 315,296 C 304.3,298.3 304.3,298.3 302,309 C 299.7,298.3 299.7,298.3 289,296 C 299.7,293.7 299.7,293.7 302,283 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

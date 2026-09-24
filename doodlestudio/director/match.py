@@ -1,0 +1,188 @@
+"""Find doodles for a piece of text: literal keyword hits first, then meaning (small local embeddings)."""
+from __future__ import annotations
+
+import hashlib
+import math
+import os
+import re
+import threading
+from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
+
+import numpy as np
+import platformdirs
+
+from ..library import ASSETS, catalog
+
+EMBED_MODELS = {'en': 'BAAI/bge-small-en-v1.5', 'zh': 'BAAI/bge-small-zh-v1.5'}
+CACHE = (Path(os.environ['DOODLE_MODELS']).expanduser() / 'embed' if os.environ.get('DOODLE_MODELS')
+         else Path(platformdirs.user_cache_dir('DoodleStudio')) / 'embed')
+_LOCK = threading.Lock()
+EN_STOP = set('''a an the and or but if then so of to in on at by for with from as is are was were be been being it its
+this that these those there here they them their we our you your he she his her i me my mine us not no yes do does did
+done can could will would should may might must shall have has had just also very really more most much many few less
+least some any all each every other another such same own than too only even still again ever never always often
+sometimes first second third last next new old good bad big small great little long short high low one two three four
+five six seven eight nine ten hundred thousand million billion way thing things time times day days year years people
+make makes made take takes took get gets got go goes went come comes came see sees saw look looks know knows knew
+think thinks thought say says said tell told use uses used want wants like likes need needs place part point case
+number kind lot lots back up down out over under into onto about after before between during while where when why how
+what which who whom whose because though although until since per via today now then once full turn
+turns check step steps end side form set sort white black red blue green yellow orange pink purple brown gray grey
+colour color colours colors'''.split())
+ZH_STOP = set('时间 问题 方法 东西 事情 人们 一些 这个 那个 自己 今天 明天 现在 以后 以前 很多 非常 可以 需要 固定 工作 '
+              '白色 黑色 红色 蓝色 绿色 黄色 橙色 粉色 紫色 棕色 灰色 颜色'.split())
+
+
+@dataclass
+class Hit:
+    id: str
+    score: float
+    phrase: str | None = None      # the text that matched (label and trigger), None for meaning-only matches
+    start: int = -1                # where the phrase starts in the text
+
+
+def singular(word: str) -> str:
+    if len(word) > 4 and word.endswith('ies'):
+        return word[:-3] + 'y'
+    if len(word) > 4 and word.endswith(('ches', 'shes', 'sses', 'xes')):
+        return word[:-2]
+    if len(word) > 3 and word.endswith('s') and not word.endswith(('ss', 'us', 'is')):
+        return word[:-1]
+    return word
+
+
+def _en_key(text: str) -> str:
+    return ' '.join(singular(w) for w in re.findall(r"[a-z0-9']+", text.lower()))
+
+
+class Matcher:
+    def __init__(self, lang: str, include_fluent: bool = True, exclude_categories=('narrator',)):
+        self.lang = lang
+        self.entries = {i: e for i, e in catalog().items()
+                        if e.get('category') not in exclude_categories and (include_fluent or e['set'] != 'fluent')}
+        self.index: dict[str, list[tuple[str, float]]] = {}
+        for did, e in self.entries.items():
+            keywords = e.get(lang) or []
+            if e['set'] == 'fluent':
+                keywords = keywords[:6]
+            for rank, kw in enumerate(keywords):
+                key = _en_key(kw) if lang == 'en' else kw.strip()
+                if not key or (lang == 'en' and (key in EN_STOP or len(key) < 3 or key.isdigit())) or \
+                        (lang == 'zh' and (len(key) < 2 or key in ZH_STOP)):
+                    continue
+                weight = (1.0 - .04 * min(rank, 5)) * (1.08 if e['set'] == 'bespoke' else .8)
+                self.index.setdefault(key, []).append((did, weight))
+        # keywords shared by many doodles say little about any one of them
+        self.rarity = {k: 1 / (1 + math.log(len(v))) for k, v in self.index.items()}
+        self._ids, self._vecs = None, None
+
+    # ------------------------------------------------------------ literal hits
+    def lexical(self, text: str, every_phrase: bool = False) -> list[Hit]:
+        """Keyword hits, best first: one per doodle, or (``every_phrase``) one per doodle and phrase, so
+        every picture a word could mean competes for that word."""
+        hits: dict = {}
+        if self.lang == 'en':
+            words = [(m.group(0), m.start()) for m in re.finditer(r"[A-Za-z0-9']+", text)]
+            for n in (3, 2, 1):
+                for i in range(len(words) - n + 1):
+                    chunk = words[i:i + n]
+                    key = ' '.join(singular(w.lower()) for w, _ in chunk)
+                    for did, weight in self.index.get(key, []):
+                        score = weight * self.rarity[key] + .15 * (n - 1)
+                        start = chunk[0][1]
+                        phrase = text[start:chunk[-1][1] + len(chunk[-1][0])]
+                        k = (did, start) if every_phrase else did
+                        if k not in hits or hits[k].score < score:
+                            hits[k] = Hit(did, score, phrase, start)
+        else:
+            for key, owners in self.index.items():
+                start = text.find(key)
+                if start < 0:
+                    continue
+                for did, weight in owners:
+                    score = weight * self.rarity[key] + .06 * (len(key) - 2)
+                    k = (did, key) if every_phrase else did
+                    if k not in hits or hits[k].score < score:
+                        hits[k] = Hit(did, score, key, start)
+        return sorted(hits.values(), key=lambda h: -h.score)
+
+    # --------------------------------------------------------------- meaning
+    def _catalog_vectors(self):
+        """(ids, vectors) of the doodles this matcher may return, cut from the shared per-language table."""
+        if self._vecs is None:
+            ids, vecs = catalog_vectors(self.lang)
+            keep = [k for k, i in enumerate(ids) if i in self.entries]
+            self._ids, self._vecs = [ids[k] for k in keep], vecs[keep]
+        return self._ids, self._vecs
+
+    def semantic(self, text: str, k: int = 5) -> list[Hit]:
+        ids, vecs = self._catalog_vectors()
+        query = _normalize(np.array(list(_model(self.lang).embed([text])), np.float32))[0]
+        sims = vecs @ query
+        top = np.argsort(-sims)[:k]
+        return [Hit(ids[i], float(sims[i]) + (.02 if self.entries[ids[i]]['set'] == 'bespoke' else 0)) for i in top]
+
+
+def _entry_text(e: dict, lang: str) -> str:
+    words = e.get(lang) or []
+    return (f"{e.get('desc', '')}. {', '.join(words[:8])}" if lang == 'en'
+            else f"{'，'.join(words[:8])}。{e.get('desc', '')}")
+
+
+def _picture_text(e: dict, lang: str) -> str:
+    """What the drawing shows, without its search keywords (so a keyword's other meanings don't leak in)."""
+    return e.get('desc', '') if lang == 'en' else '，'.join((e.get('zh') or [])[:8])
+
+
+TEXTS = {'embed': _entry_text, 'picture': _picture_text}
+
+
+def _table(lang: str, kind: str = 'embed'):
+    entries = catalog()
+    ids = sorted(entries)
+    texts = [TEXTS[kind](entries[i], lang) for i in ids]
+    digest = hashlib.sha256(('\n'.join(texts) + EMBED_MODELS[lang]).encode()).hexdigest()[:16]
+    return ids, texts, digest
+
+
+@lru_cache(maxsize=4)
+def catalog_vectors(lang: str, kind: str = 'embed'):
+    """Embeddings of every doodle ('embed': description + keywords, for search; 'picture': description
+    only, for judging senses): shipped with the app, else cached, else computed once (about a minute)."""
+    with _LOCK:
+        ids, texts, digest = _table(lang, kind)
+        for path in (ASSETS / f'{kind}-{lang}.npz', CACHE / f'catalog-{kind}-{lang}-{digest}.npz'):
+            if path.exists():
+                data = np.load(path)
+                if str(data['digest']) == digest:
+                    return ids, data['vecs'].astype(np.float32)
+        vecs = _normalize(np.array(list(_model(lang).embed(texts)), np.float32))
+        CACHE.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(CACHE / f'catalog-{kind}-{lang}-{digest}.npz', vecs=vecs.astype(np.float16), digest=digest)
+        return ids, vecs
+
+
+def bundle():
+    """Write assets/doodles/{embed,picture}-<lang>.npz so new users never wait (run after changing the library)."""
+    for lang in EMBED_MODELS:
+        for kind in TEXTS:
+            ids, texts, digest = _table(lang, kind)
+            vecs = _normalize(np.array(list(_model(lang).embed(texts)), np.float32))
+            np.savez_compressed(ASSETS / f'{kind}-{lang}.npz', vecs=vecs.astype(np.float16), digest=digest)
+            print(lang, kind, len(ids), 'doodles ->', ASSETS / f'{kind}-{lang}.npz')
+
+
+def _normalize(v: np.ndarray) -> np.ndarray:
+    return v / (np.linalg.norm(v, axis=1, keepdims=True) + 1e-9)
+
+
+@lru_cache(maxsize=2)
+def _model(lang: str):
+    from fastembed import TextEmbedding
+    return TextEmbedding(EMBED_MODELS[lang], cache_dir=str(CACHE))
+
+
+if __name__ == '__main__':
+    bundle()

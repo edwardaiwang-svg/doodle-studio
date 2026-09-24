@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 372" width="400" height="372">
+  <path id="sign" d="M 183.5,48.7 Q 200,19 216.5,48.7 L 361.5,309.3 Q 378,339 344,339 L 56,339 Q 22,339 38.5,309.3 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="face" d="M 191.3,80 Q 200,64.3 208.7,80 L 331.8,301.3 Q 340.6,317 322.6,317 L 77.4,317 Q 59.4,317 68.2,301.3 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 177.6,131.2 L 149.5,181.8" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="bang" d="M 188,121 L 212,121 Q 220,121 219.4,129 L 213,241 A 13 13 0 0 1 187,241 L 180.6,129 Q 180,121 188,121 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="bang_dot" cx="200" cy="285" r="18" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

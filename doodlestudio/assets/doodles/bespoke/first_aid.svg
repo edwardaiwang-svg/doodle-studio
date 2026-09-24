@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" width="420" height="360">
+  <path id="handle" d="M 169 116 L 169 66.1 L 169.2 63.5 L 170 61 L 171.2 58.8 L 172.8 56.8 L 174.8 55.2 L 177 54 L 179.5 53.2 L 182.1 53 L 237.9 53 L 240.5 53.2 L 243 54 L 245.2 55.2 L 247.2 56.8 L 248.8 58.8 L 250 61 L 250.8 63.5 L 251 66.1 L 251 116 L 273 116 L 273 65.9 L 272.3 59.2 L 270.3 52.6 L 267.1 46.6 L 262.7 41.3 L 257.4 36.9 L 251.4 33.7 L 244.8 31.7 L 238.1 31 L 181.9 31 L 175.2 31.7 L 168.6 33.7 L 162.6 36.9 L 157.3 41.3 L 152.9 46.6 L 149.7 52.6 L 147.7 59.2 L 147 65.9 L 147 116 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="box" x="36" y="100" width="348" height="228" rx="28" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="lid" x1="36" y1="146" x2="384" y2="146" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="latch_l" x="84" y="134" width="30" height="24" rx="4" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="latch_r" x="306" y="134" width="30" height="24" rx="4" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cross" points="185,172 235,172 235,213 276,213 276,263 235,263 235,304 185,304 185,263 144,263 144,213 185,213" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 60 190 L 60 294" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

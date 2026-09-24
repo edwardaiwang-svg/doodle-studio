@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+private_presets/
+projects/
+*.mp4
+!docs/media/*.mp4
+*.wav
+.DS_Store
+/dist/
+/build/
+.pytest_cache/
+.Rhistory

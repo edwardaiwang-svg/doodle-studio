@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 434" width="384" height="434">
+  <g transform="translate(-18,-4)">
+    <polygon id="back_leg" points="203,40 217,40 222,420 198,420" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="left_leg" points="192,20 210,24 96,422 72,418" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="right_leg" points="210,24 228,20 348,418 324,422" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="frame" x="40" y="58" width="340" height="248" rx="10" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="board" x="56" y="74" width="308" height="216" rx="4" fill="#00897B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="tray" x="34" y="298" width="352" height="18" rx="6" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="chalk_triangle" points="100,196 138,120 176,196" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="chalk_plus" d="M202,158 L234,158 M218,142 L218,174" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="chalk_circle" cx="290" cy="158" r="34" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="chalk_wave" d="M100,242 Q124,222 148,242 T196,242 T244,242 T292,242 T326,236" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="chalk_stick" x="98" y="286" width="40" height="12" rx="3" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="eraser" x="262" y="278" width="64" height="20" rx="4" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="eraser_felt" x1="266" y1="290" x2="322" y2="290" fill="none" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

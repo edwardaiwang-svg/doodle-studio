@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 308" width="480" height="308">
+  <path id="far_wing" d="M 194,150 C 176,112 186,70 216,36 C 230,70 252,118 260,170 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tail" d="M 332,196 L 420,166 Q 446,172 436,192 Q 460,204 440,222 Q 454,244 426,250 L 332,234 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="body" d="M 114,150 C 116,126 134,112 154,112 C 178,112 190,130 202,146 C 224,176 274,192 346,198 L 346,230 C 306,252 252,264 202,256 C 156,248 124,228 116,194 C 113,178 112,162 114,150 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="wing" d="M 214,172 C 230,110 292,52 396,30 A 33.7 33.7 0 0 1 380,82 A 30 30 0 0 1 360,126 A 27.9 27.9 0 0 1 336,164 A 26.4 26.4 0 0 1 308,196 C 278,206 242,196 214,172 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="feathers" d="M 380,82 L 346,92 M 360,126 L 326,136 M 336,164 L 302,174" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="beak" d="M 115,146 L 84,160 L 116,172 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye" cx="144" cy="144" r="6.5" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="branch" d="M 102,162 Q 70,196 58,264" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf1" d="M 92,170 Q 79.2,146 52,146 Q 64.8,170 92,170 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf2" d="M 80,194 Q 97.8,214.3 124,208 Q 106.2,187.7 80,194 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf3" d="M 68,222 Q 53.2,202.6 30,210 Q 44.8,229.4 68,222 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf4" d="M 62,248 Q 72,272.3 98,276 Q 88,251.7 62,248 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

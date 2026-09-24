@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" width="440" height="340">
+  <path d="M 220,140 L 124,140 Q 110,140 110,154 L 110,186 Q 110,200 124,200 L 220,200 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 220,140 L 316,140 Q 330,140 330,154 L 330,186 Q 330,200 316,200 L 220,200 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="128" y1="154" x2="200" y2="154" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <line x1="240" y1="154" x2="312" y2="154" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 112,148 C 109.3,143.3 91.3,128.3 96,120 C 100.7,111.7 119.3,103 140,98 C 160.7,93 193.3,90 220,90 C 246.7,90 279.3,93 300,98 C 320.7,103 339.3,111.7 344,120 C 348.7,128.3 330.7,143.3 328,148" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 112,192 C 109.3,196.7 91.3,211.7 96,220 C 100.7,228.3 119.3,237 140,242 C 160.7,247 193.3,250 220,250 C 246.7,250 279.3,247 300,242 C 320.7,237 339.3,228.3 344,220 C 348.7,211.7 330.7,196.7 328,192" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 110,158 C 103.7,152.3 70.3,138.7 72,124 C 73.7,109.3 95.3,80.7 120,70 C 144.7,59.3 186.7,60 220,60 C 253.3,60 295.3,59.3 320,70 C 344.7,80.7 366.3,109.3 368,124 C 369.7,138.7 336.3,152.3 330,158" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 110,182 C 103.7,187.7 70.3,201.3 72,216 C 73.7,230.7 95.3,259.3 120,270 C 144.7,280.7 186.7,280 220,280 C 253.3,280 295.3,280.7 320,270 C 344.7,259.3 366.3,230.7 368,216 C 369.7,201.3 336.3,187.7 330,182" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 110,168 C 99.7,161.3 48.7,148.7 48,128 C 47.3,107.3 77.3,60 106,44 C 134.7,28 182,32 220,32 C 258,32 305.3,28 334,44 C 362.7,60 392.7,107.3 392,128 C 391.3,148.7 340.3,161.3 330,168" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 110,172 C 99.7,178.7 48.7,191.3 48,212 C 47.3,232.7 77.3,280 106,296 C 134.7,312 182,308 220,308 C 258,308 305.3,312 334,296 C 362.7,280 392.7,232.7 392,212 C 391.3,191.3 340.3,178.7 330,172" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="211,49 225,60 211,71" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="211,269 225,280 211,291" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

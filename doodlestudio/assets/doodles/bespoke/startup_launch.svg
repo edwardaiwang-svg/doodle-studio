@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="420" height="380">
+  <path id="lid" d="M 86,142 L 334,142 Q 350,142 350,158 L 350,306 Q 350,322 334,322 L 86,322 Q 70,322 70,306 L 70,158 Q 70,142 86,142 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="screen" x="88" y="160" width="244" height="144" rx="4" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="base" d="M 40,322 L 380,322 L 402,344 Q 404,354 394,354 L 26,354 Q 16,354 18,344 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 180,322 L 180,330 Q 180,334 184,334 L 236,334 Q 240,334 240,330 L 240,322" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(210,22)">
+    <path id="rocket" d="M 0,0 C 24,14 36,56 34,110 L 28,142 L -28,142 L -34,110 C -36,56 -24,14 0,0 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="fin_l" d="M -34.2,96 C -52,106 -58,126 -56,150 L -28.8,138 L -34,110 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="fin_r" d="M 34.2,96 C 52,106 58,126 56,150 L 28.8,138 L 34,110 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="nose" d="M 0,0 C 10.8,6.3 19.2,18.3 24.9,34.5 Q 0,44 -24.9,34.5 C -19.2,18.3 -10.8,6.3 0,0 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="window" cx="0" cy="74" r="15" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="nozzle" x="-18" y="142" width="36" height="12" rx="3" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="flame" d="M -15,157 Q -24,186 0,214 Q 24,186 15,157" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -8,157 Q -12,174 0,190 Q 12,174 8,157" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path id="smoke" d="M 130,272 A 20,20 0 0 1 150,244 A 22,22 0 0 1 184,226 A 22,22 0 0 1 220,222 A 22,22 0 0 1 256,232 A 20,20 0 0 1 286,258 A 10,10 0 0 1 290,272 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="speed" d="M 146,40 L 146,86 M 274,40 L 274,86 M 128,70 L 128,100 M 292,70 L 292,100" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 330" width="440" height="330">
+  <rect id="foot" x="166" y="271" width="108" height="26" rx="8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bowl" d="M 44 149 L 396 149 C 396 243 314 281 220 281 C 126 281 44 243 44 149 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rim" x="34" y="139" width="372" height="26" rx="13" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="greens" d="M 60 139 C 44 103 80 73 112 85 C 118 49 170 33 196 59 C 214 23 276 25 290 61 C 318 39 372 57 372 99 C 394 107 400 129 388 139 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf1" d="M 86 139 C 70 113 84 81 116 77 C 134 93 136 123 124 139 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf2" d="M 238 139 C 222 103 240 63 280 57 C 300 83 290 119 272 139 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="leaf3" d="M 340 139 C 336 113 352 91 380 91 C 390 111 380 131 368 139 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="tomato1" cx="170" cy="103" r="26" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="tomato2" cx="330" cy="115" r="22" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 170 72 Q 170 79 181 79 Q 170 79 170 86 Q 170 79 159 79 Q 170 79 170 72 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 330 89 Q 330 95 339 95 Q 330 95 330 101 Q 330 95 321 95 Q 330 95 330 89 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="cuke1" cx="214" cy="119" r="24" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="214" cy="119" r="15" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="cuke2" cx="128" cy="123" r="20" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="123" r="12" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="veins" d="M 100 129 C 100 111 106 99 114 89 M 256 129 C 258 103 266 83 276 69" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 76 179 C 90 215 118 237 150 249" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

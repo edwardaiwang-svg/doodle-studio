@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 340" width="460" height="340">
+  <path id="left_half" d="M 214,311 C 136.9,271.4 38.7,227 24.8,139.3 C 15.5,80.8 55.1,36.5 102.5,29 C 134.1,24 160.9,39.7 175.1,65.4 L 162.4,118.4 L 206.7,162.3 L 182.5,214.1 L 216.7,256.6 L 214,311 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="right_half" d="M 284.9,65.4 C 299.1,39.7 325.9,24 357.5,29 C 404.9,36.5 444.5,80.8 435.2,139.3 C 421.3,227 323.1,271.4 246,311 L 265.4,260.1 L 245.9,209.1 L 285,167.3 L 256.5,111.9 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_shine" d="M 57.9,143.9 Q 50.5,76.2 90.2,60.9" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="right_shine" d="M 365.8,66.2 Q 392,64.4 403.1,96.1" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <circle id="shine_dot" cx="64.4" cy="184.8" r="7" fill="#FFFFFF" data-noink="1"/>
+</svg>

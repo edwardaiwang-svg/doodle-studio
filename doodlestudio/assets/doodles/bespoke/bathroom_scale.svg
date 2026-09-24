@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect id="base" x="36" y="55" width="328" height="314" rx="46" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="top" x="36" y="31" width="328" height="314" rx="46" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="bezel" cx="200" cy="127" r="72" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dial" cx="200" cy="127" r="58" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ticks" d="M 160.5 112.6 L 151.1 109.2 M 166.7 101.4 L 158.7 95.3 M 175.9 92.6 L 170.2 84.4 M 187.4 86.9 L 184.4 77.4 M 200 85 L 200 75 M 212.6 86.9 L 215.6 77.4 M 224.1 92.6 L 229.8 84.4 M 233.3 101.4 L 241.3 95.3 M 239.5 112.6 L 248.9 109.2" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="needle" points="206.1,130.5 224,85.4 193.9,123.5" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="hub" cx="200" cy="127" r="9" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="foot_l" d="M 140 227 C 162 225 176 241 174 263 C 172 279 162 291 162 307 C 162 325 164 339 154 349 C 144 357 124 355 120 341 C 116 327 116 311 112 295 C 106 273 108 229 140 227 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 148 211 A 12 12 0 1 0 172 211 A 12 12 0 1 0 148 211 Z M 129 203 A 9 9 0 1 0 147 203 A 9 9 0 1 0 129 203 Z M 112 207 A 8 8 0 1 0 128 207 A 8 8 0 1 0 112 207 Z M 99 217 A 7 7 0 1 0 113 217 A 7 7 0 1 0 99 217 Z M 92 231 A 6 6 0 1 0 104 231 A 6 6 0 1 0 92 231 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="foot_r" d="M 260 227 C 238 225 224 241 226 263 C 228 279 238 291 238 307 C 238 325 236 339 246 349 C 256 357 276 355 280 341 C 284 327 284 311 288 295 C 294 273 292 229 260 227 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 228 211 A 12 12 0 1 0 252 211 A 12 12 0 1 0 228 211 Z M 253 203 A 9 9 0 1 0 271 203 A 9 9 0 1 0 253 203 Z M 272 207 A 8 8 0 1 0 288 207 A 8 8 0 1 0 272 207 Z M 287 217 A 7 7 0 1 0 301 217 A 7 7 0 1 0 287 217 Z M 296 231 A 6 6 0 1 0 308 231 A 6 6 0 1 0 296 231 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

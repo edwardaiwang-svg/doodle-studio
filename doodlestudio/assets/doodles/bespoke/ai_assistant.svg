@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 352" width="424" height="352">
+  <path id="bubble" d="M 58,44 L 314,44 Q 350,44 350,80 L 350,240 Q 350,276 314,276 L 142,276 L 82,330 L 94,276 L 58,276 Q 22,276 22,240 L 22,80 Q 22,44 58,44 Z" fill="#8E24AA" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="head" x="106" y="104" width="160" height="120" rx="28" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="90" y="140" width="18" height="48" rx="8" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="264" y="140" width="18" height="48" rx="8" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="186" y1="104" x2="186" y2="80" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="antenna" cx="186" cy="72" r="11" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="visor" x="124" y="124" width="124" height="80" rx="20" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="162" cy="156" r="14" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="156" r="14" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="151" r="4.5" fill="#FFFFFF" data-noink="1"/>
+  <circle cx="214" cy="151" r="4.5" fill="#FFFFFF" data-noink="1"/>
+  <path id="smile" d="M 172,178 Q 186,194 200,178 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sparkle" d="M 342,22 Q 342,56 376,56 Q 342,56 342,90 Q 342,56 308,56 Q 342,56 342,22 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 386,102 Q 386,118 402,118 Q 386,118 386,134 Q 386,118 370,118 Q 386,118 386,102 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

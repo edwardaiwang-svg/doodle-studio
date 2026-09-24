@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400">
+  <circle id="ball" cx="180" cy="164" r="122" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 89.6,138.1 A 94 94 0 0 1 141.8,78.1" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="glint" d="M 162.2,70.5 A 8 8 0 1 0 178.2,70.5 A 8 8 0 1 0 162.2,70.5 Z" fill="#FFFFFF" data-noink="1"/>
+  <path id="mist" d="M 116,196 C 140,168 176,222 206,196 C 226,178 246,184 252,198" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="holder" d="M 96,258 Q 180,318 264,258 L 246,318 L 114,318 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="base" x="78" y="314" width="204" height="50" rx="14" fill="#8E24AA" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sparkles" d="M 52,30 Q 52,52 74,52 Q 52,52 52,74 Q 52,52 30,52 Q 52,52 52,30 Z M 314,42 Q 314,60 332,60 Q 314,60 314,78 Q 314,60 296,60 Q 314,60 314,42 Z M 324,236 Q 324,250 338,250 Q 324,250 324,264 Q 324,250 310,250 Q 324,250 324,236 Z M 34,208 Q 34,222 48,222 Q 34,222 34,236 Q 34,222 20,222 Q 34,222 34,208 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

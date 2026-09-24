@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402 280" width="402" height="280">
+  <rect id="shell" x="22" y="62" width="330" height="160" rx="30" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="terminal" x="352" y="110" width="28" height="64" rx="8" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="charge" x="44" y="84" width="200" height="116" rx="14" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="96" width="170" height="14" rx="7" fill="#9CCC65" data-noink="1"/>
+  <polygon id="bolt" points="179.8,27 239.6,27 202.8,119 248.8,119 156.8,257 179.8,155.8 133.8,155.8" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 142,36 L 128,22 M 124,56 L 106,52" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 254,244 L 268,258 M 272,228 L 290,232" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 400" width="420" height="400">
+  <polygon id="roof" points="44,176 186,50 328,176" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="walls" d="M 72,179 L 72,352 L 300,352 L 300,179" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="chimney" d="M 244,98.5 L 244,70 L 274,70 L 274,125" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="door" x="160" y="262" width="54" height="90" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="202" cy="310" r="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="94" y="200" width="50" height="46" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 119,200 L 119,246 M 94,223 L 144,223" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="232" y="200" width="50" height="46" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 257,200 L 257,246 M 232,223 L 282,223" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="ground" x1="30" y1="352" x2="330" y2="352" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(352,196) rotate(122)">
+    <path id="key" d="M 30,-11 L 176,-11 Q 184,-11 184,-3 L 184,34 L 166,34 L 166,11 L 152,11 L 152,28 L 136,28 L 136,11 L 30,11 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="key_bow" d="M -40,0 A 40,40 0 1 0 40,0 A 40,40 0 1 0 -40,0 Z M -16,0 A 16,16 0 1 0 16,0 A 16,16 0 1 0 -16,0 Z" fill="#F9A825" fill-rule="evenodd" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle id="coin" cx="84" cy="330" r="46" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="84" cy="330" r="34" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 94.5,318.4 C 90.3,312.1 73.5,312.1 73.5,322.6 C 73.5,331.1 94.5,328.9 94.5,338.4 C 94.5,347.9 76.6,347.9 72.9,341.1 M 84,310 L 84,350" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

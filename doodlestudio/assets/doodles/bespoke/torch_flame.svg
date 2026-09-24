@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480" width="320" height="480">
+  <path id="flame" d="M 100,204 C 62,176 62,118 90,76 C 96,106 112,122 126,126 C 118,86 132,46 162,16 C 178,52 200,76 204,108 C 216,98 228,80 234,58 C 266,110 262,176 222,204 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="flame_inner" d="M 124,204 C 104,184 104,150 118,124 C 126,142 136,150 148,150 C 144,120 152,92 166,70 C 178,100 194,118 192,146 C 202,140 208,130 212,120 C 224,154 216,188 198,204 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cup" d="M 82,190 L 238,190 L 218,246 L 102,246 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="cup_rim" x="74" y="182" width="172" height="20" rx="8" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="handle" points="126,246 194,246 176,452 144,452" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="125.8,290 194.2,290 192.8,306 127.2,306" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="135.3,398 184.7,398 183.3,414 136.7,414" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 140,262 L 146,380" fill="none" stroke="#D7B98E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

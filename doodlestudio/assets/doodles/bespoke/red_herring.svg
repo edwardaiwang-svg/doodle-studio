@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 330" width="440" height="330">
+  <polygon id="tail" points="140,214 46,148 74,214 46,280" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="fin_top" d="M 188,172 C 196,120 250,104 300,158 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="fin_bot" d="M 214,262 C 222,300 256,306 272,266 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="body" d="M 120,214 C 160,138 300,124 370,176 C 398,196 398,226 370,246 C 300,300 160,290 120,214 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 172,176 C 200,158 236,150 270,152" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="gill" d="M 306,168 C 292,196 292,226 306,254" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="scales" d="M 176,196 C 190,204 190,222 176,230 M 208,186 C 224,196 224,220 208,230 M 240,182 C 254,192 254,210 244,220 M 196,236 C 208,244 208,258 198,266" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pec_fin" d="M 290,216 C 268,214 248,232 250,256 C 272,258 292,240 290,216 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye" cx="338" cy="194" r="18" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="pupil" cx="343" cy="195" r="8" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="glint" cx="346" cy="191" r="3.5" fill="#FFFFFF" data-noink="1"/>
+  <path id="smile" d="M 364,228 C 372,236 382,234 388,224" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="qmark_ink" d="M 328,50 C 328,22 374,18 376,46 C 378,68 350,70 350,94" fill="none" stroke="#1B1B1B" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="qmark" d="M 328,50 C 328,22 374,18 376,46 C 378,68 350,70 350,94" fill="none" stroke="#FDD835" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="qdot" cx="350" cy="122" r="10" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="swish" d="M 36,196 L 22,196 M 38,232 L 24,232" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

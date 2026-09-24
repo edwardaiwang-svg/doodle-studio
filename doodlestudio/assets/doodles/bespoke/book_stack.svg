@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334 320" width="334" height="320">
+  <g transform="translate(-24,-52)">
+    <path id="book1" d="M52,298 L330,298 L330,356 L52,356 A12,12 0 0 1 40,344 L40,310 A12,12 0 0 1 52,298 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="book2" d="M74,240 L342,240 L342,298 L74,298 A12,12 0 0 1 62,286 L62,252 A12,12 0 0 1 74,240 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="book3" d="M62,182 L310,182 L310,240 L62,240 A12,12 0 0 1 50,228 L50,194 A12,12 0 0 1 62,182 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pages1" x="266" y="308" width="64" height="38" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="page_lines1" d="M272,320.0 L324,320.0 M272,334.0 L324,334.0" fill="none" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="spine_bands1" d="M64,298 L64,356 M78,298 L78,356" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pages2" x="278" y="250" width="64" height="38" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="page_lines2" d="M284,262.0 L336,262.0 M284,276.0 L336,276.0" fill="none" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="spine_bands2" d="M86,240 L86,298 M100,240 L100,298" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pages3" x="246" y="192" width="64" height="38" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="page_lines3" d="M252,204.0 L304,204.0 M252,218.0 L304,218.0" fill="none" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="spine_bands3" d="M74,182 L74,240 M88,182 L88,240" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="apple" d="M180,104 C160,86 124,94 124,130 C124,164 150,184 166,184 C173,184 176,180 180,180 C184,180 187,184 194,184 C210,184 236,164 236,130 C236,94 200,86 180,104 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="stem" points="176,106 185,106 193,78 184,76" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="leaf" d="M190,90 Q206,64 236,70 Q222,98 190,90 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse id="shine" cx="148" cy="124" rx="7" ry="14" transform="rotate(18 148 124)" fill="#FFFFFF" data-noink="1"/>
+  </g>
+</svg>

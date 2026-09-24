@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" width="400" height="360">
+  <circle cx="196" cy="178" r="54" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="159.3,135.6 86.7,79.3 73.3,96.7 145.8,153" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="233,220.2 309.3,278.7 322.7,261.3 246.3,202.7" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="246,152.6 324.8,90.6 311.2,73.4 232.4,135.3" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="147.7,206.5 74.7,271.8 89.3,288.2 162.3,222.9" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="88" r="38" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="316" cy="270" r="38" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="318" cy="82" r="31" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="82" cy="280" r="31" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 164.5,166.5 A 33.5,33.5 0 0 1 184.5,146.5" fill="none" stroke="#FFFFFF" stroke-width="8.6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 57.9,79.9 A 23.6,23.6 0 0 1 71.9,65.9" fill="none" stroke="#FFFFFF" stroke-width="6.1" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 293.9,261.9 A 23.6,23.6 0 0 1 307.9,247.9" fill="none" stroke="#FFFFFF" stroke-width="6.1" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 299.9,75.4 A 19.2,19.2 0 0 1 311.4,63.9" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 63.9,273.4 A 19.2,19.2 0 0 1 75.4,261.9" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

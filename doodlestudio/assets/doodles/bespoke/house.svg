@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358 416" width="358" height="416">
+  <g transform="translate(-24,8)">
+    <rect id="walls" x="70" y="196" width="260" height="184" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="roof" points="40,206 200,74 360,206" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="chimney" points="268,98 304,98 304,159.8 268,130.1" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="chimney_cap" x="260" y="86" width="52" height="14" rx="3" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke1" d="M316.7,64.3 A11.1,11.1 0 0 1 302.4,74.9 A11.8,11.8 0 0 1 284.7,67.7 A9.6,9.6 0 0 1 288.2,52.6 A12.3,12.3 0 0 1 308,50.5 A10.1,10.1 0 0 1 316.7,64.3 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke2" d="M362.4,36.2 A14.3,14.3 0 0 1 342.5,47.7 A15.6,15.6 0 0 1 318.1,41.6 A11.3,11.3 0 0 1 313.6,23.8 A14.3,14.3 0 0 1 333.5,12.3 A15.6,15.6 0 0 1 357.9,18.4 A11.3,11.3 0 0 1 362.4,36.2 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="attic" cx="200" cy="150" r="22" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="attic_bars" d="M200,128 L200,172 M178,150 L222,150" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="door" d="M176,380 L176,302 A24,24 0 0 1 224,302 L224,380 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="knob" cx="212" cy="338" r="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="window1" x="94" y="236" width="60" height="60" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bars1" d="M124,236 L124,296 M94,266 L154,266" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="window2" x="246" y="236" width="60" height="60" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bars2" d="M276,236 L276,296 M246,266 L306,266" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="step" x="160" y="378" width="80" height="14" rx="3" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

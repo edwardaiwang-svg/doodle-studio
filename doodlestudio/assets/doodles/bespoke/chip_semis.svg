@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 396" width="340" height="396">
+  <rect id="body" x="80" y="176" width="180" height="180" rx="16" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_t0" x="102" y="154" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_b0" x="102" y="356" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_t1" x="142" y="154" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_b1" x="142" y="356" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_t2" x="182" y="154" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_b2" x="182" y="356" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_t3" x="222" y="154" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_b3" x="222" y="356" width="16" height="22" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_l0" x="58" y="198" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_r0" x="260" y="198" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_l1" x="58" y="238" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_r1" x="260" y="238" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_l2" x="58" y="278" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_r2" x="260" y="278" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_l3" x="58" y="318" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pin_r3" x="260" y="318" width="22" height="16" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="die" x="118" y="214" width="104" height="104" rx="8" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="die_grid" d="M152,214 L152,318 M188,214 L188,318 M118,248 L222,248 M118,284 L222,284" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="notch" cx="100" cy="196" r="7" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="arrow" points="170,14 230,74 196,74 196,136 144,136 144,74 110,74" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ticks" d="M96,44 L78,32 M92,76 L72,76 M244,44 L262,32 M248,76 L268,76" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400" width="440" height="400">
+  <path id="sheet" d="M30,20 L390,20 L390,252 L300,252 L304,262 L297,272 L304,282 L297,292 L304,302 L297,312 L304,322 L297,332 L300,340 L30,340 Z" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="frame" x="44" y="34" width="332" height="204" rx="6" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="panel" x="58" y="48" width="304" height="176" rx="4" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="title" x="120" y="62" width="180" height="24" rx="12" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lines" d="M82,112 L338,112 M82,140 L300,140 M82,168 L240,168" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="tail_l" points="296,196 310,206 298,232 290,222 282,228" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="tail_r" points="326,196 312,206 324,232 332,222 340,228" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="rosette" points="311,154 317.2,160.8 326,158 328,167 337,169 334.2,177.8 341,184 334.2,190.2 337,199 328,201 326,210 317.2,207.2 311,214 304.8,207.2 296,210 294,201 285,199 287.8,190.2 281,184 287.8,177.8 285,169 294,167 296,158 304.8,160.8" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="seal" cx="311" cy="184" r="15" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="perforation" d="M34,252 L44,252 M54,252 L64,252 M74,252 L84,252 M94,252 L104,252 M114,252 L124,252 M134,252 L144,252 M154,252 L164,252 M174,252 L184,252 M194,252 L204,252 M214,252 L224,252 M234,252 L244,252 M254,252 L264,252 M274,252 L284,252 M294,252 L304,252 M120,258 L120,268 M120,278 L120,288 M120,298 L120,308 M120,318 L120,328 M210,258 L210,268 M210,278 L210,288 M210,298 L210,308 M210,318 L210,328" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="coupon_coin1" cx="75" cy="296" r="25" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="coupon_dollar1" d="M83,287.2 C79.8,282.4 66.2,282.4 66.2,290.4 C66.2,296.8 83.8,295.2 83.8,302.4 C83.8,310.4 69.4,310.4 66.2,304.8 M75,280 L75,312" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="coupon_coin2" cx="165" cy="296" r="25" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="coupon_dollar2" d="M173,287.2 C169.8,282.4 156.2,282.4 156.2,290.4 C156.2,296.8 173.8,295.2 173.8,302.4 C173.8,310.4 159.4,310.4 156.2,304.8 M165,280 L165,312" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="coupon_coin3" cx="255" cy="296" r="25" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="coupon_dollar3" d="M263,287.2 C259.8,282.4 246.2,282.4 246.2,290.4 C246.2,296.8 263.8,295.2 263.8,302.4 C263.8,310.4 249.4,310.4 246.2,304.8 M255,280 L255,312" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="rotate(14 360 316)">
+  <path id="torn_coupon" d="M313,272 L402,272 L402,360 L313,360 L320,342 L313,332 L320,322 L313,312 L320,302 L313,292 L320,282 Z" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="torn_coin" cx="359" cy="316" r="25" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="torn_dollar" d="M367,307.2 C363.8,302.4 350.2,302.4 350.2,310.4 C350.2,316.8 367.8,315.2 367.8,322.4 C367.8,330.4 353.4,330.4 350.2,324.8 M359,300 L359,332" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path id="motion" d="M306,368 L290,380 M330,378 L322,392" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <path id="big" d="M 166,80 Q 196,196 312,226 Q 196,256 166,372 Q 136,256 20,226 Q 136,196 166,80 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="big_facet" d="M 166,226 L 294.5,226 Q 192.4,252.4 166,354.5 Z" fill="#F9A825" data-noink="1"/>
+  <path id="medium" d="M 314,34 Q 328,86 380,100 Q 328,114 314,166 Q 300,114 248,100 Q 300,86 314,34 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="small" d="M 336,276 Q 345,309 378,318 Q 345,327 336,360 Q 327,327 294,318 Q 327,309 336,276 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dot1" cx="64" cy="62" r="10" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dot2" cx="228" cy="44" r="8" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

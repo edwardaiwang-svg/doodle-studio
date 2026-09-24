@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 268" width="392" height="268">
+  <path id="cloud" d="M 63,206 A 54 54 0 0 1 71,100 A 72 72 0 0 1 189,46 A 76 76 0 0 1 319,84 A 64 64 0 0 1 329,206 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 85,106 A 58 58 0 0 1 135,70 L 139,82 A 46 46 0 0 0 97,112 Z" fill="#FFFFFF" data-noink="1"/>
+  <polygon id="arrow" points="195,60 251,120 219,120 219,242 171,242 171,120 139,120" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 151,222 L 151,246" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 239,222 L 239,246" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

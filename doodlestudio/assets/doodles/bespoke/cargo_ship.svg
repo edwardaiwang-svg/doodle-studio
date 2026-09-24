@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 592 300" width="592" height="300">
+  <g transform="translate(0,-38)">
+    <polygon id="hull" points="34,232 500,232 552,208 508,304 72,304" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="hull_bottom" points="57.2,276 520.8,276 508,304 72,304" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bridge" x="62" y="110" width="86" height="124" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bridge_wing" x="52" y="104" width="106" height="16" rx="3" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bridge_windows" x="72" y="130" width="66" height="20" rx="3" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cabin_windows" d="M76,170 L96,170 L96,188 L76,188 Z M112,170 L132,170 L132,188 L112,188 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="funnel" x="86" y="62" width="36" height="42" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="funnel_top" x="82" y="54" width="44" height="14" rx="3" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="158" y="198" width="68" height="34" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="158" y="164" width="68" height="34" fill="#FB8C00" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="158" y="130" width="68" height="34" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="226" y="198" width="68" height="34" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="226" y="164" width="68" height="34" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="294" y="198" width="68" height="34" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="294" y="164" width="68" height="34" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="294" y="130" width="68" height="34" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="362" y="198" width="68" height="34" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="362" y="164" width="68" height="34" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="198" width="68" height="34" fill="#FB8C00" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="430" y="164" width="68" height="34" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="corrugation" d="M175,206 L175,224 M192,206 L192,224 M209,206 L209,224 M175,172 L175,190 M192,172 L192,190 M209,172 L209,190 M175,138 L175,156 M192,138 L192,156 M209,138 L209,156 M243,206 L243,224 M260,206 L260,224 M277,206 L277,224 M243,172 L243,190 M260,172 L260,190 M277,172 L277,190 M311,206 L311,224 M328,206 L328,224 M345,206 L345,224 M311,172 L311,190 M328,172 L328,190 M345,172 L345,190 M311,138 L311,156 M328,138 L328,156 M345,138 L345,156 M379,206 L379,224 M396,206 L396,224 M413,206 L413,224 M379,172 L379,190 M396,172 L396,190 M413,172 L413,190 M447,206 L447,224 M464,206 L464,224 M481,206 L481,224 M447,172 L447,190 M464,172 L464,190 M481,172 L481,190" fill="none" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="sea" d="M16,322 L16,294 Q30,282 44,294 Q58,306 72,294 Q86,282 100,294 Q114,306 128,294 Q142,282 156,294 Q170,306 184,294 Q198,282 212,294 Q226,306 240,294 Q254,282 268,294 Q282,306 296,294 Q310,282 324,294 Q338,306 352,294 Q366,282 380,294 Q394,306 408,294 Q422,282 436,294 Q450,306 464,294 Q478,282 492,294 Q506,306 520,294 Q534,282 548,294 Q562,306 576,294 L576,322 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

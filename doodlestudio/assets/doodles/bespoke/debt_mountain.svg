@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 364" width="420" height="364">
+  <g transform="rotate(-2 64 321)">
+  <rect id="bundle1" x="18" y="297" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet1" x1="27" y1="326.8" x2="101" y2="326.8" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap1" x="57" y="297" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(1.5 157 323)">
+  <rect id="bundle2" x="111" y="299" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap2" x="146" y="299" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-1 251 320)">
+  <rect id="bundle3" x="205" y="296" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet3" x1="214" y1="325.8" x2="288" y2="325.8" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap3" x="248" y="296" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2 344 323)">
+  <rect id="bundle4" x="298" y="299" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap4" x="339" y="299" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2.5 102 274)">
+  <rect id="bundle5" x="56" y="250" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap5" x="99" y="250" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-1.5 195 276)">
+  <rect id="bundle6" x="149" y="252" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet6" x1="158" y1="281.8" x2="232" y2="281.8" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap6" x="188" y="252" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(1.5 288 273)">
+  <rect id="bundle7" x="242" y="249" width="92" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet7" x1="251" y1="278.8" x2="325" y2="278.8" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap7" x="277" y="249" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-2.5 163 227)">
+  <rect id="bundle8" x="118" y="203" width="90" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet8" x1="127" y1="232.8" x2="199" y2="232.8" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap8" x="156" y="203" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2 251 229)">
+  <rect id="bundle9" x="208" y="205" width="86" height="48" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap9" x="248" y="205" width="14" height="48" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-2 199 167)">
+  <rect id="bundle10" x="169" y="129" width="60" height="76" rx="3" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="sheet10" x1="178" y1="179.2" x2="220" y2="179.2" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="strap10" x="192" y="129" width="14" height="76" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(1.5 153 323)">
+  <circle id="badge2" cx="153" cy="323" r="23" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="badge_dollar2" d="M160.3,315 C157.4,310.6 145,310.6 145,317.9 C145,323.7 161,322.3 161,328.9 C161,336.2 147.9,336.2 145,331 M153,308.4 L153,337.6" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2 346 323)">
+  <circle id="badge4" cx="346" cy="323" r="23" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="badge_dollar4" d="M353.3,315 C350.4,310.6 338,310.6 338,317.9 C338,323.7 354,322.3 354,328.9 C354,336.2 340.9,336.2 338,331 M346,308.4 L346,337.6" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2.5 106 274)">
+  <circle id="badge5" cx="106" cy="274" r="23" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="badge_dollar5" d="M113.3,266 C110.4,261.6 98,261.6 98,268.9 C98,274.7 114,273.3 114,279.9 C114,287.2 100.9,287.2 98,282 M106,259.4 L106,288.6" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(2 255 229)">
+  <circle id="badge9" cx="255" cy="229" r="23" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="badge_dollar9" d="M262.3,221 C259.4,216.6 247,216.6 247,223.9 C247,229.7 263,228.3 263,234.9 C263,242.2 249.9,242.2 247,237 M255,214.4 L255,243.6" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <line id="pole" x1="199" y1="130" x2="199" y2="24" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="flag" points="199,26 263,46 199,68" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

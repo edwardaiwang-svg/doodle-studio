@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 460" width="300" height="460">
+  <path id="paper" d="M 62,384 L 62,50 L 73,34 L 84,50 L 95,34 L 106,50 L 117,34 L 128,50 L 139,34 L 150,50 L 161,34 L 172,50 L 183,34 L 194,50 L 205,34 L 216,50 L 227,34 L 238,50 L 238,384" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="header" x="108" y="70" width="84" height="18" rx="9" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="items" d="M 86,116 L 150,116 M 188,116 L 214,116 M 86,144 L 168,144 M 188,144 L 214,144 M 86,172 L 140,172 M 188,172 L 214,172 M 86,200 L 160,200 M 188,200 L 214,200 M 86,228 L 132,228 M 188,228 L 214,228" fill="none" stroke="#9E9E9E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="rule" x1="86" y1="254" x2="214" y2="254" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="total" x="78" y="268" width="144" height="36" rx="8" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="total_text" d="M 94,286 L 136,286 M 176,286 L 206,286" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bars_thick" d="M 94,322 L 94,352 M 118,322 L 118,352 M 138,322 L 138,352 M 164,322 L 164,352 M 186,322 L 186,352 M 206,322 L 206,352" fill="none" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bars_thin" d="M 106,322 L 106,352 M 128,322 L 128,352 M 151,322 L 151,352 M 175,322 L 175,352 M 196,322 L 196,352" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="roll" d="M 69,382 L 231,382 Q 256,382 256,407 L 256,407 Q 256,432 231,432 L 69,432 Q 44,432 44,407 L 44,407 Q 44,382 69,382 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="roll_end" cx="69" cy="407" rx="14" ry="25" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="curl" d="M 69,397 A 5,9 0 1 0 74,407" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

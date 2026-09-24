@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436 336" width="436" height="336">
+  <rect id="window" x="22" y="22" width="392" height="292" rx="18" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="titlebar" d="M 22,66 L 22,40 A 18 18 0 0 1 40,22 L 396,22 A 18 18 0 0 1 414,40 L 414,66 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50" cy="44" r="9" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="78" cy="44" r="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="106" cy="44" r="9" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="94" width="84" height="18" rx="9" fill="#F48FB1" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="144" y="94" width="56" height="18" rx="9" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="130" width="112" height="18" rx="9" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="166" width="60" height="18" rx="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="148" y="166" width="70" height="18" rx="9" fill="#FB8C00" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="106" y="202" width="96" height="18" rx="9" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="78" y="238" width="88" height="18" rx="9" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="50" y="274" width="64" height="18" rx="9" fill="#F48FB1" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="brackets" d="M 290,144 L 260,184 L 290,224 M 334,136 L 314,232 M 358,144 L 388,184 L 358,224" fill="none" stroke="#1B1B1B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 290,144 L 260,184 L 290,224 M 334,136 L 314,232 M 358,144 L 388,184 L 358,224" fill="none" stroke="#FDD835" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

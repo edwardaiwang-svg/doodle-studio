@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420">
+  <g transform="rotate(-28 190 240)">
+    <rect x="80" y="182" width="216" height="52" rx="10" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="290" y="170" width="62" height="76" rx="10" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="352" cy="208" rx="9" ry="34" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="44" y="196" width="42" height="24" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="110" y="160" width="60" height="22" rx="8" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="176" y="176" width="30" height="64" rx="6" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <polygon points="184,258.4 190,392.5 206,391.5 196,257.6" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="178.2,254.1 84.5,391 99.5,401 189.8,261.9" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="190.3,262 284.6,401.1 299.4,390.9 201.7,254" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="178" y="236" width="24" height="26" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="362,30 369.1,48.3 388.6,49.3 373.4,61.7 378.5,80.7 362,70 345.5,80.7 350.6,61.7 335.4,49.3 354.9,48.3" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="268,27 272.4,37.9 284.2,38.7 275.1,46.3 278,57.8 268,51.5 258,57.8 260.9,46.3 251.8,38.7 263.6,37.9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 64,64 C 67.6,80.4 67.6,80.4 84,84 C 67.6,87.6 67.6,87.6 64,104 C 60.4,87.6 60.4,87.6 44,84 C 60.4,80.4 60.4,80.4 64,64 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

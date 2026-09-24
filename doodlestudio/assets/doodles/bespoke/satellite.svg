@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482 328" width="482" height="328">
+  <g transform="rotate(-18 242 196)">
+    <rect id="body" x="198" y="138" width="88" height="112" rx="14" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="166" y="186" width="32" height="16" rx="3" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="286" y="186" width="32" height="16" rx="3" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="panel_l" x="26" y="146" width="140" height="96" rx="6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="panel_r" x="318" y="146" width="140" height="96" rx="6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 72,146 L 72,242 M 119,146 L 119,242 M 26,194 L 166,194" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 365,146 L 365,242 M 412,146 L 412,242 M 318,194 L 458,194" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 198,176 L 286,176 M 198,212 L 286,212" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="242" y1="138" x2="242" y2="118" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="dish" d="M 186,96 Q 242,142 298,96 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="242" y1="108" x2="242" y2="74" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="242" cy="66" r="10" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 219,46.7 A 30 30 0 0 1 265,46.7" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 203.7,33.9 A 50 50 0 0 1 280.3,33.9" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

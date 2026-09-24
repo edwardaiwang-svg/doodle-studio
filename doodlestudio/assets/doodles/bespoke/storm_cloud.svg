@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 364" width="360" height="364">
+  <path id="cloud" d="M84,214 C36,214 22,160 62,146 C48,96 102,64 138,88 C154,44 226,34 248,86 C290,68 332,104 316,144 C350,156 346,214 300,214 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="belly" d="M68,184 C110,198 250,198 318,180 C330,196 318,208 300,208 L84,208 C70,208 62,198 68,184 Z" fill="#424242" data-noink="1"/>
+  <path id="shine" d="M150,86 C164,64 196,56 218,66 C196,68 174,76 160,92 Z" fill="#E0E0E0" data-noink="1"/>
+  <polygon id="bolt" points="172,196 220,196 200,250 232,250 164,346 178,272 146,272" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain1" d="M84,240 C87,247 94,255 94,261 C94,267 89,272 84,272 C79,272 74,267 74,261 C74,255 81,247 84,240 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain2" d="M108,296 C111,303 118,311 118,317 C118,323 113,328 108,328 C103,328 98,323 98,317 C98,311 105,303 108,296 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain3" d="M270,238 C273,245 280,253 280,259 C280,265 275,270 270,270 C265,270 260,265 260,259 C260,253 267,245 270,238 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain4" d="M250,296 C253,303 260,311 260,317 C260,323 255,328 250,328 C245,328 240,323 240,317 C240,311 247,303 250,296 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

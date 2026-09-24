@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 380" width="440" height="380">
+  <polygon id="back_peak" points="22,356 138,186 262,356" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="back_snow" points="138,186 164.3,222 152,214 140,228 128,214 113.4,222" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="peak" points="86,356 250,92 416,356" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="shade" points="250,92 416,356 300,356" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="snow" points="250,92 292.8,160 278,150 264,172 250,152 236,174 222,150 207.8,160" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="pole" x1="250" y1="94" x2="250" y2="22" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="flag" d="M 252,26 C 270,18 292,34 316,26 L 316,62 C 292,70 270,54 252,62 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cloud" d="M 52,110 C 40,110 36,92 50,88 C 50,72 70,66 80,76 C 88,62 112,64 114,80 C 128,78 134,96 124,104 C 120,110 116,110 112,110 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

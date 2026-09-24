@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+  <rect id="post_left" x="58" y="34" width="40" height="386" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="post_right" x="302" y="34" width="40" height="386" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="head" x="36" y="58" width="328" height="52" rx="6" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="stretcher" x="98" y="372" width="204" height="24" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="foot_left" x="34" y="410" width="90" height="24" rx="6" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="foot_right" x="276" y="410" width="90" height="24" rx="6" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="screw" x="182" y="110" width="36" height="96" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="threads" d="M 182,135 L 218,121 M 182,155 L 218,141 M 182,175 L 218,161 M 182,195 L 218,181" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="lever" points="198.5,157.8 350.5,187.8 353.5,172.2 201.5,142.2" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="knob" cx="358" cy="181" r="16" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="platen" x="124" y="204" width="152" height="32" rx="4" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="bed" x="34" y="262" width="332" height="32" rx="4" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sheet" d="M 132,254 L 268,254 L 268,340 Q 268,358 250,356 L 132,356 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="print_lines" d="M 150,278 L 250,278 M 150,298 L 250,298 M 150,318 L 250,318 M 150,338 L 214,338" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" width="400" height="290">
+  <g transform="rotate(-8 200 145)">
+  <path id="ticket" d="M46,60 L354,60 Q370,60 370,76 L370,125 A20,20 0 0 0 370,165 L370,214 Q370,230 354,230 L46,230 Q30,230 30,214 L30,165 A20,20 0 0 0 30,125 L30,76 Q30,60 46,60 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="panel" x="64" y="78" width="196" height="134" rx="12" fill="#FB8C00" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="perforation" d="M284,70 L284,80 M284,90 L284,100 M284,110 L284,120 M284,130 L284,140 M284,150 L284,160 M284,170 L284,180 M284,190 L284,200 M284,210 L284,220" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="arrow_up" points="122,92 152,126 134,126 134,198 110,198 110,126 92,126" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="arrow_down" points="202,198 232,164 214,164 214,92 190,92 190,164 172,164" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="premium" d="M343,128.5 C337,119.5 311.5,119.5 311.5,134.5 C311.5,146.5 344.5,143.5 344.5,157 C344.5,172 317.5,172 311.5,161.5 M328,115 L328,175" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

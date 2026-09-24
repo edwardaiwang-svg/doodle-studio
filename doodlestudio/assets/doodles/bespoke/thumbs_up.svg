@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400">
+  <path id="hand" d="M 115,178 C 127,154 131,116 133,74 A 32 32 0 0 1 197,72 C 201,102 197,126 201,142 C 205,152 215,154 227,154 L 289,154 A 24 24 0 0 1 289,202 L 295,202 A 24 24 0 0 1 295,250 L 289,250 A 24 24 0 0 1 289,298 L 273,298 A 22 22 0 0 1 273,342 L 143,342 Q 115,342 115,314 Z" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="sleeve" x="41" y="160" width="84" height="202" rx="12" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cuff" d="M 103,168 L 103,354" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="fingers" d="M 215,202 L 293,202 M 215,250 L 287,250 M 215,298 L 271,298" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="thumb_crease" d="M 151,138 Q 169,146 189,140" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

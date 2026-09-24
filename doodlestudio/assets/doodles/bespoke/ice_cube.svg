@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 372" width="360" height="372">
+  <path id="cube" d="M 152.3,43.8 Q 172,34 191.7,43.8 L 300.3,98.2 Q 320,108 320,130 L 320,240 Q 320,262 300.3,271.8 L 191.7,326.2 Q 172,336 152.3,326.2 L 43.7,271.8 Q 24,262 24,240 L 24,130 Q 24,108 43.7,98.2 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="top" d="M 28.9,111 Q 33.8,103.1 43.7,98.2 L 152.3,43.8 Q 172,34 191.7,43.8 L 300.3,98.2 Q 310.2,103.1 315.1,111 L 172,182 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="side" d="M 315.1,111 Q 320,119 320,130 L 320,240 Q 320,262 300.3,271.8 L 191.7,326.2 Q 181.8,331.1 172,331.1 L 172,182 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_glints" d="M 48,146 L 48,214 M 72,176 L 72,200" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="side_glint" d="M 296,142 L 296,196" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="frost1" d="M 310,68 Q 316,90 338,96 Q 316,102 310,124 Q 304,102 282,96 Q 304,90 310,68 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="frost2" d="M 56,286 Q 60,302 76,306 Q 60,310 56,326 Q 52,310 36,306 Q 52,302 56,286 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

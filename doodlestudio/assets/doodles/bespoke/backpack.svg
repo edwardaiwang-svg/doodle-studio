@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316 388" width="316" height="388">
+  <g transform="translate(-22,-24)">
+    <path id="handle" d="M146,98 L146,70 Q146,40 180,40 Q214,40 214,70 L214,98 L198,98 L198,72 Q198,56 180,56 Q162,56 162,72 L162,98 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="side_pocket_l" x="38" y="244" width="36" height="120" rx="12" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="side_pocket_r" x="286" y="244" width="36" height="120" rx="12" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="body" d="M60,370 L60,154 A74,74 0 0 1 134,80 L226,80 A74,74 0 0 1 300,154 L300,370 A26,26 0 0 1 274,396 L86,396 A26,26 0 0 1 60,370 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="zip_top" d="M84,162 Q180,118 276,162" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pull_top" x="236" y="134" width="13" height="28" rx="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="pocket" d="M120,236 L240,236 A28,28 0 0 1 268,264 L268,344 A28,28 0 0 1 240,372 L120,372 A28,28 0 0 1 92,344 L92,264 A28,28 0 0 1 120,236 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="zip_pocket" d="M112,268 Q180,254 248,268" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pull_pocket" x="206" y="262" width="13" height="28" rx="5" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

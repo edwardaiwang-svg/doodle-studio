@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420">
+  <path id="up" d="M 115.1,32.4 Q 120,26 124.9,32.4 L 197.9,128.1 Q 204,136 194,136 L 162,136 Q 156,136 156,142 L 156,320 Q 156,330 146,330 L 94,330 Q 84,330 84,320 L 84,142 Q 84,136 78,136 L 46,136 Q 36,136 42.1,128.1 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="up_shine" d="M 100,152 L 100,306" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="up_head_shine" d="M 62,124 L 110,62" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="down" d="M 304.9,387.6 Q 300,394 295.1,387.6 L 222.1,291.9 Q 216,284 226,284 L 258,284 Q 264,284 264,278 L 264,100 Q 264,90 274,90 L 326,90 Q 336,90 336,100 L 336,278 Q 336,284 342,284 L 374,284 Q 384,284 377.9,291.9 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="down_shine" d="M 280,108 L 280,262" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

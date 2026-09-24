@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 296" width="460" height="296">
+  <polygon id="fulcrum" points="182,268 278,268 230,184" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="plank" x="30" y="164" width="400" height="22" rx="10" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grain" d="M 70,175 L 150,175 M 310,175 L 390,175" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="bolt" cx="230" cy="184" r="12" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 46,164 L 60,96 L 124,96 L 138,164 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 76,96 C 72,58 112,58 108,96" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 66,108 L 76,108 L 68,152 L 58,152 Z" fill="#FFFFFF" data-noink="1"/>
+  <path d="M 322,164 L 336,96 L 400,96 L 414,164 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 352,96 C 348,58 388,58 384,96" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 342,108 L 352,108 L 344,152 L 334,152 Z" fill="#FFFFFF" data-noink="1"/>
+  <line id="ground" x1="22" y1="271" x2="438" y2="271" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

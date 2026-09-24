@@ -1,0 +1,602 @@
+{
+ "atom": {
+  "desc": "Atom: nucleus with three elliptical electron orbits",
+  "category": "science",
+  "en": [
+   "atom",
+   "atomic",
+   "nucleus",
+   "electron",
+   "physics",
+   "nuclear",
+   "particle",
+   "atomic structure",
+   "quantum",
+   "matter"
+  ],
+  "zh": [
+   "原子",
+   "原子核",
+   "电子",
+   "物理",
+   "核能",
+   "粒子"
+  ]
+ },
+ "molecule": {
+  "desc": "Ball-and-stick molecule with five coloured atoms",
+  "category": "science",
+  "en": [
+   "molecule",
+   "chemistry",
+   "chemical",
+   "compound",
+   "chemical bond",
+   "molecular structure",
+   "atoms bonding",
+   "materials science",
+   "drug molecule"
+  ],
+  "zh": [
+   "分子",
+   "化学",
+   "化合物",
+   "化学键",
+   "分子结构"
+  ]
+ },
+ "microscope": {
+  "desc": "Laboratory microscope over a glass slide",
+  "category": "science",
+  "en": [
+   "microscope",
+   "laboratory",
+   "lab research",
+   "biology lab",
+   "magnify",
+   "microscopic",
+   "scientist",
+   "research",
+   "under the microscope",
+   "close examination"
+  ],
+  "zh": [
+   "显微镜",
+   "实验室",
+   "科研",
+   "显微",
+   "观察",
+   "生物实验"
+  ]
+ },
+ "test_tubes": {
+  "desc": "Wooden rack holding three test tubes of red, green and blue liquid",
+  "category": "science",
+  "en": [
+   "test tubes",
+   "lab test",
+   "laboratory",
+   "experiment",
+   "samples",
+   "chemistry lab",
+   "clinical testing",
+   "research and development",
+   "R&D",
+   "trial"
+  ],
+  "zh": [
+   "试管",
+   "实验",
+   "实验室",
+   "样本",
+   "化学实验",
+   "研发"
+  ]
+ },
+ "flask_bubbling": {
+  "desc": "Conical lab flask of green liquid bubbling over (experiment)",
+  "category": "science",
+  "en": [
+   "experiment",
+   "flask",
+   "chemistry",
+   "chemical reaction",
+   "bubbling",
+   "lab experiment",
+   "trial and error",
+   "formula",
+   "potion",
+   "testing an idea"
+  ],
+  "zh": [
+   "实验",
+   "烧瓶",
+   "化学反应",
+   "化学",
+   "试验",
+   "配方"
+  ]
+ },
+ "telescope": {
+  "desc": "Telescope on a tripod pointing up at the stars",
+  "category": "science",
+  "en": [
+   "telescope",
+   "astronomy",
+   "stargazing",
+   "look ahead",
+   "long-term view",
+   "observatory",
+   "space",
+   "far future",
+   "outlook",
+   "vision"
+  ],
+  "zh": [
+   "望远镜",
+   "天文",
+   "观星",
+   "展望",
+   "远见",
+   "长远"
+  ]
+ },
+ "planet_ringed": {
+  "desc": "Ringed planet like Saturn with twinkling stars",
+  "category": "science",
+  "en": [
+   "planet",
+   "Saturn",
+   "space",
+   "astronomy",
+   "outer space",
+   "universe",
+   "cosmos",
+   "gas giant",
+   "ringed planet"
+  ],
+  "zh": [
+   "行星",
+   "土星",
+   "太空",
+   "宇宙",
+   "天文"
+  ]
+ },
+ "solar_system": {
+  "desc": "Sun with four planets on orbit lines (solar system)",
+  "category": "science",
+  "en": [
+   "solar system",
+   "planets",
+   "orbit",
+   "sun and planets",
+   "astronomy",
+   "space",
+   "orbiting",
+   "revolve around",
+   "center of gravity",
+   "galaxy"
+  ],
+  "zh": [
+   "太阳系",
+   "行星",
+   "轨道",
+   "天文",
+   "宇宙",
+   "围绕"
+  ]
+ },
+ "cell": {
+  "desc": "Biological cell with nucleus, mitochondria and organelles",
+  "category": "science",
+  "en": [
+   "cell",
+   "biology",
+   "living cell",
+   "cell biology",
+   "nucleus",
+   "organism",
+   "life science",
+   "stem cell",
+   "biotech",
+   "tissue"
+  ],
+  "zh": [
+   "细胞",
+   "生物学",
+   "细胞核",
+   "生命科学",
+   "生物技术",
+   "干细胞"
+  ]
+ },
+ "virus": {
+  "desc": "Round virus particle with club-shaped spikes",
+  "category": "health",
+  "en": [
+   "virus",
+   "pandemic",
+   "infection",
+   "disease",
+   "germ",
+   "outbreak",
+   "flu",
+   "epidemic",
+   "contagion",
+   "viral"
+  ],
+  "zh": [
+   "病毒",
+   "疫情",
+   "感染",
+   "传染病",
+   "流感",
+   "大流行"
+  ]
+ },
+ "bacteria": {
+  "desc": "Cluster of rod-shaped bacteria with wavy tails",
+  "category": "health",
+  "en": [
+   "bacteria",
+   "germs",
+   "microbes",
+   "bacterial",
+   "microbiome",
+   "gut bacteria",
+   "antibiotics",
+   "microorganism",
+   "infection",
+   "hygiene"
+  ],
+  "zh": [
+   "细菌",
+   "微生物",
+   "病菌",
+   "抗生素",
+   "肠道菌群",
+   "感染"
+  ]
+ },
+ "volcano": {
+  "desc": "Erupting volcano with lava flows, fountain and ash cloud",
+  "category": "nature",
+  "en": [
+   "volcano",
+   "eruption",
+   "erupting",
+   "lava",
+   "magma",
+   "natural disaster",
+   "explosive",
+   "blow up",
+   "pressure building",
+   "boiling over"
+  ],
+  "zh": [
+   "火山",
+   "火山爆发",
+   "岩浆",
+   "喷发",
+   "自然灾害",
+   "爆发"
+  ]
+ },
+ "earthquake": {
+  "desc": "Ground split by a jagged crack with a small house tilting (earthquake)",
+  "category": "nature",
+  "en": [
+   "earthquake",
+   "quake",
+   "tremor",
+   "seismic",
+   "shake",
+   "natural disaster",
+   "fault line",
+   "ground shaking",
+   "shock",
+   "aftershock"
+  ],
+  "zh": [
+   "地震",
+   "震动",
+   "余震",
+   "断层",
+   "地震灾害",
+   "冲击"
+  ]
+ },
+ "water_cycle": {
+  "desc": "Cloud raining on a hill with an arrow rising from the sea (water cycle)",
+  "category": "science",
+  "en": [
+   "water cycle",
+   "evaporation",
+   "precipitation",
+   "rain",
+   "condensation",
+   "hydrological cycle",
+   "cycle",
+   "circulation",
+   "climate",
+   "weather system"
+  ],
+  "zh": [
+   "水循环",
+   "蒸发",
+   "降水",
+   "降雨",
+   "循环",
+   "气候"
+  ]
+ },
+ "sprout": {
+  "desc": "Seedling with two leaves sprouting from a soil mound",
+  "category": "nature",
+  "en": [
+   "sprout",
+   "seedling",
+   "growth",
+   "grow",
+   "early stage",
+   "new beginning",
+   "startup",
+   "plant",
+   "seed",
+   "green shoots",
+   "nurture"
+  ],
+  "zh": [
+   "发芽",
+   "幼苗",
+   "成长",
+   "萌芽",
+   "起步",
+   "新开始"
+  ]
+ },
+ "leaf_sun": {
+  "desc": "Green leaf catching sun rays with arrows into it (photosynthesis)",
+  "category": "science",
+  "en": [
+   "photosynthesis",
+   "sunlight",
+   "solar energy",
+   "light energy",
+   "leaf",
+   "plant energy",
+   "green energy",
+   "sun power",
+   "renewable energy",
+   "energy from light"
+  ],
+  "zh": [
+   "光合作用",
+   "阳光",
+   "太阳能",
+   "叶子",
+   "光能",
+   "绿色能源"
+  ]
+ },
+ "food_chain": {
+  "desc": "Grass, rabbit and fox linked by arrows (food chain)",
+  "category": "nature",
+  "en": [
+   "food chain",
+   "ecosystem",
+   "predator and prey",
+   "food web",
+   "who eats whom",
+   "pecking order",
+   "hierarchy",
+   "survival",
+   "nature",
+   "value chain"
+  ],
+  "zh": [
+   "食物链",
+   "生态系统",
+   "捕食",
+   "食物网",
+   "弱肉强食",
+   "生态"
+  ]
+ },
+ "magnet_field": {
+  "desc": "Bar magnet with curved field lines looping pole to pole",
+  "category": "science",
+  "en": [
+   "magnet",
+   "magnetic field",
+   "magnetism",
+   "attraction",
+   "pull",
+   "field lines",
+   "physics",
+   "polarity",
+   "attract",
+   "north and south poles"
+  ],
+  "zh": [
+   "磁铁",
+   "磁场",
+   "磁力",
+   "吸引",
+   "磁极",
+   "物理"
+  ]
+ },
+ "battery_circuit": {
+  "desc": "Battery wired in a loop to a glowing light bulb (electric circuit)",
+  "category": "science",
+  "en": [
+   "electric circuit",
+   "circuit",
+   "battery",
+   "electricity",
+   "light bulb",
+   "current",
+   "power",
+   "energy",
+   "wiring",
+   "electrical"
+  ],
+  "zh": [
+   "电路",
+   "电池",
+   "电流",
+   "电力",
+   "灯泡",
+   "通电"
+  ]
+ },
+ "thermometer_hot": {
+  "desc": "Thermometer with the red level near the top and heat waves",
+  "category": "nature",
+  "en": [
+   "hot",
+   "heat",
+   "temperature",
+   "rising temperature",
+   "heatwave",
+   "global warming",
+   "warming",
+   "overheating",
+   "fever",
+   "thermometer",
+   "climate change"
+  ],
+  "zh": [
+   "高温",
+   "温度",
+   "升温",
+   "热浪",
+   "全球变暖",
+   "过热",
+   "温度计"
+  ]
+ },
+ "rain_cloud": {
+  "desc": "Grey cloud with falling blue rain drops",
+  "category": "nature",
+  "en": [
+   "rain",
+   "rainy",
+   "raining",
+   "rain cloud",
+   "weather",
+   "downpour",
+   "gloomy",
+   "shower",
+   "wet weather",
+   "precipitation"
+  ],
+  "zh": [
+   "下雨",
+   "雨",
+   "雨云",
+   "天气",
+   "阴雨",
+   "降雨"
+  ]
+ },
+ "sun_bright": {
+  "desc": "Bright yellow sun with orange rays",
+  "category": "nature",
+  "en": [
+   "sun",
+   "sunny",
+   "sunshine",
+   "bright",
+   "solar",
+   "summer",
+   "clear skies",
+   "good weather",
+   "optimism",
+   "sunlight"
+  ],
+  "zh": [
+   "太阳",
+   "晴天",
+   "阳光",
+   "明亮",
+   "晴朗",
+   "夏天"
+  ]
+ },
+ "moon_stars": {
+  "desc": "Crescent moon with a few stars (night)",
+  "category": "nature",
+  "en": [
+   "night",
+   "moon",
+   "stars",
+   "overnight",
+   "nighttime",
+   "crescent moon",
+   "bedtime",
+   "sleep",
+   "after hours",
+   "dream"
+  ],
+  "zh": [
+   "夜晚",
+   "月亮",
+   "星星",
+   "深夜",
+   "夜间",
+   "月牙",
+   "睡觉"
+  ]
+ },
+ "fossil": {
+  "desc": "Spiral ammonite fossil set in a rock slab",
+  "category": "history",
+  "en": [
+   "fossil",
+   "ammonite",
+   "prehistoric",
+   "ancient",
+   "extinct",
+   "paleontology",
+   "fossilized",
+   "relic",
+   "outdated",
+   "fossil record"
+  ],
+  "zh": [
+   "化石",
+   "菊石",
+   "史前",
+   "古老",
+   "灭绝",
+   "古生物"
+  ]
+ },
+ "dinosaur": {
+  "desc": "Friendly cartoon long-neck dinosaur",
+  "category": "history",
+  "en": [
+   "dinosaur",
+   "prehistoric",
+   "Jurassic",
+   "extinct",
+   "dino",
+   "ancient times",
+   "old-fashioned",
+   "legacy",
+   "brontosaurus",
+   "sauropod"
+  ],
+  "zh": [
+   "恐龙",
+   "史前",
+   "侏罗纪",
+   "灭绝",
+   "远古",
+   "老古董"
+  ]
+ }
+}

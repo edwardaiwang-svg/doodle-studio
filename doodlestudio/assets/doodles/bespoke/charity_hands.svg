@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" width="420" height="360">
+  <path id="heart" d="M 210,266 C 149.5,214.1 100,159.8 100,100.8 C 100,34.7 141.8,20.6 160.5,30 C 188,37.1 205.6,63 210,96.1 C 214.4,63 232,37.1 259.5,30 C 278.2,20.6 320,34.7 320,100.8 C 320,159.8 270.5,214.1 210,266 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 130,104 C 128,76 146,54 174,50 C 156,66 146,84 146,108 Z" fill="#FFFFFF" data-noink="1"/>
+  <circle id="coin" cx="266" cy="112" r="36" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 277.1,99.8 C 272.6,93.2 254.9,93.2 254.9,104.3 C 254.9,113.1 277.1,110.9 277.1,120.8 C 277.1,130.8 258.3,130.8 254.4,123.6 M 266,91 L 266,133" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 36,250 C 62,248 82,242 96,234 C 104,216 116,200 128,194 C 140,188 150,198 146,210 C 142,222 138,232 142,240 C 164,254 186,256 204,246 C 214,240 224,244 222,256 C 214,288 160,312 100,312 C 74,312 54,310 36,310 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 218,266 C 200,282 176,290 150,290 M 208,282 C 190,296 166,302 142,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 384,250 C 358,248 338,242 324,234 C 316,216 304,200 292,194 C 280,188 270,198 274,210 C 278,222 282,232 278,240 C 256,254 234,256 216,246 C 206,240 196,244 198,256 C 206,288 260,312 320,312 C 346,312 366,310 384,310 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 202,266 C 220,282 244,290 270,290 M 212,282 C 230,296 254,302 278,302" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cuff_l" d="M 28,236 L 46,236 Q 54,236 54,244 L 54,314 Q 54,322 46,322 L 28,322 Q 20,322 20,314 L 20,244 Q 20,236 28,236 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cuff_r" d="M 374,236 L 392,236 Q 400,236 400,244 L 400,314 Q 400,322 392,322 L 374,322 Q 366,322 366,314 L 366,244 Q 366,236 374,236 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

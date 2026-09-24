@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 340" width="300" height="340">
+  <path id="shield" d="M150,20 C190,40 232,46 264,40 L264,150 C264,234 212,290 150,320 C88,290 36,234 36,150 L36,40 C68,46 110,40 150,20 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="inner" d="M150,48 C181,63 214,69 240,66 L240,152 C240,220 199,265 150,291 C101,265 60,220 60,152 L60,66 C86,69 119,63 150,48 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M74,82 C92,82 106,78 118,72 C112,96 96,120 76,140 Z" fill="#FFFFFF" data-noink="1"/>
+  <path id="check" d="M86,182 L136.8,232.9 L218.8,139.2 L193.2,116.8 L135.2,183.1 L110,158 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ticks" d="M270,30 L283,17 M278,52 L293,49 M253,20 L257,10" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

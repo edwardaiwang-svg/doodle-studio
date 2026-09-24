@@ -1,0 +1,611 @@
+{
+ "castle": {
+  "desc": "stone castle with crenellated towers and red pennant flags",
+  "category": "history",
+  "en": [
+   "castle",
+   "medieval castle",
+   "fortress",
+   "kingdom",
+   "the Middle Ages",
+   "stronghold",
+   "fortified",
+   "royal palace",
+   "feudal lord",
+   "defend the realm"
+  ],
+  "zh": [
+   "城堡",
+   "中世纪",
+   "堡垒",
+   "王国",
+   "要塞",
+   "封建"
+  ]
+ },
+ "pyramid_egypt": {
+  "desc": "two desert pyramids under a blazing sun (ancient Egypt)",
+  "category": "history",
+  "en": [
+   "pyramid",
+   "pyramids",
+   "ancient Egypt",
+   "pharaoh",
+   "Giza",
+   "desert",
+   "ancient wonder",
+   "tomb",
+   "ancient civilization",
+   "built to last"
+  ],
+  "zh": [
+   "金字塔",
+   "古埃及",
+   "法老",
+   "沙漠",
+   "古代文明",
+   "奇迹"
+  ]
+ },
+ "scroll": {
+  "desc": "partly unrolled blank paper scroll (ancient document)",
+  "category": "history",
+  "en": [
+   "scroll",
+   "ancient document",
+   "parchment",
+   "manuscript",
+   "decree",
+   "proclamation",
+   "ancient text",
+   "record",
+   "charter",
+   "old writing"
+  ],
+  "zh": [
+   "卷轴",
+   "古代文献",
+   "羊皮纸",
+   "手稿",
+   "诏书",
+   "典籍"
+  ]
+ },
+ "quill_ink": {
+  "desc": "feather quill pen standing in an ink pot",
+  "category": "history",
+  "en": [
+   "quill",
+   "quill pen",
+   "inkwell",
+   "ink pot",
+   "writing",
+   "author",
+   "handwritten",
+   "old-fashioned writing",
+   "literature",
+   "draft a letter"
+  ],
+  "zh": [
+   "羽毛笔",
+   "墨水瓶",
+   "写作",
+   "作家",
+   "手写",
+   "文学"
+  ]
+ },
+ "greek_temple": {
+  "desc": "ancient Greek temple with fluted columns and a triangular pediment",
+  "category": "history",
+  "en": [
+   "Greek temple",
+   "ancient Greece",
+   "Parthenon",
+   "columns",
+   "classical architecture",
+   "ancient Rome",
+   "democracy",
+   "philosophy",
+   "antiquity",
+   "Athens"
+  ],
+  "zh": [
+   "希腊神庙",
+   "古希腊",
+   "帕特农神庙",
+   "柱廊",
+   "古典建筑",
+   "民主",
+   "哲学"
+  ]
+ },
+ "knight_helmet": {
+  "desc": "medieval knight's great helm with a red plume",
+  "category": "history",
+  "en": [
+   "knight",
+   "knight's helmet",
+   "armor",
+   "armour",
+   "medieval",
+   "chivalry",
+   "crusade",
+   "jousting",
+   "warrior",
+   "Middle Ages"
+  ],
+  "zh": [
+   "骑士",
+   "头盔",
+   "盔甲",
+   "中世纪",
+   "骑士精神",
+   "武士"
+  ]
+ },
+ "sailing_ship": {
+  "desc": "three-masted sailing ship on waves (age of exploration)",
+  "category": "history",
+  "en": [
+   "sailing ship",
+   "tall ship",
+   "galleon",
+   "age of exploration",
+   "voyage",
+   "explorer",
+   "set sail",
+   "navy",
+   "trade route",
+   "discovery",
+   "New World"
+  ],
+  "zh": [
+   "帆船",
+   "大航海时代",
+   "远航",
+   "探险",
+   "航海",
+   "船队"
+  ]
+ },
+ "steam_train": {
+  "desc": "steam locomotive puffing smoke on a rail (industrial revolution)",
+  "category": "history",
+  "en": [
+   "steam train",
+   "steam locomotive",
+   "railway",
+   "railroad",
+   "industrial revolution",
+   "train",
+   "steam engine",
+   "full steam ahead",
+   "locomotive",
+   "rail network"
+  ],
+  "zh": [
+   "蒸汽火车",
+   "火车头",
+   "铁路",
+   "工业革命",
+   "蒸汽机",
+   "火车"
+  ]
+ },
+ "printing_press": {
+  "desc": "old wooden screw printing press with a freshly printed sheet",
+  "category": "history",
+  "en": [
+   "printing press",
+   "Gutenberg",
+   "printing",
+   "movable type",
+   "publishing",
+   "mass media",
+   "print revolution",
+   "press",
+   "spread of ideas",
+   "books for everyone"
+  ],
+  "zh": [
+   "印刷机",
+   "古腾堡",
+   "印刷术",
+   "活字印刷",
+   "出版",
+   "传播"
+  ]
+ },
+ "treasure_map": {
+  "desc": "old parchment map with a dotted trail to a red X and a compass star",
+  "category": "history",
+  "en": [
+   "treasure map",
+   "X marks the spot",
+   "treasure hunt",
+   "old map",
+   "hidden treasure",
+   "roadmap",
+   "the path to",
+   "quest",
+   "pirate map",
+   "find the gold"
+  ],
+  "zh": [
+   "藏宝图",
+   "寻宝",
+   "地图",
+   "宝藏",
+   "路线图",
+   "探险"
+  ]
+ },
+ "crown": {
+  "desc": "gold royal crown with red and blue gems",
+  "category": "symbols",
+  "en": [
+   "crown",
+   "king",
+   "queen",
+   "royalty",
+   "monarchy",
+   "power",
+   "throne",
+   "reign",
+   "crowned",
+   "champion",
+   "top dog"
+  ],
+  "zh": [
+   "王冠",
+   "国王",
+   "女王",
+   "皇室",
+   "君主",
+   "权力",
+   "王者"
+  ]
+ },
+ "sword_shield": {
+  "desc": "round red shield with a sword crossed behind it",
+  "category": "history",
+  "en": [
+   "sword and shield",
+   "battle",
+   "defence",
+   "defense",
+   "war",
+   "warrior",
+   "fight",
+   "protect",
+   "conflict",
+   "army",
+   "combat"
+  ],
+  "zh": [
+   "剑与盾",
+   "战斗",
+   "防御",
+   "战争",
+   "保卫",
+   "冲突"
+  ]
+ },
+ "treaty_signing": {
+  "desc": "hand signing a document with a quill beside a red wax seal",
+  "category": "history",
+  "en": [
+   "treaty",
+   "signing",
+   "agreement",
+   "contract",
+   "sign the deal",
+   "peace treaty",
+   "signature",
+   "accord",
+   "official document",
+   "ratify"
+  ],
+  "zh": [
+   "条约",
+   "签署",
+   "协议",
+   "合同",
+   "签字",
+   "和约",
+   "盟约"
+  ]
+ },
+ "candlestick_phone": {
+  "desc": "early candlestick telephone with the earpiece on its hook",
+  "category": "history",
+  "en": [
+   "telephone",
+   "old telephone",
+   "candlestick phone",
+   "invention",
+   "Alexander Graham Bell",
+   "phone call",
+   "communication history",
+   "early telephone",
+   "vintage phone",
+   "ring ring"
+  ],
+  "zh": [
+   "电话",
+   "老式电话",
+   "发明",
+   "通讯",
+   "打电话",
+   "贝尔"
+  ]
+ },
+ "gramophone": {
+  "desc": "gramophone with a big brass horn playing a record",
+  "category": "history",
+  "en": [
+   "gramophone",
+   "phonograph",
+   "record player",
+   "vinyl",
+   "music history",
+   "old music",
+   "recording",
+   "Edison",
+   "vintage",
+   "turntable"
+  ],
+  "zh": [
+   "留声机",
+   "唱片",
+   "黑胶",
+   "音乐",
+   "复古",
+   "录音"
+  ]
+ },
+ "hot_air_balloon": {
+  "desc": "striped hot-air balloon with a wicker basket",
+  "category": "transport",
+  "en": [
+   "hot-air balloon",
+   "balloon",
+   "early flight",
+   "flight",
+   "adventure",
+   "rise",
+   "take off",
+   "journey",
+   "lift off",
+   "Montgolfier"
+  ],
+  "zh": [
+   "热气球",
+   "飞行",
+   "冒险",
+   "升空",
+   "旅程",
+   "上升"
+  ]
+ },
+ "lighthouse": {
+  "desc": "red-and-white striped lighthouse on rocks with light beams",
+  "category": "places",
+  "en": [
+   "lighthouse",
+   "beacon",
+   "guiding light",
+   "coast",
+   "harbor",
+   "navigation",
+   "safe harbour",
+   "warning",
+   "show the way",
+   "shine a light"
+  ],
+  "zh": [
+   "灯塔",
+   "指路明灯",
+   "海岸",
+   "港口",
+   "导航",
+   "指引"
+  ]
+ },
+ "windmill": {
+  "desc": "traditional windmill with four lattice sails on a green hill",
+  "category": "places",
+  "en": [
+   "windmill",
+   "wind power",
+   "Netherlands",
+   "Dutch",
+   "farming",
+   "mill",
+   "grinding grain",
+   "countryside",
+   "wind energy",
+   "agriculture"
+  ],
+  "zh": [
+   "风车",
+   "风力",
+   "荷兰",
+   "磨坊",
+   "农业",
+   "乡村"
+  ]
+ },
+ "arena_ruins": {
+  "desc": "ruined round stone arena with tiers of arches (ancient Rome)",
+  "category": "history",
+  "en": [
+   "Colosseum",
+   "ancient Rome",
+   "Roman Empire",
+   "amphitheater",
+   "ruins",
+   "arena",
+   "gladiator",
+   "fall of Rome",
+   "empire",
+   "antiquity"
+  ],
+  "zh": [
+   "罗马斗兽场",
+   "古罗马",
+   "罗马帝国",
+   "遗迹",
+   "竞技场",
+   "角斗士"
+  ]
+ },
+ "great_wall": {
+  "desc": "crenellated wall winding over green hills with watchtowers (ancient China)",
+  "category": "history",
+  "en": [
+   "Great Wall",
+   "Great Wall of China",
+   "ancient China",
+   "China",
+   "wall",
+   "defense",
+   "dynasty",
+   "fortification",
+   "border",
+   "protect the empire"
+  ],
+  "zh": [
+   "长城",
+   "万里长城",
+   "古代中国",
+   "中国",
+   "城墙",
+   "防御",
+   "朝代"
+  ]
+ },
+ "pagoda": {
+  "desc": "four-tiered East Asian pagoda with upturned teal roofs",
+  "category": "culture",
+  "en": [
+   "pagoda",
+   "temple",
+   "East Asia",
+   "Asian architecture",
+   "Buddhist temple",
+   "Japan",
+   "China",
+   "Kyoto",
+   "shrine",
+   "tower"
+  ],
+  "zh": [
+   "宝塔",
+   "塔",
+   "寺庙",
+   "东亚",
+   "佛塔",
+   "古建筑"
+  ]
+ },
+ "paper_lantern": {
+  "desc": "red paper lantern with gold caps and a tassel",
+  "category": "culture",
+  "en": [
+   "lantern",
+   "red lantern",
+   "Chinese lantern",
+   "Lunar New Year",
+   "Spring Festival",
+   "Chinese New Year",
+   "festival",
+   "celebration",
+   "Mid-Autumn Festival",
+   "Chinese culture"
+  ],
+  "zh": [
+   "灯笼",
+   "红灯笼",
+   "春节",
+   "新年",
+   "元宵节",
+   "节日",
+   "中国文化"
+  ]
+ },
+ "torch_flame": {
+  "desc": "hand-held torch with a big orange flame",
+  "category": "symbols",
+  "en": [
+   "torch",
+   "flame",
+   "pass the torch",
+   "carry the torch",
+   "enlightenment",
+   "Olympic flame",
+   "light the way",
+   "inspiration",
+   "fire",
+   "beacon of hope"
+  ],
+  "zh": [
+   "火炬",
+   "火焰",
+   "传递火炬",
+   "启蒙",
+   "圣火",
+   "希望"
+  ]
+ },
+ "old_book": {
+  "desc": "thick old leather-bound book with gold corners and a red ribbon",
+  "category": "history",
+  "en": [
+   "old book",
+   "history book",
+   "tome",
+   "records",
+   "chronicle",
+   "archive",
+   "ancient knowledge",
+   "the history books",
+   "leather-bound",
+   "wisdom"
+  ],
+  "zh": [
+   "古书",
+   "史书",
+   "典籍",
+   "记录",
+   "编年史",
+   "档案",
+   "知识"
+  ]
+ },
+ "compass_rose": {
+  "desc": "navigation compass rose with four main points and a red north point",
+  "category": "symbols",
+  "en": [
+   "compass",
+   "compass rose",
+   "direction",
+   "navigation",
+   "north",
+   "exploration",
+   "find your way",
+   "orientation",
+   "cardinal directions",
+   "true north"
+  ],
+  "zh": [
+   "罗盘",
+   "指南针",
+   "方向",
+   "导航",
+   "北方",
+   "探索"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="320">
+  <g transform="translate(153,128) rotate(-32)">
+    <path id="body" d="M -4 -48 L 84 -48 A 48 48 0 0 1 84 48 L -4 48 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cap" d="M 8 -52 L -84 -52 A 52 52 0 0 0 -84 52 L 8 52 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shine" d="M -104 -26 L -34 -26" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  </g>
+  <path id="tablet_side" d="M 265 222 L 265 248 A 72 38 0 0 0 409 248 L 409 222 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="tablet_top" cx="337" cy="222" rx="72" ry="38" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="score" x1="281" y1="222" x2="393" y2="222" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 330" width="500" height="330">
+  <path d="M 248.9,125 L 257.1,146.4 L 277.6,136 L 268.3,156.9 L 290,163.9 L 268.6,172.1 L 279,192.6 L 258.1,183.3 L 251.1,205 L 242.9,183.6 L 222.4,194 L 231.7,173.1 L 210,166.1 L 231.4,157.9 L 221,137.4 L 241.9,146.7 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 24.9,232.4 L 70.6,212 A 30,30 -24 0,1 95,266.8 L 49.3,287.2 A 30,30 -24 0,1 24.9,232.4 Z M 35.4,248.5 L 75.6,230.6 A 11,11 -24 0,1 84.6,250.7 L 44.4,268.6 A 11,11 -24 0,1 35.4,248.5 Z" fill-rule="evenodd" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 94.9,219.8 L 171.6,185.7 A 13,13 -24 0,1 182.2,209.4 L 105.5,243.6 A 13,13 -24 0,1 94.9,219.8 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 106.6,228.9 L 170.5,200.4" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 196.2,148.1 L 174.9,164.7 A 30,30 -38 0,0 211.9,212 L 233.1,195.4 L 221.4,180.4 L 202.5,195.2 A 11,11 -38 0,1 189,177.8 L 207.9,163.1 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 273.4,113.7 L 300,109 A 30,30 -10 0,1 310.4,168.1 L 283.8,172.8 L 280.5,154.1 L 304.2,149.9 A 11,11 -10 0,0 300.4,128.2 L 276.7,132.4 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 317.8,120.6 L 394.5,86.4 A 13,13 -24 0,1 405.1,110.2 L 328.4,144.3 A 13,13 -24 0,1 317.8,120.6 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 329.5,129.6 L 393.4,101.1" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 405,63.2 L 450.7,42.8 A 30,30 -24 0,1 475.1,97.6 L 429.4,118 A 30,30 -24 0,1 405,63.2 Z M 415.4,79.3 L 455.6,61.4 A 11,11 -24 0,1 464.6,81.5 L 424.4,99.4 A 11,11 -24 0,1 415.4,79.3 Z" fill-rule="evenodd" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 223.2,104.7 L 214.2,84.6 M 268.2,101.5 L 274.3,80.4 M 190.7,136 L 170.9,126.4 M 276.8,225.3 L 285.8,245.4 M 309.3,194 L 329.1,203.6 M 231.8,228.5 L 225.7,249.6" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

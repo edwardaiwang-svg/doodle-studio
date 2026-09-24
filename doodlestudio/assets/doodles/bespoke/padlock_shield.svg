@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 362" width="354" height="362">
+  <path id="shield" d="M 54,62 Q 174,22 294,62 L 294,170 C 294,254 236,306 174,340 C 112,306 54,254 54,170 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shade" d="M 174,50 Q 232,50 286,70 L 286,170 C 286,248 232,296 174,328 Z" fill="#1A3A6B" data-noink="1"/>
+  <path id="shine" d="M 80,90 Q 110,76 138,70 Q 110,102 94,152 Q 84,156 80,152 Z" fill="#FFFFFF" data-noink="1"/>
+  <path id="shackle" d="M 130,194 L 130,162 A 44 44 0 0 1 218,162 L 218,194 L 198,194 L 198,164 A 24 24 0 0 0 150,164 L 150,194 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="lock" x="110" y="186" width="128" height="100" rx="16" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="122" y="200" width="10" height="44" rx="5" fill="#FFFFFF" data-noink="1"/>
+  <path id="keyhole" d="M 174,212 A 14 14 0 0 1 183,236 L 188,262 L 160,262 L 165,236 A 14 14 0 0 1 174,212 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 314,22 Q 314,40 332,40 Q 314,40 314,58 Q 314,40 296,40 Q 314,40 314,22 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 34,98 Q 34,110 46,110 Q 34,110 34,122 Q 34,110 22,110 Q 34,110 34,98 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

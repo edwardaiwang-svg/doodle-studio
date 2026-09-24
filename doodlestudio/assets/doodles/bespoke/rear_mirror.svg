@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 272" width="420" height="272">
+  <rect x="28" y="92" width="364" height="156" rx="66" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="174" y="20" width="72" height="20" rx="6" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="196" y="38" width="28" height="56" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="48" y="110" width="324" height="120" rx="50" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48,168 H372 V180 A50,50 0 0 1 322,230 H98 A50,50 0 0 1 48,180 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="136,230 284,230 214,168 206,168" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="206.5,176 213.5,176 214.5,186 205.5,186" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M190,192 L197,174 H223 L230,192 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="178" y="190" width="64" height="24" rx="7" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M198,190 L202,180 H218 L222,190 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="191" cy="201" r="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="229" cy="201" r="5" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="184" y="212" width="12" height="10" rx="2" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="224" y="212" width="12" height="10" rx="2" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M86,118 H112 L78,160 H60 Z" fill="#FFFFFF" stroke="none" data-noink="1"/>
+  <path d="M322,118 H334 L304,158 H292 Z" fill="#FFFFFF" stroke="none" data-noink="1"/>
+</svg>

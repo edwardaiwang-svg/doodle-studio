@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" width="340" height="440">
+  <path id="outer" d="M 165,420 C 89,420 39,368 39,298 C 39,238 61,196 79,160 C 93,196 107,214 123,222 C 111,150 133,74 171,22 C 207,72 231,120 223,184 C 241,160 257,132 263,104 C 295,150 305,206 299,272 C 293,364 241,420 165,420 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="middle" d="M 165,404 C 105,404 67,362 71,306 C 75,262 99,236 109,208 C 121,236 135,248 147,250 C 141,196 153,150 177,118 C 201,160 217,196 215,236 C 229,222 239,206 245,190 C 267,236 267,280 261,316 C 253,372 217,404 165,404 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="core" d="M 165,392 C 125,392 107,364 109,330 C 111,296 137,268 165,236 C 193,268 221,296 221,330 C 221,364 203,392 165,392 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="core_shine" d="M 131,340 Q 133,310 151,290" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <circle id="spark1" cx="61" cy="96" r="11" fill="#FB8C00" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="spark2" cx="291" cy="46" r="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

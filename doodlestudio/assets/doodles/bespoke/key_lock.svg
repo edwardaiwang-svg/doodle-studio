@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <path id="shackle" d="M 318,172 L 318,112 A 57 57 0 0 1 432,112 L 432,172 L 410,172 L 410,112 A 35 35 0 0 0 340,112 L 340,172 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="lock_body" x="290" y="160" width="170" height="164" rx="22" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="keyhole" d="M 359,222 A 16 16 0 1 0 391,222 A 16 16 0 1 0 359,222 Z M 366,230 L 384,230 L 390,272 L 360,272 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lock_shine" d="M 308,180 L 320,180 L 320,290 L 308,290 Z" fill="#64B5F6" data-noink="1"/>
+  <path d="M 43.7,91.9 A 56,56 21 0,0 148.3,132.1 A 56,56 21 0,0 43.7,91.9 Z M 76.4,104.5 A 21,21 21 0,0 115.6,119.5 A 21,21 21 0,0 76.4,104.5 Z" fill-rule="evenodd" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 148.8,119.4 L 283.3,171 L 274.7,193.4 L 261.6,188.4 L 250.1,218.3 L 233.3,211.8 L 238.4,198.8 L 223.4,193 L 218.4,206.1 L 201.6,199.7 L 213.1,169.8 L 140.2,141.8 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 164.1,118.8 L 171.5,121.7 A 4,4 21 0,1 173.8,126.9 L 163.8,153 A 4,4 21 0,1 158.6,155.3 L 151.2,152.5 A 4,4 21 0,1 148.9,147.3 L 158.9,121.1 A 4,4 21 0,1 164.1,118.8 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330" width="420" height="330">
+  <path id="wallet" d="M 62,128 L 342,128 Q 370,128 370,156 L 370,282 Q 370,310 342,310 L 62,310 Q 34,310 34,282 L 34,156 Q 34,128 62,128 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 54.8,125 L 46.2,92.9 L 212.4,48.4 L 232.9,125" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 68.3,125 L 62.2,102.1 L 203.2,64.3 L 219.5,125" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 195.1,125 L 215.6,48.4 L 381.8,92.9 L 373.2,125" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 208.5,125 L 224.8,64.3 L 365.8,102.1 L 359.7,125" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 128,125 L 128,39 L 300,39 L 300,125" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 141,52 L 287,52 L 287,124 L 141,124 Z" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="214" cy="84" r="22" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 220.8,76.5 C 218.1,72.4 207.2,72.4 207.2,79.2 C 207.2,84.7 220.8,83.3 220.8,89.5 C 220.8,95.6 209.2,95.6 206.8,91.2 M 214,71 L 214,97" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="stitch" d="M 65,143 L 339,143 Q 355,143 355,159 L 355,279 Q 355,295 339,295 L 65,295 Q 49,295 49,279 L 49,159 Q 49,143 65,143 Z" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="clasp" d="M 312,186 L 370,186 Q 392,186 392,208 L 392,232 Q 392,254 370,254 L 312,254 Q 290,254 290,232 L 290,208 Q 290,186 312,186 Z" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="334" cy="220" r="12" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

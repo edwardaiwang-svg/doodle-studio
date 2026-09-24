@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 394" width="364" height="394">
+  <path id="frame" d="M 44,38 Q 44,22 60,22 L 304,22 Q 320,22 320,38 L 320,316 L 290,316 L 290,52 L 74,52 L 74,316 L 44,316 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="base" x="22" y="308" width="320" height="64" rx="12" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="display" x="48" y="324" width="70" height="32" rx="5" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="knob" cx="142" cy="340" r="11" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="bed" x="88" y="290" width="188" height="18" rx="6" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="cube_front" x="162" y="238" width="52" height="52" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cube_top" points="162,238 214,238 232,222 180,222" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cube_side" points="214,238 232,222 232,274 214,290" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rail" x="74" y="160" width="216" height="14" rx="7" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="filament" d="M 214,132 C 214,98 242,84 250,52" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="head" x="149" y="132" width="84" height="72" rx="12" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="fan" cx="191" cy="168" r="18" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 180,157 L 202,179 M 202,157 L 180,179" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="nozzle" points="177,204 205,204 197,226 185,226" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

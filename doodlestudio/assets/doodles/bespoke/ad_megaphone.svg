@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
+  <polygon id="cone" points="87.5,199.9 237,88.5 281.5,267 97.2,238.8" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="mouthpiece" points="43.9,206.7 88.5,195.6 100.1,242.2 55.5,253.3" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="handle" points="150.3,245 188.9,250.9 188.4,298.5 155.4,306.7" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="band" points="188.3,124.8 205.7,111.8 242.9,261.1 221.5,257.8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bell" d="M 282.5 270.9 A 96 26 76 1 1 236 84.6 A 96 26 76 1 1 282.5 270.9 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="card_blue" points="325.9,66.5 400.1,42.4 418.1,97.5 343.9,121.6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="card_green" points="404.2,145.1 481.8,153.2 475.8,210.9 398.2,202.8" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="card_orange" points="347.3,249.4 420.6,276.1 400.7,330.6 327.4,303.9" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="play" points="359.1,71.5 386.3,77.4 367.8,98.1" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="star" points="441.9,160.1 445.6,172.7 458.5,175 447.7,182.5 449.4,195.4 439,187.4 427.2,193.1 431.6,180.8 422.5,171.3 435.6,171.6" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="heart" d="M 368.5 305 L 357.8 282 Q 356.9 266.8 367.5 272.7 Q 372.1 276.4 376.1 284.4 Q 380.1 276.4 390.1 280.9 Q 402 283.2 391.6 294.3 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 470 50 Q 470 70 490 70 Q 470 70 470 90 Q 470 70 450 70 Q 470 70 470 50 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 318 166 Q 318 182 334 182 Q 318 182 318 198 Q 318 182 302 182 Q 318 182 318 166 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 474 274 Q 474 290 490 290 Q 474 290 474 306 Q 474 290 458 290 Q 474 290 474 274 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

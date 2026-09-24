@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380">
+  <circle id="rim" cx="274" cy="190" r="158" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="face" cx="274" cy="190" r="128" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rim_shine" d="M 138,145.8 A 143 143 0 0 1 202.5,66.2" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="ticks" d="M 274,90 L 274,76 M 374,190 L 388,190 M 274,290 L 274,304 M 174,190 L 160,190" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="minute_hand" d="M 265,190 L 265,92 A 9 9 0 0 1 283,92 L 283,190 A 9 9 0 0 1 265,190 Z" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hour_hand" d="M 268.5,180.5 L 325.7,147.5 A 11 11 0 0 1 336.7,166.5 L 279.5,199.5 A 11 11 0 0 1 268.5,180.5 Z" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="pin" cx="274" cy="190" r="13" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="speed_lines" d="M 40,122 L 90,122 M 26,190 L 88,190 M 40,258 L 90,258" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

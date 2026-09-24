@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <circle id="globe" cx="220" cy="226" r="116" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 152,142 C 172,124 204,126 212,146 C 220,164 200,170 194,186 C 186,204 202,222 188,236 C 172,250 150,236 144,214 C 138,194 122,186 126,166 C 128,154 140,148 152,142 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 252,134 C 274,128 300,140 306,160 C 310,176 298,184 284,182 C 270,180 262,192 258,206 C 254,220 238,216 236,200 C 234,182 242,170 238,156 C 236,142 240,138 252,134 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 252,248 C 272,240 298,246 306,264 C 314,282 300,302 282,308 C 264,314 246,304 242,288 C 238,270 238,254 252,248 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="route_top" d="M 48.9,176.9 A 178,178 0 0 1 370.8,131.4 L 380.9,125 L 377.6,162.3 L 347.1,146.3 L 357.2,139.9 A 162,162 0 0 0 64.3,181.3 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="route_bottom" d="M 391.1,275.1 A 178,178 0 0 1 69.2,320.6 L 59.1,327 L 62.4,289.7 L 92.9,305.7 L 82.8,312.1 A 162,162 0 0 0 375.7,270.7 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(237.8,56.9) rotate(6)">
+    <polygon id="plane" points="52,0 36,-8 10,-8 -10,-44 -24,-44 -14,-8 -34,-8 -44,-24 -54,-24 -50,-6 -52,0 -50,6 -54,24 -44,24 -34,8 -14,8 -24,44 -10,44 10,8 36,8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(190.5,393.4) rotate(10)">
+    <rect x="-50" y="-36" width="28" height="24" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="-22" y="-36" width="28" height="24" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="6" y="-36" width="28" height="24" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="38" y="-46" width="20" height="34" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="hull" points="-74,-12 64,-12 56,14 -58,14" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

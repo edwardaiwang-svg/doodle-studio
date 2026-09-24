@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 440" width="320" height="440">
+  <path id="hook" d="M 55.7,164 A 108 108 0 1 1 214,229.5 A 52 52 0 0 0 188,274.6 L 188,290.6 A 28 28 0 0 1 132,290.6 L 132,274.6 A 108 108 0 0 1 186,181 A 52 52 0 1 0 109.8,149.5 A 28 28 0 0 1 55.7,164 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hook_shade" d="M 211.5,46.8 A 103 103 0 0 1 238.9,202.2 Q 258.5,118.6 211.5,46.8 Z" fill="#1E6FD9" data-noink="1"/>
+  <path id="hook_shine" d="M 71.6,110.6 A 92 92 0 0 1 116.8,54.8" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <circle id="dot" cx="160" cy="377.6" r="33" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="dot_shade" d="M 187,370.3 A 28 28 0 0 1 148.2,402.9 Q 171.6,391.4 187,370.3 Z" fill="#1E6FD9" data-noink="1"/>
+  <path id="dot_shine" d="M 142.1,371.1 A 19 19 0 0 1 152,360.3" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

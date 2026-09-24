@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" width="360" height="380">
+  <rect x="33" y="206" width="120" height="120" rx="6" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="33,206 73,172 193,172 153,206" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="66.6" cy="242" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="117" cy="234.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="93" cy="273.2" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="61.8" cy="299.6" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="124.2" cy="294.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <rect x="153" y="206" width="120" height="120" rx="6" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="153,206 193,172 313,172 273,206" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="273,206 313,172 313,292 273,326" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="186.6" cy="242" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="237" cy="234.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="213" cy="273.2" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="181.8" cy="299.6" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="244.2" cy="294.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <rect x="93" y="86" width="120" height="120" rx="6" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="93,86 133,52 253,52 213,86" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="213,86 253,52 253,172 213,206" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="126.6" cy="122" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="177" cy="114.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="153" cy="153.2" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="121.8" cy="179.6" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <circle cx="184.2" cy="174.8" r="4.5" fill="#E0E0E0" data-noink="1"/>
+  <polygon points="57,338 66,346 57,354 48,346" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="297,334 306,342 297,350 288,342" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="321,316 330,324 321,332 312,324" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 315 26 Q 315 44 333 44 Q 315 44 315 62 Q 315 44 297 44 Q 315 44 315 26 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 39 112 Q 39 124 51 124 Q 39 124 39 136 Q 39 124 27 124 Q 39 124 39 112 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

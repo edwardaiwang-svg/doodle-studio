@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 330" width="440" height="330">
+  <path id="hills" d="M 20,148 C 22,118 50,100 84,100 C 120,100 140,114 150,124 C 170,96 190,84 214,84 C 250,84 276,104 290,118 C 306,106 326,100 350,100 C 386,100 414,120 420,148 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="field" d="M 20,140 L 420,140 L 420,300 Q 420,314 406,314 L 34,314 Q 20,314 20,300 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="road" d="M 138,314 C 158,282 180,256 190,236 C 168,204 116,168 74,142 L 94,142 C 136,164 196,196 220,214 C 244,196 304,164 346,142 L 366,142 C 324,168 272,204 250,236 C 260,256 282,282 302,314 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 220,302 L 220,282" fill="none" stroke="#FDD835" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 220,266 L 220,250" fill="none" stroke="#FDD835" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 197.2,217.2 L 181.2,204" fill="none" stroke="#FDD835" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 162,190.1 L 144.9,178.7" fill="none" stroke="#FDD835" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 127.1,167.5 L 113.3,159.1" fill="none" stroke="#FDD835" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 242.8,217.2 L 258.8,204" fill="none" stroke="#FDD835" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 278,190.1 L 295.1,178.7" fill="none" stroke="#FDD835" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 312.9,167.5 L 326.7,159.1" fill="none" stroke="#FDD835" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

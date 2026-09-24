@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358 340" width="358" height="340">
+  <path id="bell" d="M 179,46 C 119,46 95,94 95,150 L 95,216 C 95,244 73,260 57,272 L 301,272 C 285,260 263,244 263,216 L 263,150 C 263,94 239,46 179,46 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shade" d="M 227,80 C 239,98 243,122 243,150 L 243,218 C 243,238 253,252 267,262 L 243,262 C 233,252 227,238 227,218 L 227,150 C 227,120 229,96 227,80 Z" fill="#F9A825" data-noink="1"/>
+  <rect id="shine" x="117" y="108" width="16" height="84" rx="8" fill="#FFFFFF" data-noink="1"/>
+  <rect id="rim" x="45" y="266" width="268" height="28" rx="14" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="clapper" d="M 155,294 A 24 24 0 0 0 203,294 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="knob" cx="179" cy="36" r="14" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ring_l" d="M 59,122 Q 43,150 59,178 M 33,106 Q 11,150 33,194" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ring_r" d="M 299,122 Q 315,150 299,178 M 325,106 Q 347,150 325,194" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="badge" cx="261" cy="74" r="40" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 239,68 A 24 24 0 0 1 253,54" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

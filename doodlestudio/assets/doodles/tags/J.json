@@ -1,0 +1,630 @@
+{
+ "heart_organ": {
+  "desc": "friendly cartoon anatomical heart with an aortic arch and blue vessels",
+  "category": "health",
+  "en": [
+   "heart",
+   "human heart",
+   "cardiac",
+   "cardiovascular",
+   "heart health",
+   "heart disease",
+   "cardiology",
+   "organ",
+   "blood circulation",
+   "anatomy"
+  ],
+  "zh": [
+   "心脏",
+   "心血管",
+   "心脏健康",
+   "心脏病",
+   "器官",
+   "血液循环",
+   "解剖"
+  ]
+ },
+ "lungs": {
+  "desc": "pair of pink lungs with the trachea and branching airways",
+  "category": "health",
+  "en": [
+   "lungs",
+   "breathing",
+   "respiratory",
+   "respiration",
+   "lung health",
+   "airway",
+   "trachea",
+   "asthma",
+   "air quality",
+   "pulmonary"
+  ],
+  "zh": [
+   "肺",
+   "肺部",
+   "呼吸",
+   "呼吸系统",
+   "气管",
+   "哮喘",
+   "肺健康"
+  ]
+ },
+ "brain_side": {
+  "desc": "pink human brain seen from the side with folds, cerebellum and brain stem",
+  "category": "science",
+  "en": [
+   "brain",
+   "mind",
+   "thinking",
+   "neuroscience",
+   "memory",
+   "cognition",
+   "mental health",
+   "intelligence",
+   "psychology",
+   "nervous system"
+  ],
+  "zh": [
+   "大脑",
+   "脑",
+   "思考",
+   "神经科学",
+   "记忆",
+   "认知",
+   "心理健康"
+  ]
+ },
+ "stethoscope": {
+  "desc": "doctor's stethoscope with grey headset, blue tube and chest piece",
+  "category": "health",
+  "en": [
+   "stethoscope",
+   "doctor",
+   "physician",
+   "checkup",
+   "medical exam",
+   "diagnosis",
+   "healthcare",
+   "clinic",
+   "nurse",
+   "medicine"
+  ],
+  "zh": [
+   "听诊器",
+   "医生",
+   "体检",
+   "诊断",
+   "医疗",
+   "看病",
+   "门诊"
+  ]
+ },
+ "pill_capsule": {
+  "desc": "red-and-white capsule next to a round scored tablet",
+  "category": "health",
+  "en": [
+   "pill",
+   "capsule",
+   "tablet",
+   "medicine",
+   "medication",
+   "drug",
+   "prescription",
+   "pharmacy",
+   "dose",
+   "pharmaceutical"
+  ],
+  "zh": [
+   "药片",
+   "胶囊",
+   "药物",
+   "药品",
+   "处方",
+   "药房",
+   "服药"
+  ]
+ },
+ "syringe_vaccine": {
+  "desc": "syringe with blue liquid and a drop at the needle tip",
+  "category": "health",
+  "en": [
+   "syringe",
+   "vaccine",
+   "vaccination",
+   "injection",
+   "shot",
+   "jab",
+   "needle",
+   "immunization",
+   "booster",
+   "inoculation"
+  ],
+  "zh": [
+   "注射器",
+   "疫苗",
+   "接种",
+   "打针",
+   "注射",
+   "免疫",
+   "针筒"
+  ]
+ },
+ "apple_red": {
+  "desc": "shiny red apple with a green leaf",
+  "category": "food",
+  "en": [
+   "apple",
+   "fruit",
+   "healthy food",
+   "nutrition",
+   "healthy eating",
+   "diet",
+   "snack",
+   "an apple a day",
+   "fresh produce",
+   "vitamins"
+  ],
+  "zh": [
+   "苹果",
+   "水果",
+   "健康饮食",
+   "营养",
+   "健康食品",
+   "零食"
+  ]
+ },
+ "running_shoe": {
+  "desc": "blue running shoe with motion lines",
+  "category": "health",
+  "en": [
+   "running shoe",
+   "sneaker",
+   "running",
+   "jogging",
+   "exercise",
+   "workout",
+   "fitness",
+   "cardio",
+   "marathon",
+   "physical activity",
+   "trainers"
+  ],
+  "zh": [
+   "跑鞋",
+   "运动鞋",
+   "跑步",
+   "慢跑",
+   "锻炼",
+   "健身",
+   "运动"
+  ]
+ },
+ "dumbbell": {
+  "desc": "blue dumbbell with a grey grip",
+  "category": "health",
+  "en": [
+   "dumbbell",
+   "weights",
+   "strength training",
+   "weightlifting",
+   "gym",
+   "workout",
+   "fitness",
+   "exercise",
+   "muscle",
+   "resistance training"
+  ],
+  "zh": [
+   "哑铃",
+   "举重",
+   "力量训练",
+   "健身房",
+   "健身",
+   "锻炼",
+   "肌肉"
+  ]
+ },
+ "sleep_bed": {
+  "desc": "person asleep in bed under a blue blanket with a crescent moon and stars",
+  "category": "health",
+  "en": [
+   "sleep",
+   "bed",
+   "rest",
+   "bedtime",
+   "night",
+   "asleep",
+   "insomnia",
+   "nap",
+   "sleep quality",
+   "good night's sleep",
+   "recovery"
+  ],
+  "zh": [
+   "睡觉",
+   "睡眠",
+   "床",
+   "休息",
+   "夜晚",
+   "失眠",
+   "睡眠质量"
+  ]
+ },
+ "tooth": {
+  "desc": "clean white molar with sparkles",
+  "category": "health",
+  "en": [
+   "tooth",
+   "teeth",
+   "dental",
+   "dentist",
+   "oral health",
+   "dental care",
+   "brushing teeth",
+   "cavity",
+   "molar",
+   "clean teeth"
+  ],
+  "zh": [
+   "牙齿",
+   "牙科",
+   "牙医",
+   "口腔健康",
+   "刷牙",
+   "蛀牙"
+  ]
+ },
+ "hospital": {
+  "desc": "hospital building with a red cross sign and entrance canopy",
+  "category": "places",
+  "en": [
+   "hospital",
+   "medical center",
+   "clinic",
+   "health system",
+   "healthcare",
+   "emergency room",
+   "patients",
+   "inpatient",
+   "medical facility",
+   "hospitalization"
+  ],
+  "zh": [
+   "医院",
+   "医疗中心",
+   "诊所",
+   "急诊",
+   "住院",
+   "医疗机构",
+   "病人"
+  ]
+ },
+ "first_aid": {
+  "desc": "red first-aid kit with a white cross and a handle",
+  "category": "health",
+  "en": [
+   "first aid",
+   "first-aid kit",
+   "medical kit",
+   "emergency",
+   "injury",
+   "safety",
+   "emergency supplies",
+   "treatment",
+   "paramedic",
+   "preparedness"
+  ],
+  "zh": [
+   "急救",
+   "急救箱",
+   "医药箱",
+   "紧急",
+   "受伤",
+   "安全"
+  ]
+ },
+ "water_glass": {
+  "desc": "glass of water with a blue droplet beside it",
+  "category": "health",
+  "en": [
+   "water",
+   "glass of water",
+   "hydration",
+   "drink water",
+   "stay hydrated",
+   "thirst",
+   "drinking water",
+   "fluid intake",
+   "clean water",
+   "dehydration"
+  ],
+  "zh": [
+   "水",
+   "一杯水",
+   "喝水",
+   "补水",
+   "饮用水",
+   "口渴",
+   "脱水"
+  ]
+ },
+ "salad_bowl": {
+  "desc": "blue bowl of leafy salad with cherry tomatoes and cucumber slices",
+  "category": "food",
+  "en": [
+   "salad",
+   "healthy eating",
+   "vegetables",
+   "greens",
+   "diet",
+   "vegan",
+   "vegetarian",
+   "nutrition",
+   "fresh food",
+   "lunch",
+   "plant-based"
+  ],
+  "zh": [
+   "沙拉",
+   "蔬菜",
+   "健康饮食",
+   "素食",
+   "营养",
+   "轻食",
+   "节食"
+  ]
+ },
+ "hand_wash": {
+  "desc": "two hands under a running tap surrounded by soap bubbles",
+  "category": "health",
+  "en": [
+   "hand washing",
+   "wash your hands",
+   "hygiene",
+   "soap",
+   "clean hands",
+   "sanitation",
+   "germs",
+   "infection prevention",
+   "handwashing",
+   "cleanliness"
+  ],
+  "zh": [
+   "洗手",
+   "卫生",
+   "肥皂",
+   "清洁",
+   "细菌",
+   "预防感染",
+   "勤洗手"
+  ]
+ },
+ "face_mask": {
+  "desc": "light-blue medical face mask with pleats and ear loops",
+  "category": "health",
+  "en": [
+   "face mask",
+   "mask",
+   "surgical mask",
+   "medical mask",
+   "pandemic",
+   "covid",
+   "flu season",
+   "protection",
+   "respiratory virus",
+   "masking",
+   "airborne"
+  ],
+  "zh": [
+   "口罩",
+   "医用口罩",
+   "防护",
+   "疫情",
+   "新冠",
+   "流感",
+   "戴口罩"
+  ]
+ },
+ "meditation": {
+  "desc": "person sitting cross-legged meditating with calm aura lines",
+  "category": "health",
+  "en": [
+   "meditation",
+   "mindfulness",
+   "calm",
+   "relaxation",
+   "stress relief",
+   "yoga",
+   "breathing exercise",
+   "mental health",
+   "wellbeing",
+   "inner peace",
+   "zen"
+  ],
+  "zh": [
+   "冥想",
+   "正念",
+   "放松",
+   "减压",
+   "瑜伽",
+   "心理健康",
+   "平静"
+  ]
+ },
+ "bandage": {
+  "desc": "two crossed adhesive bandages",
+  "category": "health",
+  "en": [
+   "bandage",
+   "band-aid",
+   "plaster",
+   "adhesive bandage",
+   "injury",
+   "wound",
+   "healing",
+   "cut",
+   "scrape",
+   "first aid",
+   "recovery"
+  ],
+  "zh": [
+   "创可贴",
+   "绷带",
+   "受伤",
+   "伤口",
+   "愈合",
+   "包扎"
+  ]
+ },
+ "ambulance": {
+  "desc": "white ambulance van with a red cross, side stripe and flashing roof light",
+  "category": "health",
+  "en": [
+   "ambulance",
+   "emergency",
+   "paramedics",
+   "EMS",
+   "911",
+   "emergency services",
+   "urgent care",
+   "rescue",
+   "siren",
+   "medical emergency"
+  ],
+  "zh": [
+   "救护车",
+   "急救",
+   "紧急情况",
+   "医护人员",
+   "120",
+   "急救车"
+  ]
+ },
+ "xray": {
+  "desc": "x-ray film on a light box showing a ribcage and spine",
+  "category": "health",
+  "en": [
+   "x-ray",
+   "xray",
+   "radiology",
+   "medical imaging",
+   "scan",
+   "ribcage",
+   "chest x-ray",
+   "skeleton",
+   "diagnosis",
+   "bones",
+   "radiograph"
+  ],
+  "zh": [
+   "X光",
+   "X光片",
+   "放射科",
+   "医学影像",
+   "胸片",
+   "骨骼",
+   "检查"
+  ]
+ },
+ "heartbeat": {
+  "desc": "monitor screen with a green heartbeat pulse line and a red heart",
+  "category": "health",
+  "en": [
+   "heartbeat",
+   "heart rate",
+   "pulse",
+   "vital signs",
+   "ECG",
+   "EKG",
+   "heart monitor",
+   "patient monitor",
+   "health tracking",
+   "alive"
+  ],
+  "zh": [
+   "心跳",
+   "心率",
+   "脉搏",
+   "生命体征",
+   "心电图",
+   "监护仪"
+  ]
+ },
+ "sugar_cubes": {
+  "desc": "small pile of white sugar cubes with sparkles",
+  "category": "food",
+  "en": [
+   "sugar",
+   "sugar cubes",
+   "sweet",
+   "sweets",
+   "diet",
+   "sugar intake",
+   "added sugar",
+   "diabetes",
+   "carbs",
+   "sweetener",
+   "calories"
+  ],
+  "zh": [
+   "糖",
+   "方糖",
+   "甜食",
+   "糖分",
+   "控糖",
+   "糖尿病",
+   "饮食"
+  ]
+ },
+ "coffee_cup": {
+  "desc": "steaming teal cup of coffee on a white saucer",
+  "category": "food",
+  "en": [
+   "coffee",
+   "cup of coffee",
+   "caffeine",
+   "morning",
+   "espresso",
+   "coffee break",
+   "cafe",
+   "hot drink",
+   "latte",
+   "wake up"
+  ],
+  "zh": [
+   "咖啡",
+   "一杯咖啡",
+   "咖啡因",
+   "早晨",
+   "提神",
+   "咖啡馆",
+   "热饮"
+  ]
+ },
+ "bathroom_scale": {
+  "desc": "bathroom scale with a dial and footprints",
+  "category": "health",
+  "en": [
+   "scale",
+   "bathroom scale",
+   "weight",
+   "weigh-in",
+   "weight loss",
+   "body weight",
+   "obesity",
+   "BMI",
+   "diet",
+   "weight gain",
+   "fitness goal"
+  ],
+  "zh": [
+   "体重秤",
+   "体重",
+   "称重",
+   "减肥",
+   "肥胖",
+   "体重管理",
+   "节食"
+  ]
+ }
+}

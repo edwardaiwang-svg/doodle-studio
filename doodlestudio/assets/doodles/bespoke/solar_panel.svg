@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 414" width="448" height="414">
+  <polygon id="frame" points="176,200 426,200 366,336 116,336" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="cells" points="182.8,210.2 410.2,210.2 359.2,325.8 131.8,325.8" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="188.8,216.3 206.3,216.3 172.2,265.3 162.2,265.3" fill="#64B5F6" data-noink="1"/>
+  <polygon points="213.8,216.3 221.3,216.3 187.2,265.3 179.7,265.3" fill="#64B5F6" data-noink="1"/>
+  <path id="grid" d="M 188.6,325.8 L 239.6,210.2 M 245.5,325.8 L 296.5,210.2 M 302.4,325.8 L 353.4,210.2 M 148.8,287.3 L 376.2,287.3 M 165.8,248.7 L 393.2,248.7" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="post" x="229" y="336" width="24" height="40" rx="3" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ground" d="M 150,392 Q 241,354 332,392 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rays" d="M 95.9,48.9 L 106,22 L 116.1,48.9 Z M 139.3,58.5 L 165.4,46.6 L 153.5,72.7 Z M 163.1,95.9 L 190,106 L 163.1,116.1 Z M 153.5,139.3 L 165.4,165.4 L 139.3,153.5 Z M 116.1,163.1 L 106,190 L 95.9,163.1 Z M 72.7,153.5 L 46.6,165.4 L 58.5,139.3 Z M 48.9,116.1 L 22,106 L 48.9,95.9 Z M 58.5,72.7 L 46.6,46.6 L 72.7,58.5 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="sun" cx="106" cy="106" r="44" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

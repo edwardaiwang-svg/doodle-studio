@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 440" width="300" height="440">
+  <path d="M 104,212 C 70,232 54,272 56,318 L 106,292 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 196,212 C 230,232 246,272 244,318 L 194,292 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 100,112 L 200,112 C 204,170 204,240 196,300 L 104,300 C 96,240 96,170 100,112 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 150,26 C 176,42 196,78 200,112 L 100,112 C 104,78 124,42 150,26 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="176" r="32" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="176" r="20" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 138,168 A 13,13 0 0 1 150,160" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <polygon points="116,300 184,300 194,324 106,324" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 37.4,416 C 21.2,416 21.2,390.8 39.2,390.8 C 37.4,371 66.2,365.6 75.2,381.8 C 82.4,363.8 114.8,365.6 114.8,387.2 C 136.4,383.6 143.6,416 122,416 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 262.6,416 C 278.8,416 278.8,390.8 260.8,390.8 C 262.6,371 233.8,365.6 224.8,381.8 C 217.6,363.8 185.2,365.6 185.2,387.2 C 163.6,383.6 156.4,416 178,416 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 108,324 C 98,352 116,378 126,370 C 128,392 140,410 150,418 C 160,410 172,392 174,370 C 184,378 202,352 192,324 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 126,324 C 122,344 134,360 140,354 C 142,370 146,380 150,384 C 154,380 158,370 160,354 C 166,360 178,344 174,324 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 40,120 L 40,176 M 260,120 L 260,176 M 60,70 L 60,104 M 240,70 L 240,104" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

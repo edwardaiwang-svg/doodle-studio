@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 360" width="440" height="360">
+  <ellipse id="cerebellum" cx="340" cy="260" rx="64" ry="42" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="stem" d="M 243.4 242.2 L 259.4 320.2 L 261.2 325.4 L 264.3 329.9 L 268.4 333.5 L 273.4 335.9 L 278.8 337 L 284.2 336.6 L 289.4 334.8 L 293.9 331.7 L 297.5 327.6 L 299.9 322.6 L 301 317.2 L 300.6 311.8 L 284.6 233.8 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cerebrum" d="M 365.8 227.1 C 394.9 225.2 415.7 188.5 396.3 173.3 C 420.9 162.8 416.1 125 389.3 117.7 C 405.4 101.7 380.2 71.3 352.3 73 C 357.7 53.9 316.9 33.2 292.4 42.7 C 286.1 23.7 236.8 16.4 220 32 C 203.2 16.4 153.9 23.7 147.6 42.7 C 123.1 33.2 82.3 53.9 87.7 73 C 59.8 71.3 34.6 101.7 50.7 117.7 C 23.9 125 19.1 162.8 43.7 173.3 C 24.3 188.5 45.1 225.2 74.2 227.1 C 98 246 132 250 154 238 C 166 260 204 290 264 284 C 314 280 348 260 365.8 227.1 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="folia" d="M 294 278 Q 340 292 388 270 M 310 296 Q 344 302 372 290" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lateral" d="M 154 238 C 190 212 244 202 304 212" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="central" d="M 254 42 C 240 82 270 110 246 154" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 84 148 C 104 122 132 154 154 126 M 130 82 C 156 70 168 102 194 88 M 110 198 C 134 182 164 204 190 184" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 306 70 C 314 102 348 90 356 122 M 304 148 C 328 168 360 154 378 184 M 198 260 C 222 244 250 266 276 250" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 102 104 C 114 80 138 62 166 56" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

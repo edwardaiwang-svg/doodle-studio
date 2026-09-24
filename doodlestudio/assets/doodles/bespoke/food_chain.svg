@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 264" width="600" height="264">
+  <path d="M 29,238 Q 34.8,192 20,146 Q 35.4,192 51,238 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 80,238 Q 92.5,204 120,170 Q 107.5,204 100,238 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 47,238 Q 57.1,177 58,116 Q 64.3,177 73,238 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 65,238 Q 77.1,185 98,132 Q 90.3,185 87,238 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 16,246 C 28,222 114,222 126,246 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="136,195 154,195 154,207 180,188 154,169 154,181 136,181" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(252 244) scale(0.86)">
+    <ellipse cx="0" cy="-48" rx="56" ry="48" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-54" cy="-38" r="15" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="34" cy="-176" rx="13" ry="40" transform="rotate(-14 34 -176)" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="58" cy="-178" rx="14" ry="42" transform="rotate(10 58 -178)" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="58" cy="-174" rx="6" ry="28" transform="rotate(10 58 -174)" fill="#F48FB1" data-noink="1"/>
+    <circle cx="50" cy="-118" r="34" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="-14" cy="-6" rx="36" ry="10" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="44" cy="-8" rx="15" ry="9" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="62" cy="-124" r="6" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="82" cy="-110" r="6" fill="#F48FB1" stroke="#1B1B1B" stroke-width="4.1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <polygon points="336,195 354,195 354,207 380,188 354,169 354,181 336,181" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(468 244) scale(0.86)">
+    <path d="M -30,-8 C -70,-10 -92,-50 -84,-96 C -80,-120 -62,-134 -48,-128 C -62,-104 -60,-60 -28,-40 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -84,-96 C -80,-120 -62,-134 -48,-128 C -54,-118 -58,-108 -60,-98 C -68,-94 -78,-94 -84,-96 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -36,0 C -52,-30 -44,-80 -14,-104 C 0,-116 20,-120 34,-116 L 48,-84 C 40,-56 44,-24 54,0 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 26,-112 C 14,-90 18,-50 36,-30 C 46,-50 48,-80 44,-96 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 28,0 L 30,-30 C 30,-36 50,-36 50,-30 L 52,0 Z" fill="#424242" stroke="#1B1B1B" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 6,-120 C 0,-140 6,-160 20,-168 L 18,-204 L 42,-176 C 48,-176 54,-174 60,-170 L 76,-196 L 80,-160 C 92,-150 108,-140 118,-132 C 110,-122 92,-118 76,-116 C 56,-112 24,-108 6,-120 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60,-130 C 80,-128 100,-128 116,-132 C 106,-120 90,-116 74,-116 C 64,-116 58,-122 60,-130 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="118" cy="-133" r="7" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="62" cy="-148" rx="5" ry="7" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

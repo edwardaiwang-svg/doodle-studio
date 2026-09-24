@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <path id="lung_l" d="M 150 96 C 104 96 42 190 38 312 C 36 356 58 382 98 370 C 128 360 156 350 172 352 C 184 354 186 340 184 324 L 178 150 C 177 118 170 96 150 96 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lung_r" d="M 250 96 C 296 96 358 190 362 312 C 364 356 342 382 302 370 C 272 360 244 350 228 352 C 216 354 214 340 216 324 L 222 150 C 223 118 230 96 250 96 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="airway" d="M 184 30 L 216 30 L 216 158 C 216 172 226 180 238 190 L 272 222 L 252 244 L 214 208 C 206 200 194 200 186 208 L 148 244 L 128 222 L 162 190 C 174 180 184 172 184 158 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rings" d="M 190 56 L 210 56 M 190 82 L 210 82 M 190 108 L 210 108 M 190 134 L 210 134" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tree_l" d="M 138 242 Q 118 280 98 322 M 124 270 Q 100 262 80 242 M 110 298 Q 118 322 132 342" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tree_r" d="M 262 242 Q 282 280 302 322 M 276 270 Q 300 262 320 242 M 290 298 Q 282 322 268 342" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 60 250 C 62 200 80 160 106 132" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 340 250 C 338 200 320 160 294 132" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

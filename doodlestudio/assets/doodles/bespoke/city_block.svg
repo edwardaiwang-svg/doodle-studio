@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 344" width="552" height="344">
+  <g transform="translate(-4,-62)">
+    <rect id="b1" x="36" y="184" width="94" height="146" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b2" x="130" y="90" width="110" height="240" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b3" x="240" y="196" width="110" height="134" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b4" x="350" y="126" width="106" height="204" fill="#00897B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b2_ledge" x="122" y="78" width="126" height="16" rx="3" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b4_ledge" x="342" y="114" width="122" height="16" rx="3" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="sidewalk" x="20" y="330" width="520" height="20" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="road" x="20" y="350" width="520" height="40" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="trunk" x="482" y="262" width="18" height="70" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="canopy" d="M491,196 A21.1,21.1 0 0 1 522.3,209.6 A19.5,19.5 0 0 1 530,240 A20.2,20.2 0 0 1 508.4,264.4 A21.5,21.5 0 0 1 473.6,264.4 A20.2,20.2 0 0 1 452,240 A19.5,19.5 0 0 1 459.7,209.6 A21.1,21.1 0 0 1 491,196 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="b1_win" d="M52,204 L74,204 L74,230 L52,230 Z M94,204 L116,204 L116,230 L94,230 Z M52,246 L74,246 L74,272 L52,272 Z M94,246 L116,246 L116,272 L94,272 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b1_door" x="70" y="290" width="26" height="40" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="b2_win" d="M150,110 L176,110 L176,138 L150,138 Z M194,110 L220,110 L220,138 L194,138 Z M150,154 L176,154 L176,182 L150,182 Z M194,154 L220,154 L220,182 L194,182 Z M150,198 L176,198 L176,226 L150,226 Z M194,198 L220,198 L220,226 L194,226 Z M150,242 L176,242 L176,270 L150,270 Z M194,242 L220,242 L220,270 L194,270 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="b2_door" x="170" y="290" width="30" height="40" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="b3_win" d="M258,212 L288,212 L288,242 L258,242 Z M302,212 L332,212 L332,242 L302,242 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="b4_win" d="M370,146 L396,146 L396,174 L370,174 Z M410,146 L436,146 L436,174 L410,174 Z M370,190 L396,190 L396,218 L370,218 Z M410,190 L436,190 L436,218 L410,218 Z M370,234 L396,234 L396,262 L370,262 Z M410,234 L436,234 L436,262 L410,262 Z M370,278 L396,278 L396,306 L370,306 Z M410,278 L436,278 L436,306 L410,306 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="shop_window" x="256" y="292" width="50" height="38" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="shop_door" x="314" y="292" width="24" height="38" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="awning" points="236,256 354,256 362,284 228,284" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="awning_stripes" d="M259.6,259 L283.2,259 L281.6,281 L254.8,281 Z M306.8,259 L330.4,259 L335.2,281 L308.4,281 Z" fill="#FFFFFF" data-noink="1"/>
+    <path id="road_marks" d="M46,366 L96,366 L96,374 L46,374 Z M146,366 L196,366 L196,374 L146,374 Z M246,366 L296,366 L296,374 L246,374 Z M346,366 L396,366 L396,374 L346,374 Z M446,366 L496,366 L496,374 L446,374 Z" fill="#FFFFFF" data-noink="1"/>
+  </g>
+</svg>

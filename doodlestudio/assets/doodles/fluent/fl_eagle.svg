@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <path d="M26.2,149.8L36.4,118.8C44.6,112.7 54.7,109 65.6,109L102,109L102,160L36.4,160L26.2,149.8Z" fill="#D3D3D3" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M248.6,262C260.3,262 263.4,249.9 258.8,243.6L238.9,219.7L179.3,219.7C179.3,240 189.7,262 220.8,262L248.6,262Z" fill="#D3D3D3" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M169.5,100.7L169.3,100.7C161.6,100.7 156.5,92.6 159.9,85.6L189.4,58L304,58C304.1,74.6 294.7,88.9 280.9,96C280.1,113.2 267.2,126.5 250.6,129C250.5,148.4 233.4,160 222.5,160L170.3,160C162.2,160 157.6,152 162.3,145.5L171,129.4L170.8,129.4C162.8,129.4 157.7,121.6 161.6,114.6L169.5,100.7Z" fill="#6D4534" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M117.5,170.2L87.4,221.2L169,221.2L117.5,170.2Z" fill="#6D4534" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23.3,168.7C28.4,165.8 36.5,160 36.5,160L36.4,118.8C31,122.6 16,135.7 16,160C16,171.7 18.1,171.6 23.3,168.7Z" fill="#F9C23C" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M103.6,230.1C98.9,224 90.1,223.4 83.7,227.1C77.6,230.7 74.8,237.9 76,243C76.4,244.8 73.6,246.4 72.3,245C69,241.3 67,237 67,231.6C67,220.1 76.3,210.8 87.8,211C96,211.1 103.3,216.5 106.5,224.1C107.1,225.7 107.6,227.2 107.8,228.7C108,230.6 105.4,232.4 103.6,230.1Z" fill="#F9C23C" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M189.4,160L240.1,221.2C240.1,221.2 188.2,221.2 170.2,221.2C124.5,221.2 87.4,184.6 87.4,139.6C87.4,94.6 124.5,58 170.2,58C176.9,58 183.3,58 189.4,58L189.4,160Z" fill="#A56953" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56.8,134.7C56.8,137.5 54.5,139.8 51.7,139.8C48.9,139.8 46.6,137.5 46.6,134.7C46.6,131.9 48.9,129.6 51.7,129.6C54.5,129.6 56.8,131.9 56.8,134.7Z" fill="#1C1C1C" data-noink="1"/>
+</svg>

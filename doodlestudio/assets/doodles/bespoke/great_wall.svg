@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <path id="hill_back" d="M 16,251 L 60,226 L 96,216 L 146,220 L 178,238 L 214,250 L 258,216 L 300,178 L 384,178 L 384,124 C 412,124 440,146 464,166 L 464,332 Q 464,344 452,344 L 28,344 Q 16,344 16,332 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hill_front" d="M 16,306 C 70,276 140,270 200,288 C 250,302 300,322 330,344 L 28,344 Q 16,344 16,332 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hill_front_r" d="M 318,344 C 350,310 410,292 464,296 L 464,332 Q 464,344 452,344 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="16,215 60,190 96,180 96,216 60,226 16,251" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="146,184 178,202 214,214 258,180 300,142 300,178 258,216 214,250 178,238 146,220" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="380,142 420,168 464,195 464,231 420,204 380,178" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 21,212.2 L 35,204.2 L 35,189.2 L 21,197.2 Z M 65,188.6 L 79,184.7 L 79,169.7 L 65,173.6 Z" fill="#D7B98E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 151,186.8 L 165,194.7 L 165,179.7 L 151,171.8 Z M 183,203.7 L 197,208.3 L 197,193.3 L 183,188.7 Z M 219,210.1 L 233,199.3 L 233,184.3 L 219,195.1 Z M 263,175.5 L 277,162.8 L 277,147.8 L 263,160.5 Z" fill="#D7B98E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 385,145.2 L 399,154.3 L 399,139.3 L 385,130.2 Z M 425,171.1 L 439,179.7 L 439,164.7 L 425,156.1 Z" fill="#D7B98E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="tower_small" points="94,222 94,138 104.8,138 104.8,151 115.6,151 115.6,138 126.4,138 126.4,151 137.2,151 137.2,138 148,138 148,222" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="small_door" d="M 110,222 L 110,194 A 11,11 0 0 1 132,194 L 132,222 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="tower" points="296,188 296,62 313.6,62 313.6,79 331.2,79 331.2,62 348.8,62 348.8,79 366.4,79 366.4,62 384,62 384,188" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tower_window" d="M 322,146 L 322,118 A 18,18 0 0 1 358,118 L 358,146 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tower_band" d="M 296,164 L 384,164" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

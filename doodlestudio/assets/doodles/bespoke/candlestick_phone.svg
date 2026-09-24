@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 460" width="340" height="460">
+  <path id="base_dome" d="M 60,418 C 60,378 100,360 150,360 C 200,360 240,378 240,418 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="base_plate" x="48" y="412" width="204" height="22" rx="8" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="stem" x="136" y="126" width="28" height="240" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="mouthpiece" cx="150" cy="86" r="48" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="mouth_ring" cx="150" cy="86" r="30" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="mouth_hole" cx="150" cy="86" r="12" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="collar_top" x="130" y="124" width="40" height="16" rx="4" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="collar_bottom" x="128" y="344" width="44" height="18" rx="4" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="hook" x="164" y="178" width="82" height="12" rx="3" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="earcup" d="M 226,140 L 290,140 L 276,186 L 240,186 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="earcup_rim" x="220" y="132" width="76" height="14" rx="6" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="receiver" x="244" y="184" width="28" height="136" rx="12" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="receiver_cap" x="240" y="308" width="36" height="16" rx="6" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cord" d="M 258,324 C 262,366 302,372 294,400 C 288,420 258,416 238,406" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 145,160 L 145,330" fill="none" stroke="#9E9E9E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 118,74 A 34,34 0 0 1 136,56" fill="none" stroke="#9E9E9E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="400" height="380">
+  <path id="bubble" d="M 141 120 L 259 120 Q 295 120 295 156 L 295 192 Q 295 228 259 228 L 174 228 L 130 266 L 144 228 L 141 228 Q 105 228 105 192 L 105 156 Q 105 120 141 120 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="155" cy="170" r="14" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="170" r="14" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="245" cy="170" r="14" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ring" d="M 36 190 A 164 164 0 1 0 364 190 A 164 164 0 1 0 36 190 Z M 70 190 A 130 130 0 1 0 330 190 A 130 130 0 1 0 70 190 Z" fill-rule="evenodd" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="bar" d="M 96.8 110.9 L 279.1 293.2 A 130 130 0 0 0 303.2 269.1 L 120.9 86.8 A 130 130 0 0 0 96.8 110.9 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

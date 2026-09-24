@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 310" width="440" height="310">
+  <path id="red_wave" d="M17.7,116.2 L61.6,143 L94.5,112 L133.6,164.1 L166.8,100 L204.8,186 L239.8,80 L275.7,192 L312.5,90 L347.4,180 L384.8,102 L409.5,149.7 L430.5,138.3 L383.2,54 L348.6,132 L311.5,42 L276.3,144 L240.2,32 L203.2,138 L169.2,52 L130.4,119.9 L97.5,76 L58.4,113 L30.3,95.8 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="orange_wave" d="M19.5,236.1 L61.1,254.5 L94.8,232 L133.2,268.3 L167,225.2 L204.8,286 L239.9,218 L275.6,288 L312.6,223.3 L347.3,277.3 L384.8,227.3 L411.8,257.4 L428.2,242.6 L383.2,192.7 L348.7,238.7 L311.4,180.7 L276.4,244 L240.1,174 L203.2,242 L169,186.8 L130.8,235.7 L97.2,204 L58.9,229.5 L28.5,215.9 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="tick1" x1="210" y1="40" x2="196" y2="28" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="tick2" x1="240" y1="22" x2="240" y2="10" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="tick3" x1="270" y1="40" x2="284" y2="28" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

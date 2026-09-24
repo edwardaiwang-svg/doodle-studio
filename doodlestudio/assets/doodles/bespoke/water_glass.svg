@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400">
+  <path id="glass" d="M 38 60 L 234 60 L 212 342 Q 210 358 194 358 L 78 358 Q 62 358 60 342 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="water" d="M 55.5 130 L 70.1 318 Q 71.1 330 83.1 330 L 188.9 330 Q 200.9 330 201.9 318 L 216.5 130 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="surface" cx="136" cy="130" rx="80.5" ry="14" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="rim" cx="136" cy="60" rx="98" ry="18" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M 78 162 L 88 302" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="drop" d="M 290 182 C 297.7 209.6 322 220.6 322 242 A 32 32 0 0 1 258 242 C 258 220.6 282.3 209.6 290 182 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 274 256 C 270 244 272 234 278 226" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

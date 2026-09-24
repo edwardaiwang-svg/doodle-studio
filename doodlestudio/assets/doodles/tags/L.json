@@ -1,0 +1,643 @@
+{
+ "piggy_bank": {
+  "desc": "pink piggy bank with a gold coin dropping into its slot",
+  "category": "money",
+  "en": [
+   "piggy bank",
+   "saving money",
+   "savings",
+   "save up",
+   "put money aside",
+   "rainy-day fund",
+   "emergency fund",
+   "thrift",
+   "saving habit",
+   "nest egg"
+  ],
+  "zh": [
+   "存钱罐",
+   "储蓄",
+   "存钱",
+   "攒钱",
+   "积蓄",
+   "理财"
+  ]
+ },
+ "wallet": {
+  "desc": "brown wallet with green banknotes sticking out of the top",
+  "category": "money",
+  "en": [
+   "wallet",
+   "cash",
+   "spending money",
+   "personal finance",
+   "pocket money",
+   "paying cash",
+   "out of pocket",
+   "consumer spending",
+   "purse",
+   "disposable income"
+  ],
+  "zh": [
+   "钱包",
+   "现金",
+   "零花钱",
+   "个人理财",
+   "消费",
+   "花钱"
+  ]
+ },
+ "bank_card": {
+  "desc": "blue bank card with a gold chip, a dark stripe and number bars",
+  "category": "money",
+  "en": [
+   "bank card",
+   "credit card",
+   "debit card",
+   "card payment",
+   "payment",
+   "paying by card",
+   "credit",
+   "swipe",
+   "cashless",
+   "plastic",
+   "card spending"
+  ],
+  "zh": [
+   "银行卡",
+   "信用卡",
+   "借记卡",
+   "刷卡",
+   "支付",
+   "无现金"
+  ]
+ },
+ "store_front": {
+  "desc": "small shop with a red-and-white striped awning, display window and door",
+  "category": "business",
+  "en": [
+   "store",
+   "shop",
+   "small business",
+   "retail",
+   "storefront",
+   "local business",
+   "retailer",
+   "shopkeeper",
+   "brick and mortar",
+   "main street",
+   "corner shop"
+  ],
+  "zh": [
+   "商店",
+   "店铺",
+   "小商店",
+   "零售",
+   "实体店",
+   "小企业",
+   "门店"
+  ]
+ },
+ "market_stall": {
+  "desc": "street market stall with a striped canopy and crates of apples, oranges and greens",
+  "category": "business",
+  "en": [
+   "market stall",
+   "street market",
+   "farmers market",
+   "market",
+   "trade",
+   "vendor",
+   "produce",
+   "selling goods",
+   "bazaar",
+   "fresh produce",
+   "street vendor"
+  ],
+  "zh": [
+   "市场摊位",
+   "集市",
+   "菜市场",
+   "摊贩",
+   "农贸市场",
+   "买卖",
+   "贸易"
+  ]
+ },
+ "startup_launch": {
+  "desc": "laptop with a small rocket blasting out of the screen",
+  "category": "business",
+  "en": [
+   "startup",
+   "product launch",
+   "launch",
+   "tech startup",
+   "new venture",
+   "go live",
+   "app launch",
+   "launching a company",
+   "entrepreneurship",
+   "takeoff",
+   "founders"
+  ],
+  "zh": [
+   "创业",
+   "初创公司",
+   "产品发布",
+   "上线",
+   "发布",
+   "创业公司",
+   "启动"
+  ]
+ },
+ "contract_sign": {
+  "desc": "contract page with text lines, a blue signature squiggle and a fountain pen",
+  "category": "business",
+  "en": [
+   "contract",
+   "signing",
+   "sign the deal",
+   "agreement",
+   "deal",
+   "signature",
+   "legal document",
+   "paperwork",
+   "terms",
+   "sign on the dotted line",
+   "closing the deal"
+  ],
+  "zh": [
+   "合同",
+   "签约",
+   "签字",
+   "协议",
+   "签署",
+   "交易",
+   "法律文件"
+  ]
+ },
+ "receipt": {
+  "desc": "long receipt strip with item lines, a highlighted total bar and a curled roll",
+  "category": "money",
+  "en": [
+   "receipt",
+   "bill",
+   "expenses",
+   "purchase",
+   "shopping bill",
+   "total cost",
+   "invoice",
+   "checkout",
+   "spending",
+   "the tab",
+   "transaction"
+  ],
+  "zh": [
+   "收据",
+   "账单",
+   "小票",
+   "发票",
+   "开支",
+   "消费",
+   "总额"
+  ]
+ },
+ "tax_form": {
+  "desc": "form page with checkbox rows and a round red stamp with a percent sign",
+  "category": "money",
+  "en": [
+   "tax",
+   "taxes",
+   "tax form",
+   "tax return",
+   "filing taxes",
+   "paperwork",
+   "tax season",
+   "tax rate",
+   "bureaucracy",
+   "application form",
+   "tax bill"
+  ],
+  "zh": [
+   "税",
+   "税收",
+   "报税",
+   "税表",
+   "纳税",
+   "表格",
+   "文书工作"
+  ]
+ },
+ "budget_cut": {
+  "desc": "red scissors cutting a green banknote in half",
+  "category": "money",
+  "en": [
+   "budget cuts",
+   "cutting costs",
+   "cost cutting",
+   "spending cuts",
+   "austerity",
+   "saving costs",
+   "slash the budget",
+   "trim expenses",
+   "downsizing",
+   "belt-tightening",
+   "cut spending"
+  ],
+  "zh": [
+   "削减预算",
+   "削减开支",
+   "降低成本",
+   "节省开支",
+   "紧缩",
+   "节流",
+   "砍预算"
+  ]
+ },
+ "inflation_balloon": {
+  "desc": "red balloon printed with a big dollar sign, swelling with outward arrows",
+  "category": "money",
+  "en": [
+   "inflation",
+   "rising prices",
+   "price increases",
+   "cost of living",
+   "inflated prices",
+   "purchasing power",
+   "prices going up",
+   "hyperinflation",
+   "money losing value",
+   "price surge"
+  ],
+  "zh": [
+   "通货膨胀",
+   "通胀",
+   "物价上涨",
+   "涨价",
+   "生活成本",
+   "购买力下降"
+  ]
+ },
+ "supply_chain": {
+  "desc": "factory, delivery truck and shop linked left to right by green arrows",
+  "category": "business",
+  "en": [
+   "supply chain",
+   "logistics",
+   "distribution",
+   "factory to store",
+   "shipping goods",
+   "manufacturing",
+   "wholesale",
+   "delivery",
+   "value chain",
+   "supply chain disruption",
+   "flow of goods"
+  ],
+  "zh": [
+   "供应链",
+   "物流",
+   "配送",
+   "分销",
+   "生产",
+   "运输",
+   "产业链"
+  ]
+ },
+ "global_trade": {
+  "desc": "globe circled by orange arrows carrying a cargo ship and an airplane",
+  "category": "business",
+  "en": [
+   "global trade",
+   "international trade",
+   "globalization",
+   "imports",
+   "exports",
+   "trade routes",
+   "world trade",
+   "shipping",
+   "cross-border trade",
+   "global economy",
+   "trade deal"
+  ],
+  "zh": [
+   "全球贸易",
+   "国际贸易",
+   "全球化",
+   "进出口",
+   "出口",
+   "进口",
+   "贸易往来",
+   "世界经济"
+  ]
+ },
+ "currency_exchange": {
+  "desc": "gold dollar coin and silver star coin linked by circular swap arrows",
+  "category": "money",
+  "en": [
+   "currency exchange",
+   "exchange rate",
+   "foreign exchange",
+   "forex",
+   "FX",
+   "currency conversion",
+   "swap currencies",
+   "strong dollar",
+   "weak dollar",
+   "money changer",
+   "exchange"
+  ],
+  "zh": [
+   "货币兑换",
+   "汇率",
+   "外汇",
+   "换汇",
+   "兑换",
+   "外币"
+  ]
+ },
+ "pay_envelope": {
+  "desc": "brown pay envelope with green banknotes peeking out and a dollar seal",
+  "category": "work",
+  "en": [
+   "salary",
+   "wages",
+   "paycheck",
+   "pay",
+   "payday",
+   "income",
+   "earnings",
+   "pay raise",
+   "bonus",
+   "compensation",
+   "take-home pay"
+  ],
+  "zh": [
+   "工资",
+   "薪水",
+   "薪资",
+   "收入",
+   "发工资",
+   "奖金",
+   "报酬"
+  ]
+ },
+ "job_interview": {
+  "desc": "interviewer holding a CV and a candidate in a suit facing each other across a desk",
+  "category": "work",
+  "en": [
+   "job interview",
+   "interview",
+   "hiring",
+   "recruiting",
+   "job candidate",
+   "job applicant",
+   "recruitment",
+   "HR",
+   "getting hired",
+   "job search",
+   "talent"
+  ],
+  "zh": [
+   "面试",
+   "招聘",
+   "求职",
+   "应聘",
+   "招人",
+   "人力资源",
+   "求职者"
+  ]
+ },
+ "resume": {
+  "desc": "CV page with a photo box, a name bar and text-line sections",
+  "category": "work",
+  "en": [
+   "resume",
+   "CV",
+   "curriculum vitae",
+   "job application",
+   "work experience",
+   "qualifications",
+   "applying for jobs",
+   "job seeker",
+   "career history",
+   "credentials"
+  ],
+  "zh": [
+   "简历",
+   "履历",
+   "求职申请",
+   "工作经历",
+   "个人简历",
+   "资历"
+  ]
+ },
+ "team_meeting": {
+  "desc": "four colleagues around an oval table with a laptop showing a rising chart",
+  "category": "work",
+  "en": [
+   "team meeting",
+   "meeting",
+   "teamwork",
+   "colleagues",
+   "board meeting",
+   "discussion",
+   "coworkers",
+   "staff meeting",
+   "collaboration",
+   "conference",
+   "strategy session"
+  ],
+  "zh": [
+   "团队会议",
+   "开会",
+   "会议",
+   "团队合作",
+   "同事",
+   "讨论",
+   "协作"
+  ]
+ },
+ "brainstorm_board": {
+  "desc": "whiteboard on an easel covered with coloured sticky notes and a lightbulb doodle",
+  "category": "work",
+  "en": [
+   "brainstorming",
+   "brainstorm",
+   "planning",
+   "ideas",
+   "sticky notes",
+   "whiteboard",
+   "strategy planning",
+   "workshop",
+   "ideation",
+   "project planning",
+   "roadmap"
+  ],
+  "zh": [
+   "头脑风暴",
+   "规划",
+   "创意",
+   "便利贴",
+   "白板",
+   "构思",
+   "策划"
+  ]
+ },
+ "money_tree": {
+  "desc": "tree bearing gold dollar coins, growing out of a pile of coins",
+  "category": "money",
+  "en": [
+   "money tree",
+   "investment growth",
+   "growing money",
+   "compound interest",
+   "passive income",
+   "returns",
+   "investing",
+   "wealth building",
+   "money grows",
+   "long-term investing",
+   "dividends"
+  ],
+  "zh": [
+   "摇钱树",
+   "投资增长",
+   "复利",
+   "被动收入",
+   "财富增长",
+   "投资回报",
+   "理财"
+  ]
+ },
+ "discount_tag": {
+  "desc": "red sale tag with a white percent sign, a string loop and sparkles",
+  "category": "money",
+  "en": [
+   "discount",
+   "sale",
+   "percent off",
+   "price cut",
+   "markdown",
+   "clearance",
+   "special offer",
+   "promotion",
+   "bargain",
+   "coupon",
+   "deal"
+  ],
+  "zh": [
+   "打折",
+   "折扣",
+   "促销",
+   "降价",
+   "优惠",
+   "特价",
+   "大减价"
+  ]
+ },
+ "mortgage_house": {
+  "desc": "house with a big gold key and a dollar coin",
+  "category": "money",
+  "en": [
+   "mortgage",
+   "home loan",
+   "buying a home",
+   "homeownership",
+   "real estate",
+   "housing market",
+   "first home",
+   "down payment",
+   "property",
+   "home buyer",
+   "house keys"
+  ],
+  "zh": [
+   "房贷",
+   "按揭",
+   "买房",
+   "购房",
+   "房地产",
+   "首付",
+   "房产"
+  ]
+ },
+ "warehouse": {
+  "desc": "warehouse with an open roll-up door, stacked boxes and pallets",
+  "category": "business",
+  "en": [
+   "warehouse",
+   "inventory",
+   "storage",
+   "stockpile",
+   "distribution center",
+   "fulfillment center",
+   "stock",
+   "goods storage",
+   "logistics hub",
+   "depot",
+   "excess inventory"
+  ],
+  "zh": [
+   "仓库",
+   "库存",
+   "仓储",
+   "存货",
+   "配送中心",
+   "物流中心",
+   "囤货"
+  ]
+ },
+ "cash_register": {
+  "desc": "shop cash register with a dollar display, keypad and an open drawer of bills and coins",
+  "category": "business",
+  "en": [
+   "cash register",
+   "sales",
+   "revenue",
+   "checkout",
+   "retail sales",
+   "till",
+   "cashier",
+   "point of sale",
+   "ringing up sales",
+   "takings",
+   "turnover"
+  ],
+  "zh": [
+   "收银机",
+   "销售额",
+   "营收",
+   "收入",
+   "收银台",
+   "结账",
+   "营业额"
+  ]
+ },
+ "charity_hands": {
+  "desc": "two cupped hands holding a red heart with a gold dollar coin",
+  "category": "society",
+  "en": [
+   "charity",
+   "donation",
+   "donate",
+   "giving",
+   "philanthropy",
+   "nonprofit",
+   "fundraising",
+   "generosity",
+   "helping others",
+   "giving back",
+   "social good"
+  ],
+  "zh": [
+   "慈善",
+   "捐款",
+   "捐赠",
+   "公益",
+   "爱心",
+   "慈善事业",
+   "奉献"
+  ]
+ }
+}

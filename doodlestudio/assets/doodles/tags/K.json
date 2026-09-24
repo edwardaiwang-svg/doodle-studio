@@ -1,0 +1,631 @@
+{
+ "ballot_box": {
+  "desc": "Blue ballot box with a folded, ticked ballot paper going into the slot",
+  "category": "society",
+  "en": [
+   "ballot box",
+   "voting",
+   "vote",
+   "election",
+   "elections",
+   "polls",
+   "casting a ballot",
+   "democracy",
+   "voters",
+   "referendum",
+   "election day"
+  ],
+  "zh": [
+   "投票箱",
+   "投票",
+   "选举",
+   "选票",
+   "大选",
+   "民主",
+   "公投"
+  ]
+ },
+ "courthouse": {
+  "desc": "Stone courthouse with columns and a gold balance-scales emblem in the pediment",
+  "category": "society",
+  "en": [
+   "courthouse",
+   "court",
+   "law",
+   "justice",
+   "legal system",
+   "judiciary",
+   "lawsuit",
+   "trial",
+   "ruling",
+   "supreme court",
+   "legal"
+  ],
+  "zh": [
+   "法院",
+   "法律",
+   "司法",
+   "正义",
+   "诉讼",
+   "审判",
+   "裁决"
+  ]
+ },
+ "newspaper": {
+  "desc": "Folded newspaper with a masthead, headline bars, a photo box and text columns",
+  "category": "society",
+  "en": [
+   "newspaper",
+   "news",
+   "press",
+   "headlines",
+   "media",
+   "journalism",
+   "reporting",
+   "the papers",
+   "front page",
+   "breaking news"
+  ],
+  "zh": [
+   "报纸",
+   "新闻",
+   "媒体",
+   "头条",
+   "报道",
+   "新闻界"
+  ]
+ },
+ "speech_bubbles": {
+  "desc": "Two overlapping speech bubbles, a blue one with text lines and a yellow one with typing dots",
+  "category": "symbols",
+  "en": [
+   "conversation",
+   "dialogue",
+   "chat",
+   "discussion",
+   "talking",
+   "messaging",
+   "communication",
+   "feedback",
+   "debate",
+   "comments"
+  ],
+  "zh": [
+   "对话",
+   "聊天",
+   "交流",
+   "讨论",
+   "沟通",
+   "消息"
+  ]
+ },
+ "crowd": {
+  "desc": "Group of five diverse smiling people shown heads and shoulders in two rows",
+  "category": "people",
+  "en": [
+   "crowd",
+   "the public",
+   "community",
+   "people",
+   "population",
+   "citizens",
+   "society",
+   "audience",
+   "general public",
+   "consumers",
+   "group of people"
+  ],
+  "zh": [
+   "人群",
+   "公众",
+   "社区",
+   "民众",
+   "大众",
+   "群众",
+   "人们"
+  ]
+ },
+ "house": {
+  "desc": "Family house with a red roof, smoking chimney, blue door and windows",
+  "category": "places",
+  "en": [
+   "house",
+   "home",
+   "housing",
+   "real estate",
+   "homeowner",
+   "mortgage",
+   "residential",
+   "property",
+   "household",
+   "rent"
+  ],
+  "zh": [
+   "房子",
+   "住房",
+   "家",
+   "房地产",
+   "住宅",
+   "房贷",
+   "房产"
+  ]
+ },
+ "city_block": {
+  "desc": "City street with buildings of different heights, a striped shop awning, a road and a tree",
+  "category": "places",
+  "en": [
+   "city",
+   "urban",
+   "downtown",
+   "street",
+   "neighborhood",
+   "city life",
+   "urbanization",
+   "main street",
+   "local businesses",
+   "town"
+  ],
+  "zh": [
+   "城市",
+   "城区",
+   "街道",
+   "市中心",
+   "社区",
+   "城市化",
+   "街区"
+  ]
+ },
+ "school_building": {
+  "desc": "Red school building with a bell tower, a flag on top, a clock and a front door",
+  "category": "education",
+  "en": [
+   "school",
+   "schoolhouse",
+   "education",
+   "elementary school",
+   "public school",
+   "students",
+   "classes",
+   "K-12",
+   "school district",
+   "back to school"
+  ],
+  "zh": [
+   "学校",
+   "教育",
+   "小学",
+   "校园",
+   "上学",
+   "公立学校"
+  ]
+ },
+ "graduation_cap": {
+  "desc": "Mortarboard cap with a gold tassel next to a rolled diploma tied with a red ribbon",
+  "category": "education",
+  "en": [
+   "graduation",
+   "degree",
+   "diploma",
+   "graduate",
+   "college degree",
+   "university",
+   "commencement",
+   "higher education",
+   "alumni",
+   "qualification"
+  ],
+  "zh": [
+   "毕业",
+   "学位",
+   "文凭",
+   "毕业生",
+   "大学",
+   "高等教育",
+   "学历"
+  ]
+ },
+ "book_stack": {
+  "desc": "Stack of three coloured books with a red apple on top",
+  "category": "education",
+  "en": [
+   "books",
+   "study",
+   "learning",
+   "reading",
+   "knowledge",
+   "homework",
+   "studying",
+   "textbooks",
+   "research",
+   "library"
+  ],
+  "zh": [
+   "书本",
+   "学习",
+   "阅读",
+   "知识",
+   "读书",
+   "教科书",
+   "功课"
+  ]
+ },
+ "pencil": {
+  "desc": "Yellow pencil drawing a wavy squiggle line",
+  "category": "education",
+  "en": [
+   "pencil",
+   "writing",
+   "drafting",
+   "sketch",
+   "draft",
+   "note-taking",
+   "drawing",
+   "first draft",
+   "jot down",
+   "editing"
+  ],
+  "zh": [
+   "铅笔",
+   "写作",
+   "起草",
+   "草稿",
+   "书写",
+   "绘图",
+   "记笔记"
+  ]
+ },
+ "blackboard": {
+  "desc": "Green classroom chalkboard on a wooden easel with chalk shapes and a wavy line",
+  "category": "education",
+  "en": [
+   "blackboard",
+   "chalkboard",
+   "teaching",
+   "lesson",
+   "classroom",
+   "teacher",
+   "lecture",
+   "explain",
+   "tutorial",
+   "class"
+  ],
+  "zh": [
+   "黑板",
+   "教学",
+   "课堂",
+   "上课",
+   "老师",
+   "讲解",
+   "课程"
+  ]
+ },
+ "backpack": {
+  "desc": "Red school backpack with a yellow front pocket, zips and a top handle",
+  "category": "education",
+  "en": [
+   "backpack",
+   "school bag",
+   "student",
+   "going to school",
+   "back to school",
+   "schoolbag",
+   "rucksack",
+   "kids",
+   "travel pack"
+  ],
+  "zh": [
+   "书包",
+   "背包",
+   "学生",
+   "上学",
+   "开学"
+  ]
+ },
+ "calendar_page": {
+  "desc": "Wall calendar page with a red header, binder rings, a grid of days and one day circled in red",
+  "category": "concepts",
+  "en": [
+   "calendar",
+   "date",
+   "deadline",
+   "schedule",
+   "appointment",
+   "due date",
+   "save the date",
+   "planning",
+   "month",
+   "important day",
+   "earnings date"
+  ],
+  "zh": [
+   "日历",
+   "日期",
+   "截止日期",
+   "日程",
+   "安排",
+   "期限",
+   "重要日子"
+  ]
+ },
+ "alarm_clock": {
+  "desc": "Ringing red twin-bell alarm clock with shake lines",
+  "category": "concepts",
+  "en": [
+   "alarm clock",
+   "time",
+   "wake up",
+   "deadline",
+   "morning",
+   "hurry",
+   "running out of time",
+   "wake-up call",
+   "reminder",
+   "time pressure",
+   "urgent"
+  ],
+  "zh": [
+   "闹钟",
+   "时间",
+   "起床",
+   "截止",
+   "紧迫",
+   "提醒",
+   "警钟"
+  ]
+ },
+ "briefcase": {
+  "desc": "Brown leather briefcase with a handle and gold latches",
+  "category": "work",
+  "en": [
+   "briefcase",
+   "job",
+   "business trip",
+   "work",
+   "career",
+   "employment",
+   "professional",
+   "commute",
+   "office job",
+   "business"
+  ],
+  "zh": [
+   "公文包",
+   "工作",
+   "出差",
+   "职业",
+   "就业",
+   "上班",
+   "商务"
+  ]
+ },
+ "office_desk": {
+  "desc": "Office desk with a computer monitor, keyboard and mug, and a blue swivel chair",
+  "category": "work",
+  "en": [
+   "office",
+   "desk",
+   "office work",
+   "workstation",
+   "desk job",
+   "remote work",
+   "white-collar",
+   "computer work",
+   "workplace",
+   "working from home"
+  ],
+  "zh": [
+   "办公室",
+   "办公桌",
+   "办公",
+   "工位",
+   "白领",
+   "上班",
+   "居家办公"
+  ]
+ },
+ "factory": {
+  "desc": "Blue factory with a sawtooth roof and two striped chimneys puffing smoke",
+  "category": "business",
+  "en": [
+   "factory",
+   "industry",
+   "manufacturing",
+   "plant",
+   "production",
+   "industrial",
+   "output",
+   "pollution",
+   "emissions",
+   "manufacturer",
+   "supply chain"
+  ],
+  "zh": [
+   "工厂",
+   "工业",
+   "制造业",
+   "生产",
+   "厂房",
+   "排放",
+   "制造"
+  ]
+ },
+ "farm_barn": {
+  "desc": "Red barn with white X doors and a hayloft beside a grain silo",
+  "category": "places",
+  "en": [
+   "farm",
+   "barn",
+   "farming",
+   "agriculture",
+   "rural",
+   "countryside",
+   "farmer",
+   "crops",
+   "harvest",
+   "grain",
+   "silo"
+  ],
+  "zh": [
+   "农场",
+   "谷仓",
+   "农业",
+   "农村",
+   "务农",
+   "粮食",
+   "农民"
+  ]
+ },
+ "tractor": {
+  "desc": "Green farm tractor with a cab, exhaust pipe and big treaded wheels",
+  "category": "transport",
+  "en": [
+   "tractor",
+   "farming",
+   "agriculture",
+   "farm equipment",
+   "farmer",
+   "machinery",
+   "harvest",
+   "rural economy",
+   "plowing",
+   "field work"
+  ],
+  "zh": [
+   "拖拉机",
+   "农业",
+   "农机",
+   "耕作",
+   "农民",
+   "收割"
+  ]
+ },
+ "shopping_cart": {
+  "desc": "Shopping cart full of grocery bags with bread and greens sticking out",
+  "category": "business",
+  "en": [
+   "shopping cart",
+   "shopping",
+   "consumers",
+   "consumer spending",
+   "groceries",
+   "retail",
+   "supermarket",
+   "buying",
+   "purchases",
+   "retail sales",
+   "inflation"
+  ],
+  "zh": [
+   "购物车",
+   "购物",
+   "消费者",
+   "消费",
+   "超市",
+   "零售",
+   "买东西"
+  ]
+ },
+ "delivery_truck": {
+  "desc": "Blue delivery truck carrying a stack of taped cardboard boxes",
+  "category": "transport",
+  "en": [
+   "delivery truck",
+   "shipping",
+   "logistics",
+   "delivery",
+   "freight",
+   "trucking",
+   "parcels",
+   "packages",
+   "distribution",
+   "last mile",
+   "e-commerce"
+  ],
+  "zh": [
+   "货车",
+   "运输",
+   "物流",
+   "送货",
+   "快递",
+   "配送",
+   "货运"
+  ]
+ },
+ "cargo_ship": {
+  "desc": "Container ship stacked with coloured shipping containers on the waves",
+  "category": "transport",
+  "en": [
+   "cargo ship",
+   "container ship",
+   "trade",
+   "shipping",
+   "global trade",
+   "imports",
+   "exports",
+   "freight",
+   "supply chain",
+   "ocean shipping",
+   "tariffs"
+  ],
+  "zh": [
+   "货轮",
+   "集装箱船",
+   "贸易",
+   "航运",
+   "进出口",
+   "海运",
+   "供应链"
+  ]
+ },
+ "map_route": {
+  "desc": "Folded paper map with a dashed route from a start dot to a red location pin",
+  "category": "places",
+  "en": [
+   "map",
+   "route",
+   "directions",
+   "travel",
+   "journey",
+   "navigation",
+   "roadmap",
+   "destination",
+   "trip",
+   "itinerary",
+   "path"
+  ],
+  "zh": [
+   "地图",
+   "路线",
+   "导航",
+   "旅行",
+   "目的地",
+   "路线图",
+   "行程"
+  ]
+ },
+ "family_group": {
+  "desc": "Smiling family of four, two parents and two children, holding hands",
+  "category": "people",
+  "en": [
+   "family",
+   "parents",
+   "children",
+   "parents and children",
+   "household",
+   "kids",
+   "family life",
+   "mom and dad",
+   "raising kids",
+   "families"
+  ],
+  "zh": [
+   "家庭",
+   "家人",
+   "父母",
+   "孩子",
+   "亲子",
+   "一家人",
+   "全家"
+  ]
+ }
+}

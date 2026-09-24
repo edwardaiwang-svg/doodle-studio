@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498 238" width="498" height="238">
+  <g transform="translate(-20,-84)">
+    <rect id="bed" x="36" y="236" width="304" height="24" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cab" d="M334,262 L334,124 Q334,116 342,116 L420,116 Q434,116 442,128 L482,190 Q490,202 490,216 L490,262 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="window" d="M350,132 L416,132 Q424,132 428,140 L458,192 L350,192 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="headlight" x="476" y="218" width="16" height="18" rx="3" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bumper" x="466" y="250" width="36" height="14" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="door_handle" x1="356" y1="214" x2="380" y2="214" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="box1" x="52" y="168" width="78" height="68" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="box2" x="134" y="168" width="78" height="68" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="box3" x="216" y="168" width="78" height="68" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="box4" x="92" y="100" width="78" height="68" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="box5" x="176" y="100" width="78" height="68" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="tape" d="M84,168 L98,168 L98,236 L84,236 Z M166,168 L180,168 L180,236 L166,236 Z M248,168 L262,168 L262,236 L248,236 Z M124,100 L138,100 L138,168 L124,168 Z M208,100 L222,100 L222,168 L208,168 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel1" cx="120" cy="272" r="34" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="hub1" cx="120" cy="272" r="13" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel2" cx="428" cy="272" r="34" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="hub2" cx="428" cy="272" r="13" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

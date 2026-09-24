@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 392" width="512" height="392">
+  <g transform="translate(-10,-24)">
+    <polygon id="desktop" points="50,198 482,198 506,222 26,222" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="desk_edge" x="26" y="222" width="480" height="18" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="pedestal" x="46" y="240" width="130" height="160" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="drawer1" x="58" y="252" width="106" height="64" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="drawer2" x="58" y="326" width="106" height="64" rx="3" fill="#D7B98E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="handles" d="M96,280 L126,280 M96,354 L126,354" fill="none" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="leg" x="456" y="240" width="26" height="160" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="monitor" x="146" y="40" width="224" height="132" rx="10" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="screen" x="160" y="54" width="196" height="102" rx="3" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="screen_lines" d="M180,80 L300,80 M180,104 L270,104 M180,128 L240,128" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="neck" x="250" y="172" width="16" height="20" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="stand" x="220" y="190" width="76" height="10" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="keyboard" points="206,206 314,206 320,216 200,216" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="mug" x="80" y="158" width="34" height="40" rx="4" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mug_handle" d="M114,168 Q132,168 132,178 Q132,188 114,188" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="chair_back" x="430" y="176" width="40" height="128" rx="18" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="seat" x="334" y="294" width="140" height="28" rx="12" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="armrest" x="376" y="256" width="66" height="12" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="arm_post" x="388" y="266" width="10" height="28" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="gas_lift" x="396" y="322" width="16" height="38" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="chair_base" x="346" y="358" width="116" height="14" rx="7" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel1" cx="358" cy="386" r="12" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel2" cx="450" cy="386" r="12" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

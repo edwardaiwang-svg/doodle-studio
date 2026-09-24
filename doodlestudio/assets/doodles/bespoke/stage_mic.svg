@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420">
+  <polygon id="floor" points="44,318 476,318 504,350 16,350" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="stage_front" x="16" y="350" width="488" height="44" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 20 40 L 116 40 Q 92 130 112 210 Q 128 280 98 336 L 20 336 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50 50 Q 42 190 52 330" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 78 50 Q 68 190 76 330" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 500 40 L 404 40 Q 428 130 408 210 Q 392 280 422 336 L 500 336 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 470 50 Q 478 190 468 330" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 442 50 Q 452 190 444 330" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="valance" d="M 14 18 L 506 18 L 506 58 A 32 22 0 0 1 444.5 58 A 32 22 0 0 1 383 58 A 32 22 0 0 1 321.5 58 A 32 22 0 0 1 260 58 A 32 22 0 0 1 198.5 58 A 32 22 0 0 1 137 58 A 32 22 0 0 1 75.5 58 A 32 22 0 0 1 14 58 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="beam" d="M 232 100 L 140 322 A 120 22 0 0 0 380 322 L 288 100 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="lamp" points="236,62 284,62 298,102 222,102" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="260" y1="300" x2="226" y2="330" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="260" y1="300" x2="294" y2="330" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="260" y1="300" x2="260" y2="336" fill="none" stroke="#1B1B1B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pole" x="254" y="206" width="12" height="96" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="handle" x="246" y="164" width="28" height="50" rx="10" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="head" cx="260" cy="146" r="28" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 236 134 L 284 134 M 234 152 L 286 152 M 260 120 L 260 172" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

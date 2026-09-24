@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 284" width="508" height="284">
+  <path id="piece_left" d="M 72,72 L 126,72 C 132,82 112,88 116,106 C 120,126 164,126 168,106 C 172,88 152,82 158,72 L 212,72 L 212,126 C 222,132 228,112 246,116 C 266,120 266,164 246,168 C 228,172 222,152 212,158 L 212,212 L 158,212 C 152,222 172,228 168,246 C 164,266 120,266 116,246 C 112,228 132,222 126,212 L 72,212 L 72,72 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="piece_right" d="M 296,72 L 350,72 C 356,62 336,56 340,38 C 344,18 388,18 392,38 C 396,56 376,62 382,72 L 436,72 L 436,212 L 382,212 C 376,202 396,196 392,178 C 388,158 344,158 340,178 C 336,196 356,202 350,212 L 296,212 L 296,158 C 306,152 312,172 330,168 C 350,164 350,120 330,116 C 312,112 306,132 296,126 L 296,72 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="motion_l" d="M 30,114 L 54,114 M 18,142 L 54,142 M 30,170 L 54,170" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="motion_r" d="M 454,114 L 478,114 M 454,142 L 490,142 M 454,170 L 478,170" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="click" d="M 254,96 L 254,78 M 234,102 L 222,88 M 274,102 L 286,88 M 254,188 L 254,206 M 234,182 L 222,196 M 274,182 L 286,196" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

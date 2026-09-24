@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 348" width="452" height="348">
+  <g transform="translate(-6,-62)">
+    <polygon id="barn" points="60,380 60,232 98,158 190,114 282,158 320,232 320,380" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="roof" points="35.8,235.3 42.2,222.9 83.3,142.9 190,91.8 296.7,142.9 337.8,222.9 344.2,235.3 326.4,244.5 320,232 282,158 190,114 98,158 60,232 53.6,244.5" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="silo" x="342" y="118" width="80" height="262" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="silo_dome" d="M342,118 A40,40 0 0 1 422,118 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="door_frame" x="128" y="270" width="124" height="110" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="door1" x="138" y="280" width="48" height="100" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="138,280 150,280 186,366 186,380 174,380 138,294" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="186,280 186,294 150,380 138,380 138,366 174,280" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="door2" x="194" y="280" width="48" height="100" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="194,280 206,280 242,366 242,380 230,380 194,294" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="242,280 242,294 206,380 194,380 194,366 230,280" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="hayloft" x="164" y="176" width="52" height="56" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="hay" x="173" y="185" width="34" height="38" fill="#F9A825" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="silo_bands" d="M342,172 L422,172 M342,226 L422,226 M342,280 L422,280 M342,334 L422,334" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="windows" d="M76,290 L110,290 L110,324 L76,324 Z M270,290 L304,290 L304,324 L270,324 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="window_bars" d="M93,290 L93,324 M76,307 L110,307 M287,290 L287,324 M270,307 L304,307" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="grass" x="22" y="376" width="420" height="18" rx="9" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

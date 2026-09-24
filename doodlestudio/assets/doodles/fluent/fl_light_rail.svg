@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <path d="M262.9,52L304,62.3L304,247.4L85.7,247.4C81,247.4 76.9,244.2 75.8,239.6L72.4,226.1C69.2,213.4 71,199.9 77.5,188.5L96.4,154.9L144.6,108.6C159.1,82.7 233.1,52 262.9,52Z" fill="#F4F4F4" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16,247.4L304,247.4L304,278.3L16,278.3L16,247.4Z" fill="#433B6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M85.7,247.4L304,247.4L304,206.3L71.4,206.3C70.4,212.8 70.8,219.6 72.4,226.1L75.8,239.6C76.9,244.2 81,247.4 85.7,247.4Z" fill="#F9C23C" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96.4,154.9L142.8,154.9C160,154.9 176,146.3 185.6,132L216.7,85.2C226.3,70.9 242.3,62.3 259.5,62.3L304,62.3L304,41.7L208.1,41.7C187.8,41.7 168.5,49.2 153.7,62.3C154.9,72.6 154.3,90.1 149.7,98.3L107.9,134.3L96.4,154.9Z" fill="#46A4FB" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M136.4,83.7C141,75.5 146.9,68.3 153.7,62.3L181.2,62.3C189.5,62.3 194.4,71.7 189.5,78.5L165.1,112.7C155.4,126.3 139.9,134.3 123.2,134.3L107.9,134.3L136.4,83.7Z" fill="#26C9FC" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M304,82.9L266.2,82.9C251.4,82.9 237.8,90.8 230.4,103.6L218.7,124.1C210.9,137.8 220.8,154.9 236.6,154.9L304,154.9L304,82.9Z" fill="#26C9FC" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M98.3,185.7C98.3,180 102.9,175.4 108.6,175.4L129.1,175.4C134.8,175.4 139.4,180 139.4,185.7L139.4,185.7C139.4,191.4 134.8,196 129.1,196L108.6,196C102.9,196 98.3,191.4 98.3,185.7L98.3,185.7Z" fill="#F92F60" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M211.4,185.7C211.4,180 216,175.4 221.7,175.4L304,175.4L304,196L221.7,196C216,196 211.4,191.4 211.4,185.7L211.4,185.7Z" fill="#E6E6E6" data-noink="1"/>
+</svg>

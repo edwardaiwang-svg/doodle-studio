@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 480" width="340" height="480">
+  <rect id="frame" x="40" y="22" width="260" height="434" rx="4" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="door" x="62" y="44" width="216" height="412" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line id="floor" x1="18" y1="456" x2="322" y2="456" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="glass" x="96" y="80" width="148" height="112" rx="6" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="panel" x="96" y="238" width="148" height="180" rx="6" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="72" y1="110" x2="72" y2="150" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="72" y1="330" x2="72" y2="370" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hanger" d="M 212 296 A 38 38 0 0 1 288 296 L 288 390 Q 288 404 274 404 L 226 404 Q 212 404 212 390 Z M 234 290 A 16 16 0 1 0 266 290 A 16 16 0 1 0 234 290 Z" fill-rule="evenodd" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="no_entry_bar" x="228" y="342" width="44" height="18" rx="5" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="knob" cx="250" cy="290" r="12" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

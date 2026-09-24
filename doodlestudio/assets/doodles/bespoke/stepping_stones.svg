@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 372" width="440" height="372">
+  <path id="water" d="M 20,96 L 420,96 L 420,300 L 20,300 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="far_bank" d="M 20,52 Q 20,40 32,40 L 408,40 Q 420,40 420,52 L 420,104 Q 360,120 300,108 Q 230,96 160,110 Q 90,122 20,106 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="near_bank" d="M 20,300 Q 100,284 190,294 Q 290,306 420,290 L 420,344 Q 420,356 408,356 L 32,356 Q 20,356 20,344 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="150" cy="285" rx="50" ry="20" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="150" cy="276" rx="50" ry="20" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="236" cy="241.7" rx="42" ry="17" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="236" cy="234" rx="42" ry="17" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="168" cy="198.3" rx="35" ry="14" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="168" cy="192" rx="35" ry="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="232" cy="161.4" rx="29" ry="12" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="232" cy="156" rx="29" ry="12" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="196" cy="133" rx="23" ry="9" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="196" cy="128" rx="23" ry="9" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ripples" d="M 178,254.4 Q 188,266.3 202,269.7 M 294,254.4 Q 284,266.3 270,269.7 M 117,208.8 Q 127,218.6 141,221.4 M 219,208.8 Q 209,218.6 195,221.4" fill="none" stroke="#64B5F6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="grass" d="M 329,72 L 325,61 M 336,72 L 336,57 M 343,72 L 347,61 M 89,78 L 85,67 M 96,78 L 96,63 M 103,78 L 107,67 M 349,338 L 345,327 M 356,338 L 356,323 M 363,338 L 367,327 M 73,340 L 69,329 M 80,340 L 80,325 M 87,340 L 91,329" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

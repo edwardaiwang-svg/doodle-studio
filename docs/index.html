@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodle Studio</title>
+<meta name="description" content="Turn any script into a hand-drawn whiteboard explainer video, on your own computer. Free and open source.">
+<link rel="icon" href="media/icon.png">
+<style>
+  @font-face { font-family: 'Playpen'; src: url('media/PlaypenSans-Bold.ttf'); font-weight: 700; font-display: swap; }
+  :root { --paper: #eceae4; --ink: #1b1b1b; --soft: #55606a; --orange: #f57c00; --blue: #1e6fd9; --green: #2e9d4f; --card: #fbfaf6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', 'PingFang SC', sans-serif;
+    background-image: radial-gradient(#0000000b 1px, transparent 1px); background-size: 18px 18px; }
+  h1, h2, h3, .btn { font-family: 'Playpen', 'Comic Sans MS', sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 24px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+  h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.05; margin: 0 0 14px; }
+  h1 span { color: var(--orange); }
+  .lead { font-size: 20px; color: #333; margin: 0 0 22px; }
+  .btn { display: inline-block; text-decoration: none; color: var(--ink); border: 2.5px solid var(--ink); border-radius: 14px; padding: 12px 22px; font-size: 19px; margin: 0 10px 10px 0; background: #fff; box-shadow: 0 3px 0 var(--ink); }
+  .btn.primary { background: var(--orange); color: #fff; }
+  .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+  .narrator { width: 100%; max-width: 330px; justify-self: center; }
+  .small { color: var(--soft); font-size: 14px; }
+  section { padding: 28px 0; }
+  h2 { font-size: 34px; margin: 0 0 16px; }
+  .demo { background: var(--card); border: 2.5px solid var(--ink); border-radius: 18px; padding: 12px; box-shadow: 0 8px 26px #1b1b1b14; }
+  video { width: 100%; border-radius: 12px; display: block; background: #000; }
+  .demos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  .demo h3 { margin: 10px 4px 2px; font-size: 20px; }
+  .demo p { margin: 0 4px 4px; }
+  .steps, .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 2.5px solid var(--ink); border-radius: 16px; padding: 18px; }
+  .card img { height: 96px; display: block; margin-bottom: 8px; }
+  .card h3 { margin: 0 0 6px; font-size: 21px; }
+  .card p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 2.5px solid var(--ink); border-radius: 14px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1.5px solid #d8d4ca; }
+  th { font-family: 'Playpen', sans-serif; }
+  code { background: #fff; border: 1.5px solid #d8d4ca; border-radius: 8px; padding: 2px 6px; font-size: 15px; }
+  pre { background: #1b1b1b; color: #f5f2ea; border-radius: 14px; padding: 16px; overflow-x: auto; font-size: 15px; }
+  footer { padding: 36px 0 60px; color: var(--soft); font-size: 14px; }
+  @media (max-width: 760px) { header { grid-template-columns: 1fr; padding-top: 32px; } .narrator { max-width: 200px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Doodle <span>Studio</span></h1>
+      <p class="lead">Turn any script into a hand-drawn whiteboard explainer video, on your own computer.
+        Free, open source, in English and 中文.</p>
+      <a class="btn primary" href="https://github.com/edwardaiwang-svg/doodle-studio/releases">Download</a>
+      <a class="btn" href="https://github.com/edwardaiwang-svg/doodle-studio">Source on GitHub</a>
+      <p class="small">macOS · Windows · Linux. No account and no API key needed.</p>
+    </div>
+    <img class="narrator" src="media/narrator_wave.svg" alt="The Doodle Studio narrator waving">
+  </header>
+
+  <section>
+    <div class="demo">
+      <video controls preload="metadata" poster="media/demo-history.png" src="media/demo-history.mp4"></video>
+      <h3>How the Printing Press Changed the World</h3>
+      <p class="small">A 300-word script, turned into this video in about 3 minutes on a laptop, in offline mode.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Script in, video out</h2>
+    <div class="steps">
+      <div class="card"><img src="media/pencil.svg" alt=""><h3>1 · Paste a script</h3><p>Text, Markdown or a Word file. Each heading becomes a section.</p></div>
+      <div class="card"><img src="media/lightbulb_idea.svg" alt=""><h3>2 · It plans the board</h3><p>Every sentence gets a doodle; numbers become charts, dates become timelines, and definitions become sticky notes.</p></div>
+      <div class="card"><img src="media/video_play.svg" alt=""><h3>3 · It draws and speaks</h3><p>A hand draws while a natural voice narrates. Captions, chapters, music and a thumbnail come with the video.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>More examples</h2>
+    <div class="demos">
+      <div class="demo"><video controls preload="metadata" poster="media/demo-science.png" src="media/demo-science.mp4"></video>
+        <h3>Why Is the Sky Blue?</h3><p class="small">Science · English</p></div>
+      <div class="demo"><video controls preload="metadata" poster="media/demo-zh.png" src="media/demo-zh.mp4"></video>
+        <h3>为什么我们需要睡觉？</h3><p class="small">Health · 中文 (Mandarin voice and handwriting)</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <div class="features">
+      <div class="card"><h3>1,760+ doodles</h3><p>279 original drawings plus 1,483 Fluent Emoji, all in one outlined style, and a recurring narrator in 8 poses.</p></div>
+      <div class="card"><h3>Local voice</h3><p>Kokoro neural voices run on your CPU. Drawings and captions land on the spoken word, within a fraction of a second.</p></div>
+      <div class="card"><h3>Edit anything</h3><p>Swap doodles, fix labels, retitle sections and preview frames in the Studio app before you render.</p></div>
+      <div class="card"><h3>Checked output</h3><p>Every video is decoded frame by frame, its audio compared with the mix, and its chapters verified.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who plans the visuals?</h2>
+    <table>
+      <tr><th>Director</th><th>Cost</th><th></th></tr>
+      <tr><td>Offline</td><td>Free</td><td>Matches each sentence to the doodle library. Nothing leaves your computer.</td></tr>
+      <tr><td>Doodle Cloud</td><td>5 free videos</td><td>An AI plans each section. No key needed; sign in with an email code.</td></tr>
+      <tr><td>Your own key</td><td>≈ $0.02 per 15-min video with GPT-6 Luna</td><td>OpenAI, Anthropic, or any OpenAI-compatible server, including a local model.</td></tr>
+    </table>
+    <p class="small">AI suggestions are checked by code before use: doodles must exist, drawings must start on words that are really spoken, and numbers and quotes must appear in your script.</p>
+  </section>
+
+  <section>
+    <h2>For the command line</h2>
+<pre>uv tool install git+https://github.com/edwardaiwang-svg/doodle-studio
+doodle make my-script.md -o "My Video"
+doodle studio          # the app window</pre>
+  </section>
+
+  <footer>
+    Code: MIT. Original doodles, narrator and drawing hand: CC BY 4.0. Fluent Emoji: MIT © Microsoft.
+    Fonts: SIL OFL (Playpen Sans, LXGW WenKai, Arimo, Noto Sans SC). Music: FreePD (CC0). Voice: Kokoro (Apache-2.0).
+    Made by Edward Ai.
+  </footer>
+</div>
+</body>
+</html>

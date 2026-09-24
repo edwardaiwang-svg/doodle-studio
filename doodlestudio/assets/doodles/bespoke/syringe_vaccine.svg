@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 340" width="430" height="340">
+  <g transform="translate(211,157) rotate(-35)">
+    <rect id="rod" x="-190" y="-11" width="96" height="22" rx="3" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="barrel" x="-112" y="-38" width="212" height="76" rx="10" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="liquid" x="-66" y="-28" width="158" height="56" rx="4" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="stopper" x="-86" y="-30" width="22" height="60" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="marks" d="M -40 -38 L -40 -18 M -10 -38 L -10 -24 M 20 -38 L 20 -18 M 50 -38 L 50 -24 M 80 -38 L 80 -18" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="flange" x="-124" y="-66" width="14" height="132" rx="6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="thumb" x="-204" y="-40" width="16" height="80" rx="6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="hub" points="100,-20 130,-11 130,11 100,20" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="needle" points="130,-4 196,-4 212,0 196,4 130,4" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path id="drop" d="M 389 45 C 393.3 61.2 407 67.7 407 81 A 18 18 0 0 1 371 81 C 371 67.7 384.7 61.2 389 45 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

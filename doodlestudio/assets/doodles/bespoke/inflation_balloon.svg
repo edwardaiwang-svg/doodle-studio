@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 440" width="340" height="440">
+  <path id="balloon" d="M 170,324 C 104,304 56,248 56,178 C 56,98 106,42 170,42 C 234,42 284,98 284,178 C 284,248 236,304 170,324 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 88,160 C 90,120 112,88 146,72 C 124,96 108,124 104,164 Z" fill="#FFFFFF" data-noink="1"/>
+  <path id="knot" d="M 170,322 L 154,344 Q 170,352 186,344 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="string" d="M 170,348 C 190,370 150,386 172,420" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 209.5,140.6 C 193.7,116.9 130.5,116.9 130.5,156.4 C 130.5,187.9 209.5,180.1 209.5,215.6 C 209.5,251.1 142.4,251.1 128.6,225.4 M 170,109 L 170,259" fill="none" stroke="#1B1B1B" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 209.5,140.6 C 193.7,116.9 130.5,116.9 130.5,156.4 C 130.5,187.9 209.5,180.1 209.5,215.6 C 209.5,251.1 142.4,251.1 128.6,225.4 M 170,109 L 170,259" fill="none" stroke="#FDD835" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grow" d="M 44,190 L 18,190 M 29,181 L 18,190 L 29,199 M 296,190 L 322,190 M 311,199 L 322,190 L 311,181 M 80,74 L 58,52 M 72.1,53.4 L 58,52 L 59.4,66.1 M 260,74 L 282,52 M 280.6,66.1 L 282,52 L 267.9,53.4" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

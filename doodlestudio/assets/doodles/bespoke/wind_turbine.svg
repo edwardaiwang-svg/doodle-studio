@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 450" width="412" height="450">
+  <path id="hill" d="M 22,427 A 214.3 214.3 0 0 1 390,427 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 96,367 Q 206,325 316,367 Q 206,343 96,367 Z" fill="#9CCC65" data-noink="1"/>
+  <polygon points="117,229 127,229 132,338 112,346" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 118,215 C 102,199.4 111,163.4 121,149 Q 125,146 126,155 C 131,170.6 132,199.4 127,215 Z" transform="rotate(20 122 221)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 118,215 C 102,199.4 111,163.4 121,149 Q 125,146 126,155 C 131,170.6 132,199.4 127,215 Z" transform="rotate(140 122 221)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 118,215 C 102,199.4 111,163.4 121,149 Q 125,146 126,155 C 131,170.6 132,199.4 127,215 Z" transform="rotate(260 122 221)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="122" cy="221" r="10" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="273,143 283,143 291,342 265,333" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 274,129 C 250,101.4 262.6,45.4 277,23 Q 281,20 282,29 C 290.6,56.6 292,101.4 283,129 Z" transform="rotate(0 278 135)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 274,129 C 250,101.4 262.6,45.4 277,23 Q 281,20 282,29 C 290.6,56.6 292,101.4 283,129 Z" transform="rotate(120 278 135)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 274,129 C 250,101.4 262.6,45.4 277,23 Q 281,20 282,29 C 290.6,56.6 292,101.4 283,129 Z" transform="rotate(240 278 135)" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="278" cy="135" r="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 30,103 C 56,91 86,111 118,99" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50,135 C 68,127 88,141 108,133" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

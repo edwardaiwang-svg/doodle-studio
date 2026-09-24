@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300">
+  <polygon points="36.0,284.0 36.0,166.0 27.0,172.4 27.0,150.4 100.0,98.0 100.0,32.0 123.0,15.4 123.0,221.4 100.0,238.0 100.0,120.0 59.0,149.4 59.0,267.4" fill="#43A047" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <rect x="100.0" y="54.0" width="290.0" height="32.0" rx="6" fill="#D7B98E" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <rect x="100.0" y="94.0" width="290.0" height="32.0" rx="6" fill="#D7B98E" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <polygon points="36.0,192.0 326.0,192.0 390.0,146.0 100.0,146.0" fill="#D7B98E" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M 63.3,176.7 L 341.3,176.7 M 84.7,161.3 L 362.7,161.3" fill="none" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <polygon points="36.0,192.0 326.0,192.0 326.0,208.0 36.0,208.0" fill="#8D6E63" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <polygon points="326.0,284.0 326.0,166.0 317.0,172.4 317.0,150.4 390.0,98.0 390.0,32.0 413.0,15.4 413.0,221.4 390.0,238.0 390.0,120.0 349.0,149.4 349.0,267.4" fill="#43A047" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M 104.0,146.0 L 134.3,52.8 M 104.0,146.0 L 175.7,79.2 M 104.0,146.0 L 199.1,122.3 M 104.0,146.0 L 198.7,171.4" fill="none" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M 120.7,94.6 Q 128.4,107.7 143.5,109.2 Q 143.9,124.4 156.4,132.9 Q 149.4,146.4 156.2,160.0 M 133.0,56.6 Q 146.4,79.4 172.7,81.9 Q 173.4,108.3 195.2,123.3 Q 183.0,146.7 194.8,170.3" fill="none" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M 226.0,126.0 L 226.0,160.0" fill="none" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M 216.0,164.0 L 210.0,150.0 L 206.0,156.0 M 216.0,169.0 L 207.0,160.0 L 203.0,166.0 M 216.0,174.0 L 208.0,172.0 L 204.0,178.0 M 216.0,178.0 L 212.0,182.0 L 208.0,188.0 M 236.0,164.0 L 242.0,150.0 L 246.0,156.0 M 236.0,169.0 L 245.0,160.0 L 249.0,166.0 M 236.0,174.0 L 244.0,172.0 L 248.0,178.0 M 236.0,178.0 L 240.0,182.0 L 244.0,188.0" fill="none" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <circle cx="226.0" cy="170.0" r="12" fill="#424242" stroke="#1B1B1B" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <circle cx="221.5" cy="167.0" r="3.5" fill="#FFFFFF" stroke="none" data-noink="1"/>
+  <circle cx="230.5" cy="167.0" r="3.5" fill="#FFFFFF" stroke="none" data-noink="1"/>
+</svg>

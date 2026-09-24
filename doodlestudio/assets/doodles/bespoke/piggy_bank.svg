@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" width="420" height="360">
+  <ellipse id="body" cx="214" cy="206" rx="150" ry="104" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 98,184 C 102,150 128,124 168,110 C 140,132 122,154 114,188 Z" fill="#FFFFFF" data-noink="1"/>
+  <path d="M 104,276.7 L 104,331 Q 104,340 113,340 L 133,340 Q 142,340 142,331 L 142,297.2 A 150,104 0 0 1 104,276.7 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 152,300.7 L 152,331 Q 152,340 161,340 L 181,340 Q 190,340 190,331 L 190,308.7 A 150,104 0 0 1 152,300.7 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 240,308.4 L 240,331 Q 240,340 249,340 L 269,340 Q 278,340 278,331 L 278,300.1 A 150,104 0 0 1 240,308.4 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 288,296.5 L 288,331 Q 288,340 297,340 L 317,340 Q 326,340 326,331 L 326,275.2 A 150,104 0 0 1 288,296.5 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ear" d="M 254,116 C 258,86 278,64 304,56 C 316,80 322,106 320,134 Z" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="snout" cx="364" cy="216" rx="25" ry="35" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="360" cy="203" rx="5" ry="8" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="360" cy="229" rx="5" ry="8" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye" cx="312" cy="172" r="8" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tail" d="M 66,198 C 44,194 32,178 42,166 C 52,154 68,166 58,178 C 48,190 30,186 24,174" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="slot" x="172" y="108" width="64" height="14" rx="7" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="coin" cx="204" cy="52" r="30" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 212.9,42.2 C 209.4,36.8 195.1,36.8 195.1,45.7 C 195.1,52.9 212.9,51.1 212.9,59.2 C 212.9,67.2 197.7,67.2 194.6,61.4 M 204,35 L 204,69" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="motion" d="M 156,30 L 156,62 M 252,30 L 252,62" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

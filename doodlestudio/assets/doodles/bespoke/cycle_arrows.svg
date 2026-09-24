@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <path id="arrow1" d="M 169.4,39.7 A 112 112 0 0 1 261.7,142.2 L 277.7,141.1 L 235.3,184.5 L 205.9,146.1 L 221.8,145 A 72 72 0 0 0 162.5,79.1 L 183,64.1 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow2" d="M 235.8,222 A 112 112 0 0 1 100.9,250.7 L 93.9,265 L 77.5,206.6 L 125.5,200.3 L 118.4,214.7 A 72 72 0 0 0 205.2,196.3 L 207.9,221.5 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow3" d="M 44.8,188.3 A 112 112 0 0 1 87.4,57.1 L 78.4,43.9 L 137.2,58.9 L 118.7,103.6 L 109.7,90.3 A 72 72 0 0 0 82.3,174.6 L 59.1,164.4 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 194.7,58.3 A 102 102 0 0 1 232.5,90" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 207,234.6 A 102 102 0 0 1 160.7,251.4" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path d="M 48.2,157.1 A 102 102 0 0 1 56.8,108.5" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+</svg>

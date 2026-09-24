@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 384" width="320" height="384">
+  <g transform="translate(-24,-24)">
+    <rect id="front" x="40" y="200" width="222" height="192" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="side" points="262,200 328,152 328,344 262,392" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="top" points="40,200 106,152 328,152 262,200" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="slot" points="109.1,182.5 241.1,182.5 258.9,169.5 126.9,169.5" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="ballot" x="134" y="40" width="100" height="136" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="fold" x1="134" y1="112" x2="234" y2="112" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="tickbox" x="150" y="58" width="34" height="34" rx="3" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="tick" points="156.3,70.6 166.1,83.2 195.7,46.5 204.3,53.5 165.9,100.8 147.7,77.4" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="lines" d="M150,134 L218,134 M150,154 L198,154" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="star" points="151,246 163.9,280.2 200.5,281.9 171.9,304.8 181.6,340.1 151,320 120.4,340.1 130.1,304.8 101.5,281.9 138.1,280.2" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

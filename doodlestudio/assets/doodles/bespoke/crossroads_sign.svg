@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 448" width="420" height="448">
+  <path id="mound" d="M 70,426 C 96,378 324,378 350,426 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="post" d="M 194,410 L 194,72 L 210,50 L 226,72 L 226,410 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="176.5,86 334.5,61 364.1,81.6 342.3,110.4 184.3,135.4" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="242.8,168.8 90,150.1 61.1,171.7 83.9,199.7 236.7,218.5" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="185.3,245.7 322.7,272.4 343.5,302 313.2,321.5 175.8,294.8" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grain" d="M 234.3,93 L 301.4,82.4 M 255,109 L 322.2,98.4 M 185.3,177.9 L 123.8,170.3 M 165.1,194.6 L 103.6,187 M 237.2,272.1 L 284.4,281.3 M 251.3,294.2 L 298.4,303.4" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="106" r="6" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="190" r="6" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="276" r="6" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grass" d="M 111,412 L 107,401 M 118,412 L 118,397 M 125,412 L 129,401 M 293,410 L 289,399 M 300,410 L 300,395 M 307,410 L 311,399" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

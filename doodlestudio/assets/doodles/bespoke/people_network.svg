@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 352" width="400" height="352">
+  <path id="links" d="M200,84 L84,266 M84,266 L316,266 M316,266 L200,84" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="node1" cx="200" cy="84" r="64" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shoulders1" d="M154,124.1 C154,106 176,96 200,96 C224,96 246,106 246,124.1 A61,61 0 0 1 154,124.1 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="head1" cx="200" cy="66" r="27" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hair1" d="M172,66 C169,28 231,28 228,66 C215,51 190,47 172,66 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye1a" cx="191" cy="68" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye1b" cx="209" cy="68" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="smile1" d="M192,78 Q200,85 208,78" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="node2" cx="84" cy="266" r="64" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shoulders2" d="M38,306.1 C38,288 60,278 84,278 C108,278 130,288 130,306.1 A61,61 0 0 1 38,306.1 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="head2" cx="84" cy="248" r="27" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hair2" d="M56,248 C53,210 115,210 112,248 C99,233 74,229 56,248 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye2a" cx="75" cy="250" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye2b" cx="93" cy="250" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="smile2" d="M76,260 Q84,267 92,260" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="node3" cx="316" cy="266" r="64" fill="#F48FB1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shoulders3" d="M270,306.1 C270,288 292,278 316,278 C340,278 362,288 362,306.1 A61,61 0 0 1 270,306.1 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="head3" cx="316" cy="248" r="27" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hair3" d="M288,248 C285,210 347,210 344,248 C331,233 306,229 288,248 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye3a" cx="307" cy="250" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="eye3b" cx="325" cy="250" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="smile3" d="M308,260 Q316,267 324,260" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

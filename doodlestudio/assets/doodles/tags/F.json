@@ -1,0 +1,650 @@
+{
+ "lightbulb_idea": {
+  "desc": "Glowing light bulb with short rays: a bright idea",
+  "category": "concepts",
+  "en": [
+   "idea",
+   "bright idea",
+   "light bulb",
+   "lightbulb moment",
+   "insight",
+   "inspiration",
+   "eureka",
+   "innovation",
+   "brainstorm",
+   "creative thinking",
+   "new idea"
+  ],
+  "zh": [
+   "想法",
+   "灵感",
+   "点子",
+   "创意",
+   "灯泡",
+   "顿悟",
+   "创新"
+  ]
+ },
+ "gears_meshing": {
+  "desc": "Two interlocking gears of different sizes: how a process or system works",
+  "category": "concepts",
+  "en": [
+   "gears",
+   "process",
+   "how it works",
+   "mechanism",
+   "machinery",
+   "moving parts",
+   "system",
+   "operations",
+   "working together",
+   "cogs in the machine",
+   "engine"
+  ],
+  "zh": [
+   "齿轮",
+   "流程",
+   "运作机制",
+   "机制",
+   "系统",
+   "协同运转",
+   "运营"
+  ]
+ },
+ "puzzle_fit": {
+  "desc": "Two jigsaw pieces about to click together: the fit, the missing piece, the solution",
+  "category": "concepts",
+  "en": [
+   "puzzle",
+   "fit",
+   "perfect fit",
+   "missing piece",
+   "piece of the puzzle",
+   "solution",
+   "fits together",
+   "match",
+   "complementary",
+   "jigsaw",
+   "strategic fit"
+  ],
+  "zh": [
+   "拼图",
+   "契合",
+   "完美匹配",
+   "缺失的一块",
+   "解决方案",
+   "互补",
+   "拼合"
+  ]
+ },
+ "domino_chain": {
+  "desc": "Row of dominoes with the first one tipping into the next: a chain reaction",
+  "category": "concepts",
+  "en": [
+   "domino effect",
+   "chain reaction",
+   "knock-on effect",
+   "ripple effect",
+   "cascade",
+   "contagion",
+   "one thing leads to another",
+   "trigger",
+   "dominoes",
+   "spillover"
+  ],
+  "zh": [
+   "多米诺效应",
+   "连锁反应",
+   "骨牌效应",
+   "连带影响",
+   "蔓延",
+   "传导效应"
+  ]
+ },
+ "snowball_roll": {
+  "desc": "Snowball rolling downhill and growing bigger: the snowball effect, compounding",
+  "category": "concepts",
+  "en": [
+   "snowball effect",
+   "snowballing",
+   "compounding",
+   "compound growth",
+   "momentum",
+   "growing bigger",
+   "accelerating",
+   "gathers pace",
+   "exponential growth",
+   "builds on itself"
+  ],
+  "zh": [
+   "滚雪球",
+   "雪球效应",
+   "复利",
+   "复合增长",
+   "越滚越大",
+   "势头",
+   "加速增长"
+  ]
+ },
+ "cycle_arrows": {
+  "desc": "Three curved arrows chasing each other in a circle: a cycle or feedback loop",
+  "category": "concepts",
+  "en": [
+   "cycle",
+   "feedback loop",
+   "flywheel",
+   "virtuous cycle",
+   "vicious cycle",
+   "loop",
+   "recurring",
+   "cyclical",
+   "self-reinforcing",
+   "round and round",
+   "repeat"
+  ],
+  "zh": [
+   "循环",
+   "反馈循环",
+   "飞轮效应",
+   "良性循环",
+   "恶性循环",
+   "周期",
+   "周而复始"
+  ]
+ },
+ "crossroads_sign": {
+  "desc": "Wooden signpost with three arrow boards pointing different ways: a choice of direction",
+  "category": "concepts",
+  "en": [
+   "crossroads",
+   "at a crossroads",
+   "choice",
+   "decision",
+   "which way",
+   "direction",
+   "options",
+   "signpost",
+   "choose a path",
+   "turning point",
+   "strategy"
+  ],
+  "zh": [
+   "十字路口",
+   "选择",
+   "抉择",
+   "方向",
+   "路标",
+   "何去何从",
+   "决策"
+  ]
+ },
+ "fork_road": {
+  "desc": "Road splitting into two paths toward the horizon: two options, a fork in the road",
+  "category": "concepts",
+  "en": [
+   "fork in the road",
+   "two paths",
+   "two options",
+   "diverge",
+   "divergence",
+   "split",
+   "either or",
+   "path forward",
+   "parting ways",
+   "choice"
+  ],
+  "zh": [
+   "岔路口",
+   "两条路",
+   "分岔",
+   "两种选择",
+   "分道扬镳",
+   "抉择"
+  ]
+ },
+ "ladder_up": {
+  "desc": "Wooden ladder leaning up toward a gold star: climbing toward an ambitious goal",
+  "category": "concepts",
+  "en": [
+   "ladder",
+   "climb",
+   "ambition",
+   "career ladder",
+   "climbing the ladder",
+   "reach for the stars",
+   "aspiration",
+   "move up",
+   "upward mobility",
+   "goal",
+   "success"
+  ],
+  "zh": [
+   "梯子",
+   "攀登",
+   "雄心",
+   "抱负",
+   "向上爬",
+   "目标",
+   "晋升",
+   "摘星"
+  ]
+ },
+ "stairs_steps": {
+  "desc": "Staircase rising left to right with a small flag at the top: step-by-step progress",
+  "category": "concepts",
+  "en": [
+   "step by step",
+   "one step at a time",
+   "stairs",
+   "steps",
+   "progress",
+   "gradual",
+   "incremental",
+   "stages",
+   "next step",
+   "milestones",
+   "climb"
+  ],
+  "zh": [
+   "一步一步",
+   "台阶",
+   "楼梯",
+   "循序渐进",
+   "逐步",
+   "阶段",
+   "进步"
+  ]
+ },
+ "bridge_gap": {
+  "desc": "Arched bridge spanning a gap between two cliffs: connecting, closing a gap",
+  "category": "concepts",
+  "en": [
+   "bridge",
+   "bridge the gap",
+   "close the gap",
+   "connect",
+   "connection",
+   "link",
+   "span",
+   "bridging",
+   "crossing",
+   "gap",
+   "bridge financing"
+  ],
+  "zh": [
+   "桥梁",
+   "弥合差距",
+   "缩小差距",
+   "连接",
+   "跨越",
+   "沟通",
+   "过桥"
+  ]
+ },
+ "seesaw_balance": {
+  "desc": "Level seesaw with an equal weight on each end: balance and trade-offs",
+  "category": "concepts",
+  "en": [
+   "balance",
+   "balanced",
+   "trade-off",
+   "equilibrium",
+   "seesaw",
+   "evenly matched",
+   "weigh up",
+   "stable",
+   "parity",
+   "pros and cons",
+   "even"
+  ],
+  "zh": [
+   "平衡",
+   "权衡",
+   "取舍",
+   "均衡",
+   "跷跷板",
+   "势均力敌",
+   "利弊"
+  ]
+ },
+ "tug_of_war": {
+  "desc": "Two small teams pulling a rope with a marker flag in the middle: conflict and tension",
+  "category": "concepts",
+  "en": [
+   "tug of war",
+   "conflict",
+   "tension",
+   "struggle",
+   "standoff",
+   "competing interests",
+   "rivalry",
+   "push and pull",
+   "bulls vs bears",
+   "battle",
+   "stalemate",
+   "tug-of-war"
+  ],
+  "zh": [
+   "拔河",
+   "冲突",
+   "拉锯战",
+   "角力",
+   "博弈",
+   "僵持",
+   "对抗",
+   "多空博弈"
+  ]
+ },
+ "funnel": {
+  "desc": "Funnel with many coloured dots going in the top and a few coming out: filtering, narrowing down",
+  "category": "concepts",
+  "en": [
+   "funnel",
+   "filter",
+   "filtering",
+   "narrow down",
+   "whittle down",
+   "sales funnel",
+   "conversion",
+   "screening",
+   "shortlist",
+   "pipeline",
+   "selection"
+  ],
+  "zh": [
+   "漏斗",
+   "筛选",
+   "过滤",
+   "销售漏斗",
+   "转化率",
+   "层层筛选",
+   "缩小范围"
+  ]
+ },
+ "pyramid_layers": {
+  "desc": "Pyramid of four stacked coloured tiers: hierarchy and levels",
+  "category": "concepts",
+  "en": [
+   "pyramid",
+   "hierarchy",
+   "levels",
+   "tiers",
+   "layers",
+   "pecking order",
+   "top of the pyramid",
+   "structure",
+   "ranking",
+   "foundation",
+   "Maslow"
+  ],
+  "zh": [
+   "金字塔",
+   "层级",
+   "等级",
+   "层次",
+   "分层",
+   "塔尖",
+   "结构"
+  ]
+ },
+ "magnet_pull": {
+  "desc": "Horseshoe magnet pulling small metal objects toward it: attraction",
+  "category": "concepts",
+  "en": [
+   "magnet",
+   "attract",
+   "attraction",
+   "pull",
+   "draw in",
+   "magnetic",
+   "lure",
+   "pulling power",
+   "attract talent",
+   "attract customers",
+   "attract investors"
+  ],
+  "zh": [
+   "磁铁",
+   "吸引",
+   "吸引力",
+   "吸引人才",
+   "吸引客户",
+   "磁力",
+   "拉动"
+  ]
+ },
+ "maze": {
+  "desc": "Square maze with the solution path marked in red: complexity, finding a way through",
+  "category": "concepts",
+  "en": [
+   "maze",
+   "labyrinth",
+   "complexity",
+   "find a way",
+   "navigate",
+   "way out",
+   "problem solving",
+   "complicated",
+   "solution",
+   "red tape",
+   "puzzle"
+  ],
+  "zh": [
+   "迷宫",
+   "复杂",
+   "找到出路",
+   "摸索",
+   "错综复杂",
+   "破解难题",
+   "解决方案"
+  ]
+ },
+ "summit_flag": {
+  "desc": "Mountain peak with a flag planted on top: goal reached",
+  "category": "concepts",
+  "en": [
+   "summit",
+   "peak",
+   "reach the top",
+   "goal reached",
+   "mission accomplished",
+   "achievement",
+   "top of the mountain",
+   "milestone",
+   "success",
+   "conquer",
+   "pinnacle"
+  ],
+  "zh": [
+   "登顶",
+   "顶峰",
+   "达成目标",
+   "成功",
+   "里程碑",
+   "巅峰",
+   "征服"
+  ]
+ },
+ "chain_broken": {
+  "desc": "Chain with the middle link snapping open: a weak link, breaking free",
+  "category": "concepts",
+  "en": [
+   "broken chain",
+   "weak link",
+   "weakest link",
+   "break free",
+   "breaking point",
+   "snap",
+   "breakdown",
+   "rupture",
+   "disruption",
+   "supply chain disruption",
+   "freedom"
+  ],
+  "zh": [
+   "断链",
+   "薄弱环节",
+   "挣脱",
+   "断裂",
+   "供应链中断",
+   "突破束缚",
+   "崩断"
+  ]
+ },
+ "bottleneck": {
+  "desc": "Bottle on its side with many balls jammed at the narrow neck: a bottleneck",
+  "category": "concepts",
+  "en": [
+   "bottleneck",
+   "choke point",
+   "constraint",
+   "congestion",
+   "backlog",
+   "capacity constraint",
+   "jam",
+   "logjam",
+   "supply bottleneck",
+   "throughput limit",
+   "clogged"
+  ],
+  "zh": [
+   "瓶颈",
+   "卡脖子",
+   "拥堵",
+   "积压",
+   "产能瓶颈",
+   "堵塞",
+   "限制"
+  ]
+ },
+ "spotlight": {
+  "desc": "Stage spotlight casting a beam onto an empty circle on the floor: focus and attention",
+  "category": "concepts",
+  "en": [
+   "spotlight",
+   "in the spotlight",
+   "focus",
+   "attention",
+   "center stage",
+   "limelight",
+   "highlight",
+   "under scrutiny",
+   "shine a light",
+   "stage",
+   "featured"
+  ],
+  "zh": [
+   "聚光灯",
+   "焦点",
+   "关注",
+   "万众瞩目",
+   "舞台中央",
+   "聚焦",
+   "亮点"
+  ]
+ },
+ "key_lock": {
+  "desc": "Big key next to a closed padlock: the key to unlocking something",
+  "category": "concepts",
+  "en": [
+   "key",
+   "the key to",
+   "unlock",
+   "unlocking value",
+   "lock",
+   "padlock",
+   "access",
+   "security",
+   "open up",
+   "key factor",
+   "solution"
+  ],
+  "zh": [
+   "钥匙",
+   "解锁",
+   "关键",
+   "锁",
+   "挂锁",
+   "打开",
+   "释放价值"
+  ]
+ },
+ "tipping_point": {
+  "desc": "Ball balanced on the very top of a rounded hill, arrows showing it could roll either way: a tipping point",
+  "category": "concepts",
+  "en": [
+   "tipping point",
+   "inflection point",
+   "could go either way",
+   "on the edge",
+   "knife edge",
+   "precarious balance",
+   "unstable equilibrium",
+   "critical point",
+   "turning point",
+   "make or break",
+   "delicate balance"
+  ],
+  "zh": [
+   "临界点",
+   "转折点",
+   "拐点",
+   "岌岌可危",
+   "悬而未决",
+   "摇摆不定",
+   "关键时刻"
+  ]
+ },
+ "stepping_stones": {
+  "desc": "Row of stepping stones across water toward the far bank: gradual progress",
+  "category": "concepts",
+  "en": [
+   "stepping stones",
+   "stepping stone",
+   "gradual progress",
+   "step by step",
+   "one step at a time",
+   "small steps",
+   "incremental",
+   "path forward",
+   "crossing",
+   "milestones",
+   "way across"
+  ],
+  "zh": [
+   "垫脚石",
+   "踏脚石",
+   "循序渐进",
+   "逐步推进",
+   "一步一个脚印",
+   "过河",
+   "摸着石头过河"
+  ]
+ },
+ "crystal_ball": {
+  "desc": "Crystal ball on a stand with sparkles: prediction and forecasting",
+  "category": "concepts",
+  "en": [
+   "crystal ball",
+   "prediction",
+   "forecast",
+   "outlook",
+   "future",
+   "predict",
+   "foresee",
+   "what lies ahead",
+   "fortune telling",
+   "projection",
+   "guess"
+  ],
+  "zh": [
+   "水晶球",
+   "预测",
+   "展望",
+   "未来",
+   "预言",
+   "前景",
+   "预判"
+  ]
+ }
+}

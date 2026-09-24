@@ -1,0 +1,152 @@
+{
+  "laptop": {
+    "desc": "Open laptop showing a rising bar chart with a green growth arrow",
+    "category": "tech",
+    "en": ["laptop", "computer", "notebook computer", "PC", "working online", "remote work", "online business", "digital growth", "analytics", "dashboard", "tech company"],
+    "zh": ["笔记本电脑", "电脑", "远程办公", "在线业务", "数据分析", "数字化增长"]
+  },
+  "smartphone": {
+    "desc": "Modern smartphone with a grid of colourful app icons and a dock",
+    "category": "tech",
+    "en": ["smartphone", "mobile phone", "cell phone", "phone", "apps", "mobile apps", "app store", "mobile device", "handset", "screen time", "mobile internet"],
+    "zh": ["智能手机", "手机", "移动应用", "应用程序", "移动设备", "移动互联网", "屏幕时间"]
+  },
+  "cloud_upload": {
+    "desc": "Blue cloud with a white up arrow for uploading to cloud storage",
+    "category": "tech",
+    "en": ["cloud upload", "upload", "cloud storage", "cloud computing", "backup", "sync", "cloud service", "save to the cloud", "online storage", "move to the cloud"],
+    "zh": ["云上传", "上传", "云存储", "云计算", "备份", "同步", "云服务"]
+  },
+  "wifi_signal": {
+    "desc": "Wi-Fi signal arcs above a dot for internet connectivity",
+    "category": "tech",
+    "en": ["wifi", "wi-fi", "wireless", "internet", "connectivity", "online", "signal", "network", "internet access", "broadband", "hotspot"],
+    "zh": ["无线网络", "无线网", "互联网", "网络连接", "上网", "网络信号", "宽带"]
+  },
+  "robot": {
+    "desc": "Friendly boxy robot with an antenna, visor face and waving arm",
+    "category": "tech",
+    "en": ["robot", "robotics", "automation", "android", "bot", "machine", "humanoid robot", "AI robot", "automated", "robot worker"],
+    "zh": ["机器人", "机器人技术", "自动化", "人形机器人", "智能机器", "机器换人"]
+  },
+  "code_window": {
+    "desc": "Dark code-editor window with an angle-bracket symbol and coloured code lines",
+    "category": "tech",
+    "en": ["code", "coding", "programming", "software", "developer", "source code", "web development", "software engineering", "app development", "open source", "programmer"],
+    "zh": ["代码", "编程", "软件", "程序员", "软件开发", "源代码", "开发者"]
+  },
+  "satellite": {
+    "desc": "Satellite with two blue solar-panel wings and a signal dish",
+    "category": "science",
+    "en": ["satellite", "space", "orbit", "satellite internet", "GPS", "telecommunications", "space industry", "broadcast", "space technology", "low Earth orbit"],
+    "zh": ["卫星", "太空", "轨道", "卫星通信", "航天", "卫星互联网", "卫星导航"]
+  },
+  "drone": {
+    "desc": "Top-down quadcopter drone with four rotors and a front camera",
+    "category": "tech",
+    "en": ["drone", "quadcopter", "UAV", "unmanned aerial vehicle", "aerial photography", "drone delivery", "flying robot", "multicopter", "drone footage"],
+    "zh": ["无人机", "四旋翼", "航拍", "无人驾驶飞机", "无人机配送", "飞行器"]
+  },
+  "vr_headset": {
+    "desc": "Virtual-reality headset with a head strap and two round lenses",
+    "category": "tech",
+    "en": ["VR", "virtual reality", "VR headset", "metaverse", "immersive", "augmented reality", "AR", "mixed reality", "headset", "virtual world", "VR gaming"],
+    "zh": ["虚拟现实", "VR头显", "元宇宙", "沉浸式体验", "增强现实", "头戴设备", "虚拟世界"]
+  },
+  "printer_3d": {
+    "desc": "3D printer extruding a small blue cube onto its build plate",
+    "category": "tech",
+    "en": ["3D printer", "3D printing", "additive manufacturing", "prototype", "rapid prototyping", "maker", "fabrication", "print a part", "manufacturing technology"],
+    "zh": ["3D打印机", "3D打印", "增材制造", "原型", "快速成型", "制造技术"]
+  },
+  "padlock_shield": {
+    "desc": "Blue shield with a yellow padlock for cybersecurity and privacy",
+    "category": "tech",
+    "en": ["cybersecurity", "security", "privacy", "data protection", "encryption", "secure", "protected", "firewall", "online safety", "cyber defense", "information security"],
+    "zh": ["网络安全", "安全", "隐私", "数据保护", "加密", "信息安全", "安全防护"]
+  },
+  "software_bug": {
+    "desc": "Cartoon beetle sitting on a code window, meaning a software bug",
+    "category": "tech",
+    "en": ["software bug", "bug", "glitch", "error", "debugging", "defect", "crash", "coding error", "bug fix", "vulnerability", "system failure"],
+    "zh": ["软件漏洞", "程序错误", "故障", "调试", "漏洞", "系统错误", "修复漏洞"]
+  },
+  "battery_charge": {
+    "desc": "Battery with a green charge level and a yellow lightning bolt",
+    "category": "tech",
+    "en": ["battery", "charging", "energy storage", "battery life", "recharge", "power", "lithium-ion", "battery technology", "charge up", "power bank"],
+    "zh": ["电池", "充电", "储能", "电池续航", "锂电池", "电量", "电池技术"]
+  },
+  "plug_cable": {
+    "desc": "Blue electrical plug with gold prongs and a coiled cable",
+    "category": "tech",
+    "en": ["plug", "power plug", "electricity", "power", "plug in", "cable", "power cord", "electric power", "unplug", "power supply", "energy use"],
+    "zh": ["插头", "电源", "电力", "插电", "电线", "电源线", "用电"]
+  },
+  "electric_car": {
+    "desc": "Compact green electric car plugged into a charging station",
+    "category": "transport",
+    "en": ["electric car", "electric vehicle", "EV", "EV charging", "charging station", "battery car", "clean transport", "zero emissions", "EV market", "car charger"],
+    "zh": ["电动汽车", "电动车", "新能源汽车", "充电桩", "充电站", "零排放", "电动车充电"]
+  },
+  "solar_panel": {
+    "desc": "Tilted solar panel on a stand under a bright sun",
+    "category": "tech",
+    "en": ["solar panel", "solar power", "solar energy", "renewable energy", "clean energy", "photovoltaic", "green energy", "sunlight", "solar farm", "sustainability"],
+    "zh": ["太阳能板", "太阳能", "光伏", "可再生能源", "清洁能源", "绿色能源", "太阳能发电"]
+  },
+  "wind_turbine": {
+    "desc": "Two white wind turbines on a green hill with wind lines",
+    "category": "tech",
+    "en": ["wind turbine", "wind power", "wind energy", "wind farm", "renewable energy", "clean energy", "green power", "windmill", "sustainable energy", "offshore wind"],
+    "zh": ["风力发电机", "风能", "风力发电", "风电场", "可再生能源", "清洁能源", "风车"]
+  },
+  "circuit_board": {
+    "desc": "Green circuit board with copper traces around a central chip",
+    "category": "tech",
+    "en": ["circuit board", "PCB", "electronics", "hardware", "microchip", "semiconductor", "motherboard", "electronic circuit", "chip design", "computer hardware"],
+    "zh": ["电路板", "印刷电路板", "电子", "硬件", "芯片", "半导体", "主板"]
+  },
+  "search_bar": {
+    "desc": "Rounded search bar with a big magnifying glass for searching online",
+    "category": "tech",
+    "en": ["search", "search engine", "search bar", "searching online", "look it up", "web search", "query", "find information", "online research", "SEO"],
+    "zh": ["搜索", "搜索引擎", "搜索栏", "网上搜索", "查找信息", "查询", "搜索优化"]
+  },
+  "email_envelope": {
+    "desc": "Envelope with a red notification dot for a new email",
+    "category": "tech",
+    "en": ["email", "e-mail", "message", "inbox", "new email", "mail", "newsletter", "unread message", "email marketing", "send an email"],
+    "zh": ["电子邮件", "邮件", "消息", "收件箱", "新邮件", "未读邮件", "邮件营销"]
+  },
+  "notification_bell": {
+    "desc": "Ringing yellow bell with a red badge dot for a notification",
+    "category": "tech",
+    "en": ["notification", "alert", "bell", "reminder", "push notification", "new alert", "ringing bell", "notify", "announcement", "heads-up"],
+    "zh": ["通知", "提醒", "铃铛", "推送通知", "警报", "消息提醒"]
+  },
+  "video_play": {
+    "desc": "Video player frame with a big play triangle and a progress bar",
+    "category": "tech",
+    "en": ["video", "streaming", "play button", "watch", "video content", "online video", "stream", "media player", "video platform", "vlog", "tutorial video"],
+    "zh": ["视频", "流媒体", "播放", "在线视频", "视频内容", "播放器", "视频平台"]
+  },
+  "camera": {
+    "desc": "Photo camera with a big lens, flash and red shutter button",
+    "category": "tech",
+    "en": ["camera", "photo", "photography", "take a picture", "snapshot", "photographer", "digital camera", "picture", "capture the moment", "photo shoot"],
+    "zh": ["相机", "照相机", "拍照", "摄影", "照片", "数码相机", "摄影师"]
+  },
+  "database": {
+    "desc": "Stack of three blue database cylinders with status lights",
+    "category": "tech",
+    "en": ["database", "data", "data storage", "big data", "server", "records", "data warehouse", "SQL", "storage", "datasets", "data management"],
+    "zh": ["数据库", "数据", "数据存储", "大数据", "服务器", "数据仓库", "数据管理"]
+  },
+  "ai_assistant": {
+    "desc": "Purple chat bubble with a friendly robot face and sparkles for an AI chatbot",
+    "category": "tech",
+    "en": ["AI assistant", "chatbot", "AI chatbot", "virtual assistant", "generative AI", "artificial intelligence", "AI agent", "conversational AI", "smart assistant", "large language model", "ask the AI"],
+    "zh": ["AI助手", "聊天机器人", "人工智能", "智能助手", "虚拟助手", "生成式AI", "大模型"]
+  }
+}

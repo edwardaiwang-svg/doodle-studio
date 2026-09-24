@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 234" width="488" height="234">
+  <path id="car" d="M 142,176 L 142,114 Q 142,96 160,92 L 198,84 L 236,36 Q 248,22 268,22 L 346,22 Q 368,22 382,40 L 416,86 L 436,92 Q 454,98 454,118 L 454,162 Q 454,176 440,176 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="window_rear" d="M 214,84 L 244,44 Q 252,36 264,36 L 292,36 L 292,84 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="window_front" d="M 308,36 L 344,36 Q 358,36 366,48 L 392,84 L 308,84 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 300,92 L 300,160" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="312" y="104" width="24" height="9" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="headlight" cx="444" cy="116" rx="8" ry="12" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="252.2,103 264.1,103 256.8,121.4 266,121.4 247.6,149 252.2,128.8 243,128.8" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="176" r="36" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="388" cy="176" r="36" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="210" cy="176" r="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="388" cy="176" r="14" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="charger" x="42" y="54" width="64" height="158" rx="12" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="54" y="68" width="40" height="30" rx="5" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="72,117 85,117 77,137 87,137 67,167 72,145 62,145" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cable" d="M 106,124 C 128,124 110,188 130,188 C 146,188 138,136 152,132" fill="none" stroke="#1B1B1B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 106,124 C 128,124 110,188 130,188 C 146,188 138,136 152,132" fill="none" stroke="#424242" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <rect id="port" x="142" y="122" width="18" height="22" rx="4" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="22" y1="212" x2="466" y2="212" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

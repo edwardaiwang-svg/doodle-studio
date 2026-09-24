@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 412" width="504" height="412">
+  <g transform="translate(-5,15)">
+    <path id="building" d="M40,380 L40,176 L180,236 L180,176 L320,236 L320,176 L460,236 L460,380 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="chimney1" points="326,96 366,96 366,195.7 326,178.6" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="chimney2" points="398,128 438,128 438,226.6 398,209.4" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cap1" x="320" y="86" width="52" height="14" rx="3" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cap2" x="392" y="118" width="52" height="14" rx="3" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="stripe1" x="326" y="118" width="40" height="14" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="stripe2" x="398" y="150" width="40" height="14" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke1" d="M375.7,55.4 A11.7,11.7 0 0 1 365.4,71.2 A14.5,14.5 0 0 1 342.1,68.8 A11.1,11.1 0 0 1 338,51.4 A13.9,13.9 0 0 1 358.8,43.1 A12.9,12.9 0 0 1 375.7,55.4 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke2" d="M421.5,29.5 A15.3,15.3 0 0 1 402.3,44.8 A18.4,18.4 0 0 1 372.7,41.3 A13.3,13.3 0 0 1 362.5,22.5 A15.3,15.3 0 0 1 381.7,7.2 A18.4,18.4 0 0 1 411.3,10.7 A13.3,13.3 0 0 1 421.5,29.5 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke3" d="M445.9,96 A11.2,11.2 0 0 1 428.7,101.7 A10.2,10.2 0 0 1 416.1,91.3 A9.6,9.6 0 0 1 425.5,79 A11.6,11.6 0 0 1 443.9,82 A8.8,8.8 0 0 1 445.9,96 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="smoke4" d="M492,64 A11.8,11.8 0 0 1 480,78.7 A14.9,14.9 0 0 1 456,78.7 A11.8,11.8 0 0 1 444,64 A11.8,11.8 0 0 1 456,49.3 A14.9,14.9 0 0 1 480,49.3 A11.8,11.8 0 0 1 492,64 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="windows" d="M64,268 L122,268 L122,316 L64,316 Z M150,268 L208,268 L208,316 L150,316 Z M236,268 L294,268 L294,316 L236,316 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mullions" d="M93,268 L93,316 M179,268 L179,316 M265,268 L265,316" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bay_door" x="330" y="290" width="106" height="90" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="door_slats" d="M330,312 L436,312 M330,334 L436,334 M330,356 L436,356" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="ground" x1="22" y1="380" x2="478" y2="380" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+"""End to end in a project folder: script -> storyboard -> voice -> timeline -> render -> mix -> package.
+
+Project folder:
+  project.json        settings (language, voice, speed, director, workers)
+  script.<ext>        the source script
+  storyboard.json     chapters + beats + visuals (editable; re-running keeps your edits)
+  doodles/ photos/    optional: your own SVG doodles and photos
+  voice/              cached narration clips
+  build/              timeline, narration, mix, silent render, captions
+  <Title>.mp4         the finished video, with .srt/.vtt, chapters, transcript, description and thumbnail
+"""
+from __future__ import annotations
+
+import json
+import re
+import shutil
+from pathlib import Path
+
+from . import ingest, script, voice
+from .audio import mix as audio
+from .engine import render as renderer
+from .package import clock, contact_sheet, encoded_qa, mux, publish, sha
+
+
+def _load(path: Path):
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def _save(path: Path, data):
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+
+
+def new_project(source, project_dir: Path, title: str | None = None, lang: str | None = None, **settings) -> dict:
+    """Create the project folder from a script file or pasted text and build the storyboard skeleton."""
+    project_dir = Path(project_dir)
+    project_dir.mkdir(parents=True, exist_ok=True)
+    src = Path(source) if isinstance(source, Path) or (len(str(source)) < 1024 and '\n' not in str(source)) else None
+    if src is not None and src.is_file():
+        target = project_dir / f'script{src.suffix.lower()}'
+        doc = ingest.read(src, title=title)
+        if src.resolve() != target.resolve():
+            shutil.copyfile(src, target)
+    else:
+        target = project_dir / 'script.md'
+        target.write_text(str(source), encoding='utf-8')
+        doc = ingest.read(str(source), title=title)
+    if lang:
+        doc.lang = lang
+    board = script.build(doc)
+    _save(project_dir / 'storyboard.json', board)
+    config = {'script': target.name, 'lang': doc.lang, 'voice': voice.LANGS[doc.lang]['voice'], 'speed': 1.0,
+              'director': 'rules', 'workers': 2, **settings}
+    _save(project_dir / 'project.json', config)
+    return board
+
+
+def settings(project_dir: Path) -> dict:
+    return _load(Path(project_dir) / 'project.json')
+
+
+def storyboard(project_dir: Path) -> dict:
+    return _load(Path(project_dir) / 'storyboard.json')
+
+
+def narrate(project_dir: Path, progress=None) -> dict:
+    """Synthesize (or reuse cached) clips for every beat."""
+    project_dir = Path(project_dir)
+    cfg, board = settings(project_dir), storyboard(project_dir)
+    lang = cfg['lang']
+    clips = {}
+    for i, beat in enumerate(board['beats']):
+        clips[beat['id']] = voice.synthesize(beat['spoken'][lang], lang, project_dir / 'voice', cfg['voice'], cfg['speed'])
+        if progress:
+            progress('voice', i + 1, len(board['beats']))
+    return clips
+
+
+def build_audio(project_dir: Path, clips: dict) -> dict:
+    project_dir = Path(project_dir)
+    cfg, board = settings(project_dir), storyboard(project_dir)
+    build = project_dir / 'build'
+    tl = audio.assemble(board, cfg['lang'], clips, build)
+    tl['storyboard_sha256'] = sha(project_dir / 'storyboard.json')
+    _save(build / 'timeline.json', tl)
+    return tl
+
+
+def render(project_dir: Path, start: float = 0, duration: float | None = None, workers: int | None = None) -> Path:
+    project_dir = Path(project_dir)
+    cfg = settings(project_dir)
+    build = project_dir / 'build'
+    tl = _load(build / 'timeline.json')
+    out = build / 'silent.mp4'
+    n = round((duration or tl['duration'] - start) * renderer.FPS)
+    workers = workers or cfg.get('workers', 1)
+    if workers > 1:
+        warnings = renderer.render_segments(project_dir, project_dir / 'storyboard.json', cfg['lang'],
+                                            build / 'timeline.json', start, n, out, workers)
+    else:
+        prod = renderer.Production(storyboard(project_dir), tl, cfg['lang'], project_dir)
+        renderer.encode(prod, start, n, out, 20)
+        warnings = prod.warnings
+    _save(build / 'render-warnings.json', warnings)
+    return out
+
+
+def finish(project_dir: Path) -> dict:
+    """Mix music, mux, verify, and write the deliverables next to the project."""
+    project_dir = Path(project_dir)
+    cfg, board = settings(project_dir), storyboard(project_dir)
+    lang, build = cfg['lang'], project_dir / 'build'
+    tl = _load(build / 'timeline.json')
+    mixed = audio.mix(board, tl, build)
+    stem = re.sub(r'[\\/:*?"<>|]+', '', board['title'][lang]).strip()[:80] or 'video'
+    video = project_dir / f'{stem}.mp4'
+    mux(tl, build / 'silent.mp4', mixed, video, lang, board['title'][lang], build)
+    qa = encoded_qa(tl, video, mixed)
+    publish(board, tl, lang, build, project_dir, stem, project_dir)
+    contact_sheet(tl, video, build / 'contact-sheet.jpg')
+    qa.update({'video': str(video), 'length': clock(tl['duration'])})
+    _save(build / 'qa.json', qa)
+    return qa
+
+
+def make(source, project_dir: Path, direct=None, progress=None, **settings_) -> dict:
+    """Script to finished video. ``direct(project_dir)`` adds visuals to storyboard.json (rules or LLM)."""
+    new_project(source, project_dir, **settings_)
+    if direct:
+        direct(project_dir)
+    clips = narrate(project_dir, progress)
+    build_audio(project_dir, clips)
+    render(project_dir)
+    return finish(project_dir)

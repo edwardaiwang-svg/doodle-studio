@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 396" width="440" height="396">
+  <rect id="floor" x="16" y="294" width="408" height="84" rx="10" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="boards" d="M 70,294 L 40,378 M 150,294 L 136,378 M 290,294 L 304,378 M 370,294 L 400,378" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="beam" d="M 118.1,190.8 L 180,334 A 120 30 0 0 0 420,334 L 181.2,135.3 Z" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="pool" cx="300" cy="334" rx="120" ry="30" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="pipe" x="22" y="20" width="196" height="16" rx="8" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="hanger" x="104" y="34" width="12" height="70" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 101.8,48 L 165.1,120.1 A 14,14 48.7 0,1 163.9,139.9 L 124.8,174.2 A 14,14 48.7 0,1 105,172.9 L 41.7,100.8 A 14,14 48.7 0,1 42.9,81.1 L 82,46.7 A 14,14 48.7 0,1 101.8,48 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 178.9,126.7 L 213.5,138.9 L 210,150 L 178.1,138 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 109.8,187.4 L 117.4,223.3 L 128.8,221.3 L 121.1,188.2 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 179.7,124.6 L 183.7,129.1 A 5,5 48.7 0,1 183.2,136.2 L 118.6,193 A 5,5 48.7 0,1 111.6,192.5 L 107.6,188 A 5,5 48.7 0,1 108.1,180.9 L 172.7,124.2 A 5,5 48.7 0,1 179.7,124.6 Z" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 144.3,157.1 A 12,38 48.7 0,0 160.2,175.1 A 12,38 48.7 0,0 144.3,157.1 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

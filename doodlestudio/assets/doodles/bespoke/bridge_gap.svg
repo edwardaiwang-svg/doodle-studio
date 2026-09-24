@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+  <path id="water" d="M 110,282 L 370,282 L 370,322 L 110,322 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cliff_l" d="M 16,322 L 16,146 Q 16,132 30,132 L 124,132 L 132,170 L 122,206 L 136,248 L 126,284 L 134,322 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cliff_r" d="M 464,322 L 464,146 Q 464,132 450,132 L 356,132 L 348,170 L 358,206 L 344,248 L 354,284 L 346,322 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grass_l" d="M 14,154 L 14,136 Q 14,124 28,124 L 126,124 Q 134,124 132,134 L 130,142 Q 112,156 92,146 Q 72,158 52,146 Q 32,158 14,154 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="grass_r" d="M 466,154 L 466,136 Q 466,124 452,124 L 354,124 Q 346,124 348,134 L 350,142 Q 368,156 388,146 Q 408,158 428,146 Q 448,158 466,154 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arch" d="M 128,222 Q 240,58 352,222 L 332,226 Q 240,98 148,226 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="deck" x="80" y="104" width="320" height="22" rx="6" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="struts" d="M 160,178.8 L 160,129 M 200,147.5 L 200,129 M 240,137 L 240,129 M 280,147.5 L 280,129 M 320,178.8 L 320,129" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cracks" d="M 52,184 L 68,200 L 62,220 M 84,250 L 102,264 M 428,190 L 412,206 L 418,226 M 396,256 L 380,272" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="waves" d="M 190,300 Q 200,292 210,300 Q 220,308 230,300 M 250,304 Q 260,296 270,304 Q 280,312 290,304" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

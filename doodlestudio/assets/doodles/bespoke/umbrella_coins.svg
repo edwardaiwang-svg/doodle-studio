@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400">
+  <path id="canopy" d="M30,200 C30,118 100,60 180,60 C260,60 330,118 330,200 Q292.5,174 255,200 Q217.5,174 180,200 Q142.5,174 105,200 Q67.5,174 30,200 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="panel2" d="M180,62 C150,98 118,150 105,200 Q142.5,174 180,200 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="panel4" d="M180,62 C212,98 244,150 255,200 Q292.5,174 330,200 C330,118 260,62 180,62 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="finial" x="174" y="38" width="12" height="24" rx="5" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="shaft" x="175" y="200" width="10" height="128" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="handle" d="M173,324 L173,346 C173,378 219,378 219,346 L219,338 C219,330 207,330 207,338 L207,346 C207,362 185,362 185,346 L185,324 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_coin1" d="M62,354 L62,368 A40,12 0 0 0 142,368 L142,354 A40,12 0 0 1 62,354 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_coin2" d="M62,340 L62,354 A40,12 0 0 0 142,354 L142,340 A40,12 0 0 1 62,340 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_coin3" d="M62,326 L62,340 A40,12 0 0 0 142,340 L142,326 A40,12 0 0 1 62,326 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_coin4" d="M62,312 L62,326 A40,12 0 0 0 142,326 L142,312 A40,12 0 0 1 62,312 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="left_coin5" d="M62,298 L62,312 A40,12 0 0 0 142,312 L142,298 A40,12 0 0 1 62,298 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="left_top" cx="102" cy="298" rx="40" ry="12" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="left_ring" cx="102" cy="298" rx="27" ry="7" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="right_coin1" d="M232,354 L232,368 A40,12 0 0 0 312,368 L312,354 A40,12 0 0 1 232,354 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="right_coin2" d="M232,340 L232,354 A40,12 0 0 0 312,354 L312,340 A40,12 0 0 1 232,340 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="right_coin3" d="M232,326 L232,340 A40,12 0 0 0 312,340 L312,326 A40,12 0 0 1 232,326 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="right_top" cx="272" cy="326" rx="40" ry="12" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="right_ring" cx="272" cy="326" rx="27" ry="7" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain1" d="M40,54 C43,61 50,69 50,75 C50,81 45,86 40,86 C35,86 30,81 30,75 C30,69 37,61 40,54 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain2" d="M96,10 C99,17 106,25 106,31 C106,37 101,42 96,42 C91,42 86,37 86,31 C86,25 93,17 96,10 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain3" d="M262,8 C265,15 272,23 272,29 C272,35 267,40 262,40 C257,40 252,35 252,29 C252,23 259,15 262,8 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rain4" d="M322,50 C325,57 332,65 332,71 C332,77 327,82 322,82 C317,82 312,77 312,71 C312,65 319,57 322,50 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

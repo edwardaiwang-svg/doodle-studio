@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 372" width="340" height="372">
+  <path id="body" d="M50,130 L86,330 A84,18 0 0 0 254,330 L290,130 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon id="shade" points="252,146 283,146 252,325 228,340" fill="#9E9E9E" data-noink="1"/>
+  <polygon id="shine" points="72,150 88,150 110,322 98,326" fill="#FFFFFF" data-noink="1"/>
+  <path id="rib_top" d="M60,176 Q170,212 280,176" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="rib_bottom" d="M80,300 Q170,332 260,300" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="rim" cx="170" cy="130" rx="124" ry="28" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="inside" cx="170" cy="130" rx="106" ry="18" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="handle" d="M50,140 C38,18 302,18 290,140" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="grip" x="138" y="38" width="64" height="20" rx="10" fill="#8D6E63" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="lug_l" cx="50" cy="142" r="10" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="lug_r" cx="290" cy="142" r="10" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

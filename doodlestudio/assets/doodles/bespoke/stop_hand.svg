@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <polygon id="sign" points="375.5,272.7 272.7,375.5 127.3,375.5 24.5,272.7 24.5,127.3 127.3,24.5 272.7,24.5 375.5,127.3" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sign_border" d="M 357.1,265.1 L 265.1,357.1 L 134.9,357.1 L 42.9,265.1 L 42.9,134.9 L 134.9,42.9 L 265.1,42.9 L 357.1,134.9 Z" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" data-noink="1"/>
+  <path id="hand" d="M 176,344 C 168,318 158,298 149.4,275.8 L 97.3,202.4 A 18 18 0 0 1 126.7,181.6 L 152,217 L 152,122 A 18 18 0 0 1 188,122 L 188,104 A 18 18 0 0 1 224,104 L 224,116 A 18 18 0 0 1 260,116 L 260,144 A 16 16 0 0 1 292,144 C 294,200 292,250 278,290 C 270,312 266,328 264,344 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="fingers" d="M 188,122 L 188,200 M 224,116 L 224,198 M 260,144 L 260,204" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="palm_crease" d="M 156,230 Q 182,262 172,300" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

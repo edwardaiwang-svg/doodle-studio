@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 354" width="452" height="354">
+  <g transform="translate(3,-1)">
+    <polygon id="basket" points="96,150 424,150 396,266 126,266" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="mesh" d="M156,150 L156,266 M212,150 L212,266 M268,150 L268,266 M324,150 L324,266 M380,150 L380,266 M111,208 L410,208" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="rim" x="88" y="142" width="344" height="16" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="handle" d="M91,154.9 L41,102.9 A7,7 0 0 1 51,93.1 L101,145.1 A7,7 0 0 1 91,154.9 Z" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="grip" d="M41.5,110.5 L17.5,86.5 A12,12 0 0 1 34.5,69.5 L58.5,93.5 A12,12 0 0 1 41.5,110.5 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="legs" d="M140,266 L140,286 M382,266 L382,286" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="chassis" x="118" y="282" width="286" height="12" rx="6" fill="#424242" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel1" cx="148" cy="318" r="20" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="hub1" cx="148" cy="318" r="7" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="wheel2" cx="376" cy="318" r="20" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="hub2" cx="376" cy="318" r="7" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="baguette" d="M138.3,122.8 L116.3,32.8 A12,12 0 0 1 139.7,27.2 L161.7,117.2 A12,12 0 0 1 138.3,122.8 Z" fill="#F9A825" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="baguette_cuts" d="M122,46 L138,38 M125,60 L141,52" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="lettuce" d="M188,40 A15.5,15.5 0 0 1 210.5,51 A13.6,13.6 0 0 1 210.5,73 A15.5,15.5 0 0 1 188,84 A15.5,15.5 0 0 1 165.5,73 A13.6,13.6 0 0 1 165.5,51 A15.5,15.5 0 0 1 188,40 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="lettuce_veins" d="M188,48 L188,82 M176,62 L188,74 L200,62" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="paper_bag" points="120,142 120,72 132,62 144,72 156,62 168,72 180,62 192,72 204,62 216,72 216,142" fill="#D7B98E" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bag_handle" d="M238,84 Q238,40 262,40 Q286,40 286,84" fill="none" stroke="#1B1B1B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="bag2" points="218,142 226,82 300,82 308,142" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon id="bag3" points="310,142 316,94 390,94 396,142" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bag3_fold" x="312" y="94" width="80" height="16" rx="3" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

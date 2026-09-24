@@ -1,0 +1,1404 @@
+{
+ "chart_up": {
+  "desc": "framed chart board with a line rising in steps to an arrowhead",
+  "category": "markets",
+  "en": [
+   "growth",
+   "uptrend",
+   "rising",
+   "increase",
+   "improvement",
+   "progress",
+   "gains",
+   "chart",
+   "rally",
+   "up"
+  ],
+  "zh": [
+   "上涨",
+   "增长",
+   "图表",
+   "趋势"
+  ]
+ },
+ "chart_down": {
+  "desc": "bold zigzag arrow plunging down and to the right",
+  "category": "markets",
+  "en": [
+   "decline",
+   "downtrend",
+   "drop",
+   "fall",
+   "loss",
+   "crash",
+   "decrease",
+   "selloff",
+   "correction"
+  ],
+  "zh": [
+   "下跌",
+   "下滑",
+   "亏损",
+   "崩盘"
+  ]
+ },
+ "money_bag": {
+  "desc": "tied sack marked with a dollar sign, with coins beside it",
+  "category": "money",
+  "en": [
+   "money",
+   "cash",
+   "savings",
+   "wealth",
+   "funding",
+   "capital",
+   "profit",
+   "finance",
+   "nest egg"
+  ],
+  "zh": [
+   "钱袋",
+   "财富",
+   "资金",
+   "现金"
+  ]
+ },
+ "coin_stack": {
+  "desc": "three short stacks of gold coins",
+  "category": "money",
+  "en": [
+   "coins",
+   "savings",
+   "wealth",
+   "money",
+   "finance",
+   "gold",
+   "currency",
+   "accumulation",
+   "deposit"
+  ],
+  "zh": [
+   "硬币",
+   "存款",
+   "财富",
+   "金币"
+  ]
+ },
+ "cash_stack": {
+  "desc": "bundled pile of banknotes held with a band",
+  "category": "money",
+  "en": [
+   "cash",
+   "banknotes",
+   "money",
+   "bills",
+   "funding",
+   "payout",
+   "currency",
+   "stack of cash"
+  ],
+  "zh": [
+   "现金",
+   "钞票",
+   "钱",
+   "资金"
+  ]
+ },
+ "share_certificate": {
+  "desc": "ornate paper certificate with a decorative seal, no text",
+  "category": "markets",
+  "en": [
+   "stock",
+   "shares",
+   "equity",
+   "ownership",
+   "certificate",
+   "security",
+   "investment",
+   "stock market"
+  ],
+  "zh": [
+   "股票",
+   "证书",
+   "股权",
+   "投资"
+  ]
+ },
+ "shredder": {
+  "desc": "office shredder feeding on paper certificates with shredded strips coming out",
+  "category": "business",
+  "en": [
+   "shredding",
+   "destruction",
+   "cancellation",
+   "wipeout",
+   "elimination",
+   "erase",
+   "paper shredder",
+   "dissolve"
+  ],
+  "zh": [
+   "碎纸机",
+   "销毁",
+   "清除"
+  ]
+ },
+ "price_tag": {
+  "desc": "price tag on a string marked with a dollar sign",
+  "category": "money",
+  "en": [
+   "price",
+   "cost",
+   "pricing",
+   "value",
+   "discount",
+   "sale",
+   "tag",
+   "expense",
+   "worth"
+  ],
+  "zh": [
+   "价格",
+   "标签",
+   "价值",
+   "费用"
+  ]
+ },
+ "exchange_bell": {
+  "desc": "ceremonial bell on a stand used to mark the start of trading",
+  "category": "markets",
+  "en": [
+   "stock exchange",
+   "IPO",
+   "opening bell",
+   "listing",
+   "debut",
+   "trading floor",
+   "launch",
+   "market open"
+  ],
+  "zh": [
+   "开市",
+   "上市",
+   "交易所",
+   "钟"
+  ]
+ },
+ "balance_tipped": {
+  "desc": "balance scale tipped heavily toward one side",
+  "category": "concepts",
+  "en": [
+   "imbalance",
+   "tradeoff",
+   "supply and demand",
+   "weighing",
+   "comparison",
+   "scales",
+   "favoring one side",
+   "disparity"
+  ],
+  "zh": [
+   "天平",
+   "失衡",
+   "权衡",
+   "对比"
+  ]
+ },
+ "sellers_group": {
+  "desc": "three small figures each holding a red downward-arrow sign",
+  "category": "people",
+  "en": [
+   "sellers",
+   "selling pressure",
+   "bearish",
+   "crowd selling",
+   "decline",
+   "pessimism",
+   "sell-off",
+   "group"
+  ],
+  "zh": [
+   "卖方",
+   "抛售",
+   "看跌",
+   "人群"
+  ]
+ },
+ "empty_bench": {
+  "desc": "empty bench with a cobweb across it",
+  "category": "concepts",
+  "en": [
+   "empty",
+   "no buyers",
+   "abandoned",
+   "neglect",
+   "vacancy",
+   "quiet",
+   "waiting",
+   "deserted"
+  ],
+  "zh": [
+   "空置",
+   "无人",
+   "冷清",
+   "等待"
+  ]
+ },
+ "magnifier_report": {
+  "desc": "magnifying glass over a report page with a bar chart",
+  "category": "concepts",
+  "en": [
+   "research",
+   "analysis",
+   "investigation",
+   "scrutiny",
+   "due diligence",
+   "examine",
+   "report",
+   "inspect",
+   "findings"
+  ],
+  "zh": [
+   "研究",
+   "分析",
+   "调查",
+   "报告"
+  ]
+ },
+ "mood_masks": {
+  "desc": "happy and sad theatre masks side by side",
+  "category": "culture",
+  "en": [
+   "mood",
+   "sentiment",
+   "emotions",
+   "drama",
+   "comedy and tragedy",
+   "ups and downs",
+   "mixed feelings",
+   "swinging mood"
+  ],
+  "zh": [
+   "情绪",
+   "戏剧面具",
+   "心情",
+   "悲喜"
+  ]
+ },
+ "roller_coaster": {
+  "desc": "roller-coaster track with a cart poised at the top of a steep drop",
+  "category": "concepts",
+  "en": [
+   "volatility",
+   "ups and downs",
+   "thrill",
+   "risk",
+   "rollercoaster",
+   "swings",
+   "uncertainty",
+   "wild ride"
+  ],
+  "zh": [
+   "过山车",
+   "波动",
+   "起伏",
+   "风险"
+  ]
+ },
+ "rocket": {
+  "desc": "rocket lifting off with flame beneath it",
+  "category": "concepts",
+  "en": [
+   "launch",
+   "takeoff",
+   "growth",
+   "startup",
+   "momentum",
+   "breakout",
+   "soaring",
+   "acceleration",
+   "blast off"
+  ],
+  "zh": [
+   "火箭",
+   "起飞",
+   "增长",
+   "突破"
+  ]
+ },
+ "binoculars": {
+  "desc": "pair of binoculars",
+  "category": "concepts",
+  "en": [
+   "watching",
+   "outlook",
+   "monitoring",
+   "forecast",
+   "lookout",
+   "observation",
+   "foresight",
+   "keeping an eye on"
+  ],
+  "zh": [
+   "望远镜",
+   "观察",
+   "展望",
+   "监测"
+  ]
+ },
+ "nyc_skyline": {
+  "desc": "city skyline silhouette with a tall spire building",
+  "category": "places",
+  "en": [
+   "city",
+   "skyline",
+   "downtown",
+   "urban",
+   "metropolis",
+   "financial district",
+   "cityscape",
+   "buildings"
+  ],
+  "zh": [
+   "城市",
+   "天际线",
+   "都市",
+   "摩天大楼"
+  ]
+ },
+ "airplane": {
+  "desc": "passenger jet flying rightward",
+  "category": "transport",
+  "en": [
+   "travel",
+   "flight",
+   "aviation",
+   "journey",
+   "airline",
+   "transportation",
+   "takeoff",
+   "going abroad"
+  ],
+  "zh": [
+   "飞机",
+   "航班",
+   "旅行",
+   "航空"
+  ]
+ },
+ "neural_brain": {
+  "desc": "brain outline drawn as a network of connected nodes",
+  "category": "tech",
+  "en": [
+   "artificial intelligence",
+   "AI",
+   "machine learning",
+   "neural network",
+   "deep learning",
+   "algorithm",
+   "data science",
+   "cognition"
+  ],
+  "zh": [
+   "人工智能",
+   "神经网络",
+   "机器学习",
+   "算法"
+  ]
+ },
+ "regression_board": {
+  "desc": "easel board showing a scatter plot with a single straight trend line",
+  "category": "science",
+  "en": [
+   "data",
+   "statistics",
+   "regression",
+   "model",
+   "trend line",
+   "forecasting",
+   "analytics",
+   "correlation",
+   "prediction"
+  ],
+  "zh": [
+   "数据",
+   "统计",
+   "趋势线",
+   "预测"
+  ]
+ },
+ "mobile_game": {
+  "desc": "smartphone screen showing a colourful puzzle game with a controller badge",
+  "category": "tech",
+  "en": [
+   "mobile app",
+   "gaming",
+   "smartphone",
+   "app store",
+   "entertainment",
+   "puzzle game",
+   "mobile gaming",
+   "screen time"
+  ],
+  "zh": [
+   "手机游戏",
+   "应用",
+   "娱乐",
+   "手机"
+  ]
+ },
+ "ad_megaphone": {
+  "desc": "megaphone broadcasting sparkles and small ad cards",
+  "category": "business",
+  "en": [
+   "advertising",
+   "marketing",
+   "promotion",
+   "announcement",
+   "campaign",
+   "broadcast",
+   "publicity",
+   "outreach"
+  ],
+  "zh": [
+   "广告",
+   "营销",
+   "推广",
+   "宣传"
+  ]
+ },
+ "no_talking": {
+  "desc": "speech bubble crossed out with a red prohibition circle",
+  "category": "symbols",
+  "en": [
+   "silence",
+   "no comment",
+   "gag order",
+   "quiet period",
+   "muted",
+   "restricted speech",
+   "hush",
+   "ban on talking"
+  ],
+  "zh": [
+   "禁言",
+   "沉默",
+   "不予置评",
+   "保密"
+  ]
+ },
+ "closed_door": {
+  "desc": "closed office door with a hanger on the doorknob",
+  "category": "work",
+  "en": [
+   "closed door",
+   "privacy",
+   "exclusion",
+   "shut out",
+   "secrecy",
+   "do not disturb",
+   "private meeting",
+   "off limits"
+  ],
+  "zh": [
+   "关闭的门",
+   "隐私",
+   "排除在外",
+   "保密"
+  ]
+ },
+ "team_huddle": {
+  "desc": "four teammates huddled together with arms around shoulders",
+  "category": "people",
+  "en": [
+   "teamwork",
+   "collaboration",
+   "unity",
+   "team spirit",
+   "huddle",
+   "together",
+   "camaraderie",
+   "group effort"
+  ],
+  "zh": [
+   "团队合作",
+   "团结",
+   "协作",
+   "团队精神"
+  ]
+ },
+ "trophy": {
+  "desc": "gold trophy cup with a star",
+  "category": "symbols",
+  "en": [
+   "winning",
+   "achievement",
+   "success",
+   "first place",
+   "victory",
+   "award",
+   "champion",
+   "excellence",
+   "best in class"
+  ],
+  "zh": [
+   "奖杯",
+   "胜利",
+   "成就",
+   "冠军"
+  ]
+ },
+ "stage_mic": {
+  "desc": "stage microphone stand lit by a spotlight between curtains",
+  "category": "culture",
+  "en": [
+   "interview",
+   "presentation",
+   "keynote",
+   "public speaking",
+   "stage",
+   "spotlight",
+   "live event",
+   "conference talk"
+  ],
+  "zh": [
+   "演讲",
+   "舞台",
+   "采访",
+   "聚光灯"
+  ]
+ },
+ "podcast_mic": {
+  "desc": "studio microphone with a pair of headphones",
+  "category": "culture",
+  "en": [
+   "podcast",
+   "broadcast",
+   "audio",
+   "recording",
+   "interview",
+   "media",
+   "radio",
+   "talk show"
+  ],
+  "zh": [
+   "播客",
+   "录音",
+   "媒体",
+   "广播"
+  ]
+ },
+ "buyback_arrow": {
+  "desc": "company building pulling share certificates back with a curved arrow",
+  "category": "business",
+  "en": [
+   "buyback",
+   "repurchase",
+   "shares",
+   "capital return",
+   "reducing share count",
+   "corporate finance",
+   "stock buyback"
+  ],
+  "zh": [
+   "回购",
+   "股票回购",
+   "股份",
+   "资本"
+  ]
+ },
+ "stock_screen": {
+  "desc": "computer monitor displaying a candlestick chart with a large upward arrow",
+  "category": "markets",
+  "en": [
+   "stock market",
+   "trading",
+   "rally",
+   "price chart",
+   "gains",
+   "bullish",
+   "screen",
+   "quotes",
+   "uptrend"
+  ],
+  "zh": [
+   "股市",
+   "交易",
+   "上涨",
+   "股价"
+  ]
+ },
+ "shield": {
+  "desc": "shield with a checkmark on it",
+  "category": "symbols",
+  "en": [
+   "protection",
+   "security",
+   "safety",
+   "defense",
+   "insurance",
+   "safeguard",
+   "verified",
+   "trust",
+   "risk protection"
+  ],
+  "zh": [
+   "保护",
+   "安全",
+   "防护",
+   "保障"
+  ]
+ },
+ "umbrella_coins": {
+  "desc": "open umbrella sheltering stacks of coins from rain",
+  "category": "money",
+  "en": [
+   "protection",
+   "hedge",
+   "downside protection",
+   "insurance",
+   "safety net",
+   "shelter",
+   "risk management",
+   "coverage"
+  ],
+  "zh": [
+   "保护",
+   "对冲",
+   "保险",
+   "避险"
+  ]
+ },
+ "option_ticket": {
+  "desc": "ticket stub with a perforated edge and up/down arrows",
+  "category": "markets",
+  "en": [
+   "contract",
+   "option",
+   "ticket",
+   "agreement",
+   "entitlement",
+   "voucher",
+   "coupon",
+   "derivatives"
+  ],
+  "zh": [
+   "合约",
+   "期权",
+   "票据",
+   "凭证"
+  ]
+ },
+ "chip_semis": {
+  "desc": "computer chip with an upward arrow above it",
+  "category": "tech",
+  "en": [
+   "semiconductor",
+   "chip",
+   "technology growth",
+   "silicon",
+   "hardware",
+   "processor",
+   "tech stocks",
+   "innovation"
+  ],
+  "zh": [
+   "芯片",
+   "半导体",
+   "科技",
+   "增长"
+  ]
+ },
+ "bond_paper": {
+  "desc": "certificate with tear-off coupons along the bottom edge",
+  "category": "money",
+  "en": [
+   "bond",
+   "fixed income",
+   "debt security",
+   "coupon",
+   "investment",
+   "lending",
+   "interest payment",
+   "finance"
+  ],
+  "zh": [
+   "债券",
+   "固定收益",
+   "利息",
+   "投资"
+  ]
+ },
+ "bucket": {
+  "desc": "plain metal bucket",
+  "category": "concepts",
+  "en": [
+   "container",
+   "collection",
+   "holding",
+   "capacity",
+   "storage",
+   "category",
+   "bucket",
+   "gathering"
+  ],
+  "zh": [
+   "桶",
+   "容器",
+   "收集",
+   "存放"
+  ]
+ },
+ "conveyor": {
+  "desc": "conveyor belt carrying boxes toward the right",
+  "category": "business",
+  "en": [
+   "pipeline",
+   "backlog",
+   "production",
+   "supply chain",
+   "workflow",
+   "throughput",
+   "manufacturing",
+   "ongoing process"
+  ],
+  "zh": [
+   "传送带",
+   "生产线",
+   "供应链",
+   "流程"
+  ]
+ },
+ "construction_crane": {
+  "desc": "tower crane lifting a beam over a half-built factory",
+  "category": "work",
+  "en": [
+   "construction",
+   "building",
+   "infrastructure",
+   "capital investment",
+   "development",
+   "expansion",
+   "industrial growth",
+   "project"
+  ],
+  "zh": [
+   "建设",
+   "工程",
+   "基础设施",
+   "投资建设"
+  ]
+ },
+ "debt_mountain": {
+  "desc": "mountain made of stacked paper bills marked with dollar signs",
+  "category": "money",
+  "en": [
+   "debt",
+   "liabilities",
+   "borrowing",
+   "owed money",
+   "deficit",
+   "financial burden",
+   "mounting debt",
+   "obligations"
+  ],
+  "zh": [
+   "债务",
+   "负债",
+   "欠款",
+   "赤字"
+  ]
+ },
+ "storm_cloud": {
+  "desc": "dark storm cloud with a lightning bolt and rain",
+  "category": "nature",
+  "en": [
+   "storm",
+   "shock",
+   "crisis",
+   "turbulence",
+   "disruption",
+   "risk",
+   "warning",
+   "trouble ahead",
+   "upheaval"
+  ],
+  "zh": [
+   "风暴",
+   "危机",
+   "动荡",
+   "冲击"
+  ]
+ },
+ "lever": {
+  "desc": "plank balanced on a fulcrum, a small weight on one end lifting a heavy load",
+  "category": "concepts",
+  "en": [
+   "leverage",
+   "mechanical advantage",
+   "lifting",
+   "force multiplier",
+   "effort",
+   "balance point",
+   "fulcrum",
+   "amplify"
+  ],
+  "zh": [
+   "杠杆",
+   "撬动",
+   "支点",
+   "放大"
+  ]
+ },
+ "dna_helix": {
+  "desc": "DNA double helix",
+  "category": "science",
+  "en": [
+   "biotech",
+   "genetics",
+   "DNA",
+   "biology",
+   "life sciences",
+   "medicine",
+   "research",
+   "genome"
+  ],
+  "zh": [
+   "基因",
+   "生物科技",
+   "遗传",
+   "医学"
+  ]
+ },
+ "bank_building": {
+  "desc": "classical bank building with columns and a coin emblem",
+  "category": "business",
+  "en": [
+   "bank",
+   "banking",
+   "finance",
+   "institution",
+   "lending",
+   "deposits",
+   "financial system",
+   "treasury"
+  ],
+  "zh": [
+   "银行",
+   "金融",
+   "存款",
+   "机构"
+  ]
+ },
+ "surfer_wave": {
+  "desc": "surfer riding a large cresting wave",
+  "category": "concepts",
+  "en": [
+   "riding the trend",
+   "momentum",
+   "surfing a wave",
+   "catching a wave",
+   "timing",
+   "rise and fade",
+   "going with the flow"
+  ],
+  "zh": [
+   "冲浪",
+   "顺势",
+   "趋势",
+   "浪潮"
+  ]
+ },
+ "people_network": {
+  "desc": "three people connected by lines in a triangle",
+  "category": "people",
+  "en": [
+   "network",
+   "connections",
+   "relationships",
+   "influence",
+   "community",
+   "social network",
+   "collaboration",
+   "ties"
+  ],
+  "zh": [
+   "人脉",
+   "关系网",
+   "人际",
+   "社交网络"
+  ]
+ },
+ "vol_waves": {
+  "desc": "jagged red and orange wave lines stacked together",
+  "category": "markets",
+  "en": [
+   "volatility",
+   "turbulence",
+   "market swings",
+   "choppy",
+   "fluctuation",
+   "instability",
+   "uncertainty",
+   "price swings"
+  ],
+  "zh": [
+   "波动",
+   "动荡",
+   "起伏",
+   "不稳定"
+  ]
+ },
+ "fed_building": {
+  "desc": "classical government building with a dome and columns",
+  "category": "society",
+  "en": [
+   "government",
+   "central bank",
+   "policy",
+   "institution",
+   "capitol",
+   "authority",
+   "regulation",
+   "public sector"
+  ],
+  "zh": [
+   "政府",
+   "央行",
+   "政策",
+   "机构"
+  ]
+ },
+ "gavel": {
+  "desc": "judge's gavel striking a sound block",
+  "category": "society",
+  "en": [
+   "law",
+   "ruling",
+   "legal",
+   "justice",
+   "verdict",
+   "regulation",
+   "court",
+   "judgment",
+   "enforcement"
+  ],
+  "zh": [
+   "法律",
+   "裁决",
+   "法院",
+   "判决"
+  ]
+ },
+ "gpu_rack": {
+  "desc": "server rack with rows of glowing indicator lights",
+  "category": "tech",
+  "en": [
+   "computing power",
+   "servers",
+   "data infrastructure",
+   "GPU",
+   "hardware",
+   "cloud computing",
+   "processing",
+   "technology"
+  ],
+  "zh": [
+   "服务器",
+   "算力",
+   "芯片",
+   "云计算"
+  ]
+ },
+ "data_center": {
+  "desc": "warehouse-scale data centre with rooftop cooling units",
+  "category": "tech",
+  "en": [
+   "data center",
+   "cloud computing",
+   "servers",
+   "infrastructure",
+   "digital storage",
+   "computing",
+   "hosting",
+   "tech infrastructure"
+  ],
+  "zh": [
+   "数据中心",
+   "云计算",
+   "服务器",
+   "基础设施"
+  ]
+ },
+ "neocloud": {
+  "desc": "cloud shape with a computer chip inside it",
+  "category": "tech",
+  "en": [
+   "cloud computing",
+   "cloud provider",
+   "computing power",
+   "infrastructure",
+   "hosting",
+   "tech platform",
+   "digital services"
+  ],
+  "zh": [
+   "云计算",
+   "云服务",
+   "算力",
+   "平台"
+  ]
+ },
+ "worker_wallet": {
+  "desc": "worker in a hard hat looking distressed at an open, empty wallet",
+  "category": "work",
+  "en": [
+   "worker",
+   "wages",
+   "empty pockets",
+   "labor",
+   "paycheck",
+   "income",
+   "financial strain",
+   "working class",
+   "tight budget"
+  ],
+  "zh": [
+   "工人",
+   "工资",
+   "收入",
+   "劳动者"
+  ]
+ },
+ "capital_top_hat": {
+  "desc": "prosperous figure in a top hat and bow tie holding a money bag",
+  "category": "money",
+  "en": [
+   "wealth",
+   "capitalist",
+   "investor",
+   "prosperity",
+   "affluence",
+   "capital",
+   "rich",
+   "financier"
+  ],
+  "zh": [
+   "财富",
+   "资本家",
+   "富有",
+   "投资者"
+  ]
+ },
+ "rear_mirror": {
+  "desc": "car rear-view mirror reflecting the road behind",
+  "category": "transport",
+  "en": [
+   "hindsight",
+   "looking back",
+   "backward-looking",
+   "past performance",
+   "reflection",
+   "retrospective",
+   "lagging indicator"
+  ],
+  "zh": [
+   "后视镜",
+   "回顾",
+   "反思",
+   "过去"
+  ]
+ },
+ "oil_barrel": {
+  "desc": "oil barrel marked with a droplet symbol",
+  "category": "business",
+  "en": [
+   "oil",
+   "energy",
+   "crude",
+   "commodity",
+   "petroleum",
+   "fuel",
+   "resources",
+   "energy sector"
+  ],
+  "zh": [
+   "石油",
+   "能源",
+   "原油",
+   "商品"
+  ]
+ },
+ "tariff_crate": {
+  "desc": "shipping container stamped with a large percentage badge",
+  "category": "business",
+  "en": [
+   "tariff",
+   "trade",
+   "import tax",
+   "customs",
+   "shipping",
+   "trade policy",
+   "duties",
+   "cross-border trade"
+  ],
+  "zh": [
+   "关税",
+   "贸易",
+   "进口税",
+   "海关"
+  ]
+ },
+ "globe_pin": {
+  "desc": "globe with a red location pin",
+  "category": "places",
+  "en": [
+   "global",
+   "location",
+   "world map",
+   "international",
+   "geography",
+   "destination",
+   "worldwide",
+   "pinpoint"
+  ],
+  "zh": [
+   "全球",
+   "地点",
+   "世界",
+   "定位"
+  ]
+ },
+ "white_house": {
+  "desc": "white colonnaded government residence with a flag on top",
+  "category": "society",
+  "en": [
+   "presidency",
+   "executive branch",
+   "head of state",
+   "government",
+   "administration",
+   "national leadership",
+   "politics"
+  ],
+  "zh": [
+   "政府",
+   "总统府",
+   "行政",
+   "国家领导"
+  ]
+ },
+ "handshake": {
+  "desc": "two hands shaking",
+  "category": "concepts",
+  "en": [
+   "agreement",
+   "deal",
+   "partnership",
+   "cooperation",
+   "negotiation",
+   "collaboration",
+   "trust",
+   "alliance"
+  ],
+  "zh": [
+   "握手",
+   "协议",
+   "合作",
+   "交易"
+  ]
+ },
+ "red_phone": {
+  "desc": "red hotline telephone with sound lines",
+  "category": "symbols",
+  "en": [
+   "hotline",
+   "urgent call",
+   "emergency line",
+   "direct line",
+   "crisis communication",
+   "alert",
+   "escalation"
+  ],
+  "zh": [
+   "热线",
+   "紧急电话",
+   "直线",
+   "通话"
+  ]
+ },
+ "treasury_cart": {
+  "desc": "government building beside a shopping cart full of cash",
+  "category": "money",
+  "en": [
+   "government bonds",
+   "treasury",
+   "debt buyback",
+   "public debt",
+   "government spending",
+   "fiscal policy",
+   "national debt"
+  ],
+  "zh": [
+   "国债",
+   "财政",
+   "债券回购",
+   "公共债务"
+  ]
+ },
+ "memory_chip": {
+  "desc": "computer memory stick",
+  "category": "tech",
+  "en": [
+   "memory",
+   "hardware",
+   "computer chip",
+   "semiconductor",
+   "storage",
+   "electronics",
+   "component",
+   "tech hardware"
+  ],
+  "zh": [
+   "内存",
+   "芯片",
+   "硬件",
+   "存储"
+  ]
+ },
+ "filing_doc": {
+  "desc": "thick legal filing document with a padlock on it",
+  "category": "work",
+  "en": [
+   "confidential",
+   "filing",
+   "legal document",
+   "disclosure",
+   "paperwork",
+   "regulatory filing",
+   "sealed",
+   "draft document"
+  ],
+  "zh": [
+   "机密文件",
+   "备案",
+   "法律文件",
+   "保密"
+  ]
+ },
+ "iceberg": {
+  "desc": "iceberg with a small tip above water and a huge mass below",
+  "category": "nature",
+  "en": [
+   "hidden risk",
+   "tip of the iceberg",
+   "unseen scale",
+   "underlying problem",
+   "more beneath the surface",
+   "concealed danger"
+  ],
+  "zh": [
+   "冰山",
+   "隐藏风险",
+   "表面之下",
+   "潜在问题"
+  ]
+ },
+ "vote_hands": {
+  "desc": "row of raised hands voting",
+  "category": "society",
+  "en": [
+   "voting",
+   "democracy",
+   "election",
+   "consensus",
+   "decision",
+   "ballot",
+   "participation",
+   "civic engagement"
+  ],
+  "zh": [
+   "投票",
+   "民主",
+   "选举",
+   "表决"
+  ]
+ },
+ "hourglass": {
+  "desc": "hourglass with sand flowing through",
+  "category": "concepts",
+  "en": [
+   "waiting",
+   "time passing",
+   "countdown",
+   "patience",
+   "deadline approaching",
+   "time running out",
+   "anticipation"
+  ],
+  "zh": [
+   "沙漏",
+   "等待",
+   "倒计时",
+   "时间"
+  ]
+ },
+ "bullseye": {
+  "desc": "archery target hit dead centre by an arrow",
+  "category": "symbols",
+  "en": [
+   "precision",
+   "accuracy",
+   "target",
+   "goal achieved",
+   "bullseye",
+   "on target",
+   "exact hit",
+   "spot on"
+  ],
+  "zh": [
+   "靶心",
+   "精准",
+   "目标",
+   "命中"
+  ]
+ },
+ "debt_fraction": {
+  "desc": "stack of debt-marked bills over a growing factory, drawn as a fraction",
+  "category": "money",
+  "en": [
+   "debt to GDP",
+   "ratio",
+   "leverage ratio",
+   "national debt",
+   "economic burden",
+   "proportion",
+   "debt load"
+  ],
+  "zh": [
+   "债务比率",
+   "负债率",
+   "经济负担",
+   "比例"
+  ]
+ },
+ "red_herring": {
+  "desc": "red fish with a question mark",
+  "category": "symbols",
+  "en": [
+   "distraction",
+   "red herring",
+   "misdirection",
+   "decoy",
+   "diversion",
+   "false lead",
+   "smokescreen"
+  ],
+  "zh": [
+   "转移注意力",
+   "烟雾弹",
+   "干扰",
+   "误导"
+  ]
+ }
+}

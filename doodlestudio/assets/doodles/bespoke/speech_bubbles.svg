@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 352" width="408" height="352">
+  <g transform="translate(-8,-14)">
+    <path id="bubble_back" d="M68,30 L242,30 A44,44 0 0 1 286,74 L286,146 A44,44 0 0 1 242,190 L122,190 L50,240 L74,190 L68,190 A44,44 0 0 1 24,146 L24,74 A44,44 0 0 1 68,30 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="bubble_front" d="M194,150 L356,150 A44,44 0 0 1 400,194 L400,256 A44,44 0 0 1 356,300 L348,300 L374,350 L300,300 L194,300 A44,44 0 0 1 150,256 L150,194 A44,44 0 0 1 194,150 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bar1" x="66" y="64" width="180" height="17" rx="8.5" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bar2" x="66" y="98" width="146" height="17" rx="8.5" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="bar3" x="66" y="132" width="62" height="17" rx="8.5" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="dot1" cx="215" cy="226" r="15" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="dot2" cx="275" cy="226" r="15" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="dot3" cx="335" cy="226" r="15" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
