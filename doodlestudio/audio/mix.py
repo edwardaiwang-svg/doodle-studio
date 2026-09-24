@@ -48,7 +48,7 @@ def write_wav(path, samples: np.ndarray, rate=SR):
 
 def loudness(path) -> dict:
     out = subprocess.run([FFMPEG, '-v', 'info', '-i', str(path), '-af', 'loudnorm=print_format=json', '-f', 'null', '-'],
-                         capture_output=True, text=True).stderr
+                         capture_output=True, encoding='utf-8', errors='replace').stderr
     return json.JSONDecoder().raw_decode(out[out.rfind('{'):])[0]
 
 

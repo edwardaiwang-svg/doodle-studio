@@ -59,7 +59,7 @@ def mux(tl: dict, silent: Path, mix: Path, output: Path, lang: str, title: str, 
 def _probe(video: Path) -> dict:
     """Stream facts from ffmpeg's own report (no ffprobe needed): frame count by full decode."""
     err = subprocess.run([FFMPEG, '-v', 'info', '-i', str(video), '-map', '0:v:0', '-f', 'null', '-'],
-                         capture_output=True, text=True).stderr
+                         capture_output=True, encoding='utf-8', errors='replace').stderr   # UTF-8 on Windows too
     frames = [int(x) for x in re.findall(r'frame=\s*(\d+)', err)]
     head = err.split('Output #0')[0]                  # the input's report (chapters are listed again for the output)
     return {'frames': frames[-1] if frames else 0, 'errors': [l for l in err.splitlines() if 'rror' in l],
