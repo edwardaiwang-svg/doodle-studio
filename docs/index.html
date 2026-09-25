@@ -23,6 +23,7 @@
   .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
   .narrator { width: 100%; max-width: 330px; justify-self: center; }
   .small { color: var(--soft); font-size: 14px; }
+  .small a { color: inherit; }
   section { padding: 28px 0; }
   h2 { font-size: 34px; margin: 0 0 16px; }
   .demo { background: var(--card); border: 2.5px solid var(--ink); border-radius: 18px; padding: 12px; box-shadow: 0 8px 26px #1b1b1b14; }
@@ -51,9 +52,9 @@
       <h1>Doodle <span>Studio</span></h1>
       <p class="lead">Turn any script into a hand-drawn whiteboard explainer video, on your own computer.
         Free, open source, in English and 中文.</p>
-      <a class="btn primary" href="https://github.com/edwardaiwang-svg/doodle-studio/releases">Download</a>
+      <a class="btn primary" id="download" href="https://github.com/edwardaiwang-svg/doodle-studio/releases/latest">Download</a>
       <a class="btn" href="https://github.com/edwardaiwang-svg/doodle-studio">Source on GitHub</a>
-      <p class="small">macOS · Windows · Linux. No account and no API key needed.<br>
+      <p class="small"><a href="https://github.com/edwardaiwang-svg/doodle-studio/releases/latest">macOS · Windows · Linux</a>. No account and no API key needed.<br>
         First launch on a Mac: System Settings → Privacy &amp; Security → <b>Open Anyway</b> (the app isn't signed yet).</p>
     </div>
     <img class="narrator" src="media/narrator_wave.svg" alt="The Doodle Studio narrator waving">
@@ -131,5 +132,23 @@ doodle studio          # the app window</pre>
     Made by Edward Ai.
   </footer>
 </div>
+<script>
+// Download starts this computer's installer from the latest release; the Releases page stays the fallback.
+(async () => {
+  const ua = navigator.userAgent;
+  const ipad = /Mac/.test(ua) && navigator.maxTouchPoints > 1;
+  const os = /Android|iPhone|iPad/.test(ua) || ipad ? null
+    : /Mac/.test(ua) ? 'macOS' : /Win/.test(ua) ? 'Windows' : /Linux/.test(ua) ? 'Linux' : null;
+  if (!os) return;
+  try {
+    const r = await fetch('https://api.github.com/repos/edwardaiwang-svg/doodle-studio/releases/latest');
+    const asset = (await r.json()).assets.find(a => a.name.includes('-' + os.toLowerCase() + '.'));
+    if (!asset) return;
+    const btn = document.getElementById('download');
+    btn.href = asset.browser_download_url;
+    btn.textContent = 'Download for ' + os;
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>
