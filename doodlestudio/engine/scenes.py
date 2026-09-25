@@ -196,10 +196,15 @@ def build_stat(v, beat, box, ctx):
         dd = ctx.doodle(v['doodle'], (200, 200))
         made.append(ctx.add(dd, x0, y0 + (h - dd.size[1]) / 2 - 20, t))
         tx = x0 + 215
+    # A wordy value ("more than a year") gets two smaller lines; value and label are centred together so the
+    # block never rises out of its cell into the drawings above.
     val = ctx.text(ctx.T(v.get('value')), 110, color=ctx.color, max_w=x0 + w - tx, max_lines=1, min_size=64)
-    vel = ctx.add(val, tx, y0 + h / 2 - val.size[1] + 10, t)
+    if len(val.lines) > 1:
+        val = ctx.text(ctx.T(v.get('value')), 72, color=ctx.color, max_w=x0 + w - tx, max_lines=2, min_size=40)
     lab = ctx.text(ctx.T(v.get('label')), 42, max_w=x0 + w - tx, max_lines=2, min_size=30)
-    lel = ctx.add(lab, tx, y0 + h / 2 + 18, t)
+    top = y0 + max(0, (h - val.size[1] - 8 - lab.size[1]) / 2)
+    vel = ctx.add(val, tx, top, t)
+    lel = ctx.add(lab, tx, top + val.size[1] + 8, t)
     made += [vel, lel]
     ctx.register(v.get('id'), 0, [vel])
     ctx.register(v.get('id'), 'all', made)
