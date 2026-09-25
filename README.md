@@ -10,11 +10,15 @@ Paste a script and Doodle Studio produces a finished MP4. A drawing hand sketche
 - **1,760+ doodles.** It ships 279 original drawings in one bold outlined style (plus a recurring narrator character) and 1,483 Microsoft Fluent Emoji redrawn to match.
 - **It explains, not just decorates.** Numbers become big stats and 100-square grids, dates become timelines, "X is called Y" becomes a sticky-note definition, and quotes become quote cards. Every section ends with a takeaway note that pins onto the agenda.
 - **Everything is editable.** Swap any doodle, fix a label, retitle a section, preview a frame, then make the video.
-- **Optional AI director.** It can plan the visuals with GPT-6 Luna or Claude: through a free Doodle Cloud trial (no key), or with your own OpenAI, Anthropic or OpenAI-compatible key.
+- **Optional AI director.** It can plan the visuals with GPT-6 Luna or Claude: through Doodle Cloud (free plan, no key needed), or with your own OpenAI, Anthropic or OpenAI-compatible key.
 
 ## Install
 
 **App:** download *Doodle Studio* for macOS, Windows or Linux from [Releases](../../releases) and open it. The first video downloads the voice model (about 190 MB per language, checksum-verified).
+
+The app isn't signed with a developer certificate yet, so the first launch needs one approval:
+- **macOS:** unzip, drag *Doodle Studio* to Applications and open it. When macOS blocks it, go to System Settings → Privacy & Security and click **Open Anyway**. If macOS says the app is damaged, run `xattr -dr com.apple.quarantine "/Applications/Doodle Studio.app"` once.
+- **Windows:** unzip and run *Doodle Studio.exe*. If SmartScreen appears, click **More info** → **Run anyway**.
 
 **Command line** (Python 3.10–3.12):
 
@@ -37,10 +41,11 @@ Plain text, Markdown or a .docx file works.
 | Director | Cost | Notes |
 |---|---|---|
 | **Offline** (default) | free | Matches the words of each sentence to the doodle library on your computer. Nothing leaves your machine. |
-| **Doodle Cloud** | 5 free videos | GPT-6 Luna plans each section. No key needed; sign in with an email code. |
+| **Doodle Cloud** | free: 5 videos a month | GPT-6 Luna plans each section. No key needed; sign in with an email code. Paid plans: $5/month for GPT-6 Luna with no video count (fair use); $20/month adds Claude Opus 5.5 (10 videos a month). |
 | **Your OpenAI key** | about $0.02 per 15-min video | Default `gpt-6-luna`. |
 | **Your Anthropic key** | about $1 per 15-min video | `claude-opus-5`, `claude-opus-5-5`, or the cheaper `claude-haiku-4-5`. |
 | **OpenAI-compatible** | varies | OpenRouter, DeepInfra, Groq, or a local Ollama or LM Studio. |
+| **Your own command** | varies | Any program you choose: it gets each request as JSON and prints the plan as JSON. |
 
 AI answers are always checked by code before use:
 - doodles must come from the library;

@@ -9,10 +9,12 @@
   doodle finish MyVideo                       music, mux, captions, chapters, QA
   doodle setup [--lang en zh]                 download the voice models once
   doodle doodles "rocket launch" [--lang en]  search the doodle library
-  doodle login you@example.com                Doodle Cloud free trial (5 videos, no API key needed)
+  doodle login you@example.com                Doodle Cloud (free plan: AI-directed videos, no API key needed)
   doodle key set openai|anthropic|compat      store your own API key in the OS keychain
+  doodle key set command                      store a command to use as the director (Advanced)
 
 Directors: --director rules (offline, free) | cloud | openai | anthropic | compat (--base-url, --model)
+           | command (runs your saved command; --model is passed to it)
 """
 from __future__ import annotations
 
@@ -115,13 +117,18 @@ def cmd_login(args):
         print(f'  a 6-digit code was sent to {args.email}; run: doodle login {args.email} --code 123456')
         return
     info = cloud.verify(args.email, args.code)
-    print(f"  signed in: {info.get('plan', 'trial')} plan, {info.get('remaining', '?')} videos left")
+    left = info.get('remaining')
+    print(f"  signed in: {info.get('plan', 'free')} plan, "
+          f"{'unlimited videos (fair use)' if left is None else f'{left} videos left this month'}")
 
 
 def cmd_key(args):
     import getpass
     from .director.llm.providers import save_key
-    save_key(args.provider, getpass.getpass(f'{args.provider} API key (hidden): ').strip())
+    if args.provider == 'command':
+        save_key('command', input('command line: ').strip())
+    else:
+        save_key(args.provider, getpass.getpass(f'{args.provider} API key (hidden): ').strip())
     print('  saved to the OS keychain')
 
 
@@ -157,7 +164,7 @@ def _settings(args):
     return out
 
 
-MODES = ['rules', 'cloud', 'openai', 'anthropic', 'compat']
+MODES = ['rules', 'cloud', 'openai', 'anthropic', 'compat', 'command']
 
 
 def main(argv=None):
@@ -188,7 +195,7 @@ def main(argv=None):
     p.set_defaults(func=cmd_login)
     p = sub.add_parser('key')
     p.add_argument('action', choices=['set'])
-    p.add_argument('provider', choices=['openai', 'anthropic', 'compat'])
+    p.add_argument('provider', choices=['openai', 'anthropic', 'compat', 'command'])
     p.set_defaults(func=cmd_key)
     p = sub.add_parser('studio')
     p.add_argument('--browser', action='store_true', help='use the web browser instead of a window')

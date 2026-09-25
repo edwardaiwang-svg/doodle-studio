@@ -233,7 +233,7 @@ def state() -> dict:
         except Exception as error:  # noqa: BLE001
             cloud_status = {'error': str(error)}
     return {'projects_root': str(projects_root()), 'cloud_available': bool(cloud.URL), 'cloud': cloud_status,
-            'keys': {p: bool(api_key(p)) for p in ('openai', 'anthropic', 'compat')}, 'models': SUGGESTED,
+            'keys': {p: bool(api_key(p)) for p in ('openai', 'anthropic', 'compat', 'command')}, 'models': SUGGESTED,
             'voices': {'en': ['af_heart', 'af_bella', 'af_nicole', 'am_michael', 'am_fenrir', 'bf_emma', 'bm_george'],
                        'zh': ['zf_001', 'zf_002', 'zm_010', 'zm_020']},
             'models_ready': {lang: not voice.missing_files(lang) for lang in ('en', 'zh')}}
@@ -396,7 +396,7 @@ class Handler(BaseHTTPRequestHandler):
         if p == ['keys'] and method == 'POST':
             from ..director.llm.providers import save_key
             b = self._body()
-            if b.get('provider') not in ('openai', 'anthropic', 'compat') or not b.get('key'):
+            if b.get('provider') not in ('openai', 'anthropic', 'compat', 'command') or not b.get('key'):
                 raise ValueError('provider and key are required')
             save_key(b['provider'], b['key'].strip())
             return self._json({'ok': True})

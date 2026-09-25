@@ -4,8 +4,9 @@ const $ = (sel, root = document) => root.querySelector(sel);
 const COLORS = { orange: '#f57c00', blue: '#1e6fd9', green: '#2e9d4f', purple: '#8e24aa', red: '#d32f2f', teal: '#00897b' };
 const CYCLE = Object.keys(COLORS);
 const DIRECTORS = [
-  ['rules', 'Offline (free, private)'], ['cloud', 'Doodle Cloud (free trial)'],
+  ['rules', 'Offline (free, private)'], ['cloud', 'Doodle Cloud'],
   ['openai', 'My OpenAI key'], ['anthropic', 'My Anthropic key'], ['compat', 'OpenAI-compatible server'],
+  ['command', 'My own command (Advanced)'],
 ];
 let STATE = null, current = null, board = null, dirty = false;
 
@@ -68,15 +69,16 @@ function showNew() {
   dirSel.innerHTML = DIRECTORS.filter(([k]) => k !== 'cloud' || STATE.cloud_available).map(([k, v]) => `<option value="${k}">${v}</option>`).join('');
   const note = () => {
     const d = dirSel.value;
-    $('#byo').classList.toggle('hidden', !['openai', 'anthropic', 'compat'].includes(d));
+    $('#byo').classList.toggle('hidden', !['openai', 'anthropic', 'compat', 'command'].includes(d));
     $('#base-wrap').classList.toggle('hidden', d !== 'compat');
     $('#model').placeholder = (STATE.models[d] || [])[0] || 'model name';
     $('#director-note').textContent = {
       rules: 'Offline: free and private. Visuals are chosen by matching words to 1,700+ doodles on your computer.',
-      cloud: STATE.cloud ? `Doodle Cloud: ${STATE.cloud.remaining ?? '?'} videos left on your ${STATE.cloud.plan || 'trial'} plan.` : 'Doodle Cloud: sign in under Settings to get 5 free AI-directed videos.',
+      cloud: STATE.cloud ? `Doodle Cloud, ${esc(STATE.cloud.plan || 'free')} plan: ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${STATE.cloud.remaining ?? '?'} videos left this month`}.` : 'Doodle Cloud: sign in under Settings for 5 free AI-directed videos a month.',
       openai: STATE.keys.openai ? 'Uses your OpenAI key (about $0.02 per 15-minute video with GPT-6 Luna).' : 'Add your OpenAI key under Settings first.',
       anthropic: STATE.keys.anthropic ? 'Uses your Anthropic key (about $1 per 15-minute video with Opus).' : 'Add your Anthropic key under Settings first.',
       compat: 'Any OpenAI-compatible server (OpenRouter, Groq, a local Ollama…): set the base URL and model.',
+      command: STATE.keys.command ? 'Runs your saved command once per section; the model name is passed along to it.' : 'Save your command under Settings first.',
     }[d];
   };
   dirSel.onchange = note; note();
@@ -259,12 +261,12 @@ function renderVideo(p) {
 // ---------------------------------------------------------------- settings
 function showSettings() {
   const cloud = STATE.cloud_available ? `<section><h3>Doodle Cloud</h3>
-      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${esc(STATE.cloud.remaining)} videos left` : '5 free AI-directed videos. No API key needed.'}</p>
+      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${esc(STATE.cloud.remaining)} videos left this month`}` : '5 free AI-directed videos a month. No API key needed.'}</p>
       <div class="row"><input id="c-email" placeholder="you@example.com"><button id="c-send" class="small">Email me a code</button></div>
       <div class="row" style="margin-top:6px"><input id="c-code" placeholder="6-digit code"><button id="c-verify" class="small">Sign in</button></div></section>` : '';
   const body = modal(`<div class="settings"><h2>Settings</h2>${cloud}
-    <section><h3>Your own API key (Advanced)</h3><p class="muted">Stored in your system keychain, never in project files.</p>
-      <div class="row"><select id="k-prov" style="width:auto"><option value="openai">OpenAI</option><option value="anthropic">Anthropic</option><option value="compat">OpenAI-compatible</option></select>
+    <section><h3>Your own API key or command (Advanced)</h3><p class="muted">Stored in your system keychain, never in project files. A command gets each request as JSON on stdin and prints the plan as JSON.</p>
+      <div class="row"><select id="k-prov" style="width:auto"><option value="openai">OpenAI</option><option value="anthropic">Anthropic</option><option value="compat">OpenAI-compatible</option><option value="command">Command</option></select>
       <input id="k-key" type="password" placeholder="sk-…"><button id="k-save" class="small">Save</button></div>
       <p class="muted">Saved: ${esc(Object.entries(STATE.keys).filter(([, v]) => v).map(([k]) => k).join(', ') || 'none')}</p></section>
     <section><h3>Projects folder</h3><div class="row"><input id="s-root" value="${esc(STATE.projects_root)}"><button id="s-save" class="small">Save</button></div></section>
@@ -275,9 +277,14 @@ function showSettings() {
   });
   $('#c-verify', body)?.addEventListener('click', async () => {
     try { const r = await api('/api/cloud/verify', { method: 'POST', body: JSON.stringify({ email: $('#c-email', body).value, code: $('#c-code', body).value }) });
-      toast(`Signed in: ${r.remaining} videos left`); await refreshState(); closeModal(); }
+      toast(r.remaining === null ? 'Signed in: unlimited videos (fair use)' : `Signed in: ${r.remaining} videos left this month`); await refreshState(); closeModal(); }
     catch (e) { toast(e.message, 6000); }
   });
+  $('#k-prov', body).onchange = () => {
+    const cmd = $('#k-prov', body).value === 'command';
+    $('#k-key', body).type = cmd ? 'text' : 'password';
+    $('#k-key', body).placeholder = cmd ? '/path/to/program --flags' : 'sk-…';
+  };
   $('#k-save', body).onclick = async () => {
     try { await api('/api/keys', { method: 'POST', body: JSON.stringify({ provider: $('#k-prov', body).value, key: $('#k-key', body).value }) });
       toast('Key saved to the keychain'); await refreshState(); closeModal(); }

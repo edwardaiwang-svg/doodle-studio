@@ -97,3 +97,25 @@ def test_payload_offers_candidates_and_budget(board):
     beat = rec.payloads[1]['beats'][0]
     assert beat['candidates'] and all('id' in c and 'desc' in c for c in beat['candidates'])
     assert beat['visual_budget'] >= 1 and 'narrator_think' in rec.payloads[1]['narrator_poses']
+
+
+def test_command_provider_pipes_json_both_ways(tmp_path):
+    import json
+    import sys
+    from doodlestudio.director.llm.providers import CommandProvider
+    from doodlestudio.director.llm.schema import SECTION_SCHEMA
+    tool = tmp_path / 'tool.py'
+    tool.write_text("import json, sys\n"
+                    "req = json.load(sys.stdin)\n"
+                    "assert set(req) == {'model', 'system', 'user', 'schema'} and req['model'] == 'm1'\n"
+                    "section = json.loads(req['user'])\n"
+                    "print(json.dumps({'section_title': section['section_title'], 'hook': '', 'takeaway': '', 'beats': []}))\n")
+    provider = CommandProvider('m1', command=f'"{sys.executable}" "{tool}"')
+    usage = Usage()
+    out = provider.direct_section({'section_title': 'Part 1', 'beats': []}, usage)
+    assert out['section_title'] == 'Part 1' and usage.calls == 1 and usage.cost_usd is None
+    assert SECTION_SCHEMA['type'] == 'object'
+    failing = tmp_path / 'fail.py'
+    failing.write_text("import sys\nsys.exit('no subscription')\n")
+    with pytest.raises(ProviderError, match='no subscription'):
+        CommandProvider('m1', command=f'"{sys.executable}" "{failing}"').direct_section({'section_title': 'x'}, Usage())

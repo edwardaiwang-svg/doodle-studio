@@ -1,4 +1,4 @@
-"""Doodle Cloud client: a free trial (and later plans) without your own API key.
+"""Doodle Cloud client: AI-directed videos (free and paid plans) without your own API key.
 
 The server holds the model keys, builds the prompt itself from the structured section
 payload, and enforces quotas; the app only ever sees the resulting JSON.

@@ -1,15 +1,18 @@
 """LLM providers: one structured-JSON call per section, with usage and cost.
 
-- cloud:     Doodle Cloud (free trial, plans); the key stays on the server.
+- cloud:     Doodle Cloud (free and paid plans); the key stays on the server.
 - openai:    your OpenAI key (default gpt-6-luna).
 - anthropic: your Anthropic key (default claude-opus-5), official SDK.
 - compat:    any OpenAI-compatible endpoint (OpenRouter, DeepInfra, Groq, Ollama, LM Studio).
-Keys come from the OS keychain (service "DoodleStudio") or the usual environment variables.
+- command:   a program you choose: it gets the request as JSON on stdin and prints the section JSON.
+Keys (and the command) come from the OS keychain (service "DoodleStudio") or environment variables.
 """
 from __future__ import annotations
 
 import json
 import os
+import shlex
+import subprocess
 from dataclasses import dataclass, field
 
 from .schema import SECTION_SCHEMA, SYSTEM
@@ -18,8 +21,9 @@ from .schema import SECTION_SCHEMA, SYSTEM
 PRICES = {'gpt-6-luna': (.10, .50, .01), 'claude-opus-5-5': (4.0, 20.0, .20), 'claude-opus-5': (5.0, 25.0, .50),
           'claude-haiku-4-5': (1.0, 5.0, .10)}
 SUGGESTED = {'openai': ['gpt-6-luna'], 'anthropic': ['claude-opus-5', 'claude-opus-5-5', 'claude-haiku-4-5'],
-             'compat': []}
-KEY_ENV = {'openai': 'OPENAI_API_KEY', 'anthropic': 'ANTHROPIC_API_KEY', 'compat': 'DOODLE_COMPAT_API_KEY'}
+             'compat': [], 'command': []}
+KEY_ENV = {'openai': 'OPENAI_API_KEY', 'anthropic': 'ANTHROPIC_API_KEY', 'compat': 'DOODLE_COMPAT_API_KEY',
+           'command': 'DOODLE_DIRECTOR_COMMAND'}
 
 
 class ProviderError(RuntimeError):
@@ -126,6 +130,32 @@ class AnthropicProvider:
         return _parse(text)
 
 
+class CommandProvider:
+    """A program you choose. It reads {"model", "system", "user", "schema"} as JSON on stdin and prints the
+    section JSON (following "schema") on stdout. Its cost is whatever the program's own account says."""
+
+    def __init__(self, model: str | None = None, command: str | None = None, timeout: float = 900):
+        self.name, self.model, self.timeout = 'command', model or '', timeout
+        line = command or api_key('command')
+        if not line:
+            raise ValueError('save the command first (Settings, or the DOODLE_DIRECTOR_COMMAND variable)')
+        self.argv = shlex.split(line, posix=os.name != 'nt')
+
+    def direct_section(self, payload: dict, usage: Usage) -> dict:
+        request = json.dumps({'model': self.model, 'system': SYSTEM, 'user': json.dumps(payload, ensure_ascii=False),
+                              'schema': SECTION_SCHEMA}, ensure_ascii=False)
+        try:
+            done = subprocess.run(self.argv, input=request, capture_output=True, encoding='utf-8', errors='replace',
+                                  timeout=self.timeout)
+        except (OSError, subprocess.TimeoutExpired) as error:
+            raise ProviderError(f'command: {type(error).__name__}: {error}') from error
+        if done.returncode != 0:
+            raise ProviderError(f'command exited with {done.returncode}: {done.stderr.strip()[-300:]}')
+        usage.add(f'command:{self.model}', 0, 0)       # tokens and cost are the program's business
+        out = done.stdout.strip()
+        return _parse(out[out.find('{'):out.rfind('}') + 1] if not out.startswith('{') else out)
+
+
 def _parse(text: str) -> dict:
     try:
         data = json.loads(text or '')
@@ -145,6 +175,8 @@ def make_provider(kind: str, model: str | None = None, base_url: str | None = No
         if not (base_url and model):
             raise ValueError('an OpenAI-compatible provider needs --base-url and --model')
         return OpenAIProvider(model, base_url=base_url, name='compat', strict_schema=False)
+    if kind == 'command':
+        return CommandProvider(model)
     if kind == 'cloud':
         from .cloud import CloudProvider
         return CloudProvider()
