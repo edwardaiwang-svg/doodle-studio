@@ -139,7 +139,7 @@ class CommandProvider:
         line = command or api_key('command')
         if not line:
             raise ValueError('save the command first (Settings, or the DOODLE_DIRECTOR_COMMAND variable)')
-        self.argv = shlex.split(line, posix=os.name != 'nt')
+        self.argv = line if os.name == 'nt' else shlex.split(line)   # Windows parses a command line itself
 
     def direct_section(self, payload: dict, usage: Usage) -> dict:
         request = json.dumps({'model': self.model, 'system': SYSTEM, 'user': json.dumps(payload, ensure_ascii=False),

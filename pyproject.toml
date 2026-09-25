@@ -1,6 +1,6 @@
 [project]
 name = "doodle-studio"
-version = "0.1.0"
+version = "0.1.1"
 description = "Turn any script into a hand-drawn whiteboard explainer video, locally."
 readme = "README.md"
 license = "MIT"
