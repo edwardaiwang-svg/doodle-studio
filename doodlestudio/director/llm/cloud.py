@@ -17,6 +17,8 @@ import platformdirs
 from .providers import ProviderError, Usage
 
 URL = os.environ.get('DOODLE_CLOUD_URL', '')          # set once the service is deployed
+# Cloudflare refuses Python's default "Python-urllib" signature (error 1010), so the app names itself.
+USER_AGENT = 'DoodleStudio (+https://github.com/edwardaiwang-svg/doodle-studio)'
 INSTALL_ID = Path(platformdirs.user_data_dir('DoodleStudio')) / 'install-id'
 
 
@@ -42,7 +44,7 @@ def _call(path: str, body: dict | None = None, token: str | None = None) -> dict
         raise ProviderError('Doodle Cloud is not available in this build yet; use offline mode or your own key')
     req = urllib.request.Request(URL.rstrip('/') + path, method='POST' if body is not None else 'GET',
                                  data=json.dumps(body).encode() if body is not None else None,
-                                 headers={'Content-Type': 'application/json',
+                                 headers={'Content-Type': 'application/json', 'User-Agent': USER_AGENT,
                                           **({'Authorization': f'Bearer {token}'} if token else {})})
     try:
         with urllib.request.urlopen(req, timeout=180) as response:
