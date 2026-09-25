@@ -13,7 +13,8 @@ Meaning rules (a word is drawn only in the sense the script uses it):
   hidden, wins ("a press adapted from wine making" is a printing press, not a newspaper);
 - a word keeps the picture it got first; when that picture was used moments ago the word is
   skipped, never given a second-best meaning;
-- idioms ("a matter of weeks"), generic words ("inventions") and numbers get no picture;
+- idioms ("a matter of weeks"), generic words ("inventions") and numbers get no picture, and neither
+  does anything negated ("no engine") or the words of a term its definition note already shows;
 - a picture found by meaning alone must be a curated drawing on the subject, and may not
   take words that name something else.
 Timeline labels say who or what the dated clause is about: a named person or group first,
@@ -60,6 +61,8 @@ IDIOMS = {'en': re.compile(r"\b(?:(?:in )?a matter of|no matter|as a matter of f
                            r"all in all|at the same time|in general|in particular|for (?:example|instance)|so far|"
                            r"as well|in other words|the bottom line|a (?:lot|number|couple) of)\b", re.I),
           'zh': re.compile(r'总而言之|事实上|换句话说|与此同时|一般来说|比如说|例如')}
+NEGATION = {'en': re.compile(r"\b(?:no|not|without|never|nor|neither|non)\s+(?:[a-z-]+\s+)?$", re.I),
+            'zh': re.compile(r'(?:没有|不是|无|不|非)$')}
 NUMERAL = re.compile(r'[\d零一二三四五六七八九十百千万亿两.,:：%]+')
 DETERMINERS = set('a an the this that these those his her its their our your my every each all some many several '
                   'most more no any'.split())
@@ -67,6 +70,7 @@ PREPS = set('in on at by for with from of to into onto across through over under
             'since until around near within without against among toward towards throughout upon via like'.split())
 AUX = set('is are was were be been being has have had do does did will would can could shall should may might '
           'must'.split())
+CONNECTIVES = set('when while as and where after before because since then which who whose once'.split())
 PAST = set('spread ran began became made took came went grew fell rose led brought built found wrote gave got held '
            'kept left lost met paid put said sent sold stood taught thought told won'.split())
 NARRATOR_CUES = [
@@ -153,7 +157,9 @@ class RulesDirector:
                 budget -= 1
                 since_narrator = 0
             hits = self._concepts(text, recent, beat['chapter'])
-            used_words: set = set()
+            terms = [self._key(v['term'][lang]) for _, v in planned if v['type'] == 'glossary']
+            hits = [h for h in hits if not (h.phrase and any(self._inside(self._key(h.phrase), t) for t in terms))]
+            used_words: set = set()                   # (a defined term is shown by its note, not by its words)
             for sweep in (0, 1):                      # one doodle per free sentence first, then extras
                 for k, (a, b) in enumerate(spans):
                     if budget <= 0 or (sweep == 0 and k in taken):
@@ -253,6 +259,8 @@ class RulesDirector:
                 a, b = hit.start, hit.start + len(hit.phrase)
                 if any(x <= a and b <= y and (x, y) != (a, b) for x, y in compounds):
                     continue                          # "global warming" is one idea: not "global" on its own
+                if NEGATION[self.lang].search(plain[max(0, a - 24):a]):
+                    continue                          # "no engine": there is nothing to draw
                 if key in GENERIC[self.lang] or NUMERAL.fullmatch(key) or not self._belongs(hit.id, hit.phrase, chapter):
                     continue
                 if key in PHENOMENA[self.lang] and self.matcher.entries[hit.id]['set'] == 'fluent':
@@ -354,6 +362,10 @@ class RulesDirector:
         rival = max(cands, key=lambda c: fit[c[0].id])
         return rival if fit[rival[0].id] >= fit[best[0].id] + SENSE_MARGIN else best
 
+    def _inside(self, key, term):
+        """Are the words of ``key`` part of ``term``?"""
+        return set(key.split()) <= set(term.split()) if self.lang == 'en' else key in term
+
     def _pair(self, text, hits):
         """The best hit, plus a second nearby hit about something else (never two takes on one phrase)."""
         first = hits[0]
@@ -443,6 +455,11 @@ class RulesDirector:
         if pct and 1 <= float(pct.group(1)) <= 99:
             value = pct.group(0).split('of')[0].strip() if self.lang == 'en' else pct.group(1) + '%'
             label = pct.group(2) if self.lang == 'en' else self._noun_after(text[pct.end(1):])
+            if self.lang == 'en':                     # "27% of trips are made ..." -> "trips"
+                words = label.split()
+                while len(words) > 1 and words[-1] in AUX | PREPS | DETERMINERS:
+                    words.pop()
+                label = ' '.join(words)
             title = f'{value} of {label}' if self.lang == 'en' else f'{value}的{label}'
             v = {'id': f"{beat['id']}p", 'type': 'grid100', 'title': {self.lang: title},
                  'filled': round(float(pct.group(1))),
@@ -489,8 +506,10 @@ class RulesDirector:
         parts = [(m.start(), m.group(0)) for m in re.finditer(r'[^,;:()]+', sentence)]
         k = next((i for i, (s, p) in enumerate(parts) if s <= at < s + len(p)), 0)
         words = re.findall(r"[A-Za-z][\w'’-]*", parts[k][1].replace(date, ' '))
+        used = k
         if all(w.lower() in PREPS | DETERMINERS for w in words) and k + 1 < len(parts):
             words = re.findall(r"[A-Za-z][\w'’-]*", parts[k + 1][1])    # "By 1500, printing presses were ..."
+            used = k + 1
         subject = []                                  # the words before the clause's verb or first preposition
         for i, w in enumerate(words):
             low = w.lower()
@@ -505,8 +524,24 @@ class RulesDirector:
                 if not w[0].isupper():
                     break
                 run.append(w)
-            label = re.sub(r"['’]s$", '', ' '.join(run))
-            return label if len(label) <= LABEL_MAX['en'] else label.split()[-1]
+            follows = subject[first + len(run):]
+            if not follows or run[-1].endswith(("'s", "’s")):   # "French makers": an adjective, not a name
+                label = re.sub(r"['’]s$", '', ' '.join(run))
+                return label if len(label) <= LABEL_MAX['en'] else label.split()[-1]
+        if used + 1 < len(parts):                     # "The fix came in 1885, when John Kemp Starley sold ..."
+            nxt = re.findall(r"[A-Za-z][\w'’-]*", parts[used + 1][1])
+            while nxt and nxt[0].lower() in CONNECTIVES:
+                nxt = nxt[1:]
+            run = []
+            for w in nxt:
+                if not w[0].isupper():
+                    break
+                run.append(w)
+            after = nxt[len(run)].lower() if len(run) < len(nxt) else ''
+            if run and run[0].lower() not in DETERMINERS | EN_STOP and (not after or after in AUX | PAST
+                                                                          or after.endswith('ed')):
+                label = re.sub(r"['’]s$", '', ' '.join(run))
+                return label if len(label) <= LABEL_MAX['en'] else label.split()[-1]
         det = subject[0].lower() if subject else ''
         content = [w for w in subject if w.lower() not in DETERMINERS and not w.isdigit()]
         if len(content) == 1 and det in ('every', 'each'):

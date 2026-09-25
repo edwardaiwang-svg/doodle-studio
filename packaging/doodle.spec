@@ -26,5 +26,5 @@ exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name='Doodle Studio', conso
 coll = COLLECT(exe, a.binaries, a.datas, name='Doodle Studio')
 if sys.platform == 'darwin':
     app = BUNDLE(coll, name='Doodle Studio.app', icon=str(ROOT / 'packaging' / 'icon.icns'),
-                 bundle_identifier='io.github.doodlestudio', version='0.1.2',
+                 bundle_identifier='io.github.doodlestudio', version='0.1.3',
                  info_plist={'NSHighResolutionCapable': True, 'LSMinimumSystemVersion': '11.0'})

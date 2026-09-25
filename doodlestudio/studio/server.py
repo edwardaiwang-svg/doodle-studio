@@ -231,6 +231,7 @@ def state() -> dict:
     return {'projects_root': str(projects_root()), 'cloud_available': bool(cloud.URL),
             'cloud_signed_in': bool(cloud.URL) and ('cloud-token' in names or bool(os.environ.get('DOODLE_CLOUD_TOKEN'))),
             'cloud': None, 'keys': {p: p in names for p in ('openai', 'anthropic', 'compat', 'command')},
+            'advanced': bool(_config().get('advanced')),
             'models': SUGGESTED,
             'voices': {'en': ['af_heart', 'af_bella', 'af_nicole', 'am_michael', 'am_fenrir', 'bf_emma', 'bm_george'],
                        'zh': ['zf_001', 'zf_002', 'zm_010', 'zm_020']},
@@ -407,6 +408,8 @@ class Handler(BaseHTTPRequestHandler):
             if b.get('projects'):
                 Path(b['projects']).expanduser().mkdir(parents=True, exist_ok=True)
                 cfg['projects'] = str(Path(b['projects']).expanduser())
+            if 'advanced' in b:
+                cfg['advanced'] = bool(b['advanced'])
             _save_config(cfg)
             return self._json({'ok': True, 'projects_root': str(projects_root())})
         return self._json({'error': 'not found'}, 404)

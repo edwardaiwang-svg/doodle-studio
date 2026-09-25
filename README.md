@@ -42,7 +42,7 @@ Plain text, Markdown or a .docx file works.
 |---|---|---|
 | **Offline** (default) | free | Matches the words of each sentence to the doodle library on your computer. Nothing leaves your machine. |
 | **Doodle Cloud** | free: 5 videos a month | GPT-6 Luna plans each section. No key needed; sign in with an email code. Paid plans: $5/month for GPT-6 Luna with no video count (fair use); $20/month adds Claude Opus 5.5 (10 videos a month). |
-| **Your OpenAI key** | about $0.02 per 15-min video | Default `gpt-6-luna`. |
+| **Your OpenAI key** (Advanced) | about $0.02 per 15-min video | Default `gpt-6-luna`. In the app, turn on Settings → Advanced directors to see these last four options. |
 | **Your Anthropic key** | about $1 per 15-min video | `claude-opus-5`, `claude-opus-5-5`, or the cheaper `claude-haiku-4-5`. |
 | **OpenAI-compatible** | varies | OpenRouter, DeepInfra, Groq, or a local Ollama or LM Studio. |
 | **Your own command** | varies | Any program you choose: it gets each request as JSON and prints the plan as JSON. |

@@ -87,6 +87,8 @@ def test_timeline_labels_say_who_or_what():
     ('By 1500, printing presses were running in more than 250 European cities.', '1500', 'Printing presses'),
     ("In 1517, Martin Luther's arguments spread across Germany in a matter of weeks.", '1517', 'Martin Luther'),
     ('Before the 1450s, every book in Europe was copied by hand.', '1450s', 'Books copied by hand'),
+    ('In the 1860s, French makers added pedals to the front wheel.', '1860s', 'French makers'),
+    ('The fix came in 1885, when John Kemp Starley sold the Rover.', '1885', 'John Kemp Starley'),
 ])
 def test_event_label(sentence, date, label):
     assert RulesDirector('en')._event_label(sentence, date) == label
@@ -95,3 +97,14 @@ def test_event_label(sentence, date, label):
 def test_event_label_zh():
     label = RulesDirector('zh')._event_label('1911年，辛亥革命推翻了清朝。', '1911')
     assert label and '1911' not in label and '年' not in label, label
+
+
+def test_negated_words_and_defined_terms_get_no_picture():
+    board, picks = _picks('bicycle.md')
+    doodles = {d for _, d in picks}
+    assert 'gears_meshing' not in doodles and not any(label == 'Engine' for label, _ in picks)   # "no engine"
+    assert 'fl_horse' not in doodles                                   # "the dandy horse" is on its note
+    glossary = [v for b in board['beats'] for v in b['visuals'] if v['type'] == 'glossary']
+    assert glossary and glossary[0]['term']['en'] == 'Dandy horse'
+    grid = next(v for b in board['beats'] for v in b['visuals'] if v['type'] == 'grid100')
+    assert grid['title']['en'] == '27% of trips'
