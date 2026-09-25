@@ -14,6 +14,9 @@ import os
 import shlex
 import subprocess
 from dataclasses import dataclass, field
+from pathlib import Path
+
+import platformdirs
 
 from .schema import SECTION_SCHEMA, SYSTEM
 
@@ -24,6 +27,10 @@ SUGGESTED = {'openai': ['gpt-6-luna'], 'anthropic': ['claude-opus-5', 'claude-op
              'compat': [], 'command': []}
 KEY_ENV = {'openai': 'OPENAI_API_KEY', 'anthropic': 'ANTHROPIC_API_KEY', 'compat': 'DOODLE_COMPAT_API_KEY',
            'command': 'DOODLE_DIRECTOR_COMMAND'}
+# The names (never the values) of the keychain entries this app has saved. macOS asks the user before an app
+# reads an entry it did not create, and every unsigned update counts as a new app, so the app only reads a key
+# when a video uses it; this list answers "is a key saved?" without touching the keychain.
+SAVED = Path(platformdirs.user_config_dir('DoodleStudio')) / 'saved-keys.json'
 
 
 class ProviderError(RuntimeError):
@@ -66,6 +73,25 @@ def api_key(provider: str) -> str | None:
 def save_key(provider: str, key: str):
     import keyring
     keyring.set_password('DoodleStudio', provider, key)
+    remember(provider)
+
+
+def _saved_file() -> set:
+    try:
+        return set(json.loads(SAVED.read_text(encoding='utf-8')))
+    except (OSError, ValueError):
+        return set()
+
+
+def remember(name: str):
+    """Note that a keychain entry called ``name`` was saved."""
+    SAVED.parent.mkdir(parents=True, exist_ok=True)
+    SAVED.write_text(json.dumps(sorted(_saved_file() | {name})), encoding='utf-8')
+
+
+def saved() -> set:
+    """Names with a saved key (or an environment variable set), found without reading the keychain."""
+    return _saved_file() | {p for p, env in KEY_ENV.items() if os.environ.get(env)}
 
 
 class OpenAIProvider:

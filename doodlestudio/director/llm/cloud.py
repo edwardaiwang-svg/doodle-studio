@@ -66,7 +66,9 @@ def verify(email: str, code: str) -> dict:
     """Exchange the emailed code for a token (kept in the OS keychain)."""
     out = _call('/v1/verify', {'email': email, 'code': code, 'install_id': install_id()})
     import keyring
+    from .providers import remember
     keyring.set_password('DoodleStudio', 'cloud-token', out['token'])
+    remember('cloud-token')
     return {k: v for k, v in out.items() if k != 'token'}
 
 

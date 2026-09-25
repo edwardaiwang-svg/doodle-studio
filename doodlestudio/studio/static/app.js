@@ -74,14 +74,21 @@ function showNew() {
     $('#model').placeholder = (STATE.models[d] || [])[0] || 'model name';
     $('#director-note').textContent = {
       rules: 'Offline: free and private. Visuals are chosen by matching words to 1,700+ doodles on your computer.',
-      cloud: STATE.cloud ? `Doodle Cloud, ${esc(STATE.cloud.plan || 'free')} plan: ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${STATE.cloud.remaining ?? '?'} videos left this month`}.` : 'Doodle Cloud: sign in under Settings for 5 free AI-directed videos a month.',
+      cloud: STATE.cloud ? `Doodle Cloud, ${esc(STATE.cloud.plan || 'free')} plan: ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${STATE.cloud.remaining ?? '?'} videos left this month`}.` : STATE.cloud_signed_in ? 'Doodle Cloud: signed in.' : 'Doodle Cloud: sign in under Settings for 5 free AI-directed videos a month.',
       openai: STATE.keys.openai ? 'Uses your OpenAI key (about $0.02 per 15-minute video with GPT-6 Luna).' : 'Add your OpenAI key under Settings first.',
       anthropic: STATE.keys.anthropic ? 'Uses your Anthropic key (about $1 per 15-minute video with Opus).' : 'Add your Anthropic key under Settings first.',
       compat: 'Any OpenAI-compatible server (OpenRouter, Groq, a local Ollama…): set the base URL and model.',
       command: STATE.keys.command ? 'Runs your saved command once per section; the model name is passed along to it.' : 'Save your command under Settings first.',
     }[d];
   };
-  dirSel.onchange = note; note();
+  dirSel.onchange = async () => {
+    note();
+    if (dirSel.value === 'cloud' && STATE.cloud_signed_in && !STATE.cloud) {
+      try { STATE.cloud = await api('/api/cloud/me'); } catch (e) { STATE.cloud = null; }
+      note();
+    }
+  };
+  note();
   let upload = null;
   $('#file').onchange = async (e) => {
     const f = e.target.files[0]; if (!f) return;
@@ -261,7 +268,7 @@ function renderVideo(p) {
 // ---------------------------------------------------------------- settings
 function showSettings() {
   const cloud = STATE.cloud_available ? `<section><h3>Doodle Cloud</h3>
-      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${esc(STATE.cloud.remaining)} videos left this month`}` : '5 free AI-directed videos a month. No API key needed.'}</p>
+      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${esc(STATE.cloud.remaining)} videos left this month`}` : STATE.cloud_signed_in ? 'Signed in.' : '5 free AI-directed videos a month. No API key needed.'}</p>
       <div class="row"><input id="c-email" placeholder="you@example.com"><button id="c-send" class="small">Email me a code</button></div>
       <div class="row" style="margin-top:6px"><input id="c-code" placeholder="6-digit code"><button id="c-verify" class="small">Sign in</button></div></section>` : '';
   const body = modal(`<div class="settings"><h2>Settings</h2>${cloud}

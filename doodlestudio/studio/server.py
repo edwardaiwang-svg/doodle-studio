@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import mimetypes
+import os
 import re
 import secrets
 import threading
@@ -225,15 +226,12 @@ def still(name: str, beat: str | None, offset: float = 0.0, t: float = 0.0) -> b
 
 def state() -> dict:
     from ..director.llm import cloud
-    from ..director.llm.providers import SUGGESTED, api_key
-    cloud_status = None
-    if cloud.URL and cloud._token():
-        try:
-            cloud_status = cloud.me()
-        except Exception as error:  # noqa: BLE001
-            cloud_status = {'error': str(error)}
-    return {'projects_root': str(projects_root()), 'cloud_available': bool(cloud.URL), 'cloud': cloud_status,
-            'keys': {p: bool(api_key(p)) for p in ('openai', 'anthropic', 'compat', 'command')}, 'models': SUGGESTED,
+    from ..director.llm.providers import SUGGESTED, saved
+    names = saved()                    # names only: opening the app never reads the keychain (no macOS prompt)
+    return {'projects_root': str(projects_root()), 'cloud_available': bool(cloud.URL),
+            'cloud_signed_in': bool(cloud.URL) and ('cloud-token' in names or bool(os.environ.get('DOODLE_CLOUD_TOKEN'))),
+            'cloud': None, 'keys': {p: p in names for p in ('openai', 'anthropic', 'compat', 'command')},
+            'models': SUGGESTED,
             'voices': {'en': ['af_heart', 'af_bella', 'af_nicole', 'am_michael', 'am_fenrir', 'bf_emma', 'bm_george'],
                        'zh': ['zf_001', 'zf_002', 'zm_010', 'zm_020']},
             'models_ready': {lang: not voice.missing_files(lang) for lang in ('en', 'zh')}}
@@ -386,6 +384,9 @@ class Handler(BaseHTTPRequestHandler):
             return self._json({'path': str(folder / name)})
         if p == ['doodles'] and method == 'GET':
             return self._json(search_doodles(q.get('q', ''), q.get('lang', 'en')))
+        if p == ['cloud', 'me'] and method == 'GET':        # read the sign-in token only when Doodle Cloud is chosen
+            from ..director.llm import cloud
+            return self._json(cloud.me())
         if p == ['cloud', 'signup'] and method == 'POST':
             from ..director.llm import cloud
             return self._json(cloud.signup(self._body()['email']))

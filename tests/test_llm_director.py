@@ -119,3 +119,22 @@ def test_command_provider_pipes_json_both_ways(tmp_path):
     failing.write_text("import sys\nsys.exit('no subscription')\n")
     with pytest.raises(ProviderError, match='no subscription'):
         CommandProvider('m1', command=f'"{sys.executable}" "{failing}"').direct_section({'section_title': 'x'}, Usage())
+
+
+def test_opening_the_app_never_reads_the_keychain(tmp_path, monkeypatch):
+    """macOS asks before an app reads a keychain entry it did not create (every unsigned update counts as a
+    new app), so the Studio's startup state must list saved keys from names alone."""
+    import keyring
+    from doodlestudio.director.llm import providers
+    from doodlestudio.studio import server
+    monkeypatch.setattr(providers, 'SAVED', tmp_path / 'saved-keys.json')
+    monkeypatch.setattr(keyring, 'set_password', lambda *a: None)
+    providers.save_key('openai', 'sk-test')
+
+    reads = []
+    monkeypatch.setattr(keyring, 'get_password', lambda *a: reads.append(a))
+    for var in providers.KEY_ENV.values():
+        monkeypatch.delenv(var, raising=False)
+    state = server.state()
+    assert not reads, f'the keychain was read at startup: {reads}'
+    assert state['keys'] == {'openai': True, 'anthropic': False, 'compat': False, 'command': False}
