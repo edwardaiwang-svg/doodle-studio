@@ -5,7 +5,7 @@ export const CONFIG = {
   version: '0.1.0',
   dev: false,                                   // tests turn this on in a throwaway copy; never in a release
   cloudUrl: 'https://api.doodlecloud.org',      // Doodle Cloud: GPT-6 Luna director + server-side teacher check
-  googleClientId: 'REPLACE_WITH_OAUTH_CLIENT_ID.apps.googleusercontent.com',
+  googleClientId: '292748984382-7uf3qe28fadngtjln2p6e77jgmmf87qi.apps.googleusercontent.com',
   scopes: [
     'https://www.googleapis.com/auth/classroom.courses.readonly',        // which classes you teach (the teacher check)
     'https://www.googleapis.com/auth/classroom.courseworkmaterials',     // post the video to Classwork
