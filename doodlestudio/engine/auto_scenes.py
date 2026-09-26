@@ -191,11 +191,12 @@ def ui_small(text, size):
     return img
 
 
-def build_take_note(ctx, beat, chapter, x0, t):
+def build_take_note(ctx, beat, chapter, x0, t, t_label=None, t_head=None):
     """Big sticky note with the section's takeaway headline; returns (note elements, bbox).
 
-    The note and its headline are written first and are essential; the narrator's face (and a
-    sign-off) follow only if there is time before the note is pinned to the agenda.
+    The note is laid down at ``t``; its label and headline are written as they are said
+    (``t_label``, ``t_head``). All three are essential; the narrator's face (and a sign-off)
+    follow only if there is time before the note is pinned to the agenda.
     """
     strings = ui(ctx.ep, ctx.lang)
     col = ink.SECTION_COLORS[chapter['color']]
@@ -204,10 +205,10 @@ def build_take_note(ctx, beat, chapter, x0, t):
     face = narrator(ctx.ep, 'head')
     els = [ctx.add(sticky(ctx, nw, nh, tape=col), nx, ny, t, essential=True)]
     label = ctx.text(strings['takeaway'], 44, color=col)
-    els.append(ctx.add(label, nx + 50, ny + 48, t, essential=True))
+    els.append(ctx.add(label, nx + 50, ny + 48, max(t, t_label or t), essential=True))
     head = ctx.text(ctx.T(beat['take']['headline']), 76 if ctx.lang == 'en' else 80,
                     max_w=nw - (330 if face else 100), max_lines=3, min_size=52, pace=.9)
-    written = ctx.add(head, nx + 50, ny + 48 + label.size[1] + 22, t, essential=True)
+    written = ctx.add(head, nx + 50, ny + 48 + label.size[1] + 22, max(t, t_head or t), essential=True)
     els.append(written)
     if face:
         els.append(ctx.add(ctx.doodle(face, (220, 220)), nx + nw - 250, ny + nh - 260, t + .01, optional=True,

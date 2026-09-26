@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 
 from ..engine.storyboard import KINDS
-from ..library import resolve
+from ..library import banned, resolve
 
 SLOT_TYPES = {'cluster', 'quote', 'glossary', 'stat'}
 PAGE_TYPES = {'ladder', 'bars', 'coins', 'grid100', 'lanes', 'range', 'zones', 'levels', 'table', 'dial', 'flow',
@@ -113,6 +113,8 @@ def validate(board: dict, project_dir: Path | None = None) -> dict:
             for did in _doodles(v):
                 if resolve(did, project_dir) is None:
                     errors.append(f'{bid}/{vid}: doodle {did!r} not found')
+                elif did in banned()['doodles']:
+                    warnings.append(f'{bid}/{vid}: {did!r} is a banned picture (no director picks it)')
             if vtype == 'cluster' and not 1 <= len(v.get('items') or []) <= 3:
                 errors.append(f'{bid}/{vid}: a cluster needs 1-3 items')
     for b in beats:

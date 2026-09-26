@@ -14,6 +14,13 @@ SETS = ('bespoke', 'fluent')
 MISSING = ASSETS / 'missing.svg'
 
 
+@lru_cache(maxsize=1)
+def banned() -> dict:
+    """{'doodles': set of ids no director may pick, 'words': {lang: set of words never drawn}} (banned.json)."""
+    data = json.loads((ASSETS / 'banned.json').read_text(encoding='utf-8'))
+    return {'doodles': set(data['doodles']), 'words': {lang: set(ws) for lang, ws in data['words'].items()}}
+
+
 def resolve(doodle_id: str, project_dir: Path | None = None) -> Path | None:
     dirs = ([Path(project_dir) / 'doodles'] if project_dir else []) + [ASSETS / s for s in SETS]
     for d in dirs:
@@ -25,11 +32,11 @@ def resolve(doodle_id: str, project_dir: Path | None = None) -> Path | None:
 
 @lru_cache(maxsize=1)
 def catalog() -> dict:
-    """id -> {desc, category, en: [...], zh: [...], set} for every shipped doodle that has an SVG."""
-    out = {}
+    """id -> {desc, category, en: [...], zh: [...], set} for every shipped doodle that has an SVG and is not banned."""
+    out, skip = {}, banned()['doodles']
     for path in sorted((ASSETS / 'tags').glob('*.json')):
         doodle_set = 'fluent' if path.stem == 'fluent' else 'bespoke'
         for did, entry in json.loads(path.read_text(encoding='utf-8')).items():
-            if (ASSETS / doodle_set / f'{did}.svg').exists():
+            if did not in skip and (ASSETS / doodle_set / f'{did}.svg').exists():
                 out[did] = {**entry, 'set': doodle_set}
     return out

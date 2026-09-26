@@ -64,7 +64,7 @@ def test_good_answers_are_used_and_mapped_to_spoken_text(board):
     report = LLMDirector(rec, 'en').direct(board)
     s1 = next(c for c in board['chapters'] if c['id'] == 's1')
     assert s1['title']['en'] == 'Gutenberg builds a machine' and s1['hook']['en'] == 'Metal letters, fast'
-    first = next(b for b in board['beats'] if b['chapter'] == 's1')
+    first = next(b for b in board['beats'] if b['chapter'] == 's1' and b['kind'] == 'narration')
     kinds = [v['type'] for v in first['visuals']]
     assert kinds == ['cluster', 'stat']
     assert first['visuals'][1]['trigger']['en'] == 'Around fourteen fifty'       # display phrase -> spoken words
@@ -79,8 +79,8 @@ def test_bad_answers_fall_back_to_the_rules_draft(board):
     draft.rules.direct(reference)
     rec = Recorded({'One machine, one idea': bad_section, 'Books everywhere': ProviderError('rate limited')})
     report = LLMDirector(rec, 'en').direct(board)
-    first = next(b for b in board['beats'] if b['chapter'] == 's1')
-    ref_first = next(b for b in reference['beats'] if b['chapter'] == 's1')
+    first = next(b for b in board['beats'] if b['chapter'] == 's1' and b['kind'] == 'narration')
+    ref_first = next(b for b in reference['beats'] if b['chapter'] == 's1' and b['kind'] == 'narration')
     assert first['visuals'] == ref_first['visuals']                          # every visual rejected -> draft kept
     s1 = next(c for c in board['chapters'] if c['id'] == 's1')
     assert s1['title']['en'] == 'One machine, one idea'                       # too-long title rejected
@@ -138,3 +138,18 @@ def test_opening_the_app_never_reads_the_keychain(tmp_path, monkeypatch):
     state = server.state()
     assert not reads, f'the keychain was read at startup: {reads}'
     assert state['keys'] == {'openai': True, 'anthropic': False, 'compat': False, 'command': False}
+
+
+def test_an_ai_takeaway_is_what_the_narrator_says(board):
+    LLMDirector(Recorded({'One machine, one idea': good_section}), 'en').direct(board)
+    take = next(b for b in board['beats'] if b['chapter'] == 's1' and b['kind'] == 'take')
+    assert take['display']['en'] == 'Key takeaway: Printing got fast and cheap.'
+    assert take['spoken']['en'] == take['display']['en']
+
+
+def test_banned_pictures_are_never_offered_or_kept(board):
+    from doodlestudio.library import banned
+    rec = Recorded({})
+    LLMDirector(rec, 'en').direct(board)
+    offered = {c['id'] for p in rec.payloads for b in p['beats'] for c in b['candidates']}
+    assert offered and not offered & banned()['doodles']

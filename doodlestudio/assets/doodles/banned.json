@@ -1,0 +1,14 @@
+{
+ "why": "Pictures and words the directors never draw. Religious imagery (every faith alike) and scientist or astronomer figures are left out of every video; country words such as Germany get no picture.",
+ "doodles": [
+  "fl_church", "fl_wedding", "fl_place_of_worship", "fl_mosque", "fl_kaaba", "fl_synagogue", "fl_hindu_temple",
+  "fl_shinto_shrine", "pagoda", "fl_latin_cross", "fl_orthodox_cross", "fl_star_of_david", "fl_star_and_crescent",
+  "fl_menorah", "fl_om", "fl_khanda", "fl_wheel_of_dharma", "fl_yin_yang", "fl_prayer_beads", "fl_palms_up_together",
+  "fl_man_scientist", "fl_woman_scientist", "fl_scientist", "fl_lab_coat"
+ ],
+ "words": {
+  "en": ["church", "chapel", "cathedral", "religion", "religious", "bible", "prayer", "pray", "mosque", "synagogue",
+         "germany", "german", "scientist", "astronomer"],
+  "zh": ["教堂", "宗教", "圣经", "祈祷", "清真寺", "德国", "德国人", "科学家", "天文学家"]
+ }
+}

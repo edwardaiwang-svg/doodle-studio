@@ -12,7 +12,8 @@ Scheduling rules (every video, whatever the director planned):
   and never goes back to a page it has left;
 - a drawing that could not start within ``STALE`` seconds of its words, or would
   hold the next page up by more than ``CUT_GRACE``, is skipped rather than drawn
-  late; so is anything optional that would miss its deadline.
+  late; so is anything optional that would miss its deadline, and anything left of
+  the screen once the camera has moved on (the camera never pans back).
 """
 from __future__ import annotations
 
@@ -51,6 +52,7 @@ class Element:
     optional: bool = False          # decoration: skipped first when time is short
     deadline: float | None = None   # must be finished by then (a transition follows)
     skipped: bool = False           # not drawn at all (too late to be useful)
+    beat: str = ''                  # the beat whose visual this is (pacing), '' for automatic scenes
 
     @property
     def duration(self):
@@ -214,7 +216,7 @@ class Scheduler:
     def __init__(self, camera: Camera):
         self.camera = camera
 
-    def run(self, elements, cuts, max_rate=2.0):
+    def run(self, elements, cuts, max_rate=2.0, stale=STALE, cut_grace=CUT_GRACE):
         """Place every element in time and move the camera.
 
         ``cuts[k] = (t, L, 'cut' | 'pan')`` brings the camera to stretch k (a page, or a run of
@@ -222,9 +224,14 @@ class Scheduler:
         Drawings are scheduled as units (elements of one stretch sharing a trigger), one hand at
         a time. A unit plays at natural speed when it can finish before the next unit's trigger
         and the next page change; otherwise the whole unit speeds up just enough (<= max_rate),
-        so the board keeps pace with the narration without scribbling.
+        so the board keeps pace with the narration without scribbling. (Pacing measures with
+        ``max_rate=1`` and no skipping: how long every drawing would really take.)
         """
         cam = self.camera
+        for _ in range(3):                                  # a drawing that follows another is never due before it
+            for e in elements:
+                if e.after is not None and not e.fixed:
+                    e.trigger = max(e.trigger, e.after.trigger + .01)
         fixed = [e for e in elements if e.fixed]
         for e in fixed:
             e.start = e.trigger
@@ -306,6 +313,10 @@ class Scheduler:
                         earliest = b + .1
                 pan_at, new_col = None, None
                 L_cols = int(round(cam.target_at(earliest) / COL))
+                if c0 < L_cols and not e.essential:
+                    dropped.add(key)                        # the camera has moved past it: never pan back
+                    e.skipped = True
+                    continue
                 if c0 < L_cols or c1 > L_cols + COLS_ON_SCREEN - 1:
                     # a page shows whole; a slot scrolls into view (never left of the page's start)
                     new_col = base if c1 <= base + COLS_ON_SCREEN - 1 else max(c0, c1 - COLS_ON_SCREEN + 1)
@@ -321,8 +332,8 @@ class Scheduler:
                     travel = .12 if last_pen is None else min(.3, .08 + math.dist(last_pen, (e.x, e.y)) / 5000)
                     earliest = max(earliest, hand_free + travel / e_rate)
                 end = earliest + e.drawing.duration / e_rate
-                late = earliest - due > STALE
-                holds_page = end > page_change + CUT_GRACE
+                late = earliest - due > stale
+                holds_page = end > page_change + cut_grace
                 misses = e.deadline is not None and end > e.deadline
                 fresh = key not in started                  # a visual is judged when it would start
                 if not e.essential and ((fresh and (late or holds_page or misses)) or (e.optional and misses)):

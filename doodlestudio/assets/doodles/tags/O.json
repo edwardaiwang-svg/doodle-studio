@@ -1,0 +1,27 @@
+{
+ "read_aloud": {
+  "desc": "teacher holding up an open picture book for three children sitting on a rug (story time)",
+  "category": "education",
+  "en": ["read aloud", "story time", "storytime", "reading to children", "taught reading", "teach reading",
+         "reading lesson", "picture book", "teacher reading", "reading"],
+  "zh": ["朗读", "讲故事", "绘本", "给孩子读书", "阅读课", "教阅读"]
+ },
+ "teacher_whiteboard": {
+  "desc": "teacher pointing at a whiteboard lesson in front of three students",
+  "category": "education",
+  "en": ["teacher", "teaching", "taught", "teach", "lesson", "classroom", "students", "whiteboard", "class", "pupils"],
+  "zh": ["老师", "教师", "上课", "课堂", "教学", "学生", "白板"]
+ },
+ "web_page": {
+  "desc": "web browser window showing a website with a picture, text lines and a button",
+  "category": "tech",
+  "en": ["website", "web page", "webpage", "web site", "the web", "internet", "browser", "online", "blog", "site"],
+  "zh": ["网站", "网页", "互联网", "浏览器", "上网", "网上"]
+ },
+ "pamphlet": {
+  "desc": "two printed pamphlets with headlines, a picture and lines of text",
+  "category": "history",
+  "en": ["pamphlet", "leaflet", "flyer", "brochure", "handout", "printed sheets", "tract", "printed page"],
+  "zh": ["小册子", "传单", "宣传单", "手册", "印刷品"]
+ }
+}

@@ -3,6 +3,11 @@
 Given each beat's measured clip length and per-character speech times, place
 beats on the master clock, insert chapter gaps, take reading holds and gem
 transition time, then derive captions, chapters, music intervals and the end card.
+
+``pauses`` (beat id -> seconds, from render.pacing) add silence after a beat so the
+narration waits for the drawing hand instead of rushing or skipping pictures. A takeaway
+beat starts TAKE_PREROLL after the beat before it: the camera moves to the note and the
+note is laid down first, so "Key takeaway: ..." is said while its words are written.
 """
 from __future__ import annotations
 
@@ -18,6 +23,7 @@ END_CARD = 5.0            # pan to the closing page, write it, and let it be rea
 ZH_DWELL = .5             # extra reading pause per Mandarin paragraph (9/19 precedent)
 ZOOM_IN = .9              # first part of each section: zoom into its agenda card
 AGENDA_CARD = 2.6         # hand time per agenda card: the agenda holds until every card is drawn
+TAKE_PREROLL = 2.0        # pan to the takeaway page and lay the note down before it is read out
 
 
 def take_hold(beat, lang):
@@ -27,8 +33,10 @@ def take_hold(beat, lang):
     return max(3.0, len(re.findall(r'[一-鿿A-Za-z0-9]', head)) / 6.0)
 
 
-def layout(episode, lang, clips):
-    """clips[beat_id] = {'speech': seconds of speech incl. trailing clip gap, 'char_times': [...]}"""
+def layout(episode, lang, clips, pauses=None):
+    """clips[beat_id] = {'speech': seconds of speech incl. trailing clip gap, 'char_times': [...]};
+    pauses[beat_id] = seconds of silence after that beat (pacing)."""
+    pauses = pauses or {}
     episode = normalize(episode)
     beats = episode['beats']
     chapters = {c['id']: c for c in episode['chapters']}
@@ -38,13 +46,16 @@ def layout(episode, lang, clips):
     agenda_start = None
     for i, beat in enumerate(beats):
         clip = clips[beat['id']]
-        start = cursor
+        take = beat.get('kind') == 'take' and chapters[beat['chapter']]['kind'] == 'section'
+        prep = cursor
+        start = cursor + (TAKE_PREROLL if take else 0.)
         speech_end = start + clip['speech']
-        end = speech_end + (ZH_DWELL if lang == 'zh' else 0.)
+        end = speech_end + (ZH_DWELL if lang == 'zh' else 0.) + float(pauses.get(beat['id'], 0.))
         nxt = beats[i + 1] if i + 1 < len(beats) else None
         chapter_change = nxt is not None and nxt['chapter'] != beat['chapter']
         info = {'start': round(start, 4), 'speech_end': round(speech_end, 4), 'char_times': clip['char_times']}
-        if beat.get('kind') == 'take' and chapters[beat['chapter']]['kind'] == 'section':
+        if take:
+            info['prep'] = round(prep, 4)
             hold = take_hold(beat, lang)
             hold_end = end + hold
             t_end = hold_end + TRANSITION
@@ -96,6 +107,7 @@ def layout(episode, lang, clips):
         else:
             merged.append([a, b])
     return {'language': lang, 'fps': FPS, 'duration': duration, 'beats': out_beats, 'beat_order': order,
+            'pauses': {k: round(float(v), 3) for k, v in pauses.items() if v},
             'captions': capts, 'chapters': chaps, 'transitions': transitions,
             'music': [{'start': round(a, 4), 'end': round(b, 4)} for a, b in merged],
             'end_card': {'start': round(duration - END_CARD, 4), 'end': duration}}

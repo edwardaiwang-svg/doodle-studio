@@ -1,8 +1,13 @@
 """Document -> storyboard skeleton: chapters and beats with display and spoken text.
 
 Structure: intro (title board) -> preamble board (if any) -> agenda -> numbered
-sections, each ending in a takeaway beat -> outro. Visuals are added later by a
-director (rules or LLM); this module only decides what is said and where.
+sections -> outro. Visuals are added later by a director (rules or LLM); this module
+only decides what is said and where.
+
+Every word written on the board is said while it is written. So a section starts with
+its opener spoken ("Part 1: One machine, one idea.") while its title card is written, and
+ends with its takeaway spoken ("Key takeaway: More books meant more readers.") while the
+note is written; the section's own paragraphs are all narration, drawn like any other.
 """
 from __future__ import annotations
 
@@ -20,11 +25,13 @@ TEXT = {
     'en': {'intro': 'Today: {title}', 'agenda_first': "Here's what we'll cover. First: {t}",
            'agenda_mid': ['Second: {t}', 'Third: {t}', 'Fourth: {t}', 'Fifth: {t}', 'Sixth: {t}', 'Seventh: {t}'],
            'agenda_last': 'And finally: {t}', 'label': 'Part {n}', 'closing': 'Thanks for watching!',
-           'intro_label': 'Intro', 'outro_label': 'Wrap-up', 'agenda_label': "What we'll cover"},
+           'intro_label': 'Intro', 'outro_label': 'Wrap-up', 'agenda_label': "What we'll cover",
+           'opener': '{label}: {title}', 'take': 'Key takeaway: {h}'},
     'zh': {'intro': '今天的主题：{title}', 'agenda_first': '本期我们聊{n}件事。第一，{t}',
            'agenda_mid': ['第二，{t}', '第三，{t}', '第四，{t}', '第五，{t}', '第六，{t}', '第七，{t}'],
            'agenda_last': '最后，{t}', 'label': '第{n}部分', 'closing': '感谢收看！',
-           'intro_label': '开场', 'outro_label': '总结', 'agenda_label': '本期内容'},
+           'intro_label': '开场', 'outro_label': '总结', 'agenda_label': '本期内容',
+           'opener': '{label}：{title}', 'take': '本节要点：{h}'},
 }
 ZH_NUM = '零一二三四五六七八九十'
 
@@ -118,12 +125,38 @@ def _merge_to(sections: list[Section], limit: int, lang: str) -> list[Section]:
     return sections
 
 
-def headline(beat_text: str, fallback: str, lang: str) -> str:
-    """Takeaway note text: the shortest complete sentence of the beat that fits a note, else the section title."""
+CONTEXT = {'en': re.compile(r'^(this|that|these|those|it|its|they|their|he|she|so|but|and|or|then)\b', re.I),
+           'zh': re.compile(r'^(这|那|它|他|她|所以|但是|而且|因此)')}
+
+
+def headline(beat_texts: list[str], fallback: str, lang: str) -> str:
+    """Takeaway note text: the shortest complete sentence that fits a note and stands on its own (not "This is
+    called..."), from the section's last paragraph that has one, else the section title."""
     cap = 14 if lang == 'en' else 28
     floor = 4 if lang == 'en' else 8
-    fits = [s for s in sentences(beat_text, lang) if floor <= size(s, lang) <= cap]
-    return min(fits, key=lambda s: size(s, lang)) if fits else fallback
+    for text in reversed(beat_texts):
+        fits = [s for s in sentences(text, lang) if floor <= size(s, lang) <= cap and not CONTEXT[lang].match(s)]
+        if fits:
+            return min(fits, key=lambda s: size(s, lang))
+    return sentence_of(fallback, lang)
+
+
+def take_text(head: str, lang: str) -> str:
+    """What the narrator says while the takeaway note is written: the note's own words."""
+    return TEXT[lang]['take'].format(h=head)
+
+
+def sync_takes(board: dict) -> dict:
+    """Keep every takeaway beat saying exactly what its note shows (after an edit or an AI takeaway)."""
+    lang = board['lang']
+    for b in board['beats']:
+        head = ((b.get('take') or {}).get('headline') or {}).get(lang)
+        if b.get('kind') == 'take' and head:
+            display = take_text(sentence_of(head, lang), lang)
+            if b['display'].get(lang) != display:
+                b['display'] = {lang: display}
+                b['spoken'] = {lang: normalize(display, lang).spoken}
+    return board
 
 
 def sentence_of(text: str, lang: str) -> str:
@@ -173,14 +206,17 @@ def build(doc: Document) -> dict:
             beat('agenda', 'agenda', text, music=True)
     for k, s in enumerate(sections, 1):
         cid = f's{k}'
-        chapters.append({'id': cid, 'kind': 'section' if multi else 'board', 'label': {lang: T['label'].format(n=k)},
+        label = T['label'].format(n=k)
+        chapters.append({'id': cid, 'kind': 'section' if multi else 'board', 'label': {lang: label},
                          'title': {lang: s.heading}})
         texts = beats_of(s.paragraphs, lang)
-        for i, text in enumerate(texts):
-            if multi and i == len(texts) - 1 and len(texts) > 1:
-                beat(cid, 'take', text, take={'headline': {lang: headline(text, s.heading, lang)}})
-            else:
-                beat(cid, 'narration', text)
+        if multi:                                   # said while the section's title card is written
+            beat(cid, 'opener', T['opener'].format(label=label, title=sentence_of(s.heading, lang)))
+        for text in texts:
+            beat(cid, 'narration', text)
+        if multi:                                   # said while the takeaway note is written
+            head = headline(texts, s.heading, lang)
+            beat(cid, 'take', take_text(head, lang), take={'headline': {lang: head}})
     chapters.append({'id': 'outro', 'kind': 'outro', 'label': {lang: T['outro_label']}, 'title': {lang: ''}})
     for text in beats_of(outro_paras, lang):
         beat('outro', 'narration', text)

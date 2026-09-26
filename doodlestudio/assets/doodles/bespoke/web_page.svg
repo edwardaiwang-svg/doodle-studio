@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340" width="440" height="340">
+  <rect id="window" x="16" y="16" width="408" height="308" rx="18" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="title_bar" d="M16,34 Q16,16 34,16 L406,16 Q424,16 424,34 L424,66 L16,66 Z" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dot_red" cx="44" cy="41" r="9" fill="#E53935" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dot_yellow" cx="70" cy="41" r="9" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="dot_green" cx="96" cy="41" r="9" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="address_bar" x="124" y="28" width="280" height="26" rx="13" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="header" x="40" y="86" width="360" height="30" rx="6" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="picture" x="40" y="132" width="164" height="120" rx="8" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="picture_hills" d="M44,248 L90,196 L124,228 L152,200 L200,248 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="picture_sun" cx="172" cy="160" r="13" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="line1" x="222" y="138" width="178" height="14" rx="7" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="line2" x="222" y="166" width="150" height="14" rx="7" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="line3" x="222" y="194" width="170" height="14" rx="7" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="button" x="222" y="224" width="96" height="28" rx="14" fill="#FB8C00" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="line4" x="40" y="272" width="360" height="14" rx="7" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="cursor" d="M336,226 L336,268 L346,258 L354,276 L362,272 L354,254 L368,254 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

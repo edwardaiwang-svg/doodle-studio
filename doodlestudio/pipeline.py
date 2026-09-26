@@ -63,10 +63,14 @@ def storyboard(project_dir: Path) -> dict:
 
 
 def narrate(project_dir: Path, progress=None) -> dict:
-    """Synthesize (or reuse cached) clips for every beat."""
+    """Synthesize (or reuse cached) clips for every beat (takeaways first say what their notes show)."""
     project_dir = Path(project_dir)
     cfg, board = settings(project_dir), storyboard(project_dir)
     lang = cfg['lang']
+    before = json.dumps(board, ensure_ascii=False, sort_keys=True)
+    script.sync_takes(board)
+    if json.dumps(board, ensure_ascii=False, sort_keys=True) != before:
+        _save(project_dir / 'storyboard.json', board)
     clips = {}
     for i, beat in enumerate(board['beats']):
         clips[beat['id']] = voice.synthesize(beat['spoken'][lang], lang, project_dir / 'voice', cfg['voice'], cfg['speed'])
@@ -76,10 +80,12 @@ def narrate(project_dir: Path, progress=None) -> dict:
 
 
 def build_audio(project_dir: Path, clips: dict) -> dict:
+    """Pace the narration to the drawings (pauses where the hand needs time), then assemble it."""
     project_dir = Path(project_dir)
     cfg, board = settings(project_dir), storyboard(project_dir)
     build = project_dir / 'build'
-    tl = audio.assemble(board, cfg['lang'], clips, build)
+    pauses = renderer.pacing(board, cfg['lang'], audio.timing(clips), project_dir)
+    tl = audio.assemble(board, cfg['lang'], clips, build, pauses)
     tl['storyboard_sha256'] = sha(project_dir / 'storyboard.json')
     _save(build / 'timeline.json', tl)
     return tl

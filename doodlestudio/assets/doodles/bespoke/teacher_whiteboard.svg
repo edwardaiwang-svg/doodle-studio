@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 412" width="520" height="412">
+  <rect id="board_frame" x="196" y="26" width="306" height="212" rx="10" fill="#E0E0E0" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="board" x="210" y="40" width="278" height="184" rx="4" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="tray" x="232" y="236" width="234" height="14" rx="5" fill="#9E9E9E" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="board_sun" cx="262" cy="96" r="26" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_rays" d="M262,54 L262,62 M222,96 L230,96 M234,68 L240,74 M290,68 L284,74" fill="none" stroke="#F9A825" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_arrow" d="M300,112 Q340,100 372,128 M358,118 L374,130 L356,138" fill="none" stroke="#1E6FD9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_stem" d="M420,206 L420,142" fill="none" stroke="#43A047" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_leaf_left" d="M420,176 Q392,176 384,152 Q408,150 420,176 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_leaf_right" d="M420,160 Q448,160 456,136 Q432,134 420,160 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="board_pot" d="M398,206 L442,206 L436,218 L404,218 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_legs" d="M92,232 L88,328 L114,328 L120,258 L126,328 L152,328 L148,232 Z" fill="#424242" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_shoes" d="M78,342 L78,336 Q78,326 92,326 L114,326 L114,342 Z M126,342 L126,326 L148,326 Q162,326 162,336 L162,342 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_body" d="M92,124 L148,124 Q166,124 168,144 L172,236 Q172,244 164,244 L76,244 Q68,244 68,236 L72,144 Q74,124 92,124 Z" fill="#00897B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_arm_down" d="M80,146 L60,226 A8,8 0 0 0 76,230 L94,152 Z" fill="#00897B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_hand_down" cx="66" cy="234" r="11" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_arm_point" d="M150,140 L208,112 A8,8 0 0 1 216,126 L158,156 Z" fill="#00897B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_hand_point" cx="218" cy="116" r="11" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pointer" d="M222,110 L252,84" fill="none" stroke="#8D6E63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_head" cx="120" cy="82" r="34" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_hair" d="M85,84 C80,38 160,34 156,80 C148,64 134,58 118,60 C104,62 92,70 85,84 Z" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_eyes" d="M108,88 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 M130,88 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_smile" d="M112,100 Q124,112 136,100" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid1_body" d="M104,396 L104,356 Q104,326 136,326 L164,326 Q196,326 196,356 L196,396 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid1_head" cx="150" cy="302" r="30" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid2_body" d="M246,396 L246,360 Q246,332 278,332 L306,332 Q338,332 338,360 L338,396 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_head" cx="292" cy="308" r="30" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_pigtail_left" cx="258" cy="314" r="11" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_pigtail_right" cx="326" cy="314" r="11" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid3_body" d="M384,396 L384,356 Q384,326 416,326 L444,326 Q476,326 476,356 L476,396 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid3_head" cx="430" cy="302" r="30" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

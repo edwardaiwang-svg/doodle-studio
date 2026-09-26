@@ -24,6 +24,7 @@ from pathlib import Path
 import imageio_ffmpeg
 from PIL import Image
 
+from .. import script
 from . import auto_scenes as auto
 from . import captions as cap
 from . import ink
@@ -37,6 +38,8 @@ FPS = 30
 SIZE = (1920, 1080)
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 NOTE_READ = 1.0          # a finished takeaway note stays readable this long before it is pinned
+PAUSE_MAX = 4.0          # the longest pause after a beat while the drawing hand catches up (pacing)
+PACE_MARGIN = .3         # a beat's drawings finish this long before the next beat's words start
 
 
 def sha(path):
@@ -49,8 +52,10 @@ def ease(u):
 
 
 class Production:
-    def __init__(self, episode, tline, lang, project_dir):
+    def __init__(self, episode, tline, lang, project_dir, relaxed=False):
+        """``relaxed``: schedule every drawing at natural speed and skip nothing (pacing measures with it)."""
         self.ep, self.tl, self.lang = normalize(episode), tline, lang
+        self.relaxed = relaxed
         self.project_dir = Path(project_dir)
         scenes.load_page_plugins()
         self.layout = Layout()
@@ -127,13 +132,14 @@ class Production:
             for el in ctx.elements[n0:]:
                 el.hold = hold
                 el.group = v.get('id') or f"{beat['id']}#{k}"     # a visual is drawn whole or not at all
+                el.beat = beat['id']
         for v in deferred:
             n0 = len(ctx.elements)
             try:
                 scenes.build_emphasis(v, beat, ctx)
             except Exception as error:  # noqa: BLE001
                 self.warnings.append(f"{beat['id']}/{v.get('id')}: emphasis {error}")
-            self._tag(n0, v.get('id') or f"{beat['id']}#emphasis")
+            self._tag(n0, v.get('id') or f"{beat['id']}#emphasis", beat=beat['id'])
         for el in ctx.elements[first_new:]:          # e.g. wait for a section opener to be drawn
             el.trigger = max(el.trigger, not_before)
 
@@ -207,7 +213,7 @@ class Production:
                 if b.get('kind') == 'take' and kind == 'section':
                     self._take_page(b, bt, ch)
                     continue
-                self._visuals(b, opener_done if b is beats[0] else 0.0)
+                self._visuals(b, opener_done)              # nothing before the section's title card
         # Closing page, written by the hand like everything else.
         end = self.tl['end_card']
         col = lay.new_page()
@@ -220,18 +226,25 @@ class Production:
         self._transitions()
 
     def _take_page(self, beat, bt, ch):
-        """A fresh page for the section's takeaway: the note is written first and must be finished
-        NOTE_READ seconds before it is pinned; the narrator's face and the section's hero doodles in
-        the margins are drawn only if they fit before then."""
+        """A fresh page for the section's takeaway: during the pre-roll the camera pans over and the note
+        is laid down; its label and headline are written as "Key takeaway: ..." is said, and must be
+        finished NOTE_READ seconds before it is pinned; the narrator's face and the section's hero
+        doodles in the margins are drawn only if they fit before then."""
         ctx, lay, cid = self.ctx, self.layout, ch['id']
         tcol = lay.new_page()
         lay.reserve(tcol, tcol + 2)
         xt = tcol * COL
-        self.cut(bt['start'] + .1, xt, 'pan')
+        prep = bt.get('prep', bt['start'])
+        self.cut(prep + .1, xt, 'pan')
         tr = next((x for x in self.tl['transitions'] if x['section'] == cid), None)
         deadline = tr['hold_end'] - NOTE_READ if tr else None
-        t_note = bt['start'] + .1 + PAN_SECONDS
-        els, bbox = auto.build_take_note(ctx, beat, ch, xt, t_note)
+        t_note = prep + .1 + PAN_SECONDS
+        spoken = beat['spoken'][self.lang]
+        prefix = script.take_text('', self.lang)            # "Key takeaway: " (said before the headline)
+        t_label = ctx.time_of(beat, None, 0.)
+        t_head = ctx.time_of(beat, {self.lang: spoken[len(prefix):len(prefix) + 24]}) \
+            if spoken.startswith(prefix) and len(spoken) > len(prefix) else t_label
+        els, bbox = auto.build_take_note(ctx, beat, ch, xt, t_note, t_label, t_head)
         for k, el in enumerate(els):
             el.group = f'note:{cid}' if el.essential else f'note:{cid}:{k}'
             el.deadline = deadline
@@ -290,7 +303,10 @@ class Production:
         for k in range(len(self.cuts)):
             for el in els[marks[k]:marks[k + 1]]:
                 el.stretch = k
-        Scheduler(self.camera).run(els, self.cuts)
+        if self.relaxed:
+            Scheduler(self.camera).run(els, self.cuts, max_rate=1.0, stale=math.inf, cut_grace=math.inf)
+        else:
+            Scheduler(self.camera).run(els, self.cuts)
         skipped = sorted({e.group for e in els if e.skipped})
         if skipped:
             self.warnings.append(f"skipped {len(skipped)} visual(s) that could not keep pace with the narration: "
@@ -516,6 +532,33 @@ class Production:
             return
         img = cap.caption_image(c['text'], self.lang)
         ink.paste(frame, img, (SIZE[0] - img.width) / 2, 1046 - img.height)
+
+
+def pacing(episode, lang, clips, project_dir, rounds=3) -> dict:
+    """Pauses (beat id -> seconds) that let the drawing hand finish each beat's pictures before the next
+    beat is said, instead of rushing or skipping them: at most PAUSE_MAX after any one beat.
+
+    Every round lays out the timeline with the pauses so far, schedules the drawings at natural speed
+    with nothing skipped, and adds the overrun of each beat's drawings past the next beat's start."""
+    pauses: dict = {}
+    for _ in range(rounds):
+        timing = tl.layout(episode, lang, clips, pauses)
+        prod = Production(episode, timing, lang, project_dir, relaxed=True)
+        ends: dict = {}
+        for e in prod.ctx.elements:
+            if e.beat and e.start is not None and not e.skipped and not e.fixed:
+                ends[e.beat] = max(ends.get(e.beat, 0.), e.end)
+        order, changed = timing['beat_order'], False
+        for k, bid in enumerate(order[:-1]):
+            nxt = timing['beats'][order[k + 1]]                 # a takeaway's pre-roll is for its note
+            need = ends.get(bid, -math.inf) + PACE_MARGIN - nxt.get('prep', nxt['start'])
+            room = PAUSE_MAX - pauses.get(bid, 0.)
+            if need > .05 and room > .05:
+                pauses[bid] = round(pauses.get(bid, 0.) + min(need, room), 2)
+                changed = True
+        if not changed:
+            break
+    return pauses
 
 
 def playlist(manifest, line):

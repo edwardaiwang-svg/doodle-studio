@@ -2,10 +2,12 @@
 
 Generated from `tags/*.json` (do not edit by hand). Use these ids in `storyboard.json`.
 
-- 279 bespoke doodles (`bespoke/`, CC BY 4.0, original to this project)
-- 1483 Microsoft Fluent Emoji in the same outlined style (`fluent/`, ids start with `fl_`, MIT; see `fluent/NOTICE.md`)
+- 282 bespoke doodles (`bespoke/`, CC BY 4.0, original to this project)
+- 1460 Microsoft Fluent Emoji in the same outlined style (`fluent/`, ids start with `fl_`, MIT; see `fluent/NOTICE.md`)
 
 Search from the command line: `doodle doodles "rocket launch"`.
+
+Pictures listed in `banned.json` are left out of this catalog: no director draws them.
 
 ## business
 
@@ -72,7 +74,6 @@ Search from the command line: `doodle doodles "rocket launch"`.
 
 - `confetti_party` — Party popper bursting with confetti and streamers
 - `mood_masks` — happy and sad theatre masks side by side
-- `pagoda` — four-tiered East Asian pagoda with upturned teal roofs
 - `paper_lantern` — red paper lantern with gold caps and a tassel
 - `podcast_mic` — studio microphone with a pair of headphones
 - `stage_mic` — stage microphone stand lit by a spotlight between curtains
@@ -84,7 +85,9 @@ Search from the command line: `doodle doodles "rocket launch"`.
 - `book_stack` — Stack of three coloured books with a red apple on top
 - `graduation_cap` — Mortarboard cap with a gold tassel next to a rolled diploma tied with a red ribbon
 - `pencil` — Yellow pencil drawing a wavy squiggle line
+- `read_aloud` — teacher holding up an open picture book for three children sitting on a rug (story time)
 - `school_building` — Red school building with a bell tower, a flag on top, a clock and a front door
+- `teacher_whiteboard` — teacher pointing at a whiteboard lesson in front of three students
 
 ## food
 
@@ -129,6 +132,7 @@ Search from the command line: `doodle doodles "rocket launch"`.
 - `greek_temple` — ancient Greek temple with fluted columns and a triangular pediment
 - `knight_helmet` — medieval knight's great helm with a red plume
 - `old_book` — thick old leather-bound book with gold corners and a red ribbon
+- `pamphlet` — two printed pamphlets with headlines, a picture and lines of text
 - `printing_press` — old wooden screw printing press with a freshly printed sheet
 - `pyramid_egypt` — two desert pyramids under a blazing sun (ancient Egypt)
 - `quill_ink` — feather quill pen standing in an ink pot
@@ -316,6 +320,7 @@ Search from the command line: `doodle doodles "rocket launch"`.
 - `solar_panel` — Tilted solar panel on a stand under a bright sun
 - `video_play` — Video player frame with a big play triangle and a progress bar
 - `vr_headset` — Virtual-reality headset with a head strap and two round lenses
+- `web_page` — web browser window showing a website with a picture, text lines and a button
 - `wifi_signal` — Wi-Fi signal arcs above a dot for internet connectivity
 - `wind_turbine` — Two white wind turbines on a green hill with wind lines
 

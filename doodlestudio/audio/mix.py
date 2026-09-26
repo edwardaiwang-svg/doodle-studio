@@ -71,12 +71,17 @@ def write_captions(captions, out_dir: Path):
         (out_dir / f'captions.{ext}').write_text('\n'.join(lines), encoding='utf-8')
 
 
-def assemble(storyboard: dict, lang: str, clips: dict, out_dir: Path) -> dict:
-    """clips[beat_id] = voice.Clip. Writes narration.wav, timeline.json and captions; returns the timeline."""
+def timing(clips: dict) -> dict:
+    """What the timeline needs from each voice.Clip: speech length (with the gap after it) and character times."""
+    return {bid: {'speech': c.duration + voice.GAP, 'char_times': c.char_times} for bid, c in clips.items()}
+
+
+def assemble(storyboard: dict, lang: str, clips: dict, out_dir: Path, pauses: dict | None = None) -> dict:
+    """clips[beat_id] = voice.Clip; pauses[beat_id] = silence after a beat (pacing). Writes narration.wav,
+    timeline.json and captions; returns the timeline."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    tl = timeline.layout(storyboard, lang, {bid: {'speech': c.duration + voice.GAP, 'char_times': c.char_times}
-                                            for bid, c in clips.items()})
+    tl = timeline.layout(storyboard, lang, timing(clips), pauses)
     total = round(tl['duration'] * SR)
     pcm = np.zeros(total, np.float32)
     for beat in storyboard['beats']:

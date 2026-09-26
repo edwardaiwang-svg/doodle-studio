@@ -23,9 +23,15 @@ def test_structure(board):
     assert 2 <= len(sections) <= script.MAX_SECTIONS and 'agenda' in kinds
     agenda_beats = [b for b in board['beats'] if b['chapter'] == 'agenda']
     assert len(agenda_beats) == len(sections)
-    for s in sections:
+    lang = board['lang']
+    for s in sections:                          # each section says its title card, then its takeaway note
         beats = [b for b in board['beats'] if b['chapter'] == s['id']]
-        assert beats[-1]['kind'] == 'take' and beats[-1]['take']['headline'][board['lang']]
+        assert beats[0]['kind'] == 'opener' and s['title'][lang].rstrip('.。?？') in beats[0]['display'][lang]
+        assert beats[0]['display'][lang].startswith(s['label'][lang])
+        head = beats[-1]['take']['headline'][lang]
+        assert beats[-1]['kind'] == 'take' and beats[-1]['display'][lang] == script.take_text(head, lang)
+        assert all(b['kind'] == 'narration' for b in beats[1:-1])
+        assert not script.CONTEXT[lang].match(head), head          # a takeaway stands on its own
     ids = [b['id'] for b in board['beats']]
     assert len(ids) == len(set(ids))
     order = [b['chapter'] for b in board['beats']]
@@ -56,3 +62,12 @@ def test_markdown_and_plain_text_parsing():
     assert [s.heading for s in doc.sections] == ['A', 'B']
     assert doc.sections[0].paragraphs == ['First bold link para.', 'item one', 'item two']
     assert ingest.read('只有一段中文文本，没有标题。').lang == 'zh'
+
+
+def test_an_edited_takeaway_is_what_the_narrator_says():
+    board = script.build(ingest.read(FIX / 'printing_press.md'))
+    take = next(b for b in board['beats'] if b['kind'] == 'take')
+    take['take']['headline'] = {'en': 'Gutenberg made 180 Bibles'}
+    script.sync_takes(board)
+    assert take['display']['en'] == 'Key takeaway: Gutenberg made 180 Bibles.'
+    assert take['spoken']['en'] == 'Key takeaway: Gutenberg made one hundred eighty Bibles.'

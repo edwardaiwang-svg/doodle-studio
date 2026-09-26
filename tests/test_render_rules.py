@@ -22,8 +22,10 @@ def prod(request, tmp_path_factory):
     board = script.build(ingest.read(FIX / request.param))
     lang = board['lang']
     board = RulesDirector(lang).direct(board)
-    timing = tl.layout(board, lang, tl.synthetic_clips(board, lang))
-    return render.Production(board, timing, lang, tmp_path_factory.mktemp('project'))
+    project = tmp_path_factory.mktemp('project')
+    clips = tl.synthetic_clips(board, lang)
+    timing = tl.layout(board, lang, clips, render.pacing(board, lang, clips, project))    # as the pipeline does
+    return render.Production(board, timing, lang, project)
 
 
 def board_frames(prod):
@@ -120,3 +122,60 @@ def test_unlabelled_timeline_runs_the_whole_card(tmp_path):
     arrow = next(e for e in page if e.w > 1000 and e.h == 44)     # the time line
     assert arrow.x - band.x < 60, (band.x, arrow.x)
     assert arrow.x + arrow.w > band.x + band.w - 60
+
+
+# ------------------------------------------------ nothing is written before it is said
+def _beat(prod, beat_id):
+    return next(b for b in prod.ep['beats'] if b['id'] == beat_id)
+
+
+def test_takeaway_notes_are_written_as_they_are_said(prod):
+    lang = prod.lang
+    prefix = script.take_text('', lang)
+    for tr in prod.tl['transitions']:
+        beat = _beat(prod, tr['take_beat'])
+        sticky, label, head = prod.notes[tr['section']]['els'][:3]
+        spoken = beat['spoken'][lang]
+        said = prod.ctx.time_of(beat, {lang: spoken[len(prefix):len(prefix) + 24]})
+        assert spoken.startswith(prefix) and said > prod.tl['beats'][beat['id']]['start']
+        assert head.trigger >= said - 1e-6 and head.start >= said - 1e-6, (tr['section'], head.start, said)
+        assert head.start - said <= STALE, (tr['section'], head.start, said)           # and not far behind the words
+        assert label.trigger >= prod.tl['beats'][beat['id']]['start'] - 1e-6          # "Key takeaway" is said first
+        assert sticky.end <= label.start + 1e-6                                        # the note is down before
+
+
+def test_section_title_cards_are_written_while_they_are_said(prod):
+    for ch in (c for c in prod.ep['chapters'] if c['kind'] == 'section'):
+        opener = next(b for b in prod.ep['beats'] if b['chapter'] == ch['id'])
+        assert opener['kind'] == 'opener'
+        info = prod.tl['beats'][opener['id']]
+        card = [e for e in prod.els if e.group == f"opener:{ch['id']}"]
+        assert card and info['start'] <= min(e.start for e in card) < info['speech_end'], ch['id']
+
+
+def test_timeline_dates_are_written_when_they_are_said(tmp_path):
+    board = script.build(ingest.read(FIX / 'bicycle.md'))
+    board = RulesDirector('en').direct(board)
+    timing = tl.layout(board, 'en', tl.synthetic_clips(board, 'en'))
+    prod = render.Production(board, timing, 'en', tmp_path)
+    owner = next(b for b in board['beats'] for v in b['visuals'] if v['type'] == 'lanes')
+    lanes = next(v for v in owner['visuals'] if v['type'] == 'lanes')
+    for k, ev in enumerate(lanes['lanes'][0]['events']):
+        said = prod.ctx.time_of(owner, ev['trigger'])
+        parts = prod.ctx.registry[lanes['id']][k]
+        assert all(not e.skipped for e in parts), ev['display']
+        assert min(e.start for e in parts) >= said - 1e-6, (ev['display'], said)
+    assert not any(pan for pan in prod.camera._segments() if pan[3] == 'pan' and pan[2] < pan[1])
+
+
+def test_pacing_lets_the_hand_finish_instead_of_skipping(tmp_path):
+    board = script.build(ingest.read(FIX / 'printing_press.md'))
+    board = RulesDirector('en').direct(board)
+    clips = tl.synthetic_clips(board, 'en')
+    rushed = render.Production(board, tl.layout(board, 'en', clips), 'en', tmp_path)
+    pauses = render.pacing(board, 'en', clips, tmp_path)
+    paced = render.Production(board, tl.layout(board, 'en', clips, pauses), 'en', tmp_path)
+    skipped = lambda p: {e.group for e in p.ctx.elements if e.skipped and e.beat}     # noqa: E731
+    assert pauses and all(0 < s <= render.PAUSE_MAX for s in pauses.values())
+    assert len(skipped(paced)) < max(1, len(skipped(rushed))), (skipped(rushed), skipped(paced))
+    assert not skipped(paced), skipped(paced)

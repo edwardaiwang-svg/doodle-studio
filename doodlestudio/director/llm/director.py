@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import re
 
-from ... import numbers
+from ... import numbers, script
 from ...engine.storyboard import normalize
 from ..rules import RulesDirector
 from ..validate import validate
@@ -116,6 +116,7 @@ class LLMDirector:
             fits = head and (len(head.split()) <= lim['takeaway_words'] if lang == 'en' else len(head) <= lim['takeaway_chars'])
             if take and fits and _numbers_ok(head, section_text):
                 take['take']['headline'] = {lang: head}
+                script.sync_takes(board)              # the narrator says what the note shows
 
     def _convert(self, raw: dict, beat: dict, norm, section_text: str, allowed: set, k: int) -> dict:
         """One schema visual -> the renderer's spec, or ValueError explaining why it is unusable."""
@@ -211,6 +212,8 @@ class LLMDirector:
                 when = _clean(e.get('when'))
                 if not when or when not in section_text:
                     raise ValueError(f'date {when!r} is not in the text')
+                if when not in beat['display'][lang]:        # nothing is written before it is said
+                    raise ValueError(f'date {when!r} is said in another beat')
                 events.append(with_trigger({'pos': round(i / max(1, len(raw_events) - 1), 3), 'display': {lang: when},
                                             'label': text(e.get('label'), lim['label'], 'label')}, e.get('trigger') or when))
             if len(events) < 3:

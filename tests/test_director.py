@@ -76,10 +76,87 @@ def test_idioms_generic_words_and_numbers_get_no_picture():
 
 
 def test_timeline_labels_say_who_or_what():
-    board, _ = _picks('printing_press.md')
+    board, _ = _picks('bicycle.md')
     lanes = next(v for b in board['beats'] for v in b['visuals'] if v['type'] == 'lanes')
     labels = {e['display']['en']: e['label']['en'] for e in lanes['lanes'][0]['events']}
-    assert labels == {'1450': 'Johannes Gutenberg', '1500': 'Printing presses', '1517': 'Martin Luther'}
+    assert labels == {'1860s': 'French makers', '1870s': 'Front wheel', '1885': 'John Kemp Starley',
+                      '1888': 'John Boyd Dunlop'}
+
+
+def test_timelines_only_show_dates_their_section_says_when_it_says_them():
+    board, _ = _picks('printing_press.md')                    # 1450, 1500 and 1517 are in three sections
+    assert not any(v['type'] == 'lanes' for b in board['beats'] for v in b['visuals'])
+    board, _ = _picks('bicycle.md')
+    by_id = {b['id']: b for b in board['beats']}
+    owner = next(b for b in board['beats'] for v in b['visuals'] if v['type'] == 'lanes')
+    lanes = next(v for v in owner['visuals'] if v['type'] == 'lanes')
+    for ev in lanes['lanes'][0]['events']:
+        said = by_id[ev['trigger'].get('beat', owner['id'])]
+        assert said['chapter'] == owner['chapter'] and ev['trigger']['en'] in said['spoken']['en'], ev
+    held = [b for b in board['beats'] if b['chapter'] == owner['chapter'] and b['kind'] == 'narration']
+    between = held[held.index(owner) + 1:held.index(by_id['b012'])]
+    assert all(not b['visuals'] for b in between)             # the page holds the board between its dates
+
+
+# ---------------------------------------------------------- more pictures, said as drawn
+def _visual_doodles(board, beat_id):
+    beat = next(b for b in board['beats'] if b['id'] == beat_id)
+    return [[(it['doodle'], (it.get('trigger') or {}).get('en')) for it in v.get('items', [])] for v in beat['visuals']]
+
+
+def test_listed_things_are_all_drawn_together():
+    board, _ = _picks('printing_press.md')
+    outro = next(b['id'] for b in board['beats'] if b['chapter'] == 'outro' and b['kind'] == 'narration')
+    assert [('book_stack', 'book'), ('newspaper', 'newspaper'), ('web_page', 'website')] in _visual_doodles(board, outro)
+
+
+def test_takeaway_paragraphs_are_illustrated_before_the_takeaway():
+    board, _ = _picks('printing_press.md')
+    s2 = [b for b in board['beats'] if b['chapter'] == 's2']
+    assert [b['kind'] for b in s2] == ['opener', 'narration', 'narration', 'take']
+    doodles = {d for v in _visual_doodles(board, s2[2]['id']) for d, _ in v}
+    assert {'read_aloud', 'fl_school'} <= doodles, doodles        # "Schools taught reading to more children"
+
+
+def test_a_describing_word_is_not_a_thing_and_ink_is_drawn():
+    _, picks = _picks('printing_press.md')
+    assert ('Ink', 'quill_ink') in picks                           # "oil-based ink"
+    assert all(d != 'oil_barrel' for _, d in picks)
+
+
+def test_a_team_of_printers_are_people_not_machines():
+    _, picks = _picks('printing_press.md')
+    assert all(d != 'fl_printer' for _, d in picks), picks            # "A team of printers could now do in weeks"
+    director = RulesDirector('en')
+    board = script.build(ingest.read(FIX / 'printing_press.md'))
+    director.direct(board)
+    hits = director._concepts('A class of students listened while a team of printers worked.', [], 's2')
+    assert ('students', 'teacher_whiteboard') in {(h.phrase, h.id) for h in hits if h.phrase}  # a picture of people may
+
+
+def test_an_emoji_with_a_longer_name_needs_its_whole_name():
+    _, picks = _picks('bicycle.md')
+    doodles = {d for _, d in picks}
+    assert 'fl_ferris_wheel' not in doodles and 'fl_slot_machine' not in doodles, picks
+    assert ('Wheels', 'fl_wheel') in picks
+
+
+def test_banned_pictures_and_words_are_never_drawn():
+    from doodlestudio.library import banned, catalog
+    assert not banned()['doodles'] & set(catalog())
+    for name in ('printing_press.md', 'bicycle.md', 'sky_blue.md', 'photosynthesis.txt'):
+        _, picks = _picks(name)
+        assert not banned()['doodles'] & {d for _, d in picks}
+    director = RulesDirector('en')
+    board = script.build(ingest.read('# Cells\n\n## Tiny building blocks\n\nEvery living thing is made of cells. '
+                                     'Scientists look at cells with a microscope in the lab.\n\n## Inside a cell\n\n'
+                                     'A cell has a nucleus. Scientists in Germany found it with a microscope.'))
+    director.direct(board)
+    chapter = next(b['chapter'] for b in board['beats'] if b['kind'] == 'narration')
+    hits = director._concepts('Scientists and astronomers in Germany look at tiny cells with a microscope.', [], chapter)
+    words = {h.phrase.lower() for h in hits if h.phrase}
+    assert not words & {'scientists', 'astronomers', 'germany'}, words     # "scientists" would be a microscope
+    assert 'microscope' in words
 
 
 @pytest.mark.parametrize('sentence, date, label', [

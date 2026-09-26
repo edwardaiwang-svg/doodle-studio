@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 412" width="480" height="412">
+  <ellipse id="rug" cx="240" cy="362" rx="222" ry="30" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_legs" d="M212,236 L208,330 L234,330 L240,262 L246,330 L272,330 L268,236 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_shoes" d="M198,344 L198,338 Q198,328 212,328 L234,328 L234,344 Z M246,344 L246,328 L268,328 Q282,328 282,338 L282,344 Z" fill="#424242" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_body" d="M206,128 L274,128 Q292,128 294,148 L300,246 Q300,254 292,254 L188,254 Q180,254 180,246 L186,148 Q188,128 206,128 Z" fill="#8E24AA" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_collar" d="M222,128 L240,152 L258,128" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_head" cx="240" cy="86" r="36" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_bun" cx="240" cy="38" r="16" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_hair" d="M203,88 C200,40 280,40 277,88 C266,70 252,64 240,66 C228,64 214,70 203,88 Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_eyes" d="M224,92 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 M248,92 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="teacher_smile" d="M228,104 Q240,116 252,104" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="book_cover" d="M150,150 L240,162 L330,150 L330,248 L240,260 L150,248 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="book_left_page" d="M158,152 L236,164 L236,250 L158,240 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="book_right_page" d="M244,164 L322,152 L322,240 L244,250 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="page_sun" cx="184" cy="184" r="12" fill="#FDD835" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="page_hill" d="M162,232 Q196,196 232,228 L232,244 L162,236 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="page_tree_trunk" d="M280,236 L280,214" fill="none" stroke="#8D6E63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="page_tree_top" cx="280" cy="198" r="22" fill="#43A047" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="page_apple" cx="290" cy="200" r="6" fill="#E53935" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_hand_left" cx="150" cy="238" r="13" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="teacher_hand_right" cx="330" cy="238" r="13" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid1_body" d="M64,392 L64,352 Q64,322 96,322 L124,322 Q156,322 156,352 L156,392 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid1_head" cx="110" cy="298" r="30" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid1_ear" cx="80" cy="302" r="7" fill="#8D6E63" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid2_body" d="M194,396 L194,360 Q194,332 226,332 L254,332 Q286,332 286,360 L286,396 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_head" cx="240" cy="306" r="30" fill="#8D6E63" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_pigtail_left" cx="206" cy="312" r="11" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid2_pigtail_right" cx="274" cy="312" r="11" fill="#8D6E63" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="kid3_body" d="M324,392 L324,352 Q324,322 356,322 L384,322 Q416,322 416,352 L416,392 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid3_head" cx="370" cy="298" r="30" fill="#F9A825" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="kid3_ear" cx="400" cy="302" r="7" fill="#F6C9A4" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

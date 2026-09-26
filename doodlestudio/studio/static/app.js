@@ -180,7 +180,7 @@ function beatCard(b, ch) {
   const el = document.createElement('div');
   el.className = 'beat';
   const auto = b.kind === 'title' || b.kind === 'agenda' || ch.kind === 'intro';
-  el.innerHTML = `<div><div class="kind">${esc({ take: 'takeaway', closing: 'closing', title: 'title board', agenda: 'agenda card' }[b.kind] || 'narration')}</div>
+  el.innerHTML = `<div><div class="kind">${esc({ take: 'takeaway', opener: 'section opener', closing: 'closing', title: 'title board', agenda: 'agenda card' }[b.kind] || 'narration')}</div>
     <div class="text">${esc(b.display[lang])}</div>
     ${b.kind === 'take' ? `<label class="take">Takeaway note <input value="${esc(b.take.headline[lang])}"></label>` : ''}
     <div class="beat-tools">${auto ? '<span class="muted">Drawn automatically</span>' : '<button class="small add">+ Doodle</button>'}<button class="small prev">Preview</button></div>

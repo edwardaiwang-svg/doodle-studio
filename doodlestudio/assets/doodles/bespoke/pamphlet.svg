@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 330" width="400" height="330">
+  <path id="back_sheet" d="M170,40 L372,62 L352,300 L150,278 Z" fill="#FFF8E1" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="back_title" d="M186,64 L350,82 L346,112 L182,94 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="back_lines" d="M180,130 L340,148 M178,158 L338,176 M176,186 L300,200" fill="none" stroke="#9E9E9E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_sheet" d="M28,70 L230,48 L252,286 L50,308 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_title" d="M46,90 L212,72 L216,106 L50,124 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_picture" d="M56,142 L128,134 L136,208 L64,216 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_picture_hill" d="M62,212 Q92,172 132,204 L134,208 L64,216 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="front_lines" d="M146,142 L216,134 M148,166 L218,158 M150,190 L212,184 M70,240 L230,222 M72,264 L200,250" fill="none" stroke="#9E9E9E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
