@@ -10,10 +10,12 @@ import mimetypes
 import os
 import re
 import secrets
+import tempfile
 import threading
 import time
 import traceback
 import uuid
+import zipfile
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
@@ -120,12 +122,11 @@ def _summary(path: Path) -> dict:
 # ------------------------------------------------------------------ actions
 def create_project(body: dict) -> dict:
     text = (body.get('text') or '').strip()
-    source = Path(body['path']) if body.get('path') else None
-    if not text and not (source and source.is_file()):
+    if not text:
         raise ValueError('paste a script or choose a file')
     title = (body.get('title') or '').strip() or None
     from .. import ingest
-    doc = ingest.read(source if source else text, title=title)
+    doc = ingest.read(text, title=title)
     name = _slug(doc.title)
     path = projects_root() / name
     mode = body.get('director') or 'rules'
@@ -133,13 +134,31 @@ def create_project(body: dict) -> dict:
 
     def job(progress):
         progress('storyboard', 0, 1)
-        pipeline.new_project(source if source else text, path, title=title, lang=body.get('lang') or None,
+        pipeline.new_project(text, path, title=title, lang=body.get('lang') or None,
                              director=mode, **settings)
         report = director.direct(path, mode, body.get('model') or None, body.get('base_url') or None, progress)
         usage = report.get('usage')
         return {'project': name, 'notes': report.get('notes', [])[:20],
                 'cost': None if not usage else usage.cost_usd, 'calls': 0 if not usage else usage.calls}
     return {'job': JOBS.start('create', name, job), 'project': name}
+
+
+def docx_script(name: str, data: bytes) -> str:
+    """A chosen .docx as Markdown script text, shown in the editor so the user sees what was read."""
+    from .. import ingest
+    if Path(name).suffix.lower() != '.docx':
+        raise ValueError('choose a .md, .txt or .docx file')
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / Path(name).name
+        path.write_bytes(data)
+        try:
+            doc = ingest.read(path)
+        except (zipfile.BadZipFile, KeyError) as error:
+            raise ValueError(f'{path.name} could not be read as a Word document') from error
+    parts = [f'# {doc.title}', *doc.preamble]
+    for section in doc.sections:
+        parts += [f'## {section.heading}', *section.paragraphs]
+    return '\n\n'.join(parts)
 
 
 def make_video(name: str) -> dict:
@@ -376,13 +395,7 @@ class Handler(BaseHTTPRequestHandler):
         if p == ['upload'] and method == 'POST':
             import base64
             b = self._body()
-            name = Path(str(b.get('name') or 'script.txt')).name
-            if Path(name).suffix.lower() not in ('.txt', '.md', '.docx'):
-                raise ValueError('choose a .txt, .md or .docx file')
-            folder = projects_root() / '.uploads' / uuid.uuid4().hex[:8]
-            folder.mkdir(parents=True)
-            (folder / name).write_bytes(base64.b64decode(b.get('data') or ''))
-            return self._json({'path': str(folder / name)})
+            return self._json({'text': docx_script(str(b.get('name') or ''), base64.b64decode(b.get('data') or ''))})
         if p == ['doodles'] and method == 'GET':
             return self._json(search_doodles(q.get('q', ''), q.get('lang', 'en')))
         if p == ['cloud', 'me'] and method == 'GET':        # read the sign-in token only when Doodle Cloud is chosen

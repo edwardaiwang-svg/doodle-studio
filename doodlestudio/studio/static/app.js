@@ -95,18 +95,23 @@ function showNew() {
     }
   };
   note();
-  let upload = null;
   $('#file').onchange = async (e) => {
     const f = e.target.files[0]; if (!f) return;
-    $('#file-name').textContent = f.name;
-    if (/\.(md|txt)$/i.test(f.name)) { $('#script').value = await f.text(); upload = null; fillVoices(); return; }
-    const data = btoa(new Uint8Array(await f.arrayBuffer()).reduce((s, b) => s + String.fromCharCode(b), ''));
-    upload = (await api('/api/upload', { method: 'POST', body: JSON.stringify({ name: f.name, data }) })).path;
-    $('#script').value = ''; $('#script').placeholder = `Using ${f.name}`;
+    $('#file-name').textContent = '';
+    try {
+      if (/\.(md|txt)$/i.test(f.name)) $('#script').value = await f.text();
+      else if (/\.docx$/i.test(f.name)) {
+        const data = btoa(new Uint8Array(await f.arrayBuffer()).reduce((s, b) => s + String.fromCharCode(b), ''));
+        $('#script').value = (await api('/api/upload', { method: 'POST', body: JSON.stringify({ name: f.name, data }) })).text;
+      } else throw new Error(/\.pages$/i.test(f.name)
+        ? 'Pages files can’t be read. In Pages, choose File → Export To → Word…, then choose the .docx.'
+        : 'Choose a .md, .txt or .docx file.');
+      $('#file-name').textContent = f.name; fillVoices();
+    } catch (err) { toast(err.message, 8000); } finally { e.target.value = ''; }
   };
   $('#create').onclick = async () => {
     try {
-      const body = { text: $('#script').value, path: upload, title: $('#title').value, lang: langSel.value, voice: voiceSel.value,
+      const body = { text: $('#script').value, title: $('#title').value, lang: langSel.value, voice: voiceSel.value,
         director: dirSel.value, model: $('#model').value, base_url: $('#base-url').value };
       const { job, project } = await api('/api/projects', { method: 'POST', body: JSON.stringify(body) });
       const res = await watch(job, 'Creating the storyboard');
