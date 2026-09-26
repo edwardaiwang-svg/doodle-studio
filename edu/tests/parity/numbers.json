@@ -1,0 +1,716 @@
+[
+{
+"display": "Around 1450, Johannes Gutenberg printed 180 copies.",
+"spoken": "Around fourteen fifty, Johannes Gutenberg printed one hundred eighty copies.",
+"spans": [
+[
+7,
+11,
+7,
+21
+],
+[
+40,
+43,
+50,
+68
+]
+]
+},
+{
+"display": "By 1500, presses ran in 250 cities.",
+"spoken": "By fifteen hundred, presses ran in two hundred fifty cities.",
+"spans": [
+[
+3,
+7,
+3,
+18
+],
+[
+24,
+27,
+35,
+52
+]
+]
+},
+{
+"display": "In 1517, Luther wrote.",
+"spoken": "In fifteen seventeen, Luther wrote.",
+"spans": [
+[
+3,
+7,
+3,
+20
+]
+]
+},
+{
+"display": "Before the 1450s, every book was copied.",
+"spoken": "Before the fourteen fifties, every book was copied.",
+"spans": [
+[
+11,
+16,
+11,
+27
+]
+]
+},
+{
+"display": "In the 1860s and the 1870s things changed.",
+"spoken": "In the eighteen sixties and the eighteen seventies things changed.",
+"spans": [
+[
+7,
+12,
+7,
+23
+],
+[
+21,
+26,
+32,
+50
+]
+]
+},
+{
+"display": "It cost $3.8bn in 2005.",
+"spoken": "It cost three point eight billion dollars in two thousand five.",
+"spans": [
+[
+8,
+14,
+8,
+41
+],
+[
+18,
+22,
+45,
+62
+]
+]
+},
+{
+"display": "About 27% of trips, or 3-5% of people.",
+"spoken": "About twenty-seven percent of trips, or three to five percent of people.",
+"spans": [
+[
+6,
+9,
+6,
+26
+],
+[
+23,
+27,
+40,
+61
+]
+]
+},
+{
+"display": "Prices fell 12.5% to $19.99 each.",
+"spoken": "Prices fell twelve point five percent to nineteen dollars and ninety-nine cents each.",
+"spans": [
+[
+12,
+17,
+12,
+37
+],
+[
+21,
+27,
+41,
+79
+]
+]
+},
+{
+"display": "It took 70 years and 1 billion bikes.",
+"spoken": "It took seventy years and one billion bikes.",
+"spans": [
+[
+8,
+10,
+8,
+15
+],
+[
+21,
+22,
+26,
+29
+]
+]
+},
+{
+"display": "On March 3rd at 9:30 am, then 10:05 p.m.",
+"spoken": "On March third at nine thirty a m, then ten oh five p m",
+"spans": [
+[
+3,
+12,
+3,
+14
+],
+[
+16,
+23,
+18,
+33
+],
+[
+30,
+40,
+40,
+55
+]
+]
+},
+{
+"display": "The 21st century, the 101st day and the 3rd try.",
+"spoken": "The twenty-first century, the one hundred and first day and the third try.",
+"spans": [
+[
+4,
+8,
+4,
+16
+],
+[
+22,
+27,
+30,
+51
+],
+[
+40,
+43,
+64,
+69
+]
+]
+},
+{
+"display": "20 million books and 2,500,000 people.",
+"spoken": "twenty million books and two million five hundred thousand people.",
+"spans": [
+[
+0,
+2,
+0,
+6
+],
+[
+21,
+30,
+25,
+58
+]
+]
+},
+{
+"display": "A 3x speedup and 10× faster.",
+"spoken": "A three times speedup and ten times faster.",
+"spans": [
+[
+2,
+4,
+2,
+13
+],
+[
+17,
+20,
+26,
+35
+]
+]
+},
+{
+"display": "We have 5k fans, 2.5m views and $10m in sales.",
+"spoken": "We have five thousand fans, two point five million views and ten million dollars in sales.",
+"spans": [
+[
+8,
+10,
+8,
+21
+],
+[
+17,
+21,
+28,
+50
+],
+[
+32,
+36,
+61,
+80
+]
+]
+},
+{
+"display": "It ran 13 km in 1 hour at 25 km/h.",
+"spoken": "It ran thirteen kilometers in one hour at twenty-five kilometers per hour.",
+"spans": [
+[
+7,
+12,
+7,
+26
+],
+[
+16,
+17,
+30,
+33
+],
+[
+26,
+33,
+42,
+73
+]
+]
+},
+{
+"display": "It weighs 1 kg or 2 kg, 30°C or 1°F.",
+"spoken": "It weighs one kilogram or two kilograms, thirty degrees Celsius or one degree Fahrenheit.",
+"spans": [
+[
+10,
+14,
+10,
+22
+],
+[
+18,
+22,
+26,
+39
+],
+[
+24,
+28,
+41,
+63
+],
+[
+32,
+35,
+67,
+88
+]
+]
+},
+{
+"display": "Number #1 and #42.",
+"spoken": "Number number one and number forty-two.",
+"spans": [
+[
+7,
+9,
+7,
+17
+],
+[
+14,
+17,
+22,
+38
+]
+]
+},
+{
+"display": "About 1/2 or 2/3 of 5/8 of it.",
+"spoken": "About one half or two thirds of five eight of it.",
+"spans": [
+[
+6,
+9,
+6,
+14
+],
+[
+13,
+16,
+18,
+28
+],
+[
+20,
+23,
+32,
+42
+]
+]
+},
+{
+"display": "From 1914–1918 and 1939-1945.",
+"spoken": "From nineteen fourteen to nineteen eighteen and nineteen thirty-nine to nineteen forty-five.",
+"spans": [
+[
+5,
+14,
+5,
+43
+],
+[
+19,
+28,
+48,
+91
+]
+]
+},
+{
+"display": "Temperatures of -5 degrees and -12.",
+"spoken": "Temperatures of minus five degrees and minus twelve.",
+"spans": [
+[
+16,
+18,
+16,
+26
+],
+[
+31,
+34,
+39,
+51
+]
+]
+},
+{
+"display": "In 1066 and 2000 and 2010 and 1905 and 1800.",
+"spoken": "In one thousand sixty-six and two thousand and twenty ten and nineteen oh-five and eighteen hundred.",
+"spans": [
+[
+3,
+7,
+3,
+25
+],
+[
+12,
+16,
+30,
+42
+],
+[
+21,
+25,
+47,
+57
+],
+[
+30,
+34,
+62,
+78
+],
+[
+39,
+43,
+83,
+99
+]
+]
+},
+{
+"display": "Only 0.5 of a cup, 3.0 cups, 3.80 cups.",
+"spoken": "Only zero point five of a cup, three cups, three point eight cups.",
+"spans": [
+[
+5,
+8,
+5,
+20
+],
+[
+19,
+22,
+31,
+36
+],
+[
+29,
+33,
+43,
+60
+]
+]
+},
+{
+"display": "US$5 and €20 and £1 and ¥300 and ₹50.",
+"spoken": "five dollars and twenty euros and one pound and three hundred yen and fifty rupees.",
+"spans": [
+[
+0,
+4,
+0,
+12
+],
+[
+9,
+12,
+17,
+29
+],
+[
+17,
+19,
+34,
+43
+],
+[
+24,
+28,
+48,
+65
+],
+[
+33,
+36,
+70,
+82
+]
+]
+},
+{
+"display": "Section 2 of 1,000 pages.",
+"spoken": "Section two of one thousand pages.",
+"spans": [
+[
+8,
+9,
+8,
+11
+],
+[
+13,
+18,
+15,
+27
+]
+]
+},
+{
+"display": "B2B and 4G and COVID19 cases.",
+"spoken": "B two B and four G and COVID nineteen cases.",
+"spans": [
+[
+1,
+2,
+1,
+6
+],
+[
+8,
+9,
+12,
+17
+],
+[
+20,
+22,
+28,
+37
+]
+]
+},
+{
+"display": "1 in 10 kids read 3.14 books.",
+"spoken": "one in ten kids read three point one four books.",
+"spans": [
+[
+0,
+1,
+0,
+3
+],
+[
+5,
+7,
+7,
+10
+],
+[
+18,
+22,
+21,
+41
+]
+]
+},
+{
+"display": "Part 1: One machine, one idea.",
+"spoken": "Part one: One machine, one idea.",
+"spans": [
+[
+5,
+6,
+5,
+8
+]
+]
+},
+{
+"display": "Key takeaway: His workshop printed about 180 copies of the Bible around 1455.",
+"spoken": "Key takeaway: His workshop printed about one hundred eighty copies of the Bible around fourteen fifty-five.",
+"spans": [
+[
+41,
+44,
+41,
+59
+],
+[
+72,
+76,
+87,
+106
+]
+]
+},
+{
+"display": "It was 1,000,001 and 999,999,999 and 1,000,000,000,000.",
+"spoken": "It was one million one and nine hundred ninety-nine million nine hundred ninety-nine thousand nine hundred ninety-nine and one trillion.",
+"spans": [
+[
+7,
+16,
+7,
+22
+],
+[
+21,
+32,
+27,
+118
+],
+[
+37,
+54,
+123,
+135
+]
+]
+},
+{
+"display": "Drais rode about 13 kilometres in under an hour.",
+"spoken": "Drais rode about thirteen kilometres in under an hour.",
+"spans": [
+[
+17,
+19,
+17,
+25
+]
+]
+},
+{
+"display": "Today there are about 1 billion bicycles in the world. In the Netherlands, about 27% of trips are made by bicycle.",
+"spoken": "Today there are about one billion bicycles in the world. In the Netherlands, about twenty-seven percent of trips are made by bicycle.",
+"spans": [
+[
+22,
+23,
+22,
+25
+],
+[
+81,
+84,
+83,
+103
+]
+]
+},
+{
+"display": "more than 570 years ago",
+"spoken": "more than five hundred seventy years ago",
+"spans": [
+[
+10,
+13,
+10,
+30
+]
+]
+},
+{
+"display": "the 1990s and 2020s and 1900s",
+"spoken": "the nineteen nineties and twenty twenties and nineteen hundreds",
+"spans": [
+[
+4,
+9,
+4,
+21
+],
+[
+14,
+19,
+26,
+41
+],
+[
+24,
+29,
+46,
+63
+]
+]
+},
+{
+"display": "In 2024 about 12 of 30 kids.",
+"spoken": "In twenty twenty-four about twelve of thirty kids.",
+"spans": [
+[
+3,
+7,
+3,
+21
+],
+[
+14,
+16,
+28,
+34
+],
+[
+20,
+22,
+38,
+44
+]
+]
+},
+{
+"display": "He was born on Jan 5 and died Dec. 25th.",
+"spoken": "He was born on January fifth and died December twenty-fifth.",
+"spans": [
+[
+15,
+20,
+15,
+28
+],
+[
+30,
+39,
+38,
+59
+]
+]
+}
+]

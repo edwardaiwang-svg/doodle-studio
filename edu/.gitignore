@@ -1,0 +1,6 @@
+node_modules/
+extension/vendor/
+extension/assets/
+dist/
+tests/out/
+keys/

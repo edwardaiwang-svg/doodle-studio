@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doodle Studio for Classroom</title>
+  <link rel="icon" href="../icons/icon48.png">
+  <link rel="stylesheet" href="studio.css">
+</head>
+<body>
+  <header class="bar">
+    <img src="../icons/icon48.png" alt="" width="36" height="36">
+    <span class="brand">Doodle Studio <em>for Classroom</em></span>
+    <span class="spacer"></span>
+    <span id="account" class="account" hidden><span id="account-email"></span> <button id="signout" class="link">Sign out</button></span>
+  </header>
+
+  <main>
+    <section id="view-loading" class="card center">
+      <p class="muted">Getting ready…</p>
+    </section>
+
+    <section id="view-signin" class="card" hidden>
+      <h1>Turn your lesson into a hand-drawn video</h1>
+      <p>Write or upload a short script. Doodle Studio draws it on a whiteboard, reads it aloud, and puts the video in your Google Classroom class.</p>
+      <button id="signin" class="primary">Sign in with Google</button>
+      <p class="fine">Use the Google account you teach with. Doodle Studio asks to see which classes you teach, to save the video to your Google Drive, and to add it to your class's Classwork. It never sees your students' work or grades.</p>
+    </section>
+
+    <section id="view-blocked" class="card" hidden>
+      <h1>Doodle Studio for Classroom is for teachers</h1>
+      <p id="blocked-why">This Google account doesn't teach any active Google Classroom classes.</p>
+      <p>If you teach with a different account, sign out and sign in with that one. If your school's Google admin controls apps, they may need to allow Doodle Studio for teachers.</p>
+      <button id="blocked-signout" class="secondary">Sign out</button>
+    </section>
+
+    <section id="view-make" class="card" hidden>
+      <h1>Make a video</h1>
+      <ol class="steps">
+        <li>
+          <label for="course">Class</label>
+          <select id="course"></select>
+        </li>
+        <li>
+          <label>Script</label>
+          <div class="file-row">
+            <label class="secondary file-button">Choose a file<input id="file" type="file" accept=".docx,.txt,.md,text/plain,text/markdown,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+            <span id="file-name" class="muted">Word (.docx), text (.txt) or Markdown (.md)</span>
+          </div>
+          <textarea id="script" rows="12" placeholder="…or type or paste your script here.
+
+Tip: short headings split the video into parts, like this:
+
+# The Water Cycle
+Have you ever wondered where rain comes from?
+
+## Evaporation
+The sun warms up oceans, lakes and rivers…"></textarea>
+          <p id="estimate" class="muted small"></p>
+        </li>
+        <li>
+          <label for="title">Title <span class="muted">(optional; otherwise the script's first heading)</span></label>
+          <input id="title" type="text" maxlength="100">
+        </li>
+        <li class="options">
+          <div>
+            <label for="voice">Voice</label>
+            <select id="voice">
+              <option value="af_heart">Heart (warm)</option>
+              <option value="af_bella">Bella (bright)</option>
+              <option value="am_michael">Michael (calm)</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>When the video is ready</legend>
+            <label><input type="radio" name="state" value="PUBLISHED" checked> Post it to the class</label>
+            <label><input type="radio" name="state" value="DRAFT"> Save it as a draft for me to check first</label>
+          </fieldset>
+          <fieldset>
+            <legend>Picture</legend>
+            <label><input type="radio" name="quality" value="1080p" checked> Full HD</label>
+            <label><input type="radio" name="quality" value="720p"> Faster (720p)</label>
+          </fieldset>
+        </li>
+      </ol>
+      <button id="make" class="primary">Make my video</button>
+      <p class="fine">The video is made on this computer. Only your script's sentences are sent to Doodle Cloud, which asks GPT-6 Luna (OpenAI) to suggest pictures; Doodle Cloud doesn't keep your script.</p>
+    </section>
+
+    <section id="view-progress" class="card" hidden>
+      <h1 id="progress-title">Making your video</h1>
+      <p class="muted">Keep this tab open. You can use other tabs meanwhile.</p>
+      <ul id="stages" class="stages"></ul>
+      <div class="meter"><div id="meter"></div></div>
+      <button id="stop" class="secondary">Stop</button>
+    </section>
+
+    <section id="view-done" class="card" hidden>
+      <h1 id="done-title">Your video is in your class</h1>
+      <video id="preview" controls playsinline></video>
+      <p id="done-where"></p>
+      <p id="done-notes" class="fine"></p>
+      <div class="row">
+        <a id="open-classroom" class="primary" target="_blank" rel="noopener">Open in Classroom</a>
+        <a id="download" class="secondary" download>Download the video</a>
+        <button id="again" class="secondary">Make another video</button>
+      </div>
+    </section>
+
+    <section id="view-error" class="card" hidden>
+      <h1>Something went wrong</h1>
+      <p id="error-text"></p>
+      <button id="retry" class="primary">Try again</button>
+    </section>
+  </main>
+  <script type="module" src="studio.js"></script>
+</body>
+</html>

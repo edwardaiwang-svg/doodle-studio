@@ -1,0 +1,13 @@
+/* Doodle Studio's only rule on Classroom's pages: where its button's host element sits. It matches nothing
+   of Classroom's own, and the button itself lives in a closed shadow root (see classroom.js). */
+doodle-studio-for-classroom {
+  all: initial !important;
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  z-index: 5 !important;   /* low on purpose: Classroom's menus and dialogs must cover the button, never the reverse */
+}
+
+@media print {
+  doodle-studio-for-classroom { display: none !important; }
+}
