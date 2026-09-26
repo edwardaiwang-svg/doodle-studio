@@ -66,8 +66,8 @@ def test_good_answers_are_used_and_mapped_to_spoken_text(board):
     assert s1['title']['en'] == 'Gutenberg builds a machine' and s1['hook']['en'] == 'Metal letters, fast'
     first = next(b for b in board['beats'] if b['chapter'] == 's1' and b['kind'] == 'narration')
     kinds = [v['type'] for v in first['visuals']]
-    assert kinds == ['cluster', 'stat']
-    assert first['visuals'][1]['trigger']['en'] == 'Around fourteen fifty'       # display phrase -> spoken words
+    assert kinds == ['stat', 'cluster']                                        # in spoken order: the date is said first
+    assert first['visuals'][0]['trigger']['en'] == 'Around fourteen fifty'       # display phrase -> spoken words
     take = next(b for b in board['beats'] if b['chapter'] == 's1' and b['kind'] == 'take')
     assert take['take']['headline']['en'] == 'Printing got fast and cheap'
     assert validate(board)['ok'] and report['usage'].calls == 5 and report['usage'].cost_usd > 0
@@ -153,3 +153,45 @@ def test_banned_pictures_are_never_offered_or_kept(board):
     LLMDirector(rec, 'en').direct(board)
     offered = {c['id'] for p in rec.payloads for b in p['beats'] for c in b['candidates']}
     assert offered and not offered & banned()['doodles']
+
+
+def test_the_model_never_leaves_a_sentence_with_less_than_the_rules_drew(board):
+    """Code decides how much is drawn: the model re-picks pictures sentence by sentence, but a list keeps every item
+    and a sentence the model left bare keeps the rules' picture."""
+    def outro(payload):
+        beat = next((b for b in payload['beats'] if 'newspaper' in b['text']), None)
+        if beat is None:
+            return {'section_title': '', 'hook': '', 'takeaway': '', 'beats': []}
+        return {'section_title': '', 'hook': '', 'takeaway': '', 'beats': [{'beat_id': beat['beat_id'], 'visuals': [
+            {'type': 'cluster', 'relation': 'none', 'items': [{'doodle': 'book_stack', 'label': '', 'trigger': 'knowledge'}]},
+            {'type': 'cluster', 'relation': 'none', 'items': [{'doodle': 'newspaper', 'label': '', 'trigger': 'a newspaper'}]},
+        ]}]}
+    reference = copy.deepcopy(board)
+    LLMDirector(Recorded({}), 'en').rules.direct(reference)
+    rec = Recorded({'': outro})
+    LLMDirector(rec, 'en').direct(board)
+    assert any('newspaper' in b['text'] for p in rec.payloads for b in p['beats'])   # the outro was asked
+    beat = next(b for b in board['beats'] if b['kind'] == 'narration' and 'newspaper' in b['display']['en'])
+    draft = next(b for b in reference['beats'] if b['id'] == beat['id'])['visuals']
+    doodles = [[i['doodle'] for i in v.get('items', [])] for v in beat['visuals']]
+    assert doodles[0] == ['book_stack']                   # 1st sentence: the model's pick replaces printing_press (a tie)
+    assert ['book_stack', 'newspaper', 'web_page'] in doodles        # 2nd: the whole list beats the model's lone newspaper
+    assert ['newspaper'] not in doodles and ['printing_press'] not in doodles
+    assert [v['type'] for v in beat['visuals'][1:]] == [v['type'] for v in draft[1:]]
+    assert validate(board)['ok']
+
+
+def test_a_rules_picture_the_model_drew_elsewhere_is_not_drawn_twice(board):
+    def outro(payload):
+        beat = next((b for b in payload['beats'] if 'newspaper' in b['text']), None)
+        if beat is None:
+            return {'section_title': '', 'hook': '', 'takeaway': '', 'beats': []}
+        assert 'lightbulb_idea' in {c['id'] for c in beat['candidates']}
+        return {'section_title': '', 'hook': '', 'takeaway': '', 'beats': [{'beat_id': beat['beat_id'], 'visuals': [
+            {'type': 'cluster', 'relation': 'none', 'items': [{'doodle': 'lightbulb_idea', 'label': '', 'trigger': 'knowledge'}]},
+        ]}]}
+    LLMDirector(Recorded({'': outro}), 'en').direct(board)
+    beat = next(b for b in board['beats'] if b['kind'] == 'narration' and 'newspaper' in b['display']['en'])
+    doodles = [i['doodle'] for v in beat['visuals'] for i in v.get('items', [])]
+    assert doodles.count('lightbulb_idea') == 1 and doodles[0] == 'lightbulb_idea'
+    assert ['book_stack', 'newspaper', 'web_page'] == doodles[1:4]         # the list still comes with the second sentence

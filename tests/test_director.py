@@ -110,6 +110,15 @@ def test_listed_things_are_all_drawn_together():
     assert [('book_stack', 'book'), ('newspaper', 'newspaper'), ('web_page', 'website')] in _visual_doodles(board, outro)
 
 
+def test_snow_is_drawn_as_a_snowflake_but_a_wheel_is_still_not_a_ferris_wheel():
+    board, _ = _picks('water_cycle.md')
+    beat = next(b['id'] for b in board['beats'] if 'sleet' in b['display']['en'])
+    assert [('rain_cloud', 'rain'), ('fl_snowflake', 'snow')] in _visual_doodles(board, beat)   # "rain, snow, sleet or hail"
+    director = RulesDirector('en')
+    director.direct(script.build(ingest.read(FIX / 'water_cycle.md')))
+    assert not director._is_head('fl_ferris_wheel', 'wheels') and not director._is_head('fl_snowman', 'snow')
+
+
 def test_takeaway_paragraphs_are_illustrated_before_the_takeaway():
     board, _ = _picks('printing_press.md')
     s2 = [b for b in board['beats'] if b['chapter'] == 's2']

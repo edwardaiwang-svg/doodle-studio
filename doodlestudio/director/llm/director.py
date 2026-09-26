@@ -3,7 +3,8 @@
 Every answer is checked before it is used: doodles must come from the beat's candidates
 (or the narrator poses), triggers must be words of the beat, numbers/dates/quotes must
 appear in the section text, and texts must fit. A beat whose answer fails keeps its rules
-draft; a section whose call fails keeps all of its rules visuals.
+draft; a section whose call fails keeps all of its rules visuals. The model may re-pick a
+sentence's pictures, but never leaves a sentence with less drawn than the rules planned.
 """
 from __future__ import annotations
 
@@ -19,6 +20,7 @@ from .schema import LIMITS, MAX_VISUALS_PER_BEAT
 NARRATOR_POSES = ['narrator_wave', 'narrator_explain', 'narrator_present', 'narrator_think', 'narrator_magnifier',
                   'narrator_notebook', 'narrator_thumbs', 'narrator_worried']
 PAGE_TYPES = {'bars', 'grid100', 'timeline', 'flow', 'split'}
+KEEPABLE = {'cluster', 'stat', 'quote', 'glossary'}     # rules visuals that stand alone in one sentence
 
 
 class LLMDirector:
@@ -103,7 +105,7 @@ class LLMDirector:
                     pages += 1
                 made.append(v)
             if made:
-                beat['visuals'] = made
+                beat['visuals'] = self._keep_pictures(beat, made, beat['visuals'])
         if chapter['kind'] == 'section':
             original = next(c for c in board['chapters'] if c['id'] == chapter['id'])
             title, hook = _clean(answer.get('section_title')), _clean(answer.get('hook'))
@@ -117,6 +119,35 @@ class LLMDirector:
             if take and fits and _numbers_ok(head, section_text):
                 take['take']['headline'] = {lang: head}
                 script.sync_takes(board)              # the narrator says what the note shows
+
+    def _keep_pictures(self, beat: dict, made: list, draft: list) -> list:
+        """Code decides how much is drawn: sentence by sentence, the model's visuals replace the rules draft only
+        when they draw at least as much (a list keeps every item; a sentence the model left bare keeps its
+        picture). A chart page from the model keeps the beat as the model planned it."""
+        if any(v['type'] in PAGE_TYPES for v in made):
+            return made
+        lang = self.lang
+        spoken = numbers.normalize(beat['display'][lang], lang).spoken
+        ends, cursor = [], 0
+        for sentence in script.sentences(spoken, lang) or [spoken]:
+            cursor = spoken.find(sentence, cursor) + len(sentence)
+            ends.append(cursor)
+
+        def sentence_of(v):
+            at = _at(v, spoken, lang)
+            return next((k for k, end in enumerate(ends) if at < end), len(ends) - 1)
+        drawn = {i['doodle'] for v in made for i in v.get('items') or []}
+        model, rules = {}, {}
+        for v in made:
+            model.setdefault(sentence_of(v), []).append(v)
+        for v in draft:                               # (a picture the model already drew elsewhere is not repeated)
+            if v['type'] in KEEPABLE and not (v['type'] == 'cluster' and {i['doodle'] for i in v['items']} <= drawn):
+                rules.setdefault(sentence_of(v), []).append(v)
+        kept = []
+        for k in sorted(model.keys() | rules.keys()):
+            ours, theirs = rules.get(k, []), model.get(k, [])
+            kept += ours if _amount(ours) > _amount(theirs) else theirs
+        return sorted(kept, key=lambda v: _at(v, spoken, lang))
 
     def _convert(self, raw: dict, beat: dict, norm, section_text: str, allowed: set, k: int) -> dict:
         """One schema visual -> the renderer's spec, or ValueError explaining why it is unusable."""
@@ -274,3 +305,17 @@ def _summary(v: dict, lang: str) -> dict:
         if isinstance(v.get(key), dict):
             out[key] = v[key].get(lang)
     return out
+
+
+def _at(v: dict, spoken: str, lang: str) -> int:
+    """Where a visual starts in the beat's spoken text: its trigger or its first item's; 0 = as the beat starts."""
+    for trigger in [v.get('trigger')] + [i.get('trigger') for i in v.get('items') or []]:
+        at = spoken.find(trigger[lang]) if trigger and trigger.get(lang) else -1
+        if at >= 0:
+            return at
+    return 0
+
+
+def _amount(visuals: list) -> int:
+    """How much visuals put on the board: every doodle, and every number, quote or note."""
+    return sum(len(v['items']) if v['type'] == 'cluster' else 1 + bool(v.get('doodle')) for v in visuals)

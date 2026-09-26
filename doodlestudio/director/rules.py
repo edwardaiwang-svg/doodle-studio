@@ -73,6 +73,7 @@ GENERIC = {'en': set('invention technology device gadget product item object equ
 EMOJI_ADJ = set('red orange yellow green blue purple brown black white pink gray grey light dark small large big '
                 'little tiny new old open closed full empty round square hot cold high low happy sad smiling '
                 'grinning rolling fallen'.split())
+EMOJI_ALSO = {'fl_snowflake': {'snow'}}                # emoji a shorter word may call up: snow is drawn as a snowflake
 # Phenomena are not objects: "blue light" is never an emoji of a lamp or a traffic light.
 PHENOMENA = {'en': set('light sound heat energy power force gravity electricity radiation magnetism friction '
                        'pressure temperature'.split()),
@@ -456,6 +457,8 @@ class RulesDirector:
         name = re.split(r'\b(?:at|with|of|in|on|for|from|to|and|or)\b', self.matcher.entries[did].get('desc', '').lower())[0]
         words = re.findall(r'[a-z]+', name)
         said = [singular(w) for w in re.findall(r'[a-z]+', phrase.lower())]
+        if said and said[-1] in EMOJI_ALSO.get(did, ()):
+            return True
         if not words or singular(words[-1]) != said[-1]:
             return False
         return all(w in EMOJI_ADJ or singular(w) in said for w in words[:-1])

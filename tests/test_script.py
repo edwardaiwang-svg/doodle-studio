@@ -71,3 +71,14 @@ def test_an_edited_takeaway_is_what_the_narrator_says():
     script.sync_takes(board)
     assert take['display']['en'] == 'Key takeaway: Gutenberg made 180 Bibles.'
     assert take['spoken']['en'] == 'Key takeaway: Gutenberg made one hundred eighty Bibles.'
+
+
+def test_a_takeaway_never_leans_on_the_sentence_before_it():
+    # "We call this ..." names something the previous sentence described: skipped like "This is called ...".
+    assert script.headline(['The sun heats the water in the ocean. We call this evaporation.'], 'Evaporation', 'en') \
+        == 'The sun heats the water in the ocean.'
+    # Nothing short enough stands alone: a longer sentence that still fits the note's three lines beats the title.
+    text = 'When the drops in a cloud get too big and heavy, they fall to the ground. We call this precipitation.'
+    assert script.headline([text], 'Precipitation', 'en') == 'When the drops in a cloud get too big and heavy, they fall to the ground.'
+    assert script.headline(['Rain falls. ' + 'Tiny drops of water float high above us in very cold clouds, then join into much bigger and heavier drops.'],
+                           'Precipitation', 'en') == 'Precipitation.'          # over 18 words: the title

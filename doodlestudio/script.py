@@ -127,17 +127,21 @@ def _merge_to(sections: list[Section], limit: int, lang: str) -> list[Section]:
 
 CONTEXT = {'en': re.compile(r'^(this|that|these|those|it|its|they|their|he|she|so|but|and|or|then)\b', re.I),
            'zh': re.compile(r'^(这|那|它|他|她|所以|但是|而且|因此)')}
+NAMING = re.compile(r'\b(call|calls|called|name|names|named)\s+(this|that|these|those|it|them)\b', re.I)
 
 
 def headline(beat_texts: list[str], fallback: str, lang: str) -> str:
     """Takeaway note text: the shortest complete sentence that fits a note and stands on its own (not "This is
-    called..."), from the section's last paragraph that has one, else the section title."""
-    cap = 14 if lang == 'en' else 28
+    called..." or "We call this..."), from the section's last paragraph that has one; in English, if none has,
+    the same with sentences of up to 18 words and 90 characters (still three lines on the note); else the
+    section title."""
     floor = 4 if lang == 'en' else 8
-    for text in reversed(beat_texts):
-        fits = [s for s in sentences(text, lang) if floor <= size(s, lang) <= cap and not CONTEXT[lang].match(s)]
-        if fits:
-            return min(fits, key=lambda s: size(s, lang))
+    for cap, room in ((14, None), (18, 90)) if lang == 'en' else ((28, None),):
+        for text in reversed(beat_texts):
+            fits = [s for s in sentences(text, lang) if floor <= size(s, lang) <= cap and len(s) <= (room or len(s))
+                    and not CONTEXT[lang].match(s) and not (lang == 'en' and NAMING.search(s))]
+            if fits:
+                return min(fits, key=lambda s: size(s, lang))
     return sentence_of(fallback, lang)
 
 

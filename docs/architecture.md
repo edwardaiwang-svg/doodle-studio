@@ -54,11 +54,11 @@ Frames are composited with Pillow (paper, drawings in progress, the hand, captio
 - a word keeps the picture it got first, and is left undrawn rather than given a second-best meaning;
 - idioms ("a matter of weeks"), generic words ("inventions", "machine"), numbers and phenomena drawn as objects ("blue light" as a lamp) get no picture, and a compound such as "global warming" is one idea;
 - a describing word is not a thing ("oil-based ink" is ink, not oil), and people named by what they do are people ("a team of printers" is never an office printer);
-- an emoji with a longer name needs its whole name: "wheels" is never a Ferris wheel and "machine" never a slot machine (colours and sizes don't count: a "light blue heart" is still a heart);
+- an emoji with a longer name needs its whole name: "wheels" is never a Ferris wheel and "machine" never a slot machine (colours and sizes don't count: a "light blue heart" is still a heart; a few emoji are listed with a shorter word that calls them up: "snow" is the snowflake);
 - a picture found by meaning alone, with no word naming it, must share a word with its sentence unless the match is strong;
 - some pictures are never drawn, by any director: religious imagery (every faith alike) and scientist or astronomer figures, and the words church, Germany, scientists and astronomers get no picture (`assets/doodles/banned.json`).
 
-A takeaway note shows the section's shortest complete sentence that stands on its own (not "This is called ..."), and the narrator says it. When the AI director writes a different takeaway, the narrator says that instead.
+A takeaway note shows the section's shortest complete sentence that stands on its own (not "This is called ..." or "We call this ..."), from its last paragraph that has one; if no sentence of 14 words or fewer does, one of up to 18 words that still fits the note's three lines. The narrator says it. When the AI director writes a different takeaway, the narrator says that instead.
 
 Timeline labels say who or what each dated clause is about: a named person or group first, else the clause's subject ("By 1500, printing presses were running" gives "Printing presses"). A date after "before" or "until" is not an event.
 
@@ -70,6 +70,6 @@ The rules director always runs first; its plan is both the draft and the fallbac
 - a rules draft;
 - about 12 candidate doodles per beat, found by the matcher.
 
-The answer is constrained to a JSON schema and checked by code. A beat whose answer fails any check keeps its draft.
+The answer is constrained to a JSON schema and checked by code. A beat whose answer fails any check keeps its draft. Code also decides how much is drawn: sentence by sentence, the model's visuals replace the draft's only when they put at least as much on the board (every doodle, number, quote or note counts), so the model can re-pick a sentence's pictures but never leave a listed thing or an illustrated sentence without its picture.
 
 Doodle Cloud (a separate, private service) runs the same contract on the server. That way the model keys never ship in the app, and quotas and costs are enforced in one place.
