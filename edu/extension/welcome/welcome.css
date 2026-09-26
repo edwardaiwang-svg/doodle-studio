@@ -1,0 +1,4 @@
+.hello { width: 120px; float: right; margin: -8px 0 8px 16px; }
+.how { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; clear: both; }
+.how li { display: flex; align-items: center; gap: 18px; }
+.how img { width: 84px; height: 84px; flex: none; }

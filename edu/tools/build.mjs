@@ -1,9 +1,12 @@
 // Build the unpacked extension (edu/extension) and a store zip (edu/dist).
 //   node tools/build.mjs            vendor the JS/WASM libraries (MV3 forbids remote code) + export assets if missing
 //   node tools/build.mjs --assets   re-export the doodle library, vectors, fonts... from the Python app
-//   node tools/build.mjs --zip      also write dist/doodle-studio-classroom-<version>.zip
+//   node tools/build.mjs --zip      also write dist/doodle-studio-classroom-<version>.zip for the Chrome Web Store
+//                                   (without the manifest's "key": the store refuses it and assigns its own id)
+// The asset export runs the Python app with $PYTHON (default: the repository's .venv).
 import { execFileSync } from 'node:child_process';
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -70,14 +73,18 @@ for (const [from, to] of VENDOR) {
 }
 patchAacEncoder(join(EXT, 'vendor', 'mediabunny'));
 if (args.has('--assets') || !existsSync(join(EXT, 'assets', 'catalog.json'))) {
-  execFileSync(join(EDU, '..', '.venv', 'bin', 'python'), [join(EDU, 'tools', 'export_assets.py')], { stdio: 'inherit' });
+  execFileSync(process.env.PYTHON || join(EDU, '..', '.venv', 'bin', 'python'), [join(EDU, 'tools', 'export_assets.py')], { stdio: 'inherit' });
 }
 if (args.has('--zip')) {
-  const { version } = JSON.parse(readFileSync(join(EXT, 'manifest.json'), 'utf8'));
+  const { key, ...manifest } = JSON.parse(readFileSync(join(EXT, 'manifest.json'), 'utf8'));
   mkdirSync(join(EDU, 'dist'), { recursive: true });
-  const out = join(EDU, 'dist', `doodle-studio-classroom-${version}.zip`);
+  const out = join(EDU, 'dist', `doodle-studio-classroom-${manifest.version}.zip`);
   rmSync(out, { force: true });
-  execFileSync('zip', ['-qr', out, '.', '-x', 'dev/*', '*.DS_Store'], { cwd: EXT, stdio: 'inherit' });
+  execFileSync('zip', ['-qr', out, '.', '-x', 'dev/*', '*.DS_Store', 'manifest.json'], { cwd: EXT, stdio: 'inherit' });
+  const staged = mkdtempSync(join(tmpdir(), 'doodle-manifest-'));
+  writeFileSync(join(staged, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
+  execFileSync('zip', ['-qj', out, join(staged, 'manifest.json')], { stdio: 'inherit' });
+  rmSync(staged, { recursive: true, force: true });
   console.log('wrote', out);
 }
 console.log('extension ready:', EXT);

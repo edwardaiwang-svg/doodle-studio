@@ -1,7 +1,6 @@
 # Doodle Studio for Classroom: privacy policy
 
-_Draft for the Chrome Web Store listing and Google's OAuth verification. Publish it on the same site as
-the extension's home page before submitting._
+_Published at https://edwardaiwang-svg.github.io/doodle-studio/classroom/privacy.html (keep the two in step)._
 
 Doodle Studio for Classroom is a Chrome extension for teachers. It turns a lesson script the teacher
 writes into a hand-drawn video and adds it to one of the teacher's Google Classroom classes.
@@ -32,8 +31,8 @@ the free allowance. It never stores your script, the suggestions, your Google to
 ## What stays on your computer
 
 The drawing, the voice, the music mix and the video encoding all happen inside Chrome on your computer.
-The downloaded models and your sign-in are kept in the extension's own storage; uninstalling the
-extension removes them.
+Your sign-in is kept in memory only while Chrome is open, and the downloaded models are kept in the
+extension's own storage; uninstalling the extension removes them.
 
 ## Children
 

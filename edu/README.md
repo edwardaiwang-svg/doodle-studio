@@ -19,6 +19,11 @@ post work; Seesaw (strong in PreK–2) has no public API for posting, so it woul
 
 ## How a teacher uses it
 
+No terminal, nothing to download but the extension: teachers install it from the Chrome Web Store with **Add to
+Chrome** (or their school's IT installs it for them), and a welcome page shows the three steps. The teacher page is
+[docs/classroom](../docs/classroom/index.html) (published on the project site); how to publish the extension is in
+[STORE.md](STORE.md).
+
 1. Install the extension, open **classroom.google.com**, and open a class you teach.
 2. Click **Make a doodle video** (bottom right). The Doodle Studio tab opens with that class chosen.
 3. Sign in with Google (the account you teach with) the first time.
@@ -41,7 +46,8 @@ node tools/build.mjs          # vendors the JS/WASM libraries and exports the do
 
 Load `edu/extension` in `chrome://extensions` (Developer mode → Load unpacked). The manifest's `key` pins
 the extension id to `hoddalijnehhimlamfchabikgmjfgeoe` so the Google sign-in redirect below stays valid.
-`node tools/build.mjs --zip` writes the Chrome Web Store zip to `edu/dist/`.
+`node tools/build.mjs --zip` writes the Chrome Web Store zip to `edu/dist/` (without the `key`: the store assigns
+its own id). CI builds the same zip on every push (the **doodle-studio-classroom** artifact).
 
 ### 2. Google sign-in (Google Cloud console)
 

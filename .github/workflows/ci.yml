@@ -44,6 +44,35 @@ jobs:
             smoke/build/qa.json
             smoke/build/contact-sheet.jpg
 
+  classroom-extension:          # the Chrome Web Store package, ready to download from the run's Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: edu/package-lock.json
+      - name: Install
+        run: |
+          pip install -e .
+          cd edu && npm ci
+      - name: Build the store package
+        working-directory: edu
+        env:
+          PYTHON: python
+        run: node tools/build.mjs --zip
+      - name: Unit and parity tests
+        working-directory: edu
+        run: npm test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: doodle-studio-classroom
+          path: edu/dist/*.zip
+
   installers:
     if: startsWith(github.ref, 'refs/tags/v')
     needs: test

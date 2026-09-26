@@ -1,9 +1,10 @@
 // The whole teacher flow in the real extension (headless Chromium), with Google and Doodle Cloud mocked:
 // studio tab → signed in (dev token) → teacher check → script → GPT-6 Luna (mock) → voice → drawing → MP4 →
 // Drive resumable upload (mock) → Classroom material (mock). Verifies the MP4 with ffprobe and the requests sent.
-//   node tests/e2e/pipeline.mjs [fixture=water_cycle] [--draft] [--no-cloud] [--720p]
+//   node tests/e2e/pipeline.mjs [fixture=water_cycle] [--draft] [--no-cloud] [--720p] [--shots]
+// --shots saves the studio's screens at the Chrome Web Store's screenshot size to tests/out/store/.
 import { execFileSync } from 'node:child_process';
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
@@ -15,6 +16,7 @@ const fixture = process.argv.slice(2).find((a) => !a.startsWith('--')) || 'water
 const draft = process.argv.includes('--draft');
 const noCloud = process.argv.includes('--no-cloud');
 const quality = process.argv.includes('--720p') ? '720p' : '1080p';
+const shots = process.argv.includes('--shots') ? join(OUT, 'store') : null;
 const script = readFileSync(join(EDU, '..', 'tests', 'fixtures', `${fixture}.md`), 'utf8');
 
 // A throwaway copy of the extension with CONFIG.dev on (it only enables the test sign-in token).
@@ -30,7 +32,8 @@ const seen = { luna: [], sessions: 0, uploadInit: null, chunks: [], material: nu
 
 // The same profile as media.mjs, so the downloaded voice models (326 MB) are shared.
 const context = await chromium.launchPersistentContext(join(OUT, 'media-profile'), {
-  headless: true, channel: 'chromium', args: [`--disable-extensions-except=${ext}`, `--load-extension=${ext}`],
+  headless: true, channel: 'chromium', viewport: { width: 1280, height: 800 },
+  args: [`--disable-extensions-except=${ext}`, `--load-extension=${ext}`],
 });
 const json = (route, body, status = 200, headers = {}) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body), headers });
 try {
@@ -94,6 +97,15 @@ try {
   await page.fill('#script', script);
   if (draft) await page.check('input[name=state][value=DRAFT]');
   if (quality === '720p') await page.check('input[name=quality][value="720p"]');
+  if (shots) {
+    mkdirSync(shots, { recursive: true });
+    await page.evaluate(() => { document.getElementById('script').scrollTop = 0; window.scrollTo(0, 0); });
+    await page.screenshot({ path: join(shots, 'studio-make.png') });
+    const welcome = await context.newPage();
+    await welcome.goto(`chrome-extension://${ID}/welcome/welcome.html`);
+    await welcome.screenshot({ path: join(shots, 'welcome.png') });
+    await welcome.close();
+  }
   const t0 = Date.now();
   await page.click('#make');
   let last = '';
@@ -105,11 +117,18 @@ try {
     if (state.error) throw new Error(`the studio showed an error: ${state.error}`);
     if (state.done) break;
     if (state.stage !== last) { console.log(`${Math.round((Date.now() - t0) / 1000)}s  ${state.stage}`); last = state.stage; }
+    if (shots && /Drawing the video\s*[4-9]\d%/.test(state.stage) && !existsSync(join(shots, 'studio-progress.png'))) {
+      await page.screenshot({ path: join(shots, 'studio-progress.png') });
+    }
     if (Date.now() - t0 > 60 * 60_000) throw new Error('timed out');
     await page.waitForTimeout(3000);
   }
   const minutes = ((Date.now() - t0) / 60000).toFixed(1);
   const doneText = await page.$eval('#view-done', (el) => el.innerText);
+  if (shots) {
+    await page.$eval('#preview', (v) => new Promise((resolve) => { v.onseeked = resolve; v.currentTime = 40; }));
+    await page.screenshot({ path: join(shots, 'studio-done.png') });
+  }
   mkdirSync(OUT, { recursive: true });
   const mp4 = join(OUT, `pipeline-${fixture}.mp4`);
   writeFileSync(mp4, Buffer.concat(seen.bytes));

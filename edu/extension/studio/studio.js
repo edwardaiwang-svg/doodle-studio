@@ -122,8 +122,9 @@ $('script').oninput = () => {
 
 function estimate() {
   const words = $('script').value.split(/\s+/).filter(Boolean).length;
+  const minutes = Math.max(1, Math.round(words / 80));     // about 80 words a minute, with the pauses for the drawing
   $('estimate').textContent = chosenFile ? '' : words
-    ? `About ${words} words · roughly ${Math.max(1, Math.round(words / 110))} minute${words >= 165 ? 's' : ''} of video` : '';
+    ? `About ${words} words · roughly ${minutes} minute${minutes > 1 ? 's' : ''} of video` : '';
 }
 
 // ------------------------------------------------------------------ making it

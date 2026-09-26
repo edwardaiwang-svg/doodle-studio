@@ -21,6 +21,11 @@ chrome.runtime.onMessage.addListener((message, sender, reply) => {
 
 chrome.action.onClicked.addListener((tab) => openStudio({}, tab));
 
+// A new install opens a short welcome page: where the button is and what it does.
+chrome.runtime.onInstalled.addListener(({ reason }) => {
+  if (reason === chrome.runtime.OnInstalledReason.INSTALL) chrome.tabs.create({ url: chrome.runtime.getURL('welcome/welcome.html') });
+});
+
 /** → { status: 'teacher' | 'not-teacher' | 'signed-out' | 'error', course?: { id, name }, message? } */
 async function teacherStatus({ courseCode, accountEmail }) {
   let auth;

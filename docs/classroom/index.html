@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodle Studio for Classroom</title>
+<meta name="description" content="Turn your lesson script into a hand-drawn video for your class, made in Chrome and posted to Google Classroom.">
+<link rel="icon" href="../media/icon.png">
+<style>
+  @font-face { font-family: 'Playpen'; src: url('../media/PlaypenSans-Bold.ttf'); font-weight: 700; font-display: swap; }
+  :root { --paper: #eceae4; --ink: #1b1b1b; --soft: #55606a; --orange: #f57c00; --card: #fbfaf6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', sans-serif;
+    background-image: radial-gradient(#0000000b 1px, transparent 1px); background-size: 18px 18px; }
+  h1, h2, h3, .btn { font-family: 'Playpen', 'Comic Sans MS', sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 24px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+  h1 { font-size: clamp(38px, 6vw, 60px); line-height: 1.05; margin: 0 0 14px; }
+  h1 span { color: var(--orange); }
+  .lead { font-size: 20px; color: #333; margin: 0 0 22px; }
+  .btn { display: inline-block; text-decoration: none; color: var(--ink); border: 2.5px solid var(--ink); border-radius: 14px; padding: 12px 22px; font-size: 19px; margin: 0 10px 10px 0; background: #fff; box-shadow: 0 3px 0 var(--ink); }
+  .btn.primary { background: var(--orange); color: #fff; }
+  .btn[aria-disabled=true] { opacity: .6; box-shadow: none; cursor: default; }
+  .narrator { width: 100%; max-width: 300px; justify-self: center; }
+  .small { color: var(--soft); font-size: 14px; }
+  .small a { color: inherit; }
+  section { padding: 28px 0; }
+  h2 { font-size: 34px; margin: 0 0 16px; }
+  .demo { background: var(--card); border: 2.5px solid var(--ink); border-radius: 18px; padding: 12px; box-shadow: 0 8px 26px #1b1b1b14; }
+  .demo p { margin: 8px 4px 4px; }
+  video { width: 100%; border-radius: 12px; display: block; background: #000; }
+  .steps, .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 2.5px solid var(--ink); border-radius: 16px; padding: 18px; }
+  .card img { height: 96px; display: block; margin-bottom: 8px; }
+  .card h3 { margin: 0 0 6px; font-size: 21px; }
+  .card p { margin: 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { background: #fff; border: 1.5px solid #d8d4ca; border-radius: 8px; padding: 2px 6px; font-size: 14px; word-break: break-all; }
+  footer { padding: 36px 0 60px; color: var(--soft); font-size: 14px; }
+  footer a { color: inherit; }
+  @media (max-width: 760px) { header { grid-template-columns: 1fr; padding-top: 32px; } .narrator { max-width: 180px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Doodle Studio <span>for Classroom</span></h1>
+      <p class="lead">Turn your lesson script into a hand-drawn video, read aloud, and add it to your Google Classroom
+        class. It is all made right in Chrome: there is nothing else to install.</p>
+      <a class="btn primary" id="add-to-chrome" aria-disabled="true">Add to Chrome · coming soon</a>
+      <p class="small">A Chrome extension for teachers. It works with the Google account you teach with, in Chrome on
+        Windows, Mac and Chromebooks.</p>
+    </div>
+    <img class="narrator" src="../media/narrator_wave.svg" alt="The Doodle Studio narrator waving">
+  </header>
+
+  <section>
+    <div class="demo">
+      <video controls preload="metadata" poster="../media/demo-classroom.png" src="../media/demo-classroom.mp4"></video>
+      <p class="small">A 224-word science script about the water cycle, turned into this 3-minute video in Chrome.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Three steps</h2>
+    <div class="steps">
+      <div class="card"><img src="../media/teacher_whiteboard.svg" alt=""><h3>1 · Open your class</h3>
+        <p>Open a class you teach in Google Classroom.</p></div>
+      <div class="card"><img src="../media/video_play.svg" alt=""><h3>2 · Make a doodle video</h3>
+        <p>Click the <b>Make a doodle video</b> button at the bottom right of the class page.</p></div>
+      <div class="card"><img src="../media/read_aloud.svg" alt=""><h3>3 · Give it your script</h3>
+        <p>Paste it, or choose a Word or text file. The video goes to your class, or waits as a draft for you to check.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Made for young learners</h2>
+    <ul>
+      <li>Every word written on the board is said as it is written, so reading and listening go together.</li>
+      <li>A simple cartoon picture is drawn for what is said, as it is said, and a list is drawn in full.</li>
+      <li>Each part ends with its key idea on a sticky note, read aloud. Captions and gentle music are included.</li>
+      <li>Headings in your script (or Word's Heading styles) become the video's parts.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Private by design</h2>
+    <ul>
+      <li>Only teachers see the button. Students simply watch the video in Classwork.</li>
+      <li>The video is made on your computer and saved to your own Google Drive.</li>
+      <li>Doodle Studio never reads your students' names, work or grades. Your script's sentences are sent only to
+        suggest pictures, and are not kept.</li>
+    </ul>
+    <p><a href="privacy.html">Read the privacy policy</a></p>
+  </section>
+
+  <section>
+    <h2>For school IT</h2>
+    <ul>
+      <li>Install it for teachers only: Admin console → Devices → Chrome → Apps &amp; extensions → Users &amp; browsers
+        → the teachers' organizational unit → Add from Chrome Web Store → Force install.</li>
+      <li>Allow its Google sign-in: Security → Access and data control → API controls → App access control → trust the
+        OAuth client <code>292748984382-7uf3qe28fadngtjln2p6e77jgmmf87qi.apps.googleusercontent.com</code>.</li>
+      <li>Keep Apps → Google Workspace → Classroom → Data access → Classroom API turned on.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Part of <a href="../">Doodle Studio</a>, free and open source (<a href="https://github.com/edwardaiwang-svg/doodle-studio">GitHub</a>).
+    · <a href="privacy.html">Privacy policy</a>
+  </footer>
+</div>
+</body>
+</html>

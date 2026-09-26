@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node tools/build.mjs",
-    "test": "node --test \"tests/*.test.mjs\"",
-    "e2e": "node tests/e2e/run.mjs"
+    "test": "node --test \"tests/*.test.mjs\""
   },
   "dependencies": {
     "@huggingface/transformers": "4.3.0",

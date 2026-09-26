@@ -73,6 +73,9 @@ const courseListsBy = (token) => fake.log.courseLists.filter((call) => call.toke
 
 try {
   if (!context.serviceWorkers().length) await context.waitForEvent('serviceworker');
+  const welcome = await waitFor(() => context.pages().find((p) => p.url() === `chrome-extension://${ID}/welcome/welcome.html`));
+  check('a new install opens the welcome page, with the way to Classroom', Boolean(welcome)
+    && (await welcome.textContent('body')).includes('Open Google Classroom'), welcome?.url() ?? 'no welcome tab');
   // An extension page: it can set the dev sign-in and import the google/ modules.
   const ext = await context.newPage();
   await ext.goto(`chrome-extension://${ID}/icons/icon16.png`);

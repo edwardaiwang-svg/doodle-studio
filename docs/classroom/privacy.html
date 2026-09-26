@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodle Studio for Classroom: privacy policy</title>
+<link rel="icon" href="../media/icon.png">
+<style>
+  @font-face { font-family: 'Playpen'; src: url('../media/PlaypenSans-Bold.ttf'); font-weight: 700; font-display: swap; }
+  :root { --paper: #eceae4; --ink: #1b1b1b; --soft: #55606a; --card: #fbfaf6; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', sans-serif; }
+  h1, h2 { font-family: 'Playpen', 'Comic Sans MS', sans-serif; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+  h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; }
+  h2 { font-size: 26px; margin-top: 32px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 2px solid var(--ink); }
+  th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1.5px solid #d8d4ca; }
+  .small { color: var(--soft); font-size: 14px; }
+  a { color: inherit; }
+  @media (max-width: 640px) { table, tbody, tr, th, td { display: block; } th { display: none; } td { border: none; padding: 4px 12px; } tr { border-bottom: 1.5px solid #d8d4ca; padding: 8px 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="small"><a href="./">Doodle Studio for Classroom</a></p>
+  <h1>Privacy policy</h1>
+  <p class="small">Last updated September 26, 2026.</p>
+  <p>Doodle Studio for Classroom is a Chrome extension for teachers. It turns a lesson script the teacher writes into a
+    hand-drawn video and adds it to one of the teacher's Google Classroom classes.</p>
+
+  <h2>What it reads</h2>
+  <ul>
+    <li><b>Your script</b>, which you type, paste or choose as a file. It stays on your computer, except that its
+      sentences are sent to Doodle Cloud (below) so GPT-6 Luna can suggest pictures.</li>
+    <li><b>Your Google account's email and the list of classes you teach</b> (name, section and link), from the Google
+      Classroom API. They are used only to show you your classes and to check that you are a teacher. The extension
+      does not read rosters, students' names, work, grades or messages.</li>
+    <li><b>Google Classroom pages you visit</b>, only to learn which class is open (the class code in the address), so
+      it can show the "Make a doodle video" button there. Nothing on those pages is stored or sent anywhere.</li>
+  </ul>
+
+  <h2>What it sends, and to whom</h2>
+  <table>
+    <tr><th>Where</th><th>What</th><th>Why</th></tr>
+    <tr><td>Google Drive (your account)</td><td>the finished video file</td><td>so your class can watch it; the
+      extension can only see files it created</td></tr>
+    <tr><td>Google Classroom (your class)</td><td>a Classwork material with the video attached</td><td>to post it, as a
+      draft or published, as you choose</td></tr>
+    <tr><td>Doodle Cloud (api.doodlecloud.org, run by Doodle Studio)</td><td>your Google sign-in token (checked with
+      Google, never stored), then the script's sentences, section titles and the names of candidate doodles</td><td>to
+      confirm you teach a class and ask GPT-6 Luna for picture suggestions</td></tr>
+    <tr><td>OpenAI (GPT-6 Luna), through Doodle Cloud</td><td>the same sentences and doodle names</td><td>to suggest
+      pictures; OpenAI's API terms apply</td></tr>
+    <tr><td>Hugging Face</td><td>nothing about you: the extension downloads the voice and picture-search models from
+      it</td><td>to make the video on your computer</td></tr>
+  </table>
+  <p>Doodle Cloud stores your email, your plan and counts of videos and AI costs, so it can keep usage within the free
+    allowance. It never stores your script, the suggestions, your Google token or the video.</p>
+
+  <h2>What stays on your computer</h2>
+  <p>The drawing, the voice, the music mix and the video encoding all happen inside Chrome on your computer. Your
+    sign-in is kept in memory only while Chrome is open, and the downloaded models are kept in the extension's own
+    storage; uninstalling the extension removes them.</p>
+
+  <h2>Children</h2>
+  <p>The extension is for teachers. It checks that the signed-in account teaches an active Google Classroom class
+    before it does anything, and it never collects information from or about students.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="https://github.com/edwardaiwang-svg/doodle-studio/issues">the project's GitHub page</a>.</p>
+</div>
+</body>
+</html>
