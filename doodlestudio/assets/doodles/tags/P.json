@@ -1,0 +1,115 @@
+{
+ "ocean": {
+  "desc": "ocean with rolling waves, a small sailboat, a seagull and the sun",
+  "category": "nature",
+  "en": [
+   "ocean",
+   "oceans",
+   "sea",
+   "seas",
+   "the ocean",
+   "ocean waves",
+   "sea waves",
+   "saltwater",
+   "open water"
+  ],
+  "zh": [
+   "海洋",
+   "大海",
+   "海",
+   "海浪",
+   "海水"
+  ]
+ },
+ "river": {
+  "desc": "river winding between green hills and trees",
+  "category": "nature",
+  "en": [
+   "river",
+   "rivers",
+   "stream",
+   "creek",
+   "flowing water",
+   "riverbank",
+   "fresh water"
+  ],
+  "zh": [
+   "河流",
+   "河",
+   "小溪",
+   "江",
+   "溪流"
+  ]
+ },
+ "lake": {
+  "desc": "lake with ripples and a duck, pine trees on the shore",
+  "category": "nature",
+  "en": [
+   "lake",
+   "lakes",
+   "pond",
+   "ponds",
+   "still water",
+   "lakeside"
+  ],
+  "zh": [
+   "湖",
+   "湖泊",
+   "池塘",
+   "湖水"
+  ]
+ },
+ "raindrop": {
+  "desc": "smiling raindrop with a little droplet",
+  "category": "nature",
+  "en": [
+   "raindrop",
+   "raindrops",
+   "drop of water",
+   "water drop",
+   "droplet",
+   "drops",
+   "drop"
+  ],
+  "zh": [
+   "雨滴",
+   "水滴",
+   "水珠"
+  ]
+ },
+ "forest": {
+  "desc": "forest of pine and leafy trees with a bird flying over",
+  "category": "nature",
+  "en": [
+   "forest",
+   "forests",
+   "woods",
+   "woodland",
+   "rainforest",
+   "trees",
+   "jungle"
+  ],
+  "zh": [
+   "森林",
+   "树林",
+   "雨林",
+   "树木"
+  ]
+ },
+ "puddle": {
+  "desc": "rain puddle with ripples, falling drops and a yellow rain boot",
+  "category": "nature",
+  "en": [
+   "puddle",
+   "puddles",
+   "rain puddle",
+   "splash",
+   "splashing"
+  ],
+  "zh": [
+   "水坑",
+   "积水",
+   "水洼"
+  ]
+ }
+}

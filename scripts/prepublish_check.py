@@ -5,6 +5,7 @@
 Terms are matched case-insensitively; key patterns by their exact shape.
 """
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -18,8 +19,20 @@ KEYS = [r'sk-[A-Za-z0-9_-]{20,}', r'sk-ant-[A-Za-z0-9_-]+', r'AKIA[0-9A-Z]{16}',
 terms = re.compile('|'.join(re.escape(t) for t in PRIVATE), re.I)
 keys = re.compile('|'.join(KEYS))
 print(f'$ scan {ROOT} (case-insensitive terms: {", ".join(PRIVATE)}; key patterns: {len(KEYS)})')
+
+def published():
+    """What a push would publish: tracked files plus new files git does not ignore (test profiles, keys and
+    generated vendor/asset folders are ignored, so they are never scanned or pushed)."""
+    try:
+        out = subprocess.run(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT,
+                             capture_output=True, check=True).stdout.decode('utf-8')
+        return sorted(ROOT / p for p in out.split('\0') if p)
+    except (OSError, subprocess.CalledProcessError):     # not a git checkout: everything on disk
+        return sorted(ROOT.rglob('*'))
+
+
 hits = 0
-for path in sorted(ROOT.rglob('*')):
+for path in published():
     if not path.is_file() or SKIP_DIRS & set(path.relative_to(ROOT).parts) or path.suffix.lower() in BINARY:
         continue
     if path.name == 'prepublish_check.py':

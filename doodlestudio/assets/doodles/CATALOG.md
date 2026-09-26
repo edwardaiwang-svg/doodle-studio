@@ -2,7 +2,7 @@
 
 Generated from `tags/*.json` (do not edit by hand). Use these ids in `storyboard.json`.
 
-- 282 bespoke doodles (`bespoke/`, CC BY 4.0, original to this project)
+- 288 bespoke doodles (`bespoke/`, CC BY 4.0, original to this project)
 - 1460 Microsoft Fluent Emoji in the same outlined style (`fluent/`, ids start with `fl_`, MIT; see `fluent/NOTICE.md`)
 
 Search from the command line: `doodle doodles "rocket launch"`.
@@ -193,9 +193,15 @@ Pictures listed in `banned.json` are left out of this catalog: no director draws
 
 - `earthquake` — Ground split by a jagged crack with a small house tilting (earthquake)
 - `food_chain` — Grass, rabbit and fox linked by arrows (food chain)
+- `forest` — forest of pine and leafy trees with a bird flying over
 - `iceberg` — iceberg with a small tip above water and a huge mass below
+- `lake` — lake with ripples and a duck, pine trees on the shore
 - `moon_stars` — Crescent moon with a few stars (night)
+- `ocean` — ocean with rolling waves, a small sailboat, a seagull and the sun
+- `puddle` — rain puddle with ripples, falling drops and a yellow rain boot
 - `rain_cloud` — Grey cloud with falling blue rain drops
+- `raindrop` — smiling raindrop with a little droplet
+- `river` — river winding between green hills and trees
 - `sprout` — Seedling with two leaves sprouting from a soil mound
 - `storm_cloud` — dark storm cloud with a lightning bolt and rain
 - `sun_bright` — Bright yellow sun with orange rays

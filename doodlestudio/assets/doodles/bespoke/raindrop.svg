@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 340" width="260" height="340">
+  <path id="drop" d="M130,22 C150,70 222,150 222,214 C222,272 180,318 130,318 C80,318 38,272 38,214 C38,150 110,70 130,22 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="shine" d="M84,210 Q86,170 108,140" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="eyes" d="M104,232 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 M144,232 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="smile" d="M112,256 Q130,272 148,256" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="droplet" d="M214,40 C218,52 230,62 230,72 C230,82 222,88 214,88 C206,88 198,82 198,72 C198,62 210,52 214,40 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="320">
+  <rect id="land" x="16" y="16" width="408" height="288" rx="22" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hill_left" d="M19,120 Q90,40 170,112 L170,120 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hill_right" d="M250,112 Q340,30 421,104 L421,120 L250,120 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="river" d="M196,19 C170,70 250,100 222,150 C194,200 120,210 150,301 L262,301 C236,220 300,200 292,150 C286,98 232,70 240,19 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ripples" d="M212,70 Q222,64 232,70 M236,160 Q248,152 260,160 M190,240 Q202,232 214,240" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tree_trunk_1" d="M84,248 L84,214" fill="none" stroke="#8D6E63" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="tree_top_1" cx="84" cy="196" r="28" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="tree_trunk_2" d="M354,262 L354,228" fill="none" stroke="#8D6E63" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="tree_top_2" cx="354" cy="210" r="28" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

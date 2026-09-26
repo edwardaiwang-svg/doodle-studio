@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300">
+  <path id="shore" d="M40,164 Q40,100 150,92 Q230,86 300,96 Q404,110 404,176 Q404,252 280,262 Q210,268 140,262 Q40,252 40,164 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lake" d="M76,170 Q76,126 160,120 Q226,116 290,124 Q370,134 370,178 Q370,228 280,234 Q212,238 150,234 Q76,226 76,170 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="ripples" d="M150,164 Q164,156 178,164 M246,190 Q262,182 278,190 M196,212 Q208,206 220,212" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="duck_body" d="M288,160 Q288,146 306,146 L322,146 Q334,146 334,158 Q334,170 316,170 L298,170 Q288,170 288,160 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="duck_head" cx="330" cy="138" r="10" fill="#FDD835" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="duck_beak" d="M339,136 L350,139 L339,143 Z" fill="#FB8C00" stroke="#1B1B1B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_1" d="M64,108 L90,48 L116,108 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_trunk_1" d="M90,108 L90,124" fill="none" stroke="#8D6E63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_2" d="M348,96 L374,36 L400,96 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_trunk_2" d="M374,96 L374,112" fill="none" stroke="#8D6E63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -51,7 +51,7 @@ def test_words_are_drawn_in_the_sense_the_script_uses():
     assert all(d != 'brainstorm_board' for _, d in picks)      # a 1450s workshop is not a sticky-note meeting
     _, picks = _picks('sky_blue.md')
     wrong = {'fl_waving_hand', 'fl_candle', 'fl_light_blue_heart', 'fl_horizontal_traffic_light', 'airplane',
-             'fl_police_car_light', 'fl_cityscape_at_dusk'}
+             'fl_police_car_light', 'fl_cityscape_at_dusk', 'ocean'}           # light waves are not the sea
     assert not wrong & {d for _, d in picks}, picks            # light waves, not hands, lamps or planes
     _, picks = _picks('photosynthesis.txt')
     assert all(d != 'thought_bubble' for _, d in picks)        # leaves reflect light; they don't think

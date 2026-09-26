@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" width="440" height="280">
+  <path id="puddle" d="M40,196 Q30,150 110,146 Q170,120 250,138 Q350,130 396,170 Q420,214 350,232 Q270,256 180,244 Q70,246 40,196 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="ripple_outer" cx="214" cy="190" rx="84" ry="26" fill="none" stroke="#1E6FD9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse id="ripple_inner" cx="214" cy="190" rx="40" ry="12" fill="none" stroke="#1E6FD9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="drop_1" d="M150,40 C156,56 170,72 170,84 C170,96 160,102 150,102 C140,102 130,96 130,84 C130,72 144,56 150,40 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="drop_2" d="M290,24 C296,40 310,56 310,68 C310,80 300,86 290,86 C280,86 270,80 270,68 C270,56 284,40 290,24 Z" fill="#64B5F6" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="boot" d="M322,110 L322,176 Q322,190 336,190 L398,190 Q412,190 412,176 Q412,160 390,158 L362,154 L362,110 Z" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="boot_sole" d="M320,186 L414,186" fill="none" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

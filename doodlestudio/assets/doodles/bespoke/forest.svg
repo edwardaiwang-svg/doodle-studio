@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="460" height="320">
+  <path id="ground" d="M20,286 Q230,260 440,286 L440,300 L20,300 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_big" d="M150,244 L214,30 L278,244 Z" fill="#43A047" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_big_trunk" d="M214,244 L214,280" fill="none" stroke="#8D6E63" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_left" d="M40,256 L90,96 L140,256 Z" fill="#00897B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="pine_left_trunk" d="M90,256 L90,284" fill="none" stroke="#8D6E63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="oak_trunk" d="M354,284 L354,196" fill="none" stroke="#8D6E63" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="oak_top" d="M300,170 C286,120 330,84 360,104 C390,80 438,112 420,156 C440,190 400,222 366,206 C334,226 296,206 300,170 Z" fill="#9CCC65" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="bird" cx="252" cy="62" r="4" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="3"/>
+  <path id="bird_wings" d="M232,70 Q242,58 252,66 Q262,58 272,70" fill="none" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="320">
+  <rect id="sky" x="16" y="16" width="408" height="288" rx="22" fill="#64B5F6" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="sun" cx="336" cy="84" r="36" fill="#FDD835" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sea_back" d="M19,170 Q70,146 122,170 T226,170 T330,170 T421,166 L421,282 Q421,301 402,301 L38,301 Q19,301 19,282 Z" fill="#1E6FD9" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sea_front" d="M19,222 Q70,198 122,222 T226,222 T330,222 T421,218 L421,282 Q421,301 402,301 L38,301 Q19,301 19,282 Z" fill="#1A3A6B" stroke="#1B1B1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="foam" d="M60,196 Q80,188 100,196 M190,196 Q210,188 230,196 M300,196 Q320,188 340,196" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sailboat_hull" d="M86,150 L150,150 L140,168 L96,168 Z" fill="#E53935" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sailboat_sail" d="M118,148 L118,96 L146,148 Z" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="gull" d="M232,90 Q244,78 256,90 Q268,78 280,90" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
