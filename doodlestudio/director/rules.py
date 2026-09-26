@@ -66,7 +66,7 @@ TOPIC_RANK = 100
 MEANING_TOPIC_RANK = 60                                # pictures chosen by meaning alone: nearer the subject
 SENSE_MARGIN = .03                                     # how much better another sense must fit to win the word
 GENERIC = {'en': set('invention technology device gadget product item object equipment material stuff thing '
-                     'innovation creation machine'.split()),
+                     'innovation creation machine together'.split()),
            'zh': set('发明 技术 设备 装置 产品 物品 东西 工具 材料 创新 机器'.split())}
 # Words in an emoji's name that only describe it: "light blue heart" is still a heart; "ferris wheel" is not
 # any wheel and "slot machine" is not any machine, so those need their whole name said.
