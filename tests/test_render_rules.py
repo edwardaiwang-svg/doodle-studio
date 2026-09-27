@@ -6,6 +6,7 @@ from pathlib import Path
 
 import numpy as np
 import pytest
+from PIL import Image
 
 from doodlestudio import ingest, script
 from doodlestudio.director.rules import RulesDirector
@@ -107,6 +108,20 @@ def test_numbers_are_written_stroke_by_stroke():
     assert digits.min() > word.max(), 'the number appears before the words in front of it'
     assert digits.max() < after.min(), 'the number is finished after the words behind it'
     assert digits.max() - digits.min() > .15 * td.duration, 'the number appears all at once'
+
+
+def test_the_drawing_hand_is_a_hand_without_a_forearm():
+    """A viewer asked to lose "that little thin arm when it's scribbling": the hand fades out at the wrist. With the
+    nib in the middle of the frame, nothing of it (or of its shadow) reaches an edge of the frame."""
+    hand = ink.Hand()
+    frame = Image.new('RGBA', render.SIZE, (255, 255, 255, 255))
+    hand.paste(frame, (render.SIZE[0] / 2, render.SIZE[1] / 2))
+    px = np.asarray(frame.convert('RGB'))
+    for name, edge in (('bottom', px[-1]), ('right', px[:, -1]), ('top', px[0]), ('left', px[:, 0])):
+        assert (edge == 255).all(), f'the hand runs off the {name} of the frame: an arm, not a hand'
+    ys, xs = np.nonzero(np.asarray(hand.img.getchannel('A')) > 8)
+    reach = np.hypot(xs - hand.tip[0], ys - hand.tip[1]).max()
+    assert reach < 560, f'something is drawn {reach:.0f} px from the nib: a forearm, not a hand'
 
 
 def test_unlabelled_timeline_runs_the_whole_card(tmp_path):

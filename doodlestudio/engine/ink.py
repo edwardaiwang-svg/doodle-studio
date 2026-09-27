@@ -562,7 +562,8 @@ def circle_points(cx, cy, rx, ry, start=-math.pi / 2, turns=1.0, n=90, wobble=0.
 
 # ------------------------------------------------------------------------ hand
 class Hand:
-    """J's drawing hand, pre-processed (matte cleanup, extended arm, -16° tilt) into assets/hand."""
+    """J's drawing hand, pre-processed (matte cleanup, -16° tilt, faded out across the wrist: a hand, no forearm)
+    into assets/hand."""
 
     def __init__(self):
         import json
