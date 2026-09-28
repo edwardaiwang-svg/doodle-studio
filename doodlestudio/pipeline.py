@@ -48,7 +48,7 @@ def new_project(source, project_dir: Path, title: str | None = None, lang: str |
         doc = ingest.read(str(source), title=title)
     if lang:
         doc.lang = lang
-    board = script.build(doc)
+    board = script.build(doc, (direction or {}).get('story') or 'explain')
     board.update({k: v for k, v in (direction or {}).items() if v})
     _save(project_dir / 'storyboard.json', board)
     config = {'script': target.name, 'lang': doc.lang, 'voice': voice.LANGS[doc.lang]['voice'], 'speed': 1.0,
