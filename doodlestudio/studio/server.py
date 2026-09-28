@@ -135,7 +135,9 @@ def create_project(body: dict) -> dict:
     def job(progress):
         progress('storyboard', 0, 1)
         pipeline.new_project(text, path, title=title, lang=body.get('lang') or None,
-                             direction={k: body.get(k) for k in ('look', 'story', 'motion')}, director=mode, **settings)
+                             direction={**{k: body.get(k) for k in ('look', 'story', 'motion')},
+                                        'brand': {k: v for k, v in (body.get('brand') or {}).items() if v} or None},
+                             director=mode, **settings)
         report = director.direct(path, mode, body.get('model') or None, body.get('base_url') or None, progress)
         usage = report.get('usage')
         return {'project': name, 'notes': report.get('notes', [])[:20],
