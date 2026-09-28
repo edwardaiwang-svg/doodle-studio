@@ -6,6 +6,7 @@ stills, the mix and packaging treat it like the whiteboard.
 from __future__ import annotations
 
 import bisect
+import copy
 import hashlib
 from pathlib import Path
 from types import SimpleNamespace
@@ -40,6 +41,11 @@ class CollageProduction:
         self._puppets: dict = {}
         self.puppet_look = (episode.get('puppet') or {}).get('preset', 'sunny')
         self.puppet_colors = tuple(sorted(((episode.get('puppet') or {}).get('colors') or {}).items()))
+        if any(b.get('direction') for b in episode['beats']):    # fit the energies to the real narration timing
+            from ...director.annotate import plan as fit_energy
+            episode = copy.deepcopy(episode)
+            fit_energy(episode, tline)
+            self.ep = episode
         self.said = plan.sentences(episode, tline, lang)
         self.stages = plan.stages(self.said, tline)
         self.brand = promo.brand_of(self)

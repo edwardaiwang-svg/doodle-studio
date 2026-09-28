@@ -77,7 +77,8 @@ def sentences(board: dict, tl: dict, lang: str) -> list[Sentence]:
 def stages(said: list[Sentence], tl: dict) -> list[Stage]:
     out: list[Stage] = []
     for s in said:
-        kind = out[-1].kind if s.scene in FOLLOWS and out else STAGE_OF.get(s.scene, 'stickers')
+        joins = s.scene in FOLLOWS or (s.role == 'tagline' and s.scene == 'sticker_row')   # a tagline is written
+        kind = out[-1].kind if joins and out else STAGE_OF.get(s.scene, 'stickers')          # on the current stage
         if out and out[-1].kind == kind and kind != 'stickers':
             out[-1].sentences.append(s)
             continue
