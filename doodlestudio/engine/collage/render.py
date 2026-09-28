@@ -43,6 +43,8 @@ class CollageProduction:
         self.said = plan.sentences(episode, tline, lang)
         self.stages = plan.stages(self.said, tline)
         self.brand = promo.brand_of(self)
+        if self.stages and self.stages[-1].kind == 'end' and SHOWPIECES.get(self.dial, 2):
+            self._showpieces.append(tline['end_card']['start'])    # the finale's showpiece comes first
         self.stage_els, self.els = [], []
         for k, st in enumerate(self.stages):
             self._current = k
@@ -79,7 +81,10 @@ class CollageProduction:
         self._cues.append(c)
 
     def allow_showpiece(self, t):
-        """Confetti and other showpieces: as many as the Motion dial allows, at least 12 s apart."""
+        """Confetti and other showpieces: as many as the Motion dial allows, at least 12 s apart (the end card's
+        is reserved first)."""
+        if t in self._showpieces:
+            return True
         if len(self._showpieces) >= SHOWPIECES.get(self.dial, 2) or any(abs(t - x) < 12 for x in self._showpieces):
             return False
         self._showpieces.append(t)

@@ -24,7 +24,7 @@ def _promo_board():
     last = board['beats'][-1]['id']
     for beat in board['beats']:
         text, notes = beat['display']['en'], []
-        for i, m in enumerate(re.finditer(r'.+?[.!?]+(?=\s|$)', text)):   # a dot inside friendr.nl is no end
+        for i, m in enumerate(re.finditer(r'.+?(?:[.!?]+(?=\s|$)|$)', text)):   # friendr.nl's dot is no end
             sent = m.group(0).strip()
             a = text.find(sent, m.start())
             low = sent.lower()
@@ -52,6 +52,7 @@ def test_every_promo_stage_renders_the_same_pixels_twice(tmp_path):
     cues = a.cues()
     assert cues == b.cues() and [c['t'] for c in cues] == sorted(c['t'] for c in cues)
     assert {'pop', 'slam', 'tap', 'whoosh', 'paper'} <= {c['kind'] for c in cues}
+    assert a.brand['cta'] == 'Try it for free' and sum(c['kind'] == 'confetti' for c in cues) >= 1
 
 
 def test_the_calm_dial_has_no_showpieces(tmp_path):
