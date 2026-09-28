@@ -91,6 +91,20 @@ def test_bad_answers_fall_back_to_the_rules_draft(board):
     assert validate(board)['ok']
 
 
+def test_a_refused_video_keeps_the_whole_offline_plan(board):
+    class Refused(Recorded):                      # Doodle Cloud says no at /v1/videos: quota, budget, kill switch
+        def open_video(self, sections, characters):
+            raise ProviderError("Doodle Cloud 503: today's AI budget is used up; this video will use offline mode")
+    reference = copy.deepcopy(board)
+    LLMDirector(Recorded({}), 'en').rules.direct(reference)
+    rec = Refused({'One machine, one idea': good_section})
+    report = LLMDirector(rec, 'en').direct(board)
+    assert rec.payloads == []                                                # no section was sent
+    assert [b['visuals'] for b in board['beats']] == [b['visuals'] for b in reference['beats']]
+    assert report['notes'][0].startswith('The offline director planned this video (Doodle Cloud 503')
+    assert validate(board)['ok']
+
+
 def test_payload_offers_candidates_and_budget(board):
     rec = Recorded({})
     LLMDirector(rec, 'en').direct(board)

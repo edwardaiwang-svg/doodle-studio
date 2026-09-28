@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodle Studio: privacy policy</title>
+<link rel="icon" href="media/icon.png">
+<style>
+  @font-face { font-family: 'Playpen'; src: url('media/PlaypenSans-Bold.ttf'); font-weight: 700; font-display: swap; }
+  :root { --paper: #eceae4; --ink: #1b1b1b; --soft: #55606a; --card: #fbfaf6; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', sans-serif; }
+  h1, h2 { font-family: 'Playpen', 'Comic Sans MS', sans-serif; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+  h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.15; }
+  h2 { font-size: 26px; margin-top: 32px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 2px solid var(--ink); }
+  th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1.5px solid #d8d4ca; }
+  .small { color: var(--soft); font-size: 14px; }
+  a { color: inherit; }
+  @media (max-width: 640px) { table, tbody, tr, th, td { display: block; } th { display: none; } td { border: none; padding: 4px 12px; } tr { border-bottom: 1.5px solid #d8d4ca; padding: 8px 0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="small"><a href="./">Doodle Studio</a></p>
+  <h1>Privacy policy</h1>
+  <p class="small">Last updated September 27, 2026. This covers the Doodle Studio app and its Doodle Cloud AI director.
+    The Chrome extension for teachers has <a href="classroom/privacy.html">its own policy</a>.</p>
+  <p>Doodle Studio turns a script you write into a hand-drawn video on your own computer. The app, the site and Doodle
+    Cloud have no ads, no analytics and no tracking, and nothing about you is ever sold.</p>
+
+  <h2>The offline director: nothing leaves your computer</h2>
+  <p>With the offline director you need no account. Your scripts, projects, narration and videos stay on your
+    computer. The app only downloads its voice model (from GitHub) and doodle-search model (from Hugging Face) the
+    first time they are needed; those downloads carry nothing about you.</p>
+
+  <h2>Doodle Cloud, the AI director (optional)</h2>
+  <p>If you sign in with your email and choose "Doodle Cloud AI", this is what is sent, and to whom:</p>
+  <table>
+    <tr><th>Where</th><th>What</th><th>Why</th></tr>
+    <tr><td>Doodle Cloud (api.doodlecloud.org, run by Doodle Studio)</td><td>your email, a random ID for this
+      installation of the app, then each section's sentences, its title and the names of candidate doodles</td><td>to
+      sign you in, count your free videos, and ask GPT-6 Luna for picture suggestions</td></tr>
+    <tr><td>Resend (email delivery)</td><td>your email address and a 6-digit sign-in code</td><td>to email you the
+      code</td></tr>
+    <tr><td>OpenAI (GPT-6 Luna), through Doodle Cloud</td><td>the same sentences, title and doodle names</td><td>to
+      suggest pictures; OpenAI's API terms apply</td></tr>
+    <tr><td>Cloudflare (hosting)</td><td>ordinary request data, such as your IP address</td><td>to run the service and
+      limit abuse</td></tr>
+  </table>
+  <p>Doodle Cloud stores your email, your plan, the install ID, counts of your videos and their AI cost, and a
+    scrambled (hashed) form of your sign-in token, never the token itself. It never stores your script, the
+    suggestions, your narration or your video. A Gmail address counts as one account however it is written (with dots
+    or a "+tag").</p>
+  <p>Sign-in codes are deleted when used, or within about a day after they expire. Rate-limit records, which contain an
+    IP address or email, are deleted within about two days. On your computer, the sign-in token is kept in your
+    system's keychain.</p>
+
+  <h2>Deleting your account</h2>
+  <p>To delete your Doodle Cloud account and its usage counts, email
+    <a href="mailto:privacy@doodlecloud.org">privacy@doodlecloud.org</a> from the address you signed in with.</p>
+
+  <h2>Children</h2>
+  <p>Doodle Cloud accounts are not meant for children under 13. Anyone can use the offline director, which needs no
+    account and sends nothing.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, this page and its date change with it. Questions:
+    <a href="https://github.com/edwardaiwang-svg/doodle-studio/issues">the project's GitHub page</a> or
+    <a href="mailto:privacy@doodlecloud.org">privacy@doodlecloud.org</a>.</p>
+</div>
+</body>
+</html>

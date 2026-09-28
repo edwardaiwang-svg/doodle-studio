@@ -28,6 +28,7 @@ h1 { font-size: 30px; margin: 0 0 6px; }
 #projects a { display: block; padding: 8px 10px; border-radius: 10px; color: var(--ink); text-decoration: none; cursor: pointer; }
 #projects a:hover, #projects a.on { background: #fff; box-shadow: var(--shadow); }
 #projects small { display: block; color: var(--soft); }
+#feedback { font-size: 13px; color: var(--soft); text-align: center; }
 
 /* main */
 #main { flex: 1; overflow: auto; }

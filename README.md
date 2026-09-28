@@ -14,9 +14,9 @@ Paste a script and Doodle Studio produces a finished MP4. A drawing hand sketche
 
 ## Install
 
-**App:** download *Doodle Studio* for macOS, Windows or Linux from [Releases](../../releases) and open it. The first video downloads the voice model (about 190 MB per language, checksum-verified).
+**App:** download *Doodle Studio* for macOS (Apple silicon, M1 or newer), Windows or Linux from [Releases](../../releases) and open it. The first video downloads the voice model (about 190 MB per language, checksum-verified) and the doodle search model (about 70 MB), once.
 
-The app isn't signed with a developer certificate yet, so the first launch needs one approval:
+The app isn't notarized by Apple or signed for Windows yet, so the first launch needs one approval:
 - **macOS:** unzip, drag *Doodle Studio* to Applications and open it. When macOS blocks it, go to System Settings → Privacy & Security and click **Open Anyway**. If macOS says the app is damaged, run `xattr -dr com.apple.quarantine "/Applications/Doodle Studio.app"` once.
 - **Windows:** unzip and run *Doodle Studio.exe*. If SmartScreen appears, click **More info** → **Run anyway**.
 
@@ -40,8 +40,8 @@ Plain text, Markdown or a .docx file works.
 
 | Director | Cost | Notes |
 |---|---|---|
-| **Offline** (default) | free | Matches the words of each sentence to the doodle library on your computer. Nothing leaves your machine. |
-| **Doodle Cloud** | free: 5 videos a month | GPT-6 Luna plans each section. No key needed; sign in with an email code. Paid plans: $5/month for GPT-6 Luna with no video count (fair use); $20/month adds Claude Opus 5.5 (10 videos a month). |
+| **Offline** (always available) | free | Matches the words of each sentence to the doodle library on your computer. Nothing leaves your machine. |
+| **Doodle Cloud** | free: 5 videos a month | GPT-6 Luna plans each section. No key needed; sign in with an email code. Paid plans with more videos and Claude Opus 5.5 come later. |
 | **Your OpenAI key** (Advanced) | about $0.02 per 15-min video | Default `gpt-6-luna`. In the app, turn on Settings → Advanced directors to see these last four options. |
 | **Your Anthropic key** | about $1 per 15-min video | `claude-opus-5`, `claude-opus-5-5`, or the cheaper `claude-haiku-4-5`. |
 | **OpenAI-compatible** | varies | OpenRouter, DeepInfra, Groq, or a local Ollama or LM Studio. |

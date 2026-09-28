@@ -39,7 +39,11 @@ class LLMDirector:
                   for c in chapters if c['kind'] in ('section', 'board', 'outro')]
         groups = [(c, beats) for c, beats in groups if beats]
         if hasattr(self.provider, 'open_video'):
-            self.provider.open_video(len(groups), sum(len(b['display'][lang]) for _, bs in groups for b in bs))
+            try:
+                self.provider.open_video(len(groups), sum(len(b['display'][lang]) for _, bs in groups for b in bs))
+            except ProviderError as error:            # quota, daily budget, sign-in, network: the whole video stays offline
+                self.notes.append(f'The offline director planned this video ({error})')
+                return {'usage': self.usage, 'notes': self.notes, 'warnings': validate(board)['warnings']}
         for i, (chapter, beats) in enumerate(groups):
             if progress:
                 progress('director', i, len(groups))

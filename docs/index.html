@@ -54,8 +54,10 @@
         Free, open source, in English and 中文.</p>
       <a class="btn primary" id="download" href="https://github.com/edwardaiwang-svg/doodle-studio/releases/latest">Download</a>
       <a class="btn" href="https://github.com/edwardaiwang-svg/doodle-studio">Source on GitHub</a>
-      <p class="small"><a href="https://github.com/edwardaiwang-svg/doodle-studio/releases/latest">macOS · Windows · Linux</a>. No account and no API key needed.<br>
-        First launch on a Mac: System Settings → Privacy &amp; Security → <b>Open Anyway</b> (the app isn't signed yet).</p>
+      <p class="small"><a href="https://github.com/edwardaiwang-svg/doodle-studio/releases/latest">macOS (Apple silicon, M1 or newer) · Windows · Linux</a>. No account and no API key needed for the offline director.<br>
+        First launch on a Mac: System Settings → Privacy &amp; Security → <b>Open Anyway</b> (once; the app isn't notarized by Apple yet).
+        On Windows: <b>More info</b> → <b>Run anyway</b>.<br>
+        The first video downloads the voice (about 190 MB) and the doodle search (about 70 MB), once.</p>
     </div>
     <img class="narrator" src="media/narrator_wave.svg" alt="The Doodle Studio narrator waving">
   </header>
@@ -76,12 +78,12 @@
 
   <section>
     <h2>Free and premium AI directors</h2>
-    <p>The video above was planned by the offline director: free, private, no account. Here is the same script planned by the AI directors of Doodle Cloud (coming soon), with the same voice and drawing hand.</p>
+    <p>The video above was planned by the offline director: free, private, no account. Here is the same script planned by Doodle Cloud's AI directors, with the same voice and drawing hand.</p>
     <div class="demos">
       <div class="demo"><video controls preload="metadata" poster="media/compare-luna.png" src="media/compare-luna.mp4"></video>
-        <h3>GPT-6 Luna</h3><p class="small">Free plan: 5 videos a month. $5 plan: no video count (fair use).</p></div>
+        <h3>GPT-6 Luna</h3><p class="small">Free plan: 5 videos a month. Sign in with your email in the app.</p></div>
       <div class="demo"><video controls preload="metadata" poster="media/compare-opus.png" src="media/compare-opus.mp4"></video>
-        <h3>Claude Opus 5.5</h3><p class="small">$20 plan: 10 Opus videos a month, plus GPT-6 Luna for the rest.</p></div>
+        <h3>Claude Opus 5.5</h3><p class="small">Coming later as a paid plan.</p></div>
     </div>
   </section>
 
@@ -119,7 +121,7 @@
     <table>
       <tr><th>Director</th><th>Cost</th><th></th></tr>
       <tr><td>Offline</td><td>Free</td><td>Matches each sentence to the doodle library. Nothing leaves your computer.</td></tr>
-      <tr><td>Doodle Cloud</td><td>Free: 5 videos a month</td><td>GPT-6 Luna plans each section. No key needed; sign in with an email code. $5/month: no video count (fair use). $20/month: adds Claude Opus 5.5.</td></tr>
+      <tr><td>Doodle Cloud</td><td>Free: 5 videos a month</td><td>GPT-6 Luna plans each section. No key needed; sign in with an email code. Paid plans with more videos and Claude Opus 5.5 come later.</td></tr>
       <tr><td>Your own key</td><td>≈ $0.02 per 15-min video with GPT-6 Luna</td><td>OpenAI, Anthropic, or any OpenAI-compatible server, including a local model.</td></tr>
     </table>
     <p class="small">AI suggestions are checked by code before use: doodles must exist, drawings must start on words that are really spoken, and numbers and quotes must appear in your script.</p>
@@ -136,6 +138,7 @@ doodle studio          # the app window</pre>
     Code: MIT. Original doodles, narrator and drawing hand: CC BY 4.0. Fluent Emoji: MIT © Microsoft.
     Fonts: SIL OFL (Playpen Sans, LXGW WenKai, Arimo, Noto Sans SC). Music: FreePD (CC0). Voice: Kokoro (Apache-2.0).
     Made by Edward Ai.
+    <a href="https://github.com/edwardaiwang-svg/doodle-studio/issues/new/choose">Feedback or a problem</a> · <a href="privacy.html">Privacy</a>
   </footer>
 </div>
 <script>

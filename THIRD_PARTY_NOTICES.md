@@ -2,6 +2,8 @@
 
 Doodle Studio's own code is MIT-licensed. Its original doodles, narrator character and drawing hand are CC BY 4.0. The components below keep their own licences.
 
+The packaged apps on the Releases page also contain GPL components (FFmpeg built with x264/x265, espeak-ng and phonemizer), so each packaged app as a whole is distributed under the GNU General Public License, version 3 ([LICENSES/GPL-3.0.txt](LICENSES/GPL-3.0.txt)). Doodle Studio's own source code stays MIT on its own; see "GPL components and source" below.
+
 ## Bundled with the app
 
 | Component | Where | Licence |
@@ -19,7 +21,7 @@ Doodle Studio's own code is MIT-licensed. Its original doodles, narrator charact
 | Component | Licence |
 |---|---|
 | Kokoro-82M voice models, v1.0 and v1.1-zh (hexgrad), ONNX exports by thewh1teagle | Apache-2.0 |
-| BAAI bge-small-en-v1.5 and bge-small-zh-v1.5 (doodle search), via fastembed | MIT |
+| BAAI bge-small-en-v1.5 and bge-small-zh-v1.5 (doodle search), as the ONNX exports Qdrant/bge-small-en-v1.5-onnx-Q and Qdrant/bge-small-zh-v1.5, via fastembed | MIT |
 
 ## Python libraries
 
@@ -28,7 +30,8 @@ Doodle Studio's own code is MIT-licensed. Its original doodles, narrator charact
 | kokoro-onnx | MIT |
 | onnxruntime | MIT |
 | misaki (Chinese G2P) | Apache-2.0 |
-| espeak-ng (through espeakng-loader / phonemizer) | GPL-3.0 |
+| espeak-ng (through espeakng-loader / phonemizer) | GPL-3.0-or-later |
+| phonemizer | GPL-3.0-or-later |
 | fastembed | Apache-2.0 |
 | jieba | MIT |
 | num2words | LGPL-2.1 |
@@ -38,7 +41,8 @@ Doodle Studio's own code is MIT-licensed. Its original doodles, narrator charact
 | resvg-py | MIT |
 | svgelements | MIT |
 | fontTools | MIT |
-| imageio-ffmpeg (bundles FFmpeg) | BSD-2-Clause / LGPL |
+| imageio-ffmpeg (the Python package) | BSD-2-Clause |
+| FFmpeg 7.1 binary bundled by imageio-ffmpeg (a GPL build with libx264 and libx265) | GPL-2.0-or-later |
 | platformdirs | MIT |
 | defusedxml | PSF |
 | pywebview | BSD-3-Clause |
@@ -46,4 +50,11 @@ Doodle Studio's own code is MIT-licensed. Its original doodles, narrator charact
 | openai | Apache-2.0 |
 | anthropic | MIT |
 
-espeak-ng is GPL-3.0. It is loaded as a separate shared library to turn English text into phonemes, and it keeps its own licence and source availability. The packaged apps include its unmodified library and data. Source: https://github.com/espeak-ng/espeak-ng.
+## GPL components and source
+
+The packaged apps include these GPL components, unmodified:
+- **FFmpeg 7.1**, the static build shipped by imageio-ffmpeg 0.6.0, which encodes the video with x264. Source: https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz; build notes: https://github.com/imageio/imageio-ffmpeg.
+- **espeak-ng** (library and data, through espeakng-loader), which turns English text into phonemes. Source: https://github.com/espeak-ng/espeak-ng.
+- **phonemizer 3.4.0**. Source: https://github.com/bootphon/phonemizer.
+
+Doodle Studio's own source for every release is this repository at the release's tag. For three years after each release, anyone can ask for the complete corresponding source of any GPL component in that release by opening an issue at https://github.com/edwardaiwang-svg/doodle-studio/issues.

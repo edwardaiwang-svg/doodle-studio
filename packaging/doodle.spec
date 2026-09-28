@@ -15,7 +15,8 @@ for package in ('kokoro_onnx', 'misaki', 'espeakng_loader', 'phonemizer', 'jieba
     binaries += b
     hidden += h
 datas += [(str(ROOT / 'doodlestudio' / 'assets'), 'doodlestudio/assets'),
-          (str(ROOT / 'doodlestudio' / 'studio' / 'static'), 'doodlestudio/studio/static')]
+          (str(ROOT / 'doodlestudio' / 'studio' / 'static'), 'doodlestudio/studio/static'),
+          (str(ROOT / 'LICENSE'), '.'), (str(ROOT / 'THIRD_PARTY_NOTICES.md'), '.'), (str(ROOT / 'LICENSES'), 'LICENSES')]
 icon = {'darwin': 'icon.icns', 'win32': 'icon.ico'}.get(sys.platform)
 
 a = Analysis([str(ROOT / 'packaging' / 'launch.py')], pathex=[str(ROOT)], datas=datas, binaries=binaries,
@@ -26,5 +27,5 @@ exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name='Doodle Studio', conso
 coll = COLLECT(exe, a.binaries, a.datas, name='Doodle Studio')
 if sys.platform == 'darwin':
     app = BUNDLE(coll, name='Doodle Studio.app', icon=str(ROOT / 'packaging' / 'icon.icns'),
-                 bundle_identifier='io.github.doodlestudio', version='0.1.3',
+                 bundle_identifier='io.github.doodlestudio', version='0.1.4',
                  info_plist={'NSHighResolutionCapable': True, 'LSMinimumSystemVersion': '11.0'})

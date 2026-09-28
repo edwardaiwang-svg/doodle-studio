@@ -16,7 +16,7 @@ import platformdirs
 
 from .providers import ProviderError, Usage
 
-URL = os.environ.get('DOODLE_CLOUD_URL', '')          # set once the service is deployed
+URL = os.environ.get('DOODLE_CLOUD_URL', 'https://api.doodlecloud.org')   # the env var points a test build elsewhere
 # Cloudflare refuses Python's default "Python-urllib" signature (error 1010), so the app names itself.
 USER_AGENT = 'DoodleStudio (+https://github.com/edwardaiwang-svg/doodle-studio)'
 INSTALL_ID = Path(platformdirs.user_data_dir('DoodleStudio')) / 'install-id'

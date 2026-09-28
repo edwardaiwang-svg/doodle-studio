@@ -14,6 +14,15 @@ function directorOptions(selected) {
     return `<option value="${k}"${soon ? ' disabled' : ''}${k === selected ? ' selected' : ''}>${soon ? 'Doodle Cloud AI (coming soon)' : v}</option>`;
   }).join('');
 }
+function needsCloudSignIn(director) {     // Doodle Cloud picked but nobody signed in: open the sign-in instead of failing
+  if (director !== 'cloud' || STATE.cloud_signed_in) return false;
+  toast('Sign in to Doodle Cloud first (free: 5 AI videos a month), or choose Offline.', 6000);
+  showSettings();
+  return true;
+}
+function wholeVideoOffline(res) {          // Doodle Cloud refused the video (quota, budget, network): say so plainly
+  return res?.notes?.find((n) => n.startsWith('The offline director planned this video')) || null;
+}
 let STATE = null, current = null, board = null, dirty = false;
 
 async function api(path, opts = {}) {
@@ -72,7 +81,7 @@ function showNew() {
   };
   langSel.onchange = fillVoices; $('#script').oninput = () => { if (!langSel.value) fillVoices(); };
   fillVoices();
-  dirSel.innerHTML = directorOptions('rules');
+  dirSel.innerHTML = directorOptions(STATE.cloud_available ? 'cloud' : 'rules');
   const note = () => {
     const d = dirSel.value;
     $('#byo').classList.toggle('hidden', !['openai', 'anthropic', 'compat', 'command'].includes(d));
@@ -80,7 +89,7 @@ function showNew() {
     $('#model').placeholder = (STATE.models[d] || [])[0] || 'model name';
     $('#director-note').textContent = {
       rules: 'Offline: free and private. Visuals are chosen by matching words to 1,700+ doodles on your computer.',
-      cloud: STATE.cloud ? `Doodle Cloud, ${esc(STATE.cloud.plan || 'free')} plan: ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${STATE.cloud.remaining ?? '?'} videos left this month`}.` : STATE.cloud_signed_in ? 'Doodle Cloud: signed in.' : 'Doodle Cloud AI plans each section: GPT-6 Luna on the free plan (5 videos a month) and the $5 plan, Claude Opus 5.5 on the $20 plan. Sign in under Settings.',
+      cloud: STATE.cloud ? `Doodle Cloud, ${esc(STATE.cloud.plan || 'free')} plan: ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${STATE.cloud.remaining ?? '?'} videos left this month`}.` : STATE.cloud_signed_in ? 'Doodle Cloud: signed in.' : 'Doodle Cloud AI (GPT-6 Luna) plans each section: 5 free videos a month, no API key. You sign in with an email code first; Offline needs no account.',
       openai: STATE.keys.openai ? 'Uses your OpenAI key (about $0.02 per 15-minute video with GPT-6 Luna).' : 'Add your OpenAI key under Settings first.',
       anthropic: STATE.keys.anthropic ? 'Uses your Anthropic key (about $1 per 15-minute video with Opus).' : 'Add your Anthropic key under Settings first.',
       compat: 'Any OpenAI-compatible server (OpenRouter, Groq, a local Ollama…): set the base URL and model.',
@@ -110,12 +119,15 @@ function showNew() {
     } catch (err) { toast(err.message, 8000); } finally { e.target.value = ''; }
   };
   $('#create').onclick = async () => {
+    if (needsCloudSignIn(dirSel.value)) return;
     try {
       const body = { text: $('#script').value, title: $('#title').value, lang: langSel.value, voice: voiceSel.value,
         director: dirSel.value, model: $('#model').value, base_url: $('#base-url').value };
       const { job, project } = await api('/api/projects', { method: 'POST', body: JSON.stringify(body) });
       const res = await watch(job, 'Creating the storyboard');
-      if (res?.notes?.length) toast(`${res.notes.length} AI suggestions were replaced by the offline plan`);
+      const whole = wholeVideoOffline(res);
+      if (whole) toast(whole, 8000);
+      else if (res?.notes?.length) toast(`${res.notes.length} AI suggestions were replaced by the offline plan`);
       await openProject(project);
     } catch (e) { $('#progress').classList.add('hidden'); toast(e.message, 6000); }
   };
@@ -131,10 +143,13 @@ async function openProject(name) {
   $('#p-meta').textContent = `${board.beats.length} beats · ${p.lang === 'zh' ? '中文' : 'English'} · voice ${p.settings.voice}`;
   $('#p-director').innerHTML = directorOptions(p.settings.director || 'rules');
   $('#p-redirect').onclick = async () => {
+    if (needsCloudSignIn($('#p-director').value)) return;
     if (dirty && !confirm('Re-planning replaces your unsaved edits. Continue?')) return;
     try {
       const res = await watch((await api(`/api/projects/${encodeURIComponent(name)}/direct`, { method: 'POST', body: JSON.stringify({ director: $('#p-director').value }) })).job, 'Planning the visuals');
-      toast(res?.cost ? `Done · AI cost $${res.cost.toFixed(4)}` : 'Visuals re-planned');
+      const whole = wholeVideoOffline(res);
+      if (whole) toast(whole, 8000);
+      else toast(res?.cost ? `Done · AI cost $${res.cost.toFixed(4)}` : 'Visuals re-planned');
       openProject(name);
     } catch (e) { toast(e.message, 6000); }
   };
@@ -278,7 +293,8 @@ function renderVideo(p) {
 // ---------------------------------------------------------------- settings
 function showSettings() {
   const cloud = STATE.cloud_available ? `<section><h3>Doodle Cloud</h3>
-      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${esc(STATE.cloud.remaining)} videos left this month`}` : STATE.cloud_signed_in ? 'Signed in.' : '5 free AI-directed videos a month. No API key needed.'}</p>
+      <p class="muted">${STATE.cloud ? `Signed in · ${esc(STATE.cloud.plan)} plan · ${STATE.cloud.remaining === null ? 'unlimited videos (fair use)' : `${esc(STATE.cloud.remaining)} videos left this month`}` : STATE.cloud_signed_in ? 'Signed in.' : '5 free AI-directed videos a month. No API key needed.'}
+        <a href="https://edwardaiwang-svg.github.io/doodle-studio/privacy.html" target="_blank">What is sent (privacy)</a></p>
       <div class="row"><input id="c-email" placeholder="you@example.com"><button id="c-send" class="small">Email me a code</button></div>
       <div class="row" style="margin-top:6px"><input id="c-code" placeholder="6-digit code"><button id="c-verify" class="small">Sign in</button></div></section>` : '';
   const body = modal(`<div class="settings"><h2>Settings</h2>${cloud}
@@ -296,7 +312,7 @@ function showSettings() {
   });
   $('#c-verify', body)?.addEventListener('click', async () => {
     try { const r = await api('/api/cloud/verify', { method: 'POST', body: JSON.stringify({ email: $('#c-email', body).value, code: $('#c-code', body).value }) });
-      toast(r.remaining === null ? 'Signed in: unlimited videos (fair use)' : `Signed in: ${r.remaining} videos left this month`); await refreshState(); closeModal(); }
+      toast(r.remaining === null ? 'Signed in: unlimited videos (fair use)' : `Signed in: ${r.remaining} videos left this month`); await refreshState(); closeModal(); refreshDirectorMenus(); }
     catch (e) { toast(e.message, 6000); }
   });
   $('#s-adv', body).onchange = async (e) => {

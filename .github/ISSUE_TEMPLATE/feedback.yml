@@ -1,0 +1,21 @@
+name: I made a video / feedback
+description: Tell us how it went, what was confusing, and what you would change.
+labels: [feedback]
+body:
+  - type: textarea
+    id: made
+    attributes:
+      label: What did you make?
+      description: The topic, and a link to the video if you're happy to share it.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What worked, and what didn't?
+    validations:
+      required: true
+  - type: checkboxes
+    id: feature
+    attributes:
+      label: Sharing
+      options:
+        - label: You may show my video (or a quote from this issue) on the Doodle Studio site.

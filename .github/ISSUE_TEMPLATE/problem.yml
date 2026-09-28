@@ -1,0 +1,28 @@
+name: Something went wrong
+description: The app crashed, an install step failed, or a video came out wrong.
+labels: [problem]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead. Paste any error text.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options: [macOS, Windows, Linux, Command line]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Doodle Studio version
+      placeholder: "0.1.4"
+  - type: dropdown
+    id: director
+    attributes:
+      label: Director
+      options: [Doodle Cloud AI, Offline, My own key or command, Not sure]
