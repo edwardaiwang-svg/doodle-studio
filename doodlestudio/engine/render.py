@@ -541,6 +541,9 @@ class Production:
 def make_production(episode, tline, lang, project_dir, relaxed=False):
     """Every renderer is built here, so the storyboard's look picks its class in one place (whiteboard by default).
     A look's renderer answers frame(t), warnings, ctx.elements and cues() like Production does."""
+    if episode.get('look') == 'collage':
+        from .collage.render import CollageProduction
+        return CollageProduction(episode, tline, lang, project_dir, relaxed=relaxed)
     return Production(episode, tline, lang, project_dir, relaxed=relaxed)
 
 

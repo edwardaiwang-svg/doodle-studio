@@ -16,8 +16,8 @@ STAGE_OF = {
     'rsvp': 'how', 'threshold': 'threshold', 'use_case_grid': 'uses', 'brand_endcard': 'end', 'sticker_row': 'stickers',
 }
 FOLLOWS = {'feature_chips'}         # scenes that add to whatever stage is showing
-BACKGROUND = {'chat': 'cream', 'brand': 'blue_wash', 'how': 'blue_wash', 'threshold': 'blue_wash', 'uses': 'grid',
-              'end': 'blue_wash', 'stickers': 'cream'}
+BACKGROUND = {'chat': 'cream', 'brand': 'sky', 'how': 'sky', 'threshold': 'sky', 'uses': 'grid', 'end': 'sky',
+              'stickers': 'cream'}
 LEAD = .25                          # a stage appears this long before its first sentence is said
 LOUD_ENTRANCES = {'brand', 'end'}
 
