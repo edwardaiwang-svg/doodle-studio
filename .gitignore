@@ -6,6 +6,7 @@ projects/
 *.mp4
 !docs/media/*.mp4
 *.wav
+!doodlestudio/assets/sfx/*.wav
 .DS_Store
 /dist/
 /build/

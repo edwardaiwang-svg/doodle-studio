@@ -148,7 +148,7 @@ def brand(prod, stage):
         if s.scene == 'feature_chips':
             els += feature_chip(prod, s, k)
     prod.pose(stage, [(stage.start, 'wave', 'happy')])
-    prod.cue('riser', t_name - 1.0, dur=1.0, strength=.7)
+    prod.cue('riser', t_name, dur=1.0, strength=.7)            # a riser peaks on its time
     prod.cue('impact', t_name, strength=.9)
     return els
 
@@ -384,7 +384,7 @@ def end(prod, stage):
     if prod.allow_showpiece(t_card):
         els.append(Confetti((960, 120), t_card + .2, n=220, ident='end.confetti', spread=1100))
     prod.pose(stage, [(stage.start, 'wave', 'happy')])
-    prod.cue('riser', t0 - .9, dur=.9, strength=.6)
+    prod.cue('riser', t0, dur=.9, strength=.6)
     return els
 
 
