@@ -19,6 +19,15 @@ URL = re.compile(r'\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|nl|io|app|org|net|co|ai
                  re.I)
 TIME = re.compile(r'\bin (\d+) (seconds?|minutes?|mins?|secs?)\b', re.I)
 LIST_SPLIT = re.compile(r',\s*(?:or |and )?|\s+(?:or|and)\s+|、|，|或者?|和')
+ASK = re.compile(r'(?:try|start|get|sign up|download|join|book|visit|go to|create your|order|shop|subscribe|立即|马上|试试|下载|注册)',
+                 re.I)
+
+
+def cta_sentence(sentences):
+    """The call to action: the last sentence with the web address or an ask ("Try it for free"), else the last
+    one marked cta."""
+    ctas = [s for s in sentences if s.role == 'cta'] or sentences[-1:]
+    return next((s for s in reversed(ctas) if URL.search(s.text) or ASK.match(s.text.strip())), ctas[-1])
 
 
 def brand_of(prod) -> dict:
@@ -38,11 +47,9 @@ def brand_of(prod) -> dict:
         found = [m.group(0) for s in said for m in URL.finditer(s.text)]
         if found:
             brand['url'] = found[-1].lower()
-    if not brand.get('cta'):
-        ctas = [s for s in said if s.role == 'cta']
-        if ctas:
-            text = ctas[-1].text.rstrip('.!。！')
-            brand['cta'] = re.split(r'\s+(?:at|on|via)\s+', text)[0] if brand.get('url') else text
+    if not brand.get('cta') and said:
+        text = cta_sentence(said).text.rstrip('.!。！')
+        brand['cta'] = re.split(r'\s+(?:at|on|via)\s+', text)[0] if URL.search(text) else text
     return brand
 
 
@@ -337,8 +344,7 @@ def end(prod, stage):
     els.append(Piece(_hero(prod, name, size=170), 960, 230, t0, stage.sentences[0].beat, 'end.name', enter='slam',
                      energy=3, cue='slam'))
     els.append(Burst(960, 230, t0 + .08, r0=330, r1=390, n=16, ident='end.burst'))
-    cta = [s for s in stage.sentences if s.role == 'cta'][-1:] or stage.sentences[-1:]
-    cta = cta[0]
+    cta = cta_sentence(stage.sentences)
     name_only = (prod.brand.get('name') or '').lower()
     chips = [s for s in stage.sentences if s is not cta and len(s.text) <= 32 and s.role != 'brand'
              and s.text.strip().rstrip('.!').lower() != name_only]
