@@ -30,8 +30,10 @@ def _save(path: Path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 
 
-def new_project(source, project_dir: Path, title: str | None = None, lang: str | None = None, **settings) -> dict:
-    """Create the project folder from a script file or pasted text and build the storyboard skeleton."""
+def new_project(source, project_dir: Path, title: str | None = None, lang: str | None = None,
+                direction: dict | None = None, **settings) -> dict:
+    """Create the project folder from a script file or pasted text and build the storyboard skeleton.
+    ``direction`` sets the storyboard's dials: look, story, motion and brand (see docs/storyboard.md)."""
     project_dir = Path(project_dir)
     project_dir.mkdir(parents=True, exist_ok=True)
     src = Path(source) if isinstance(source, Path) or (len(str(source)) < 1024 and '\n' not in str(source)) else None
@@ -47,6 +49,7 @@ def new_project(source, project_dir: Path, title: str | None = None, lang: str |
     if lang:
         doc.lang = lang
     board = script.build(doc)
+    board.update({k: v for k, v in (direction or {}).items() if v})
     _save(project_dir / 'storyboard.json', board)
     config = {'script': target.name, 'lang': doc.lang, 'voice': voice.LANGS[doc.lang]['voice'], 'speed': 1.0,
               'director': 'rules', 'workers': 2, **settings}
@@ -103,9 +106,14 @@ def render(project_dir: Path, start: float = 0, duration: float | None = None, w
         warnings = renderer.render_segments(project_dir, project_dir / 'storyboard.json', cfg['lang'],
                                             build / 'timeline.json', start, n, out, workers)
     else:
-        prod = renderer.Production(storyboard(project_dir), tl, cfg['lang'], project_dir)
+        prod = renderer.make_production(storyboard(project_dir), tl, cfg['lang'], project_dir)
         renderer.encode(prod, start, n, out, 20)
         warnings = prod.warnings
+    board = storyboard(project_dir)
+    if board.get('look', 'whiteboard') != 'whiteboard':    # sound effects follow the scheduled animation
+        if workers > 1:
+            prod = renderer.make_production(board, tl, cfg['lang'], project_dir)
+        _save(build / 'cues.json', {'cues': prod.cues()})
     _save(build / 'render-warnings.json', warnings)
     return out
 

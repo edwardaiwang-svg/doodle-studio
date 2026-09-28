@@ -38,7 +38,7 @@ def cmd_new(args):
     from . import director, pipeline
     t = _stage('storyboard')
     board = pipeline.new_project(Path(args.script) if Path(args.script).is_file() else args.script, Path(args.out),
-                                 title=args.title, lang=args.lang, **_settings(args))
+                                 title=args.title, lang=args.lang, direction=_direction(args), **_settings(args))
     report = director.direct(Path(args.out), args.director, getattr(args, 'model', None), getattr(args, 'base_url', None),
                              _progress)
     sections = sum(c['kind'] == 'section' for c in board['chapters'])
@@ -60,7 +60,7 @@ def cmd_render(args):
     if args.stills:
         from .engine import render as renderer
         tl = json.loads((project / 'build' / 'timeline.json').read_text(encoding='utf-8'))
-        prod = renderer.Production(pipeline.storyboard(project), tl, pipeline.settings(project)['lang'], project)
+        prod = renderer.make_production(pipeline.storyboard(project), tl, pipeline.settings(project)['lang'], project)
         out = project / 'build' / 'stills'
         out.mkdir(parents=True, exist_ok=True)
         for s in args.stills.split(','):
@@ -164,7 +164,13 @@ def _settings(args):
     return out
 
 
+def _direction(args):
+    return {key: getattr(args, key, None) for key in ('look', 'story', 'motion')}
+
+
 MODES = ['rules', 'cloud', 'openai', 'anthropic', 'compat', 'command']
+LOOKS, STORIES, MOTIONS = ['whiteboard', 'collage', 'bold'], ['explain', 'promo', 'story', 'showcase'], \
+    ['calm', 'lively', 'showreel']
 
 
 def main(argv=None):
@@ -180,6 +186,9 @@ def main(argv=None):
         p.add_argument('--speed', type=float)
         p.add_argument('--workers', type=int, help='parallel render processes (default 2)')
         p.add_argument('--director', default='rules', choices=MODES)
+        p.add_argument('--look', choices=LOOKS, help='visual style (default whiteboard)')
+        p.add_argument('--story', choices=STORIES, help='story shape (default explain)')
+        p.add_argument('--motion', choices=MOTIONS, help='how lively the animation is (default lively)')
         p.add_argument('--model')
         p.add_argument('--base-url')
         p.set_defaults(func=fn)

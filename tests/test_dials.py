@@ -1,0 +1,24 @@
+"""The direction dials (look, story, motion) reach the storyboard, and every renderer comes from one factory."""
+import json
+from pathlib import Path
+
+from doodlestudio import pipeline
+from doodlestudio.engine import render as renderer
+from doodlestudio.engine import timeline
+
+FIX = Path(__file__).parent / 'fixtures'
+
+
+def test_new_project_writes_the_dials_into_the_storyboard(tmp_path):
+    pipeline.new_project(FIX / 'tiny.md', tmp_path / 'p', direction={'look': 'collage', 'story': 'promo', 'motion': None})
+    board = json.loads((tmp_path / 'p' / 'storyboard.json').read_text())
+    assert board['look'] == 'collage' and board['story'] == 'promo'
+    assert board.get('motion') in (None, 'lively')                              # an unset dial keeps its default
+
+
+def test_the_factory_builds_the_whiteboard_renderer_by_default(tmp_path):
+    board = pipeline.new_project(FIX / 'tiny.md', tmp_path / 'p')
+    tl = timeline.layout(board, board['lang'], timeline.synthetic_clips(board, board['lang']))
+    prod = renderer.make_production(board, tl, board['lang'], tmp_path / 'p')
+    assert type(prod) is renderer.Production and prod.cues() == []
+    assert prod.frame(1.0).size == (1920, 1080)

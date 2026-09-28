@@ -11,3 +11,4 @@ projects/
 /build/
 .pytest_cache/
 .Rhistory
+.claude/
