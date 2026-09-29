@@ -1,6 +1,6 @@
 [project]
 name = "doodle-studio"
-version = "0.1.4"
+version = "0.1.5"
 description = "Turn any script into a hand-drawn whiteboard explainer video, locally."
 readme = "README.md"
 license = "MIT"
@@ -21,6 +21,7 @@ dependencies = [
     "fonttools>=4.50",
     "imageio-ffmpeg>=0.6.0",
     "platformdirs>=4",
+    "certifi>=2024.8.30",
     "defusedxml>=0.7.1",
     "pywebview>=6",
     "keyring>=25",

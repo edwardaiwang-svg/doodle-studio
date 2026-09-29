@@ -115,6 +115,16 @@ jobs:
           if [ "$RUNNER_OS" = "Windows" ]; then 7z a "../DoodleStudio-${{ github.ref_name }}-windows.zip" "Doodle Studio"; \
           elif [ "$RUNNER_OS" = "macOS" ]; then ditto -c -k --keepParent "Doodle Studio.app" "../DoodleStudio-${{ github.ref_name }}-macos.zip"; \
           else tar czf "../DoodleStudio-${{ github.ref_name }}-linux.tar.gz" "Doodle Studio"; fi
+      - name: Smoke test the app the way a fresh computer runs it (no system certificates, no voice yet)
+        if: runner.os != 'Windows'
+        shell: bash
+        env:
+          SSL_CERT_FILE: /nonexistent          # v0.1.4's Mac app failed every download and sign-in here
+          SSL_CERT_DIR: /nonexistent
+          DOODLE_MODELS: ${{ runner.temp }}/models
+        run: |
+          if [ "$RUNNER_OS" = "macOS" ]; then app="dist/Doodle Studio.app/Contents/MacOS/Doodle Studio"; else app="dist/Doodle Studio/Doodle Studio"; fi
+          "$app" setup --lang en
       - uses: softprops/action-gh-release@v2
         with:
           files: DoodleStudio-*

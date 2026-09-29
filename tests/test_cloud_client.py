@@ -1,5 +1,6 @@
 import json
 
+from doodlestudio import net
 from doodlestudio.director.llm import cloud
 
 
@@ -22,6 +23,13 @@ def test_requests_carry_the_app_signature(monkeypatch):
         return Reply()
 
     monkeypatch.setattr(cloud, 'URL', 'https://api.example.org')
-    monkeypatch.setattr(cloud.urllib.request, 'urlopen', urlopen)
+    monkeypatch.setattr(cloud, 'urlopen', urlopen)
     cloud.signup('someone@example.org')
     assert seen['ua'].startswith('DoodleStudio')
+
+
+def test_https_trusts_certifi_where_the_system_has_no_certificates(monkeypatch):
+    """The packaged Mac app finds no system certificates; v0.1.4 failed every sign-in with CERTIFICATE_VERIFY_FAILED."""
+    monkeypatch.setenv('SSL_CERT_FILE', '/nonexistent')
+    monkeypatch.setenv('SSL_CERT_DIR', '/nonexistent')
+    assert net._context.__wrapped__().cert_store_stats()['x509_ca'] > 100

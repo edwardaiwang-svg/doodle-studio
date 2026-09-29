@@ -14,6 +14,7 @@ from pathlib import Path
 
 import platformdirs
 
+from ...net import urlopen
 from .providers import ProviderError, Usage
 
 URL = os.environ.get('DOODLE_CLOUD_URL', 'https://api.doodlecloud.org')   # the env var points a test build elsewhere
@@ -47,7 +48,7 @@ def _call(path: str, body: dict | None = None, token: str | None = None) -> dict
                                  headers={'Content-Type': 'application/json', 'User-Agent': USER_AGENT,
                                           **({'Authorization': f'Bearer {token}'} if token else {})})
     try:
-        with urllib.request.urlopen(req, timeout=180) as response:
+        with urlopen(req, timeout=180) as response:
             return json.loads(response.read())
     except urllib.error.HTTPError as error:
         try:

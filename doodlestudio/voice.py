@@ -11,7 +11,6 @@ import hashlib
 import json
 import os
 import shutil
-import urllib.request
 import wave
 from dataclasses import dataclass
 from functools import lru_cache
@@ -19,6 +18,8 @@ from pathlib import Path
 
 import numpy as np
 import platformdirs
+
+from .net import urlopen
 
 MODEL_DIR = Path(os.environ.get('DOODLE_MODELS') or Path(platformdirs.user_data_dir('DoodleStudio')) / 'models').expanduser()
 RELEASE = 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
@@ -66,7 +67,7 @@ def ensure_models(lang: str, progress=None):
         url, digest = FILES[name]
         part = MODEL_DIR / f'{name}.part'
         h = hashlib.sha256()
-        with urllib.request.urlopen(url) as response, open(part, 'wb') as out:
+        with urlopen(url) as response, open(part, 'wb') as out:
             total = int(response.headers.get('Content-Length') or 0)
             done = 0
             while chunk := response.read(1 << 20):
